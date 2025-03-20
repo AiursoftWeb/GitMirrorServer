@@ -65,13 +65,13 @@ public class GitLabService : IGitService, ITransientDependency
 
             // Create the repository
             var endpoint = $"{_baseUrl}/projects";
-            
+
             var projectData = new Dictionary<string, object>
             {
                 { "name", repositoryName },
                 { "visibility", "private" } // Default to private
             };
-            
+
             // If it's an organization (group), we need to find the group ID
             if (isOrg)
             {
@@ -85,7 +85,7 @@ public class GitLabService : IGitService, ITransientDependency
                     throw new Exception($"Group '{orgOrUser}' not found.");
                 }
             }
-            
+
             var requestContent = new StringContent(
                 JsonSerializer.Serialize(projectData),
                 System.Text.Encoding.UTF8,
@@ -127,19 +127,20 @@ public class GitLabService : IGitService, ITransientDependency
         var endpoint = $"{_baseUrl}/groups?search={groupPath}";
         var response = await _httpClient.GetAsync(endpoint);
         response.EnsureSuccessStatusCode();
-        
+
         var content = await response.Content.ReadAsStringAsync();
         var groups = JsonSerializer.Deserialize<List<GitLabGroup>>(content,
             new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<GitLabGroup>();
-        
+
         var group = groups.FirstOrDefault(g => g.Path.Equals(groupPath, StringComparison.OrdinalIgnoreCase));
         return group?.Id;
     }
 
     private class GitLabGroup
     {
-        public int Id { get; set; }
-        public string Path { get; set; } = string.Empty;
+        // ReSharper disable once UnusedAutoPropertyAccessor.Local
+        public int Id { get; init; }
+        public string Path { get; init; } = string.Empty;
     }
 
     public string GetCloneUrl(string orgOrUser, string repositoryName)
