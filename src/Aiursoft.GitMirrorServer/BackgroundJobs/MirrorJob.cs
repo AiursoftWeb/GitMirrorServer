@@ -22,12 +22,12 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
         {
             if (!EntryExtends.IsProgramEntry())
             {
-                _logger.LogInformation("Skip cleaner in test environment.");
+                _logger.LogInformation("Skip mirror in test environment.");
                 return Task.CompletedTask;
             }
 
-            _logger.LogInformation("Timed Background Service is starting");
-            _timer = new Timer(DoWork, null, TimeSpan.FromSeconds(5), TimeSpan.FromMinutes(10));
+            _logger.LogInformation("Timed Background Service is starting. Mirror all repos every 45 minutes.");
+            _timer = new Timer(DoWork, null, TimeSpan.FromSeconds(5), TimeSpan.FromMinutes(45));
             return Task.CompletedTask;
         }
 
@@ -35,7 +35,7 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
         {
             try
             {
-                _logger.LogInformation("Cleaner task started!");
+                _logger.LogInformation("Mirror job started");
                 using var scope = scopeFactory.CreateScope();
                 var serviceFactory = scope.ServiceProvider.GetRequiredService<GitServiceFactory>();
                 var workspaceManager = scope.ServiceProvider.GetRequiredService<WorkspaceManager>();
