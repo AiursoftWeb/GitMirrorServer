@@ -2,7 +2,7 @@ aiur() { arg="$( cut -d ' ' -f 2- <<< "$@" )" && curl -sL https://gitlab.aiursof
 
 app_name="gitMirrorServer"
 repo_path="https://gitlab.aiursoft.cn/aiursoft/gitMirrorServer"
-proj_path="src/Aiursoft.GitMirrorServer.csproj"
+proj_path="src/Aiursoft.GitMirrorServer/Aiursoft.GitMirrorServer.csproj"
 
 get_dll_name()
 {
