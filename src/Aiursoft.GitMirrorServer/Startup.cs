@@ -1,3 +1,5 @@
+using Aiursoft.GitMirrorServer.BackgroundJobs;
+using Aiursoft.GitRunner;
 using Aiursoft.Scanner;
 using Aiursoft.WebTools.Abstractions.Models;
 
@@ -6,10 +8,10 @@ namespace Aiursoft.GitMirrorServer;
 public class MirrorConfig
 {
     public required string FromType { get; init; }
-    public required string FromToken { get; init; }
+    public required string? FromToken { get; init; }
     public required string FromServer { get; init; }
     public required string FromOrgName { get; init; }
-    public required string FromOrgType { get; init; }
+    public required string OrgOrUser { get; init; }
     public required string TargetType { get; init; }
     public required string TargetServer { get; init; }
     public required string TargetToken { get; init; }
@@ -23,6 +25,8 @@ public class Startup : IWebStartup
         var section = configuration.GetSection("Mirrors");
         services.Configure<List<MirrorConfig>>(section);
         services.AddLibraryDependencies();
+        services.AddGitRunner();
+        services.AddSingleton<IHostedService, MirrorJob>();
 
         services
             .AddControllersWithViews()
