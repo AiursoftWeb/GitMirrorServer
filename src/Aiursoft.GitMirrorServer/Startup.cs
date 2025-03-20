@@ -19,6 +19,5 @@ public class Startup : IWebStartup
         app.UseStaticFiles();
         app.UseRouting();
         app.MapDefaultControllerRoute();
-        app.UseWebSockets();
     }
 }

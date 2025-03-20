@@ -7,7 +7,7 @@
 [![Website](https://img.shields.io/website?url=https%3A%2F%2FgitMirrorServer.aiursoft.cn%2F)](https://gitMirrorServer.aiursoft.cn)
 [![Docker](https://img.shields.io/docker/pulls/aiursoft/gitMirrorServer.svg)](https://hub.docker.com/r/aiursoft/gitMirrorServer)
 
-GitMirrorServer is a simple network speed test app. Deploy this on your server. Open your gitMirrorServer on your browser. And you can test the speed between you and your server.
+GitMirrorServer is a simple server that mirrors all repositories from GitLab to GitHub. Great for developers who self-host their GitLab server and want to mirror their repositories to GitHub.
 
 ![overview](./screenshot.png)
 
