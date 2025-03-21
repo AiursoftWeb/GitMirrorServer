@@ -1,5 +1,6 @@
 @using System.Diagnostics
 @using System.Reflection
+@using Aiursoft.GitMirrorServer.BackgroundJobs
 @{
     var process = Process.GetCurrentProcess();
 }
@@ -18,7 +19,6 @@
         <div class="col-sm-12 px-1">
             <div class="card mb-2 tests-card">
                 <div class="card-body">
-                    <h5 class="card-title">Request other properties</h5>
                     <h5 class="card-title">Server Information</h5>
                     <div class="table-responsive">
                         <table class="table table-striped table-hover table-sm">
@@ -44,7 +44,8 @@
                             </tr>
                             <tr>
                                 <td>Worker Process</td>
-                                <td>[@process.Id] @process.ProcessName @(Environment.Is64BitProcess ? "(64-bit)" : "(32-bit)")</td>
+                                <td>
+                                    [@process.Id] @process.ProcessName @(Environment.Is64BitProcess ? "(64-bit)" : "(32-bit)")</td>
                             </tr>
                             <tr>
                                 <td>Start Time</td>
@@ -63,5 +64,64 @@
                 </div>
             </div>
         </div>
+
+        <div class="col-sm-12 px-1">
+            <div class="card mb-2 tests-card">
+                <div class="card-body">
+                    <h5 class="card-title">Mirror State</h5>
+
+                    @* public static DateTime LastRunTime = DateTime.MinValue; *@
+                    @* public static TimeSpan LastRunDuration = TimeSpan.Zero; *@
+                    @* public static bool LastRunSuccess = false; *@
+                    @* public static int SuccessMirrorCount = 0; *@
+                    @* public static int FailMirrorCount = 0; *@
+                    @* public static int TotalMirroredCount = 0; *@
+                    @* public static int TotalMirrorServerConfigsCount = 0; *@
+                    @* public static DateTime EstimatedNextRunTime = DateTime.MinValue; *@
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-sm">
+                            <tr>
+                                <th>Name</th>
+                                <th>Value</th>
+                            </tr>
+                            <tr>
+                                <td>Last Run Time</td>
+                                <td>@MirrorJob.LastRunTime.ToUniversalTime() (UTC)</td>
+                            </tr>
+                            <tr>
+                                <td>Last Run Duration</td>
+                                <td>@MirrorJob.LastRunDuration</td>
+                            </tr>
+                            <tr>
+                                <td>Last Run Success</td>
+                                <td>@MirrorJob.LastRunSuccess</td>
+                            </tr>
+                            <tr>
+                                <td>Success Mirror Count</td>
+                                <td>@MirrorJob.SuccessMirrorCount</td>
+                            </tr>
+                            <tr>
+                                <td>Fail Mirror Count</td>
+                                <td>@MirrorJob.FailMirrorCount</td>
+                            </tr>
+                            <tr>
+                                <td>Total Mirrored Count</td>
+                                <td>@MirrorJob.TotalMirroredCount</td>
+                            </tr>
+                            <tr>
+                                <td>Total Mirror Server Configs Count</td>
+                                <td>@MirrorJob.TotalMirrorServerConfigsCount</td>
+                            </tr>
+                            <tr>
+                                <td>Estimated Next Run Time</td>
+                                <td>@MirrorJob.EstimatedNextRunTime.ToUniversalTime() (UTC)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
