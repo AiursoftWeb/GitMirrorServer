@@ -5,7 +5,7 @@ namespace Aiursoft.GitMirrorServer.Controllers;
 
 public class HomeController : Controller
 {
-    [LimitPerMin(10)]
+    [LimitPerMin(100)]
     public IActionResult Index()
     {
         return View();
