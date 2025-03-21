@@ -1,19 +1,19 @@
-# GitMirrorServer
+# Git Mirror Server
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://gitlab.aiursoft.cn/aiursoft/gitMirrorServer/-/blob/master/LICENSE)
 [![Pipeline stat](https://gitlab.aiursoft.cn/aiursoft/gitMirrorServer/badges/master/pipeline.svg)](https://gitlab.aiursoft.cn/aiursoft/gitMirrorServer/-/pipelines)
 [![Test Coverage](https://gitlab.aiursoft.cn/aiursoft/gitMirrorServer/badges/master/coverage.svg)](https://gitlab.aiursoft.cn/aiursoft/gitMirrorServer/-/pipelines)
 [![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.cn/aiursoft/gitMirrorServer.svg)](https://gitlab.aiursoft.cn/aiursoft/gitMirrorServer/-/commits/master?ref_type=heads)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2FgitMirrorServer.aiursoft.cn%2F)](https://gitMirrorServer.aiursoft.cn)
-[![Docker](https://img.shields.io/docker/pulls/aiursoft/gitMirrorServer.svg)](https://hub.docker.com/r/aiursoft/gitMirrorServer)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2FgitMirror.aiursoft.cn%2F)](https://gitmirror.aiursoft.cn)
+[![Docker](https://img.shields.io/docker/pulls/aiursoft/gitmirrorserver.svg)](https://hub.docker.com/r/aiursoft/gitmirrorserver)
 
-GitMirrorServer is a simple server that mirrors all repositories from GitLab to GitHub. Great for developers who self-host their GitLab server and want to mirror their repositories to GitHub.
+Git Mirror Server is a simple server that mirrors all repositories from GitLab to GitHub. Great for developers who self-host their GitLab server and want to mirror their repositories to GitHub.
 
 ![overview](./screenshot.png)
 
 ## Try
 
-Try a running gitMirrorServer [here](https://gitMirrorServer.aiursoft.cn).
+Try a running Git Mirror Server [here](https://gitMirror.aiursoft.cn).
 
 ## Run in Ubuntu
 
@@ -54,8 +54,8 @@ First, install Docker [here](https://docs.docker.com/get-docker/).
 Then run the following commands in a Linux shell:
 
 ```bash
-image=aiursoft/gitMirrorServer
-appName=gitMirrorServer
+image=aiursoft/gitmirrorserver
+appName=gitmirrorserver
 docker pull $image
 docker run -d --name $appName --restart unless-stopped -p 5000:5000 -v /var/www/$appName:/data $image
 ```
@@ -66,7 +66,7 @@ The docker image has the following context:
 
 | Properties  | Value                           |
 |-------------|---------------------------------|
-| Image       | aiursoft/gitMirrorServer                 |
+| Image       | aiursoft/gitmirrorserver        |
 | Ports       | 5000                            |
 | Binary path | /app                            |
 | Data path   | /data                           |
