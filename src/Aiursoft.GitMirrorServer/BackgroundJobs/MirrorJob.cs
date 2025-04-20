@@ -60,6 +60,8 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
             {
                 _logger.LogInformation("Mirror job started");
                 ClearStats();
+                // Calculate next estimated run time based on the timer interval (IntervalMinutes minutes)
+                EstimatedNextRunTime = DateTime.UtcNow.AddMinutes(IntervalMinutes);
                 using var scope = scopeFactory.CreateScope();
                 var serviceFactory = scope.ServiceProvider.GetRequiredService<GitServiceFactory>();
                 var workspaceManager = scope.ServiceProvider.GetRequiredService<WorkspaceManager>();
@@ -188,9 +190,6 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
             {
                 var endTime = DateTime.UtcNow;
                 LastRunDuration = endTime - startTime;
-
-                // Calculate next estimated run time based on the timer interval (IntervalMinutes minutes)
-                EstimatedNextRunTime = endTime.AddMinutes(IntervalMinutes);
 
                 logger.LogInformation(
                     "Mirror job completed in {duration}. Success: {success}, Failed: {failed}, Total: {total}",
