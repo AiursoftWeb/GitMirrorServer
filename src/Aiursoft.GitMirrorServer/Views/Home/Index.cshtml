@@ -123,5 +123,40 @@
             </div>
         </div>
 
+        <div class="col-sm-12 px-1">
+            <div class="card mb-2 tests-card">
+                <div class="card-body">
+                    <h5 class="card-title">Failed Mirror Repositories</h5>
+                    @if (MirrorJob.FailedMirrors.Count > 0)
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Organization</th>
+                                        <th>Repository</th>
+                                        <th>Error Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var (orgName, repoName, errorMessage) in MirrorJob.FailedMirrors)
+                                    {
+                                        <tr>
+                                            <td>@orgName</td>
+                                            <td>@repoName</td>
+                                            <td><div class="text-danger">@errorMessage</div></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>No failed mirrors in the last run.</p>
+                    }
+                </div>
+            </div>
+        </div>
     </div>
 </div>

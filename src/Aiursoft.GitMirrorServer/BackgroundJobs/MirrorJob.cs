@@ -27,6 +27,7 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
         public static int TotalMirroredCount;
         public static int TotalMirrorServerConfigsCount;
         public static DateTime EstimatedNextRunTime = DateTime.MinValue;
+        public static List<(string OrgName, string RepoName, string ErrorMessage)> FailedMirrors { get; private set; } = new List<(string, string, string)>();
 
         private static void ClearStats()
         {
@@ -38,6 +39,7 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
             TotalMirroredCount = 0;
             TotalMirrorServerConfigsCount = 0;
             EstimatedNextRunTime = DateTime.MinValue;
+            FailedMirrors.Clear();
         }
 
         public Task StartAsync(CancellationToken cancellationToken)
@@ -163,12 +165,14 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
                                 {
                                     logger.LogError(ex, "Error mirroring repository {repo}", repo.Name);
                                     FailMirrorCount++;
+                                    FailedMirrors.Add((config.FromOrgName, repo.Name, ex.Message));
                                 }
                             }
                             catch (Exception ex)
                             {
                                 logger.LogError(ex, "Error setting up repository {repo}", repo.Name);
                                 FailMirrorCount++;
+                                FailedMirrors.Add((config.FromOrgName, repo.Name, ex.Message));
                             }
                         }
                     }
