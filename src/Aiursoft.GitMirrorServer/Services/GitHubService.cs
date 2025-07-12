@@ -3,11 +3,10 @@ using System.Text;
 using System.Text.Json;
 using Aiursoft.GitMirrorServer.Abstractions;
 using Aiursoft.GitMirrorServer.Models;
-using Aiursoft.Scanner.Abstractions;
 
 namespace Aiursoft.GitMirrorServer.Services;
 
-public class GitHubService : IGitService, ITransientDependency
+public class GitHubService : IGitService
 {
     private readonly HttpClient _httpClient;
     private readonly string _baseUrl;

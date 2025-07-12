@@ -2,11 +2,10 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using Aiursoft.GitMirrorServer.Abstractions;
 using Aiursoft.GitMirrorServer.Models;
-using Aiursoft.Scanner.Abstractions;
 
 namespace Aiursoft.GitMirrorServer.Services;
 
-public class GitLabService : IGitService, ITransientDependency
+public class GitLabService : IGitService
 {
     private readonly HttpClient _httpClient;
     private readonly string _baseUrl;
