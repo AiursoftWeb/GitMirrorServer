@@ -3,6 +3,10 @@ using Aiursoft.GitMirrorServer.Models.Configuration;
 using Aiursoft.GitRunner;
 using Aiursoft.Scanner;
 using Aiursoft.WebTools.Abstractions.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.IdentityModel.JsonWebTokens;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
 namespace Aiursoft.GitMirrorServer;
 
@@ -12,6 +16,31 @@ public class Startup : IWebStartup
     {
         var section = configuration.GetSection("Mirrors");
         services.Configure<List<MirrorConfig>>(section);
+        services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+            })
+            .AddCookie()
+            .AddOpenIdConnect(options =>
+            {
+                var oidcConfig = configuration.GetSection("OIDC");
+
+                options.Authority = oidcConfig["Authority"];
+                options.ClientId = oidcConfig["ClientId"];
+                options.ClientSecret = oidcConfig["ClientSecret"];
+
+                options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.ResponseType = OpenIdConnectResponseType.Code;
+
+                options.SaveTokens = true;
+                options.GetClaimsFromUserInfoEndpoint = true;
+
+                options.MapInboundClaims = false;
+                options.TokenValidationParameters.NameClaimType = JwtRegisteredClaimNames.Name;
+                options.TokenValidationParameters.RoleClaimType = "groups";
+            });
+
         services.AddLibraryDependencies();
         services.AddGitRunner();
         services.AddSingleton<IHostedService, MirrorJob>();
@@ -25,6 +54,8 @@ public class Startup : IWebStartup
     {
         app.UseStaticFiles();
         app.UseRouting();
+        app.UseAuthentication();
+        app.UseAuthorization();
         app.MapDefaultControllerRoute();
     }
 }
