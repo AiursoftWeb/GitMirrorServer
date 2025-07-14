@@ -5,6 +5,7 @@ using Aiursoft.Scanner;
 using Aiursoft.WebTools.Abstractions.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.JsonWebTokens;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 
@@ -14,6 +15,7 @@ public class Startup : IWebStartup
 {
     public void ConfigureServices(IConfiguration configuration, IWebHostEnvironment environment, IServiceCollection services)
     {
+        var requiresAuth = configuration.GetValue<bool>("RequiresAuth");
         var section = configuration.GetSection("Mirrors");
         services.Configure<List<MirrorConfig>>(section);
         services.AddAuthentication(options =>
@@ -45,6 +47,15 @@ public class Startup : IWebStartup
                 options.TokenValidationParameters.RoleClaimType = "groups";
             });
 
+        services.AddAuthorization(options =>
+        {
+            if (!requiresAuth)
+            {
+                options.DefaultPolicy = new AuthorizationPolicyBuilder()
+                    .RequireAssertion(_ => true)
+                    .Build();
+            }
+        });
         services.AddLibraryDependencies();
         services.AddGitRunner();
         services.AddSingleton<IHostedService, MirrorJob>();
