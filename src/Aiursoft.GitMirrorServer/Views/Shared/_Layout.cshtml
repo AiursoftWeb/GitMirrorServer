@@ -34,12 +34,15 @@
                 </ul>
                 <div class="form-inline">
                     <ul class="navbar-nav mr-auto">
-                        <li>
-                            <a class="nav-link" href="/">
-                                <i class="fa-solid fa-user"></i>
-                                Welcome, @User.Identity?.Name!
-                            </a>
-                        </li>
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li>
+                                <a class="nav-link" href="/">
+                                    <i class="fa-solid fa-user"></i>
+                                    Welcome, @User.Identity?.Name!
+                                </a>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a class="nav-link" href="https://gitlab.aiursoft.cn/aiursoft/gitmirrorserver">
                                 <i class="fab fa-gitlab"></i>
