@@ -166,6 +166,7 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
                                     logger.LogError(ex, "Error mirroring repository {repo}", repo.Name);
                                     FailMirrorCount++;
                                     FailedMirrors.Add((config.FromOrgName, repo.Name, ex.Message));
+                                    FolderDeleter.DeleteByForce(repoPath);
                                 }
                             }
                             catch (Exception ex)
@@ -173,6 +174,7 @@ namespace Aiursoft.GitMirrorServer.BackgroundJobs
                                 logger.LogError(ex, "Error setting up repository {repo}", repo.Name);
                                 FailMirrorCount++;
                                 FailedMirrors.Add((config.FromOrgName, repo.Name, ex.Message));
+                                FolderDeleter.DeleteByForce(repoPath);
                             }
                         }
                     }
