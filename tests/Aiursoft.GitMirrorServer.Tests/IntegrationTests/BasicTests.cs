@@ -1,5 +1,4 @@
 using Aiursoft.CSTools.Tools;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Microsoft.Extensions.Hosting;
 using static Aiursoft.WebTools.Extends;
 
@@ -35,12 +34,6 @@ public class BasicTests
         if (_server == null) return;
         await _server.StopAsync();
         _server.Dispose();
-    }
-
-    [TestMethod]
-    public void DummyTest()
-    {
-        Assert.IsTrue(true);
     }
 
     // [TestMethod]
