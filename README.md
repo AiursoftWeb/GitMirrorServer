@@ -4,7 +4,7 @@
 [![Pipeline stat](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/pipelines)
 [![Test Coverage](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/badges/master/coverage.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/pipelines)
 [![ManHours](https://manhours.aiursoft.cn/r/gitlab.aiursoft.com/aiursoft/gitMirrorServer.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/commits/master?ref_type=heads)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2FgitMirror.aiursoft.cn%2F)](https://gitmirror.aiursoft.cn)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fgitmirror.aiursoft.com%2F)](https://gitmirror.aiursoft.com)
 [![Docker](https://img.shields.io/docker/pulls/aiursoft/gitmirrorserver.svg)](https://hub.docker.com/r/aiursoft/gitmirrorserver)
 
 Git Mirror Server is a simple server that mirrors all repositories from GitLab to GitHub. Great for developers who self-host their GitLab server and want to mirror their repositories to GitHub.
@@ -13,7 +13,7 @@ Git Mirror Server is a simple server that mirrors all repositories from GitLab t
 
 ## Try
 
-Try a running Git Mirror Server [here](https://gitMirror.aiursoft.cn).
+Try a running Git Mirror Server [here](https://gitmirror.aiursoft.com).
 
 ## Run in Ubuntu
 
