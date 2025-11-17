@@ -2,6 +2,8 @@ using Aiursoft.CSTools.Tools;
 using Microsoft.Extensions.Hosting;
 using static Aiursoft.WebTools.Extends;
 
+[assembly:DoNotParallelize]
+
 namespace Aiursoft.GitMirrorServer.Tests.IntegrationTests;
 
 [TestClass]
