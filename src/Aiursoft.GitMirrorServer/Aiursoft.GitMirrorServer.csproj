@@ -11,7 +11,7 @@
     <Description>GitMirrorServer is a simple server that mirrors all repositories from GitLab to GitHub. Great for developers who self-host their GitLab server and want to mirror their repositories to GitHub.</Description>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Aiursoft.GitRunner" Version="10.0.4" />
+    <PackageReference Include="Aiursoft.GitRunner" Version="10.0.5" />
     <PackageReference Include="Aiursoft.Scanner" Version="10.0.1" />
     <PackageReference Include="Aiursoft.WebTools" Version="10.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="10.0.1" />
