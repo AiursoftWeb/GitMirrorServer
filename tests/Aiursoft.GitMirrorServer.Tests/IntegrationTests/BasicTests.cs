@@ -38,14 +38,14 @@ public class BasicTests
         _server.Dispose();
     }
 
-    // [TestMethod]
-    // [DataRow("/")]
-    // [DataRow("/hOmE?aaaaaa=bbbbbb")]
-    // [DataRow("/hOmE/InDeX")]
-    // public async Task GetHome(string url)
-    // {
-    //     var response = await _http.GetAsync(_endpointUrl + url);
-    //     response.EnsureSuccessStatusCode(); // Status Code 200-299
-    //     Assert.AreEqual("text/html; charset=utf-8", response.Content.Headers.ContentType?.ToString());
-    // }
+    [TestMethod]
+    [DataRow("/")]
+    [DataRow("/hOmE?aaaaaa=bbbbbb")]
+    [DataRow("/hOmE/InDeX")]
+    public async Task GetHome(string url)
+    {
+        var response = await _http.GetAsync(_endpointUrl + url);
+        response.EnsureSuccessStatusCode(); // Status Code 200-299
+        Assert.AreEqual("text/html; charset=utf-8", response.Content.Headers.ContentType?.ToString());
+    }
 }
