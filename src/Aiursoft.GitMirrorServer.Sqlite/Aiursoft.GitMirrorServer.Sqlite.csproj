@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>Aiursoft.GitMirrorServer.Sqlite</AssemblyName>
+    <RootNamespace>Aiursoft.GitMirrorServer.Sqlite</RootNamespace>
+    <IsTestProject>false</IsTestProject>
+    <IsPackable>false</IsPackable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aiursoft.GitMirrorServer.Entities\Aiursoft.GitMirrorServer.Entities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Aiursoft.DbTools.Sqlite" Version="10.0.12" />
+  </ItemGroup>
+</Project>
