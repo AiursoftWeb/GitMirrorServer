@@ -4,7 +4,7 @@
 [![Pipeline stat](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/pipelines)
 [![Test Coverage](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/badges/master/coverage.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/pipelines)
 [![Man hours](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/gitMirrorServer.svg)](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/gitMirrorServer.html)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fgitmirrorserver.aiursoft.com)](https://gitmirrorserver.aiursoft.com)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fgitmirror.aiursoft.com)](https://gitmirror.aiursoft.com)
 [![Docker](https://img.shields.io/docker/pulls/aiursoft/gitmirrorserver.svg)](https://hub.docker.com/r/aiursoft/gitmirrorserver)
 
 GitMirrorServer is project that helps you mirror git repositories from one server to another server automatically. It is built with ASP.NET Core and supports multiple git services including GitHub, GitLab, Gitea, and Azure DevOps.
