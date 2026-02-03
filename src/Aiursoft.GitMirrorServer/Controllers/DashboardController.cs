@@ -1,14 +1,17 @@
+using Aiursoft.GitMirrorServer.Authorization;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.GitMirrorServer.Models.DashboardViewModels;
 using Aiursoft.GitMirrorServer.Services;
 using Aiursoft.UiStack.Navigation;
 using Aiursoft.WebTools.Attributes;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.GitMirrorServer.Controllers;
 
 [LimitPerMin]
+[Authorize(Policy = AppPermissionNames.CanViewMirrorStatus)]
 public class DashboardController(GitMirrorServerDbContext dbContext) : Controller
 {
     [RenderInNavBar(
