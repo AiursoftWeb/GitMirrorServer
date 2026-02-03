@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Aiursoft.GitMirrorServer.Services;
 
 public class GlobalSettingsService(
-    TemplateDbContext dbContext, 
+    GitMirrorServerDbContext dbContext, 
     IConfiguration configuration,
     StorageService storageService) : IScopedDependency
 {

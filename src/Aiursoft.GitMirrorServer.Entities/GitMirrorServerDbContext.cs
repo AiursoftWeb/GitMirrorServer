@@ -7,9 +7,12 @@ namespace Aiursoft.GitMirrorServer.Entities;
 
 [ExcludeFromCodeCoverage]
 
-public abstract class TemplateDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
+public abstract class GitMirrorServerDbContext(DbContextOptions options) : IdentityDbContext<User>(options), ICanMigrate
 {
     public DbSet<GlobalSetting> GlobalSettings => Set<GlobalSetting>();
+    public DbSet<MirrorConfiguration> MirrorConfigurations => Set<MirrorConfiguration>();
+    public DbSet<MirrorJobExecution> MirrorJobExecutions => Set<MirrorJobExecution>();
+    public DbSet<MirrorRepoExecution> MirrorRepoExecutions => Set<MirrorRepoExecution>();
 
     public virtual  Task MigrateAsync(CancellationToken cancellationToken) =>
         Database.MigrateAsync(cancellationToken);

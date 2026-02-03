@@ -66,7 +66,13 @@ public class AppPermissions
                 localizer["Allows viewing the background job dashboard and managing jobs."]),
             new(AppPermissionNames.CanManageGlobalSettings,
                 localizer["Manage Global Settings"],
-                localizer["Allows viewing and modifying global application settings."])
+                localizer["Allows viewing and modifying global application settings."]),
+            new(AppPermissionNames.CanViewMirrorStatus,
+                localizer["View Mirror Status"],
+                localizer["Allows viewing the status of mirror jobs."]),
+            new(AppPermissionNames.CanManageMirrorTargets,
+                localizer["Manage Mirror Targets"],
+                localizer["Allows managing the mirror targets and configurations."])
         ];
         return allPermission;
     }

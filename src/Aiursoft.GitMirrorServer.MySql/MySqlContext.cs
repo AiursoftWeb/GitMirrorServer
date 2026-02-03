@@ -6,4 +6,4 @@ namespace Aiursoft.GitMirrorServer.MySql;
 
 [ExcludeFromCodeCoverage]
 
-public class MySqlContext(DbContextOptions<MySqlContext> options) : TemplateDbContext(options);
+public class MySqlContext(DbContextOptions<MySqlContext> options) : GitMirrorServerDbContext(options);

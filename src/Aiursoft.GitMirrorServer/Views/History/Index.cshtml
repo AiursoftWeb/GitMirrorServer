@@ -1,0 +1,74 @@
+@model Aiursoft.GitMirrorServer.Models.HistoryViewModels.IndexViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Mirror Job History"];
+}
+
+<div class="container-fluid">
+    <h1 class="h3 mb-4 text-gray-800">@Localizer["Job History"]</h1>
+    
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">@Localizer["Execution Logs"]</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%">
+                    <thead>
+                        <tr>
+                            <th>@Localizer["Start Time"]</th>
+                            <th>@Localizer["Duration"]</th>
+                            <th>@Localizer["Status"]</th>
+                            <th>@Localizer["Stats (Success/Fail/Total)"]</th>
+                            <th>@Localizer["Action"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.History)
+                        {
+                            <tr>
+                                <td>@item.StartTime.ToLocalTime()</td>
+                                <td>
+                                    @if(item.EndTime.HasValue)
+                                    {
+                                        var duration = item.EndTime.Value - item.StartTime;
+                                        <span>@duration.ToString(@"hh\:mm\:ss")</span>
+                                    }
+                                    else
+                                    {
+                                        <div class="spinner-border spinner-border-sm text-warning" role="status">
+                                            <span class="sr-only">Running...</span>
+                                        </div>
+                                        <span class="text-warning">@Localizer["Running..."]</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (item.IsSuccess && string.IsNullOrEmpty(item.ErrorMessage))
+                                    {
+                                        <span class="badge badge-success">@Localizer["Success"]</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge badge-danger">@Localizer["Failed"]</span>
+                                    }
+                                </td>
+                                <td>
+                                    <span class="text-success font-weight-bold">@item.SuccessCount</span> / 
+                                    <span class="text-danger font-weight-bold">@item.FailureCount</span> / 
+                                    <span class="text-dark">@item.TotalCount</span>
+                                </td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary btn-sm shadow-sm">
+                                        <i class="fas fa-info-circle"></i> @Localizer["Details"]
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

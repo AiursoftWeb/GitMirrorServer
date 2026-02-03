@@ -1,0 +1,141 @@
+@model Aiursoft.GitMirrorServer.Models.HistoryViewModels.DetailsViewModel
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Job Details"];
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">@Localizer["Job Details"]</h1>
+        <a asp-action="Index" class="btn btn-secondary shadow-sm">
+            <i class="fas fa-arrow-left"></i> @Localizer["Back to History"]
+        </a>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">@Localizer["Start Time"]</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.Job.StartTime.ToLocalTime()</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">@Localizer["Success"]</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.Job.SuccessCount</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-check fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-danger shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">@Localizer["Failures"]</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@Model.Job.FailureCount</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-times fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.Job.ErrorMessage))
+    {
+        <div class="alert alert-danger alert-outline alert-dismissible mb-4" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="alert-icon">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="alert-message">
+                <strong>@Localizer["Job Error"]:</strong> @Model.Job.ErrorMessage
+            </div>
+        </div>
+    }
+
+    <div class="row">
+        @foreach (var repo in Model.Job.RepoExecutions)
+        {
+            <div class="col-lg-12 mb-2">
+                <div class="card shadow mb-4 border-bottom-@(repo.IsSuccess ? "success" : "danger")">
+                    <a href="#collapseCard-@repo.Id" class="d-block card-header py-3" data-toggle="collapse"
+                        role="button" aria-expanded="false" aria-controls="collapseCard-@repo.Id">
+                        <h6 class="m-0 font-weight-bold text-@(repo.IsSuccess ? "success" : "danger")">
+                            @repo.FromOrg / @repo.RepoName
+                            <span class="float-right badge badge-@(repo.IsSuccess ? "success" : "danger")">
+                                @(repo.IsSuccess ? Localizer["Success"] : Localizer["Failed"])
+                            </span>
+                        </h6>
+                    </a>
+                    <div class="collapse @(!repo.IsSuccess ? "show" : "")" id="collapseCard-@repo.Id">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>@Localizer["Source"]:</strong> @repo.FromOrg</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>@Localizer["Target"]:</strong> @repo.TargetOrg</p>
+                                </div>
+                            </div>
+                            
+                            @if(!string.IsNullOrEmpty(repo.ErrorMessage))
+                            {
+                                <div class="alert alert-danger alert-outline alert-dismissible" role="alert">
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    <div class="alert-icon">
+                                        <i class="fas fa-bug"></i>
+                                    </div>
+                                    <div class="alert-message">
+                                        <strong>@Localizer["Error"]:</strong> @repo.ErrorMessage
+                                    </div>
+                                </div>
+                            }
+                            
+                            <hr />
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">@Localizer["Logs"]:</h6>
+                                <button class="btn btn-sm btn-outline-secondary" onclick="copyToClipboard('log-@repo.Id')">
+                                    <i class="fas fa-copy"></i> @Localizer["Copy Log"]
+                                </button>
+                            </div>
+                            <pre id="log-@repo.Id" class="bg-dark text-light p-3 rounded" style="max-height: 400px; overflow-y: auto;">@repo.Log</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    function copyToClipboard(elementId) {
+        var copyText = document.getElementById(elementId).innerText;
+        navigator.clipboard.writeText(copyText).then(function() {
+            alert("@Localizer["Log copied to clipboard!"]");
+        }, function(err) {
+            console.error('Async: Could not copy text: ', err);
+        });
+    }
+</script>

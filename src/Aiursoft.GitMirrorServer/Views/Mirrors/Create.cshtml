@@ -1,0 +1,85 @@
+@model Aiursoft.GitMirrorServer.Models.MirrorsViewModels.EditorViewModel
+@{
+}
+
+<div class="container-fluid">
+    <h1 class="h3 mb-4 text-gray-800">@Model.PageTitle</h1>
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form asp-action="@(Model.IsCreate ? "Create" : "Edit")">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                @if(!Model.IsCreate)
+                {
+                    <input type="hidden" asp-for="Mirror.Id" />
+                    <input type="hidden" asp-for="Mirror.CreationTime" />
+                }
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Source (From)</h4>
+                        <div class="mb-3">
+                            <label asp-for="Mirror.FromType" class="form-label"></label>
+                            <select asp-for="Mirror.FromType" class="form-control">
+                                <option value="GitLab">GitLab</option>
+                                <option value="GitHub">GitHub</option>
+                            </select>
+                            <span asp-validation-for="Mirror.FromType" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Mirror.FromServer" class="form-label"></label>
+                            <input asp-for="Mirror.FromServer" class="form-control" />
+                            <span asp-validation-for="Mirror.FromServer" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Mirror.FromOrgName" class="form-label"></label>
+                            <input asp-for="Mirror.FromOrgName" class="form-control" />
+                            <span asp-validation-for="Mirror.FromOrgName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Mirror.FromToken" class="form-label"></label>
+                            <input asp-for="Mirror.FromToken" class="form-control" type="password" />
+                            <span asp-validation-for="Mirror.FromToken" class="text-danger"></span>
+                        </div>
+                         <div class="mb-3">
+                            <label asp-for="Mirror.OrgOrUser" class="form-label"></label>
+                            <select asp-for="Mirror.OrgOrUser" class="form-control">
+                                <option value="Org">Organization (Group)</option>
+                                <option value="User">User</option>
+                            </select>
+                            <span asp-validation-for="Mirror.OrgOrUser" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Target (To)</h4>
+                        <div class="mb-3">
+                            <label asp-for="Mirror.TargetType" class="form-label"></label>
+                             <select asp-for="Mirror.TargetType" class="form-control">
+                                <option value="GitHub">GitHub</option>
+                                <option value="GitLab">GitLab</option>
+                            </select>
+                            <span asp-validation-for="Mirror.TargetType" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Mirror.TargetServer" class="form-label"></label>
+                            <input asp-for="Mirror.TargetServer" class="form-control" />
+                            <span asp-validation-for="Mirror.TargetServer" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Mirror.TargetOrgName" class="form-label"></label>
+                            <input asp-for="Mirror.TargetOrgName" class="form-control" />
+                            <span asp-validation-for="Mirror.TargetOrgName" class="text-danger"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Mirror.TargetToken" class="form-label"></label>
+                            <input asp-for="Mirror.TargetToken" class="form-control" type="password" />
+                            <span asp-validation-for="Mirror.TargetToken" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">@((Model.IsCreate ? "Create" : "Save Changes"))</button>
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </form>
+        </div>
+    </div>
+</div>

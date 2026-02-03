@@ -4,6 +4,7 @@ using Aiursoft.GitMirrorServer.MySql;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aiursoft.GitMirrorServer.MySql.Migrations
 {
     [DbContext(typeof(MySqlContext))]
-    partial class MySqlContextModelSnapshot : ModelSnapshot
+    [Migration("20260203133443_AddMirrors")]
+    partial class AddMirrors
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -91,81 +94,6 @@ namespace Aiursoft.GitMirrorServer.MySql.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("MirrorConfigurations");
-                });
-
-            modelBuilder.Entity("Aiursoft.GitMirrorServer.Entities.MirrorJobExecution", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
-
-                    b.Property<DateTime?>("EndTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("ErrorMessage")
-                        .HasMaxLength(2000)
-                        .HasColumnType("varchar(2000)");
-
-                    b.Property<int>("FailureCount")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("IsSuccess")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<DateTime>("StartTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<int>("SuccessCount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TotalCount")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("MirrorJobExecutions");
-                });
-
-            modelBuilder.Entity("Aiursoft.GitMirrorServer.Entities.MirrorRepoExecution", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("ErrorMessage")
-                        .HasMaxLength(5000)
-                        .HasColumnType("varchar(5000)");
-
-                    b.Property<string>("FromOrg")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<bool>("IsSuccess")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<Guid>("JobExecutionId")
-                        .HasColumnType("char(36)");
-
-                    b.Property<string>("Log")
-                        .HasMaxLength(100000)
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("RepoName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<string>("TargetOrg")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("JobExecutionId");
-
-                    b.ToTable("MirrorRepoExecutions");
                 });
 
             modelBuilder.Entity("Aiursoft.GitMirrorServer.Entities.User", b =>
@@ -377,17 +305,6 @@ namespace Aiursoft.GitMirrorServer.MySql.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Aiursoft.GitMirrorServer.Entities.MirrorRepoExecution", b =>
-                {
-                    b.HasOne("Aiursoft.GitMirrorServer.Entities.MirrorJobExecution", "JobExecution")
-                        .WithMany("RepoExecutions")
-                        .HasForeignKey("JobExecutionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("JobExecution");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -437,11 +354,6 @@ namespace Aiursoft.GitMirrorServer.MySql.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("Aiursoft.GitMirrorServer.Entities.MirrorJobExecution", b =>
-                {
-                    b.Navigation("RepoExecutions");
                 });
 #pragma warning restore 612, 618
         }

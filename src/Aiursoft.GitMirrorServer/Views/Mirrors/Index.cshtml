@@ -1,0 +1,90 @@
+@model Aiursoft.GitMirrorServer.Models.MirrorsViewModels.IndexViewModel
+@using Aiursoft.GitMirrorServer.Authorization
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IAuthorizationService AuthorizationService
+@inject IViewLocalizer Localizer
+
+@{
+    ViewData["Title"] = Localizer["Mirrors"];
+    var canManage = (await AuthorizationService.AuthorizeAsync(User, AppPermissionNames.CanManageMirrorTargets)).Succeeded;
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">@Localizer["Mirrors"]</h1>
+        <div>
+            @if (canManage)
+            {
+                <form asp-action="Trigger" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-warning shadow-sm">
+                        <i class="fas fa-play fa-sm text-white-50"></i> @Localizer["Trigger Job"]
+                    </button>
+                </form>
+                <a asp-action="Create" class="btn btn-primary shadow-sm">
+                    <i class="fas fa-plus fa-sm text-white-50"></i> @Localizer["Add New Mirror"]
+                </a>
+            }
+        </div>
+    </div>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">@Localizer["Mirrors List"]</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%">
+                    <thead>
+                        <tr>
+                            <th>@Localizer["From"]</th>
+                            <th>@Localizer["To"]</th>
+                            <th>@Localizer["Type"]</th>
+                            @if (canManage)
+                            {
+                                <th>@Localizer["Actions"]</th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Mirrors)
+                        {
+                            <tr>
+                                <td>
+                                    <span class="badge badge-secondary">@item.FromType</span>
+                                    <br/>
+                                    <strong>@item.FromOrgName</strong>
+                                    <br/>
+                                    <small class="text-muted">@item.FromServer</small>
+                                </td>
+                                <td>
+                                    <span class="badge badge-info">@item.TargetType</span>
+                                    <br/>
+                                    <strong>@item.TargetOrgName</strong>
+                                    <br/>
+                                    <small class="text-muted">@item.TargetServer</small>
+                                </td>
+                                <td>
+                                    <span class="badge badge-light border">@item.OrgOrUser</span>
+                                </td>
+                                @if (canManage)
+                                {
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-info shadow-sm">
+                                            <i class="fas fa-edit"></i> @Localizer["Edit"]
+                                        </a>
+                                        <form asp-action="Delete" asp-route-id="@item.Id" method="post" class="d-inline" onsubmit="return confirm('@Localizer["Are you sure?"]');">
+                                            <button type="submit" class="btn btn-sm btn-danger shadow-sm">
+                                                <i class="fas fa-trash"></i> @Localizer["Delete"]
+                                            </button>
+                                        </form>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

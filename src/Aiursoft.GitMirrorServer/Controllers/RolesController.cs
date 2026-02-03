@@ -19,7 +19,7 @@ namespace Aiursoft.GitMirrorServer.Controllers;
 [LimitPerMin]
 public class RolesController(
     UserManager<User> userManager,
-    TemplateDbContext context,
+    GitMirrorServerDbContext context,
     RoleManager<IdentityRole> roleManager)
     : Controller
 {

@@ -6,7 +6,7 @@ namespace Aiursoft.GitMirrorServer.Sqlite;
 
 [ExcludeFromCodeCoverage]
 
-public class SqliteContext(DbContextOptions<SqliteContext> options) : TemplateDbContext(options)
+public class SqliteContext(DbContextOptions<SqliteContext> options) : GitMirrorServerDbContext(options)
 {
     public override Task<bool> CanConnectAsync()
     {

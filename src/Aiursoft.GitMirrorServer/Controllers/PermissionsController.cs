@@ -19,7 +19,7 @@ namespace Aiursoft.GitMirrorServer.Controllers;
 [LimitPerMin]
 public class PermissionsController(
     RoleManager<IdentityRole> roleManager,
-    TemplateDbContext context)
+    GitMirrorServerDbContext context)
     : Controller
 {
     [Authorize(Policy = AppPermissionNames.CanReadPermissions)]
