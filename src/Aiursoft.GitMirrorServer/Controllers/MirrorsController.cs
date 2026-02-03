@@ -116,6 +116,6 @@ public class MirrorsController(
             jobName: "Manually Triggered Mirror Job",
             job: async (service) => await service.RunMirrorAsync()
         );
-        return RedirectToAction(nameof(Index));
+        return RedirectToAction("Index", "History");
     }
 }

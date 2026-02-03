@@ -69,7 +69,7 @@ public class MirrorsControllerTests : TestBase
 
         // 5. Trigger
         var triggerResponse = await PostForm("/Mirrors/Trigger", new Dictionary<string, string>());
-        AssertRedirect(triggerResponse, "/Mirrors");
+        AssertRedirect(triggerResponse, "/History");
         // We can't easily verify background job ran without waiting, but redirect is enough.
 
         // 6. Delete

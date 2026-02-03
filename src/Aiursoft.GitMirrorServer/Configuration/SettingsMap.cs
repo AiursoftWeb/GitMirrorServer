@@ -54,6 +54,14 @@ public class SettingsMap
             Description = Localizer["The name of the project displayed in the frontend."],
             Type = SettingType.Text,
             DefaultValue = "Aiursoft Template"
+        },
+        new GlobalSettingDefinition
+        {
+            Key = "MirrorIntervalMinutes",
+            Name = Localizer["Mirror Interval (Minutes)"],
+            Description = Localizer["The interval in minutes between automatic mirror jobs."],
+            Type = SettingType.Number,
+            DefaultValue = "30"
         }
     };
 }
