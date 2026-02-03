@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>すべての依存関係は自動的に登録され、コンストラクタインジェクションを通じて常に利用可能です。</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>アプリ起動時間</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>自動ダークモード</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>包括的なドキュメント</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>設定済みのリポジトリ</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>整合性検証</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>ダッシュボード</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>UTCで専用に開発し、システムが自動的に日付をユーザーのローカルタイムゾーンに変換して表示します。</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>統合ファイル管理</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>最終実行時間</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>最終実行の失敗</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>最終実行成功</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>最終実行時刻</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>生涯のジョブ実行</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>ミラーの管理</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>モデルはデータ注釈に基づいて、クライアントおよびサーバーの両方で検証されます。</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>複数データベースサポート</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>一度も</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect連携</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>クイックアクション</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC認可</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>ドキュメントを読む</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>レポジトリの同期に失敗しました</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>リポジトリの同期に成功しました</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>レスポンシブデザイン</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>環境変数とデータベースバックエンド設定の両方をサポートしており、環境変数に自動的に優先順位が与えられ、スムーズな上書きが可能になります。</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>システム状態</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>ナビゲーションバーはユーザーの役割と権限に基づいて自動的に調整されます。</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>これはテンプレートプロジェクトです。ここから航海が始まります...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>合計実行回数</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>合計ミラー</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>履歴を表示</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>ようこそ</value>

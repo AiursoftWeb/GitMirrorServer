@@ -51,6 +51,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Klikkaa kirjautuaksesi</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Luo peilikuva</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Luo rooli</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Directory" xml:space="preserve">
     <value>Hakemisto</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>Muokkaa peilauksia</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Muokkaa roolia</value>
   </data>
@@ -81,8 +87,14 @@
   <data name="Features" xml:space="preserve">
     <value>Ominaisuudet</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Yleiset asetukset</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Historia</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Koti</value>
@@ -96,6 +108,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Sisäinen palvelinvirhe</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>Tehtävän tiedot</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>Tehtävän historia</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Lukitus</value>
   </data>
@@ -107,6 +125,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Hallinnoi</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Peilaus</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>Peilat</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>Peilien lista</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Ei löytynyt</value>

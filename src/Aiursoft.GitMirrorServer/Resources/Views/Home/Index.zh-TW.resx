@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>一個現代化、功能豐富且高度可擴展的基礎架構，為您的下一個網頁應用程式提供堅實根基。</value>
   </data>
+  <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
+    <value>功能強大的工具，可協助您在各平台之間保持程式庫同步。</value>
+  </data>
   <data name="Achieve more with Aiursoft Template" xml:space="preserve">
     <value>使用 Aiursoft Template 成就更多</value>
   </data>
@@ -51,6 +54,12 @@
   <data name="Anduin" xml:space="preserve">
     <value>Anduin</value>
   </data>
+  <data name="Automated" xml:space="preserve">
+    <value>自動化</value>
+  </data>
+  <data name="Automated Sync" xml:space="preserve">
+    <value>自動同步</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>自動深色模式</value>
   </data>
@@ -65,6 +74,9 @@
   </data>
   <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
     <value>自動、由AI驅動的翻譯，支援28種語言。</value>
+  </data>
+  <data name="Automatically mirror your Git repositories between GitHub, GitLab, and other providers." xml:space="preserve">
+    <value>自動將您的 Git 儲存庫在 GitHub、GitLab 及其他提供者之間進行鏡像。</value>
   </data>
   <data name="Background Job Processing" xml:space="preserve">
     <value>背景工作處理</value>
@@ -84,11 +96,20 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>完整說明文件</value>
   </data>
+  <data name="Configure your mirrors once, and let the server handle the rest. Runs automatically on a schedule you define." xml:space="preserve">
+    <value>設定一次您的鏡像，其餘交由伺服器處理。可依您定義的排程自動執行。</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>一致性驗證</value>
   </data>
+  <data name="Create an Account" xml:space="preserve">
+    <value>建立帳戶</value>
+  </data>
   <data name="Dashboard Website" xml:space="preserve">
     <value>儀表板網站</value>
+  </data>
+  <data name="Detailed History" xml:space="preserve">
+    <value>詳細紀錄</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>專注於 UTC 進行開發，而系統會自動將日期轉換並顯示為使用者的本地時間區。</value>
@@ -129,6 +150,9 @@
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>具備內建檔案管理系統，並支援自動頭像壓縮功能。</value>
   </data>
+  <data name="Flexible Configuration" xml:space="preserve">
+    <value>彈性設定</value>
+  </data>
   <data name="for any inquiries or to report issues." xml:space="preserve">
     <value>如有任何疑問或回報問題。</value>
   </data>
@@ -137,6 +161,12 @@
   </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>常見問題</value>
+  </data>
+  <data name="Get Started" xml:space="preserve">
+    <value>開始使用</value>
+  </data>
+  <data name="Git Repository" xml:space="preserve">
+    <value>Git 儲存庫</value>
   </data>
   <data name="Go to dashboard" xml:space="preserve">
     <value>前往儀表板</value>
@@ -174,14 +204,29 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>加入我們的社群，立即開始建構！</value>
   </data>
+  <data name="Made Simple" xml:space="preserve">
+    <value>簡單實作</value>
+  </data>
+  <data name="Manage access tokens securely. Supports private repositories and organizations." xml:space="preserve">
+    <value>安全地管理存取權杖。支援私人倉儲和組織。</value>
+  </data>
   <data name="Markdown To HTML" xml:space="preserve">
     <value>Markdown 轉 HTML</value>
+  </data>
+  <data name="Mirror entire organizations or specific users. Configure intervals and storage paths easily." xml:space="preserve">
+    <value>鏡像整個組織或特定使用者。輕鬆設定同步間隔與儲存路徑。</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>鏡像</value>
   </data>
   <data name="MIT Licence" xml:space="preserve">
     <value>MIT 授權</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>模型會根據資料註解，在用戶端和伺服器端進行驗證。</value>
+  </data>
+  <data name="Monitor your mirror status with a comprehensive dashboard. See what&apos;s running, what failed, and why." xml:space="preserve">
+    <value>透過完整的儀表板監控您的鏡像狀態。查看正在執行的項目、失敗的項目，以及原因。</value>
   </data>
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>多重資料庫提供者支援</value>
@@ -204,6 +249,12 @@
   <data name="Read the document" xml:space="preserve">
     <value>閱讀文件</value>
   </data>
+  <data name="Ready to secure your code?" xml:space="preserve">
+    <value>準備好保護您的程式碼了嗎？</value>
+  </data>
+  <data name="Real-time Status" xml:space="preserve">
+    <value>即時狀態</value>
+  </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>響應式設計</value>
   </data>
@@ -219,6 +270,12 @@
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>無縫整合任何 OpenID Connect 提供者，並自動同步角色權限。</value>
   </data>
+  <data name="Secure Access" xml:space="preserve">
+    <value>安全存取</value>
+  </data>
+  <data name="Secure, reliable, and fully automated." xml:space="preserve">
+    <value>安全、可靠且完全自動化。</value>
+  </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>智慧型設定覆蓋</value>
   </data>
@@ -231,8 +288,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>開始新專案</value>
   </data>
+  <data name="Start mirroring your repositories today and ensure your code is always backed up and accessible." xml:space="preserve">
+    <value>立即開始鏡像您的程式庫，確保程式碼永遠備份且可存取。</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>支援環境變數和資料庫支援的設定，並自動優先使用環境變數以實現無縫覆蓋。</value>
+  </data>
+  <data name="Supports mirroring between GitHub, GitLab, and any standard Git server. Handles branches, tags, and commits." xml:space="preserve">
+    <value>支援在 GitHub、GitLab 及任何標準 Git 伺服器之間進行鏡像。可處理分支、標籤與提交。</value>
   </data>
   <data name="Technical Lead" xml:space="preserve">
     <value>技術負責人</value>
@@ -249,11 +312,20 @@
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>這是一個模板專案，我們從這裡開啟航程...</value>
   </data>
+  <data name="Track every synchronization job. View success/failure status and detailed logs for every repository." xml:space="preserve">
+    <value>追蹤每一個同步作業。檢視每個儲存庫的成功/失敗狀態與詳細記錄。</value>
+  </data>
+  <data name="Universal Compatibility" xml:space="preserve">
+    <value>全域相容性</value>
+  </data>
   <data name="Usage" xml:space="preserve">
     <value>使用方式</value>
   </data>
   <data name="Use it as a foundation for your SaaS, a backend for your mobile app, a corporate website, or a personal blog. The possibilities are endless." xml:space="preserve">
     <value>無論是作為您 SaaS 的基礎架構、行動應用程式的後端、企業網站或個人部落格，都能完美適用。可能性永無止境。</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>檢視 GitHub</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>歡迎</value>
@@ -263,6 +335,9 @@
   </data>
   <data name="What our developers say" xml:space="preserve">
     <value>我們的開發者怎麼說</value>
+  </data>
+  <data name="Why GitMirrorServer?" xml:space="preserve">
+    <value>為什麼選擇 GitMirrorServer？</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>為什麼使用 Aiursoft 模板？</value>

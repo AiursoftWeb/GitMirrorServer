@@ -21,6 +21,9 @@
       <data name="Aiursoft" xml:space="preserve">
     <value>Aiursoft</value>
   </data>
+  <data name="Aiursoft GitMirrorServer - Automatically mirror your Git repositories between GitHub, GitLab, and other providers." xml:space="preserve">
+    <value>Aiursoft GitMirrorServer - Tự động đồng bộ các kho lưu trữ Git của bạn giữa GitHub, GitLab và các nhà cung cấp khác.</value>
+  </data>
   <data name="Aiursoft Template - A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Aiursoft Template - Nền tảng hiện đại, đầy đủ tính năng và có khả năng mở rộng cao cho ứng dụng web tiếp theo của bạn.</value>
   </data>

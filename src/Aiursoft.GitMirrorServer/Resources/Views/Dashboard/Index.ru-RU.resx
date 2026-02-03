@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Все зависимости автоматически регистрируются и всегда доступны через внедрение в конструктор.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>Время работы приложения</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Автоматическая тёмная тема</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Полная документация</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Настроенные репозитории</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Проверка согласованности</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Панель управления</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Разрабатывайте исключительно в UTC, а система автоматически преобразует и отображает даты в часовом поясе пользователя.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Встроенная система управления файлами</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Продолжительность последнего запуска</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Последние неудачные запуски</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Последний успешный запуск</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Время последнего запуска</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Общее количество выполненных заданий</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Управление зеркалами</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Модели проверяются на стороне клиента и сервера на основе аннотаций данных.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Поддержка нескольких баз данных</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Никогда</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Интеграция OpenID Connect</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Быстрые действия</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Авторизация RBAC</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Прочитать документацию</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Репозитории не удалось синхронизировать</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Репозитории успешно синхронизированы</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Адаптивный дизайн</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Поддерживает как переменные среды, так и настройки, хранящиеся в базе данных, при этом переменные среды автоматически получают приоритет для бесшовного переопределения.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Состояние системы</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Панель навигации автоматически адаптируется в зависимости от ролей и разрешений пользователя.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Это шаблонный проект, с которого мы начинаем наше путешествие...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Всего выполнений</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Всего зеркал</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Просмотреть историю</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Добро пожаловать</value>

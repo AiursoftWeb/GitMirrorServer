@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Alle afhængigheder registreres automatisk og er altid tilgængelige via konstruktor-injektion.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>App-tilstand</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatisk Mørk Tilstand</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Omfattende Dokumentation</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Konfigurerede repositoryer</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Konsistensvalidering</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Udvikl udelukkende i UTC, mens systemet automatisk konverterer og viser datoer i brugeren&apos;s lokale tidszone.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Integreret Filhåndtering</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Sidste kørselstid</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Sidste Kørsel Fejl</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Sidste køringssucces</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Sidste kørselstid</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Livstid jobkøringer</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Håndtér spejle</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modeller valideres på både klient- og serversiden baseret på dataanmærkninger.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Understøttelse af flere databaser</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Aldrig</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect-integration</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Hurtige handlinger</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC-godkendelse</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Læs dokumentationen</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Repos kunne ikke synkroniseres</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Repos synkroniseret succesfuldt</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Responsivt Design</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Støtter både miljøvariable og databasebaserede indstillinger, med automatisk prioritet til miljøvariable for smidige genoverwriter.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Systemstatus</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Navigationslinjen tilpasser sig automatisk baseret på brugerroller og tilladelser.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Dette er et skabelonprojekt, hvor vi begynder rejsen...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Samlede udførelser</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Totale spejle</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Vis historik</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Velkommen</value>

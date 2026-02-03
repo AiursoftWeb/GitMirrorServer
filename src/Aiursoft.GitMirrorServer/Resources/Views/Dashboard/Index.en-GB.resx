@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>All dependencies are automatically registered and are always available via constructor injection.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>App Uptime</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatic Dark Mode</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Comprehensive Documentation</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Configured repositories</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Consistency Validation</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Integrated File Management</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Last Run Duration</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Last Run Failures</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Last Run Success</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Last Run Time</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Lifetime job runs</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Manage Mirrors</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Models are validated on both client and server sides based on data annotations.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Multiple Database Support</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Never</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect Integration</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Quick Actions</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC Authorisation</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Read the documentation</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Repositories failed to sync</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Repos synced successfully</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Responsive Design</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>System Status</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>The navigation bar automatically adjusts according to user roles and permissions.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>This is a template project, where we begin the voyage...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Total Executions</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Total Mirrors</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>View History</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>

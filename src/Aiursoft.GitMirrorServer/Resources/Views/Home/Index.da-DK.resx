@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>En moderne, funktionsrig og meget udvidelsesparat fundament til din næste webapplikation.</value>
   </data>
+  <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
+    <value>Et kraftfuldt værktøj til at holde dine repositorys synkroniseret over platforme.</value>
+  </data>
   <data name="Achieve more with Aiursoft Template" xml:space="preserve">
     <value>Opnå mere med Aiursoft Template</value>
   </data>
@@ -51,6 +54,12 @@
   <data name="Anduin" xml:space="preserve">
     <value>Anduin</value>
   </data>
+  <data name="Automated" xml:space="preserve">
+    <value>Automatiseret</value>
+  </data>
+  <data name="Automated Sync" xml:space="preserve">
+    <value>Automatisk synkronisering</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatisk Mørk Tilstand</value>
   </data>
@@ -65,6 +74,9 @@
   </data>
   <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
     <value>Automatisk, AI-drevet oversættelse til 28 sprog.</value>
+  </data>
+  <data name="Automatically mirror your Git repositories between GitHub, GitLab, and other providers." xml:space="preserve">
+    <value>Automatisk spejl dine Git-repositorys mellem GitHub, GitLab og andre leverandører.</value>
   </data>
   <data name="Background Job Processing" xml:space="preserve">
     <value>Baggrundstaskbehandling</value>
@@ -84,11 +96,20 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Omfattende Dokumentation</value>
   </data>
+  <data name="Configure your mirrors once, and let the server handle the rest. Runs automatically on a schedule you define." xml:space="preserve">
+    <value>Konfigurer dine spejle én gang, og lad serveren tage det resterende. Kører automatisk efter et af dig defineret tidsschema.</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Konsistensvalidering</value>
   </data>
+  <data name="Create an Account" xml:space="preserve">
+    <value>Opret en konto</value>
+  </data>
   <data name="Dashboard Website" xml:space="preserve">
     <value>Dashboard-websted</value>
+  </data>
+  <data name="Detailed History" xml:space="preserve">
+    <value>Detaljeret historik</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Udvikl eksklusivt i UTC, mens systemet automatisk konverterer og viser datoer i brugeren&apos;s lokale tidszone.</value>
@@ -129,6 +150,9 @@
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Har et indbygget filhåndteringssystem med automatisk avatar-komprimering.</value>
   </data>
+  <data name="Flexible Configuration" xml:space="preserve">
+    <value>Fleksibel konfiguration</value>
+  </data>
   <data name="for any inquiries or to report issues." xml:space="preserve">
     <value>for eventuelle henvendelser eller for at rapportere problemer.</value>
   </data>
@@ -137,6 +161,12 @@
   </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>Ofte stillede spørgsmål</value>
+  </data>
+  <data name="Get Started" xml:space="preserve">
+    <value>Start nu</value>
+  </data>
+  <data name="Git Repository" xml:space="preserve">
+    <value>Git-repository</value>
   </data>
   <data name="Go to dashboard" xml:space="preserve">
     <value>Gå til dashboard</value>
@@ -174,14 +204,29 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>Bliv en del af vores fællesskab og begynd at bygge i dag!</value>
   </data>
+  <data name="Made Simple" xml:space="preserve">
+    <value>Gør det enkelt</value>
+  </data>
+  <data name="Manage access tokens securely. Supports private repositories and organizations." xml:space="preserve">
+    <value>Håndtér adgangstokener sikkert. Støtter private repository og organisationer.</value>
+  </data>
   <data name="Markdown To HTML" xml:space="preserve">
     <value>Markdown til HTML</value>
+  </data>
+  <data name="Mirror entire organizations or specific users. Configure intervals and storage paths easily." xml:space="preserve">
+    <value>Spejl hele organisationer eller specifikke brugere. Konfigurer intervaller og gemmepaths nemt.</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Spejling</value>
   </data>
   <data name="MIT Licence" xml:space="preserve">
     <value>MIT-licens</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modeller valideres på både klient- og serversiden baseret på dataanmerkninger.</value>
+  </data>
+  <data name="Monitor your mirror status with a comprehensive dashboard. See what&apos;s running, what failed, and why." xml:space="preserve">
+    <value>Overvåg din spejlingsstatus med en omfattende dashboard. Se hvad der kører, hvad der fejlede, og hvorfor.</value>
   </data>
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Understøttelse af flere databaseudbydere</value>
@@ -204,6 +249,12 @@
   <data name="Read the document" xml:space="preserve">
     <value>Læs dokumentationen</value>
   </data>
+  <data name="Ready to secure your code?" xml:space="preserve">
+    <value>Klart til at sikre din kode?</value>
+  </data>
+  <data name="Real-time Status" xml:space="preserve">
+    <value>Echtidssstatus</value>
+  </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Responsivt Design</value>
   </data>
@@ -219,6 +270,12 @@
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Integrer problemfrit med enhver OpenID Connect-udbyder med automatisk rolle-synkronisering.</value>
   </data>
+  <data name="Secure Access" xml:space="preserve">
+    <value>Sikker adgang</value>
+  </data>
+  <data name="Secure, reliable, and fully automated." xml:space="preserve">
+    <value>Sikker, pålidelig og helt automatiseret.</value>
+  </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Smarte konfigurationsgenveje</value>
   </data>
@@ -231,8 +288,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Start et nyt projekt</value>
   </data>
+  <data name="Start mirroring your repositories today and ensure your code is always backed up and accessible." xml:space="preserve">
+    <value>Start spejling af dine repository i dag og sikr, at din kode altid er sikker og tilgængelig.</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Støtter både miljøvariabler og databasebaserede indstillinger, med automatisk prioritet til miljøvariabler for smertefri overtagelser.</value>
+  </data>
+  <data name="Supports mirroring between GitHub, GitLab, and any standard Git server. Handles branches, tags, and commits." xml:space="preserve">
+    <value>Støtter spejling mellem GitHub, GitLab og enhver standard Git-server. Håndterer grene, mærker og commits.</value>
   </data>
   <data name="Technical Lead" xml:space="preserve">
     <value>Teknisk Lead</value>
@@ -249,11 +312,20 @@
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Dette er et skabelonprojekt, hvor vi starter rejsen...</value>
   </data>
+  <data name="Track every synchronization job. View success/failure status and detailed logs for every repository." xml:space="preserve">
+    <value>Spor hver synkroniseringsopgave. Vis succes/fald status og detaljerede logfiler for hver repository.</value>
+  </data>
+  <data name="Universal Compatibility" xml:space="preserve">
+    <value>Universel kompatibilitet</value>
+  </data>
   <data name="Usage" xml:space="preserve">
     <value>Brug</value>
   </data>
   <data name="Use it as a foundation for your SaaS, a backend for your mobile app, a corporate website, or a personal blog. The possibilities are endless." xml:space="preserve">
     <value>Brug den som fundament for din SaaS, som backend til din mobilapp, en virksomhedshjemmeside eller en personlig blog. Mulighederne er uendelige.</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Se på GitHub</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Velkommen</value>
@@ -263,6 +335,9 @@
   </data>
   <data name="What our developers say" xml:space="preserve">
     <value>Hvad vores udviklere siger</value>
+  </data>
+  <data name="Why GitMirrorServer?" xml:space="preserve">
+    <value>Hvorfor GitMirrorServer?</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>Hvorfor bruge Aiursoft Template?</value>

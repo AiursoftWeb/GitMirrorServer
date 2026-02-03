@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Una base moderna, rica en funciones y altamente extensible para tu próxima aplicación web.</value>
   </data>
+  <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
+    <value>Herramienta potente para mantener tus repositorios sincronizados entre plataformas.</value>
+  </data>
   <data name="Achieve more with Aiursoft Template" xml:space="preserve">
     <value>Logra más con Aiursoft Template</value>
   </data>
@@ -51,6 +54,12 @@
   <data name="Anduin" xml:space="preserve">
     <value>Anduin</value>
   </data>
+  <data name="Automated" xml:space="preserve">
+    <value>Automatizado</value>
+  </data>
+  <data name="Automated Sync" xml:space="preserve">
+    <value>Sincronización automática</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Modo Oscuro Automático</value>
   </data>
@@ -65,6 +74,9 @@
   </data>
   <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
     <value>Traducción automática, impulsada por IA, a 28 idiomas.</value>
+  </data>
+  <data name="Automatically mirror your Git repositories between GitHub, GitLab, and other providers." xml:space="preserve">
+    <value>Refleja automáticamente tus repositorios Git entre GitHub, GitLab y otros proveedores.</value>
   </data>
   <data name="Background Job Processing" xml:space="preserve">
     <value>Procesamiento de trabajos en segundo plano</value>
@@ -84,11 +96,20 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Documentación Exhaustiva</value>
   </data>
+  <data name="Configure your mirrors once, and let the server handle the rest. Runs automatically on a schedule you define." xml:space="preserve">
+    <value>Configura tus espejos una vez y deja que el servidor se encargue del resto. Se ejecuta automáticamente según el horario que definas.</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Validación de consistencia</value>
   </data>
+  <data name="Create an Account" xml:space="preserve">
+    <value>Crear una cuenta</value>
+  </data>
   <data name="Dashboard Website" xml:space="preserve">
     <value>Sitio Web del Panel de Control</value>
+  </data>
+  <data name="Detailed History" xml:space="preserve">
+    <value>Historial detallado</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Desarrolle exclusivamente en UTC mientras el sistema convierte y muestra automáticamente las fechas en la zona horaria local del usuario.</value>
@@ -129,6 +150,9 @@
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Incluye un sistema de gestión de archivos integrado con compresión automática de avatares.</value>
   </data>
+  <data name="Flexible Configuration" xml:space="preserve">
+    <value>Configuración flexible</value>
+  </data>
   <data name="for any inquiries or to report issues." xml:space="preserve">
     <value>para cualquier consulta o para informar de problemas.</value>
   </data>
@@ -137,6 +161,12 @@
   </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>Preguntas frecuentes</value>
+  </data>
+  <data name="Get Started" xml:space="preserve">
+    <value>Empezar</value>
+  </data>
+  <data name="Git Repository" xml:space="preserve">
+    <value>Repositorio Git</value>
   </data>
   <data name="Go to dashboard" xml:space="preserve">
     <value>Ir al panel de control</value>
@@ -174,14 +204,29 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>¡Únete a nuestra comunidad y empieza a construir hoy!</value>
   </data>
+  <data name="Made Simple" xml:space="preserve">
+    <value>Hecho sencillo</value>
+  </data>
+  <data name="Manage access tokens securely. Supports private repositories and organizations." xml:space="preserve">
+    <value>Administre los tokens de acceso de forma segura. Compatible con repositorios y organizaciones privados.</value>
+  </data>
   <data name="Markdown To HTML" xml:space="preserve">
     <value>Markdown a HTML</value>
+  </data>
+  <data name="Mirror entire organizations or specific users. Configure intervals and storage paths easily." xml:space="preserve">
+    <value>Espelar organizaciones enteras o usuarios específicos. Configura intervalos y rutas de almacenamiento fácilmente.</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Reproducción</value>
   </data>
   <data name="MIT Licence" xml:space="preserve">
     <value>Licencia MIT</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Los modelos se validan en ambos lados, cliente y servidor, basándose en las anotaciones de datos.</value>
+  </data>
+  <data name="Monitor your mirror status with a comprehensive dashboard. See what&apos;s running, what failed, and why." xml:space="preserve">
+    <value>Supervisa el estado de tu espejo con un panel completo. Ve qué está en ejecución, qué ha fallado y por qué.</value>
   </data>
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Soporte para múltiples proveedores de bases de datos</value>
@@ -204,6 +249,12 @@
   <data name="Read the document" xml:space="preserve">
     <value>Leer la documentación</value>
   </data>
+  <data name="Ready to secure your code?" xml:space="preserve">
+    <value>¿Listo para proteger tu código?</value>
+  </data>
+  <data name="Real-time Status" xml:space="preserve">
+    <value>Estado en tiempo real</value>
+  </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Diseño Responsive</value>
   </data>
@@ -219,6 +270,12 @@
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Integración sin problemas con cualquier proveedor de OpenID Connect, con sincronización automática de roles.</value>
   </data>
+  <data name="Secure Access" xml:space="preserve">
+    <value>Acceso seguro</value>
+  </data>
+  <data name="Secure, reliable, and fully automated." xml:space="preserve">
+    <value>Seguro, fiable y completamente automatizado.</value>
+  </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Sobrescrituras de configuración inteligentes</value>
   </data>
@@ -231,8 +288,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Iniciar un nuevo proyecto</value>
   </data>
+  <data name="Start mirroring your repositories today and ensure your code is always backed up and accessible." xml:space="preserve">
+    <value>Empiece a reflejar sus repositorios hoy y asegúrese de que su código siempre esté respaldado y accesible.</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Admite tanto variables de entorno como ajustes basados en base de datos, con prioridad automática a las variables de entorno para sobrescribir de forma fluida.</value>
+  </data>
+  <data name="Supports mirroring between GitHub, GitLab, and any standard Git server. Handles branches, tags, and commits." xml:space="preserve">
+    <value>Admite la replicación entre GitHub, GitLab y cualquier servidor Git estándar. Gestiona ramas, etiquetas y confirmaciones.</value>
   </data>
   <data name="Technical Lead" xml:space="preserve">
     <value>Líder Técnico</value>
@@ -249,11 +312,20 @@
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Este es un proyecto plantilla, donde comenzamos el viaje...</value>
   </data>
+  <data name="Track every synchronization job. View success/failure status and detailed logs for every repository." xml:space="preserve">
+    <value>Seguimiento de cada tarea de sincronización. Visualice el estado de éxito o error y los registros detallados de cada repositorio.</value>
+  </data>
+  <data name="Universal Compatibility" xml:space="preserve">
+    <value>Compatibilidad universal</value>
+  </data>
   <data name="Usage" xml:space="preserve">
     <value>Uso</value>
   </data>
   <data name="Use it as a foundation for your SaaS, a backend for your mobile app, a corporate website, or a personal blog. The possibilities are endless." xml:space="preserve">
     <value>Úsalo como base para tu SaaS, como backend para tu aplicación móvil, como sitio web corporativo o como blog personal. Las posibilidades son infinitas.</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Ver en GitHub</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>
@@ -263,6 +335,9 @@
   </data>
   <data name="What our developers say" xml:space="preserve">
     <value>Lo que dicen nuestros desarrolladores</value>
+  </data>
+  <data name="Why GitMirrorServer?" xml:space="preserve">
+    <value>¿Por qué GitMirrorServer?</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>¿Por qué usar la Plantilla de Aiursoft?</value>

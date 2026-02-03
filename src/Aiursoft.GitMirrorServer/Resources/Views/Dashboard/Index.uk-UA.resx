@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Усі залежності автоматично реєструються та завжди доступні через ін&apos;єкцію в конструктор.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>Час роботи програми</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Автоматичний темний режим</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Документація</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Налаштовані репозиторії</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Перевірка сумісності</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Панель керування</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Розробляйте виключно в UTC, тоді як система автоматично перетворює та відображає дати у часовому поясі користувача.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Інтегроване управління файлами</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Час останнього запуску</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Останні помилки запуску</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Останній успішний запуск</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Останній час запуску</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Загальні запуски завдань</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Керувати зеркалами</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Моделі перевіряються на клієнтській та серверній сторонах на основі анотацій даних.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Підтримка кількох баз даних</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Ніколи</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Інтеграція OpenID Connect</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Швидкі дії</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Авторизація на основі ролей (RBAC)</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Прочитати документацію</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Репозиторії не вдалося синхронізувати</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Репозиторії успішно синхронізовано</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Адаптивний дизайн</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Підтримує як змінні середовища, так і налаштування, зберігаються в базі даних, з автоматичним пріоритетом для змінних середовища для безперервного перекриття.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Стан системи</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Панель навігації автоматично адаптується відповідно до ролей та дозволів користувача.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Це шаблонний проект, з якого ми розпочинаємо нашу подорож...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Загальна кількість виконань</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Усього дзеркал</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Переглянути історію</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Ласкаво просимо</value>

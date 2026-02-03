@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>يتم تسجيل جميع التبعيات تلقائيًا وهي متاحة دائمًا عبر حقن المُنشئ.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>وقت تشغيل التطبيق</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>الوضع الداكن التلقائي</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>توثيق شامل</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>مستودعات مُهيأة</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>التحقق من الاتساق</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>لوحة التحكم</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>طور بشكل حصري باستخدام التوقيت العالمي الموحد (UTC) بينما يقوم النظام تلقائيًا بتحويل وتظهر التواريخ بالتوقيت المحلي للمستخدم.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>إدارة الملفات المتكاملة</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>مدة التشغيل الأخير</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>فشل آخر تشغيل</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>آخر عملية ناجحة</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>وقت التشغيل الأخير</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>تشغيل المهام مدى الحياة</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>إدارة المرآة</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>تتم مصادقة النماذج على الطرفين العميل والخادم بناءً على ملاحظات البيانات.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>دعم قواعد بيانات متعددة</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>أبداً</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>دمج OpenID Connect</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>إجراءات سريعة</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>الترخيص القائم على الأدوار (RBAC)</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>اقرأ المستند</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>المستودعات فشلت في المزامنة</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>مستودعات مزامنة بنجاح</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>تصميم متجاوب</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>يدعم متغيرات البيئة والإعدادات المخزنة في قاعدة البيانات، مع إعطاء الأولوية التلقائية لمتغيرات البيئة لتمكين التجاوزات السلسة.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>حالة النظام</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>يتم تعديل شريط التنقل تلقائيًا بناءً على أدوار المستخدمين والأذونات.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>هذا مشروع قالب، حيث نبدأ رحلة المستكشف...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>إجمالي التنفيذات</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>إجمالي المرايا</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>عرض السجل</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>مرحباً</value>

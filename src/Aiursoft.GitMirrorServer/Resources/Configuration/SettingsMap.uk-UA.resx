@@ -36,6 +36,9 @@
   <data name="ICP Number" xml:space="preserve">
     <value>Номер ICP</value>
   </data>
+  <data name="Mirror Interval (Minutes)" xml:space="preserve">
+    <value>Інтервал синхронізації (хвилини)</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>Назва проекту</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Номер ліцензії ICP для користувачів материкового Китаю. Залиште порожнім, щоб приховати.</value>
+  </data>
+  <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
+    <value>Інтервал у хвилинах між автоматичними завданнями дзеркалювання.</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Назва проекту, що відображається на фронтенді.</value>

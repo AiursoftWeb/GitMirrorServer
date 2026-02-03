@@ -51,6 +51,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Klicka för att logga in</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Skapa spegel</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Skapa roll</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Directory" xml:space="preserve">
     <value>Katalog</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>Redigera spegel</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Redigera roll</value>
   </data>
@@ -81,8 +87,14 @@
   <data name="Features" xml:space="preserve">
     <value>Funktioner</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Globala inställningar</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Historik</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Hem</value>
@@ -96,6 +108,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Intern serverfel</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>Job Details</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>Jobhistorik</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Låst ut</value>
   </data>
@@ -107,6 +125,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Hantera</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Spegling</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>Speglar</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>Speglarlista</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Inte hittat</value>

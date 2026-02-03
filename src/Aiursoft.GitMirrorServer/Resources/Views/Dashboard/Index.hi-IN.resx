@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>सभी निर्भरताएँ स्वचालित रूप से पंजीकृत होती हैं और कंस्ट्रक्टर इंजेक्शन के माध्यम से हमेशा उपलब्ध रहती हैं।</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>एप्प अपटाइम</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>स्वचालित डार्क मोड</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>विस्तृत दस्तावेज़ीकरण</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>सेट किए गए रिपॉजिटरीज़</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>सुसंगतता प्रमाणीकरण</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>डैशबोर्ड</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>यूटीसी में विशेष रूप से विकसित करें जबकि सिस्टम स्वचालित रूप से उपयोगकर्ता के स्थानीय समय क्षेत्र में तारीखों को परिवर्तित और प्रदर्शित करता है।</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>एकीकृत फ़ाइल प्रबंधन</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>अंतिम रन अवधि</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>पिछले रन में विफलताएँ</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>अंतिम रन सफलता</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>अंतिम रन समय</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>आजीवन कार्य चलाएं</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>मिरर प्रबंधित करें</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>मॉडल्स को डेटा एनोटेशन्स के आधार पर क्लाइंट और सर्वर दोनों तरफ वैधता के लिए जांचा जाता है।</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>एकाधिक डेटाबेस समर्थन</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>कभी नहीं</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>ओपनआईडी कनेक्ट एकीकरण</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>त्वरित कार्रवाई</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>आरबीएसी प्राधिकरण</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>दस्तावेज़ पढ़ें</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>रिपोज सिंक नहीं हुए</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>रिपोज सफलतापूर्वक सिंक किए गए</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>उत्तरदायी डिज़ाइन</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>पर्यावरण चर के साथ-साथ डेटाबेस-आधारित सेटिंग्स का समर्थन करता है, जहां पर्यावरण चर को बिना किसी दिक्कत के ओवरराइड करने के लिए स्वचालित प्राथमिकता दी जाती है।</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>सिस्टम स्थिति</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>नेविगेशन बार उपयोगकर्ता भूमिकाओं और अनुमतियों के आधार पर स्वचालित रूप से समायोजित होता है।</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>यह एक टेम्पलेट प्रोजेक्ट है, जहाँ से हम अपनी यात्रा शुरू करते हैं...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>कुल निष्पादन</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>कुल मिरर</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>इतिहास देखें</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>स्वागत है</value>

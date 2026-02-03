@@ -54,6 +54,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Nhấp để đăng nhập</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Tạo bản sao</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Tạo Vai Trò</value>
   </data>
@@ -72,6 +75,9 @@
   <data name="Directory" xml:space="preserve">
     <value>Thư mục</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>Chỉnh sửa bản sao</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Chỉnh sửa Vai trò</value>
   </data>
@@ -84,8 +90,14 @@
   <data name="Features" xml:space="preserve">
     <value>Tính năng</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Cài đặt chung</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Lịch sử</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Trang Chủ</value>
@@ -99,6 +111,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Lỗi máy chủ nội bộ</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>Chi tiết công việc</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>Lịch sử nhiệm vụ</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Khóa tài khoản</value>
   </data>
@@ -110,6 +128,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Quản lý</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Đồng bộ hóa</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>Gương</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>Danh sách phản chiếu</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Không tìm thấy</value>

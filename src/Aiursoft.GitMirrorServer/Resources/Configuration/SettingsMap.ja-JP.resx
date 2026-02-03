@@ -36,6 +36,9 @@
   <data name="ICP Number" xml:space="preserve">
     <value>ICP番号</value>
   </data>
+  <data name="Mirror Interval (Minutes)" xml:space="preserve">
+    <value>ミラー間隔 (分)</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>プロジェクト名</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>中国本土ユーザー向けのICPライセンス番号。空欄のままにすると非表示になります。</value>
+  </data>
+  <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
+    <value>自動ミラー作業の間隔（分単位）。</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>フロントエンドに表示されるプロジェクト名</value>

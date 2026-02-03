@@ -54,6 +54,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Zum Anmelden klicken</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Spiegel erstellen</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Rolle erstellen</value>
   </data>
@@ -72,6 +75,9 @@
   <data name="Directory" xml:space="preserve">
     <value>Verzeichnis</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>Spiegel bearbeiten</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Rolle bearbeiten</value>
   </data>
@@ -84,8 +90,14 @@
   <data name="Features" xml:space="preserve">
     <value>Funktionen</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Globale Einstellungen</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Verlauf</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Startseite</value>
@@ -99,6 +111,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Interner Serverfehler</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>Auftragsdetails</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>Auftragsverlauf</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Sperrung</value>
   </data>
@@ -110,6 +128,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Verwalten</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Spiegelung</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>Spiegel</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>Spiegel-Liste</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Nicht gefunden</value>

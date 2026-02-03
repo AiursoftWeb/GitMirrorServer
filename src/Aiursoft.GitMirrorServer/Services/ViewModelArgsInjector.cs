@@ -76,6 +76,15 @@ public class ViewModelArgsInjector(
         _ = localizer["Not Found"];
         _ = localizer["Permission Details"];
         _ = localizer["Register"];
+    
+        _ = localizer["Create Mirror"];
+        _ = localizer["Edit Mirror"];
+        _ = localizer["History"];
+        _ = localizer["Job Details"];
+        _ = localizer["Job History"];
+        _ = localizer["Mirroring"];
+        _ = localizer["Mirrors"];
+        _ = localizer["Mirrors List"];
     }
 
     public void InjectSimple(

@@ -36,6 +36,9 @@
   <data name="ICP Number" xml:space="preserve">
     <value>رقم ICP</value>
   </data>
+  <data name="Mirror Interval (Minutes)" xml:space="preserve">
+    <value>فترة المرايا (الدقائق)</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>اسم المشروع</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>رقم ترخيص ICP للمستخدمين في الصين القارية. اتركه فارغًا لإخفائه.</value>
+  </data>
+  <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
+    <value>الفاصل الزمني بالدقائق بين مهام المرآة التلقائية.</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>اسم المشروع المُعرض في الواجهة الأمامية.</value>

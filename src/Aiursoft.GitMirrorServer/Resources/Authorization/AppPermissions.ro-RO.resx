@@ -27,6 +27,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permite atribuirea sau eliminarea rolurilor pentru orice utilizator.</value>
   </data>
+  <data name="Allows managing the mirror targets and configurations." xml:space="preserve">
+    <value>Permite gestionarea destinațiilor și a configurațiilor pentru mirror.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>Permite modificarea numelor rolurilor și a permisiunilor atribuite acestora.</value>
   </data>
@@ -57,6 +60,9 @@
   <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
     <value>Permite vizualizarea listei de roluri și a permisiunilor atribuite acestora.</value>
   </data>
+  <data name="Allows viewing the status of mirror jobs." xml:space="preserve">
+    <value>Permite vizualizarea stării sarcinilor de mirror.</value>
+  </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Atribuie Roluri Utilizatorilor</value>
   </data>
@@ -84,6 +90,9 @@
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Gestionare setări globale</value>
   </data>
+  <data name="Manage Mirror Targets" xml:space="preserve">
+    <value>Gestionare ținte mirror</value>
+  </data>
   <data name="Read Permissions" xml:space="preserve">
     <value>Citește Permisiuni</value>
   </data>
@@ -98,6 +107,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Vizualizează sarcinile în fundal</value>
+  </data>
+  <data name="View Mirror Status" xml:space="preserve">
+    <value>Vizualizează Starea Mirorului</value>
   </data>
   <data name="View System Context" xml:space="preserve">
     <value>Vizualizare Context Sistem</value>

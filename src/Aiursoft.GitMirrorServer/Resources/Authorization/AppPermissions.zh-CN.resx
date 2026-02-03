@@ -27,6 +27,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>允许为任何用户分配或移除角色。</value>
   </data>
+  <data name="Allows managing the mirror targets and configurations." xml:space="preserve">
+    <value>允许管理镜像目标和配置。</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>允许修改角色名称及其分配的权限。</value>
   </data>
@@ -57,6 +60,9 @@
   <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
     <value>允许查看角色列表及其分配的权限。</value>
   </data>
+  <data name="Allows viewing the status of mirror jobs." xml:space="preserve">
+    <value>允许查看镜像任务的状态。</value>
+  </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>为用户分配角色</value>
   </data>
@@ -84,6 +90,9 @@
   <data name="Manage Global Settings" xml:space="preserve">
     <value>管理全局设置</value>
   </data>
+  <data name="Manage Mirror Targets" xml:space="preserve">
+    <value>管理镜像目标</value>
+  </data>
   <data name="Read Permissions" xml:space="preserve">
     <value>读取权限</value>
   </data>
@@ -98,6 +107,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>查看后台任务</value>
+  </data>
+  <data name="View Mirror Status" xml:space="preserve">
+    <value>查看镜像状态</value>
   </data>
   <data name="View System Context" xml:space="preserve">
     <value>查看系统上下文</value>

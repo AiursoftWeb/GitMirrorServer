@@ -54,6 +54,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Click to log in</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Create Mirror</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Create Role</value>
   </data>
@@ -72,6 +75,9 @@
   <data name="Directory" xml:space="preserve">
     <value>Directory</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>Edit Mirror</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Edit Role</value>
   </data>
@@ -84,8 +90,14 @@
   <data name="Features" xml:space="preserve">
     <value>Features</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Global Settings</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
@@ -99,6 +111,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Internal Server Error</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>Job Details</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>Job History</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Lockout</value>
   </data>
@@ -110,6 +128,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Manage</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Mirroring</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>Mirrors</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>Mirrors List</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Not Found</value>

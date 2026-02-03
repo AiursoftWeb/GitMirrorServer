@@ -21,6 +21,9 @@
       <data name="Aiursoft" xml:space="preserve">
     <value>Aiursoft</value>
   </data>
+  <data name="Aiursoft GitMirrorServer - Automatically mirror your Git repositories between GitHub, GitLab, and other providers." xml:space="preserve">
+    <value>Aiursoft GitMirrorServer - Spegla dina Git-lagringsplatser automatiskt mellan GitHub, GitLab och andra leverantörer.</value>
+  </data>
   <data name="Aiursoft Template - A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>Aiursoft Template - En modern, funktionsrik och mycket utbyggbar grund för ditt nästa webbapplikationsprojekt.</value>
   </data>
