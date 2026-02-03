@@ -1,3 +1,4 @@
+@using Aiursoft.WebTools
 @model Aiursoft.GitMirrorServer.Models.DashboardViewModels.IndexViewModel
 @inject IViewLocalizer Localizer
 
@@ -107,7 +108,7 @@
                         <dd class="col-sm-9">
                             @if (Model.LastRunTime.HasValue)
                             {
-                                @Model.LastRunTime.Value.ToLocalTime()
+                                <label data-utc-time="@Model.LastRunTime.Value.ToHtmlDateTime()"></label>
                             }
                             else
                             {
