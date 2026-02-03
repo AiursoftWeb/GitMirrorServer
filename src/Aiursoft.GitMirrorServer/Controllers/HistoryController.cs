@@ -1,7 +1,6 @@
 using Aiursoft.GitMirrorServer.Authorization;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.GitMirrorServer.Models.HistoryViewModels;
-using Aiursoft.UiStack.Layout;
 using Microsoft.AspNetCore.Authorization;
 using Aiursoft.GitMirrorServer.Services;
 using Aiursoft.UiStack.Navigation;
