@@ -4,30 +4,18 @@
 [![Pipeline stat](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/pipelines)
 [![Test Coverage](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/badges/master/coverage.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/pipelines)
 [![Man hours](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/gitMirrorServer.svg)](https://manhours.aiursoft.com/r/gitlab.aiursoft.com/aiursoft/gitMirrorServer.html)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2FgitMirrorServer.aiursoft.com)](https://gitMirrorServer.aiursoft.com)
-[![Docker](https://img.shields.io/docker/pulls/aiursoft/gitMirrorServer.svg)](https://hub.docker.com/r/aiursoft/gitMirrorServer)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fgitmirrorserver.aiursoft.com)](https://gitmirrorserver.aiursoft.com)
+[![Docker](https://img.shields.io/docker/pulls/aiursoft/gitmirrorserver.svg)](https://hub.docker.com/r/aiursoft/gitmirrorserver)
 
-GitMirrorServer is a sample project.
+GitMirrorServer is project that helps you mirror git repositories from one server to another server automatically. It is built with ASP.NET Core and supports multiple git services including GitHub, GitLab, Gitea, and Azure DevOps.
 
 ![screenshot](./screenshot.png)
 
 Default user name is `admin@default.com` and default password is `admin123`.
 
-## Projects using Aiursoft GitMirrorServer
-
-* [Stathub](https://gitlab.aiursoft.com/aiursoft/stathub)
-* [MarkToHtml](https://gitlab.aiursoft.com/aiursoft/marktohtml)
-* [MusicTools](https://gitlab.aiursoft.com/aiursoft/musictools)
-* [AnduinOS Home](https://gitlab.aiursoft.com/anduin/AnduinOS-Home)
-* [Manhours](https://gitlab.aiursoft.com/aiursoft/manhours)
-* [Tracer](https://gitlab.aiursoft.com/aiursoft/tracer)
-* [Warp](https://gitlab.aiursoft.com/aiursoft/warp)
-* [AiurDrive](https://gitlab.aiursoft.com/aiursoft/aiurdrive)
-* [EmployeeCenter](https://gitlab.aiursoft.com/aiursoft/employeecenter)
-
 ## Try
 
-Try a running GitMirrorServer [here](https://gitMirrorServer.aiursoft.com).
+Try a running GitMirrorServer [here](https://gitmirror.aiursoft.com).
 
 ## Run in Ubuntu
 
