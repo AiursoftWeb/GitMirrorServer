@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Alle afhankelijkheden worden automatisch geregistreerd en zijn altijd beschikbaar via constructorinjectie.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>App Uptime</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatische Donkere Modus</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Uitgebreide documentatie</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Geconfigureerde repositories</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Consistentievalidatie</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Ontwikkel uitsluitend in UTC terwijl het systeem data automatisch converteert en weergeeft in de lokale tijdzone van de gebruiker.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Geïntegreerd Bestandsbeheer</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Laatste uitvoertijd</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Laatste Uitvoering Mislukt</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Laatste uitvoering geslaagd</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Laatste uitvoeringstijd</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Levenslange taken uitgevoerd</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Mirrors beheren</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modellen worden gevalideerd aan zowel de client- als de serverside op basis van dataannotaties.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Ondersteuning voor meerdere databases</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Nooit</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect-integratie</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Snelacties</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC-autorisatie</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Lees het document</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Repos zijn niet gesynchroniseerd</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Repos succesvol gesynchroniseerd</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Responsief Ontwerp</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Ondersteunt zowel omgevingsvariabelen als database-gebaseerde instellingen, met automatische prioriteit voor omgevingsvariabelen voor naadloze overschrijvingen.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Systeemstatus</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>De navigatiebalk past zich automatisch aan op basis van gebruikersrollen en machtigingen.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Dit is een sjabloonproject, waar we de verkenner starten...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Totale uitvoeringen</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Totaal spiegels</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Geschiedenis weergeven</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welkom</value>

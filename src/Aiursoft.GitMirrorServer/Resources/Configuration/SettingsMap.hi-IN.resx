@@ -36,6 +36,9 @@
   <data name="ICP Number" xml:space="preserve">
     <value>ICP संख्या</value>
   </data>
+  <data name="Mirror Interval (Minutes)" xml:space="preserve">
+    <value>मिरर अंतराल (मिनटों)</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>प्रोजेक्ट नाम</value>
   </data>
@@ -44,6 +47,9 @@
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>चीन मुख्यभूमि के उपयोगकर्ताओं के लिए ICP लाइसेंस संख्या। छिपाने के लिए खाली छोड़ दें।</value>
+  </data>
+  <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
+    <value>ऑटोमैटिक मिरर जॉब्स के बीच मिनटों में अंतर।</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>फ्रंटएंड में प्रदर्शित प्रोजेक्ट का नाम।</value>

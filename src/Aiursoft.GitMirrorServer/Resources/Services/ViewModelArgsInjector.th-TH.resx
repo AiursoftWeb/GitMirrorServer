@@ -54,6 +54,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>คลิกเพื่อเข้าสู่ระบบ</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>สร้าง Mirror</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>สร้างบทบาท</value>
   </data>
@@ -72,6 +75,9 @@
   <data name="Directory" xml:space="preserve">
     <value>ไดเรกทอรี</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>แก้ไข Mirror</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>แก้ไขบทบาท</value>
   </data>
@@ -84,8 +90,14 @@
   <data name="Features" xml:space="preserve">
     <value>คุณสมบัติ</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>การตั้งค่าทั่วไป</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>ประวัติ</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>หน้าแรก</value>
@@ -99,6 +111,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>ข้อผิดพลาดของเซิร์ฟเวอร์ภายใน</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>รายละเอียดงาน</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>ประวัติงาน</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>บล็อกการเข้าถึง</value>
   </data>
@@ -110,6 +128,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>จัดการ</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>การสะท้อน</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>กระจก</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>รายการกระจก</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>ไม่พบ</value>

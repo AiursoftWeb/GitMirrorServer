@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Todas las dependencias se registran automáticamente y están siempre disponibles mediante inyección de constructor.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>Tiempo de actividad de la aplicación</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Modo Oscuro Automático</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Documentación Integral</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Repositorios configurados</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Validación de consistencia</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Panel de control</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Desarrolle exclusivamente en UTC mientras el sistema convierte y muestra automáticamente las fechas en la zona horaria local del usuario.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Gestión Integrada de Archivos</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Duración del último proceso</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Últimos fallos de ejecución</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Última ejecución correcta</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Última ejecución</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Ejecuciones de tareas a lo largo de la vida</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Administrar espejos</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Los modelos se validan en ambos lados, cliente y servidor, basándose en las anotaciones de datos.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Compatibilidad con Múltiples Bases de Datos</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Nunca</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Integración de OpenID Connect</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Acciones rápidas</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Autorización RBAC</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Leer la documentación</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Repos no se pudieron sincronizar</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Repositorios sincronizados correctamente</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Diseño Responsive</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Soporta tanto variables de entorno como ajustes basados en base de datos, con prioridad automática a las variables de entorno para sobrescribir de forma fluida.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Estado del sistema</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>La barra de navegación se ajusta automáticamente según los roles y permisos del usuario.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Este es un proyecto plantilla, donde comenzamos el viaje...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Ejecuciones totales</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Total espejos</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Ver historial</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bienvenido</value>

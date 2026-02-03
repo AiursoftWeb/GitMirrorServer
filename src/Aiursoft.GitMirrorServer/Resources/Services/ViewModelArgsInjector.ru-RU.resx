@@ -51,6 +51,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Нажмите для входа</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Создать зеркало</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Создать роль</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Directory" xml:space="preserve">
     <value>Каталог</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>Редактировать зеркало</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Редактировать роль</value>
   </data>
@@ -81,8 +87,14 @@
   <data name="Features" xml:space="preserve">
     <value>Возможности</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Глобальные настройки</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>История</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Главная</value>
@@ -96,6 +108,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Внутренняя ошибка сервера</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>Сведения о задании</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>История заданий</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Блокировка</value>
   </data>
@@ -107,6 +125,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Управление</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Отражение</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>Зеркала</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>Список зеркал</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Не найдено</value>

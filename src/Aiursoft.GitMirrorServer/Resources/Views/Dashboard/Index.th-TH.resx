@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>การอ้างอิงทั้งหมดจะถูกลงทะเบียนโดยอัตโนมัติและพร้อมใช้งานเสมอผ่านการฉีดคอนสตรัคเตอร์</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>เวลาทำงานของแอป</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>โหมดมืดอัตโนมัติ</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>เอกสารประกอบที่ครอบคลุม</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>เรพอซิทอรีที่ตั้งค่าแล้ว</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>การตรวจสอบความสอดคล้อง</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>แดชบอร์ด</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>พัฒนาเฉพาะในเวลา UTC โดยระบบจะแปลงและแสดงวันที่โดยอัตโนมัติเป็นเขตเวลาท้องถิ่นของผู้ใช้</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>การจัดการไฟล์แบบบูรณาการ</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>ระยะเวลาการดำเนินการครั้งสุดท้าย</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>จำนวนครั้งล่าสุดที่ล้มเหลว</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>การรันล่าสุดสำเร็จ</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>เวลาการรันครั้งสุดท้าย</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>จำนวนการดำเนินงานตลอดอายุการใช้งาน</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>จัดการ Mirror</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>โมเดลจะได้รับการตรวจสอบความถูกต้องทั้งในด้านไคลเอนต์และเซิร์ฟเวอร์ตามการตั้งค่าข้อมูล</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>รองรับหลายฐานข้อมูล</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>ไม่เคย</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>การผสานรวม OpenID Connect</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>การกระทำเร็ว</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>การอนุญาตตามบทบาท RBAC</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>อ่านเอกสาร</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>การซิงค์เรพโอไม่สำเร็จ</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>เรพโอที่ซิงค์สำเร็จ</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>การออกแบบที่ตอบสนอง</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>รองรับตัวแปรสภาพแวดล้อมและตั้งค่าที่เก็บไว้ในฐานข้อมูลทั้งสองแบบ โดยให้ลำดับความสำคัญอัตโนมัติแก่ตัวแปรสภาพแวดล้อมเพื่อให้สามารถแทนที่ได้อย่างราบรื่น</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>สถานะระบบ</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>แถบนำทางจะปรับเปลี่ยนโดยอัตโนมัติตามบทบาทและสิทธิ์ของผู้ใช้</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>นี่คือโปรเจกต์เทมเพลต ซึ่งเป็นจุดเริ่มต้นของการเดินทางของเรา...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>จำนวนการดำเนินการทั้งหมด</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>จำนวนการสะท้อนทั้งหมด</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>ดูประวัติการใช้งาน</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>ยินดีต้อนรับ</value>

@@ -36,6 +36,9 @@
   <data name="A modern, feature-rich, and highly extensible foundation for your next web application." xml:space="preserve">
     <value>O fundație modernă, bogată în funcționalități și extrem de extensibilă pentru următoarea ta aplicație web.</value>
   </data>
+  <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
+    <value>Un instrument puternic pentru a menține depozitele tale sincronizate pe mai multe platforme.</value>
+  </data>
   <data name="Achieve more with Aiursoft Template" xml:space="preserve">
     <value>Realizați mai multe cu Aiursoft Template</value>
   </data>
@@ -51,6 +54,12 @@
   <data name="Anduin" xml:space="preserve">
     <value>Anduin</value>
   </data>
+  <data name="Automated" xml:space="preserve">
+    <value>Automatizat</value>
+  </data>
+  <data name="Automated Sync" xml:space="preserve">
+    <value>Sincronizare automată</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Mod Întunecat Automat</value>
   </data>
@@ -65,6 +74,9 @@
   </data>
   <data name="Automatic, AI-driven translation into 28 languages." xml:space="preserve">
     <value>Traducere automată, alimentată de inteligență artificială, în 28 de limbi.</value>
+  </data>
+  <data name="Automatically mirror your Git repositories between GitHub, GitLab, and other providers." xml:space="preserve">
+    <value>Sincronizați automat repozitoarele Git dintre GitHub, GitLab și alte furnizori.</value>
   </data>
   <data name="Background Job Processing" xml:space="preserve">
     <value>Procesare sarcini în fundal</value>
@@ -84,11 +96,20 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Documentație Cuprinzătoare</value>
   </data>
+  <data name="Configure your mirrors once, and let the server handle the rest. Runs automatically on a schedule you define." xml:space="preserve">
+    <value>Configurează-ți mirror-urile o singură dată și lasă serverul să se ocupe de rest. Rulează automat după un program pe care îl definesc.</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Validare de coerentă</value>
   </data>
+  <data name="Create an Account" xml:space="preserve">
+    <value>Creează un cont</value>
+  </data>
   <data name="Dashboard Website" xml:space="preserve">
     <value>Site-ul Panoului de Control</value>
+  </data>
+  <data name="Detailed History" xml:space="preserve">
+    <value>Istoric detaliat</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Dezvoltați exclusiv în UTC, în timp ce sistemul convertește automat și afișează datele în fusul orar local al utilizatorului.</value>
@@ -129,6 +150,9 @@
   <data name="Features a built-in file management system with automatic avatar compression." xml:space="preserve">
     <value>Include un sistem integrat de gestionare a fișierelor cu compresie automată a avatarurilor.</value>
   </data>
+  <data name="Flexible Configuration" xml:space="preserve">
+    <value>Configurare flexibilă</value>
+  </data>
   <data name="for any inquiries or to report issues." xml:space="preserve">
     <value>pentru orice întrebări sau pentru a raporta probleme.</value>
   </data>
@@ -137,6 +161,12 @@
   </data>
   <data name="Frequently asked questions" xml:space="preserve">
     <value>Întrebări frecvente</value>
+  </data>
+  <data name="Get Started" xml:space="preserve">
+    <value>Începe acum</value>
+  </data>
+  <data name="Git Repository" xml:space="preserve">
+    <value>Repository Git</value>
   </data>
   <data name="Go to dashboard" xml:space="preserve">
     <value>Accesează panoul de control</value>
@@ -174,14 +204,29 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>Alăturați-vă comunității noastre și începeți să construiți astăzi!</value>
   </data>
+  <data name="Made Simple" xml:space="preserve">
+    <value>Facil</value>
+  </data>
+  <data name="Manage access tokens securely. Supports private repositories and organizations." xml:space="preserve">
+    <value>Gestionați tokenurile de acces în mod sigur. Suportă repozitoare private și organizații.</value>
+  </data>
   <data name="Markdown To HTML" xml:space="preserve">
     <value>Markdown în HTML</value>
+  </data>
+  <data name="Mirror entire organizations or specific users. Configure intervals and storage paths easily." xml:space="preserve">
+    <value>Mirror întregile organizații sau utilizatorii specifici. Configurează intervalele și căile de stocare ușor.</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Mirroring</value>
   </data>
   <data name="MIT Licence" xml:space="preserve">
     <value>Licență MIT</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modelele sunt validate pe ambele laturi, client și server, pe baza anotărilor de date.</value>
+  </data>
+  <data name="Monitor your mirror status with a comprehensive dashboard. See what&apos;s running, what failed, and why." xml:space="preserve">
+    <value>Monitorizați starea oglindirii cu un panou complet. Aflați ce rulează, ce a eșuat și de ce.</value>
   </data>
   <data name="Multiple Database Provider Support" xml:space="preserve">
     <value>Suport pentru mai multe furnizori de baze de date</value>
@@ -204,6 +249,12 @@
   <data name="Read the document" xml:space="preserve">
     <value>Citește documentația</value>
   </data>
+  <data name="Ready to secure your code?" xml:space="preserve">
+    <value>Gata să-ți protejezi codul?</value>
+  </data>
+  <data name="Real-time Status" xml:space="preserve">
+    <value>Stare în timp real</value>
+  </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Design Responsiv</value>
   </data>
@@ -219,6 +270,12 @@
   <data name="Seamlessly integrate with any OpenID Connect provider, with automatic role synchronization." xml:space="preserve">
     <value>Integrați fără probleme cu orice furnizor OpenID Connect, cu sincronizare automată a rolurilor.</value>
   </data>
+  <data name="Secure Access" xml:space="preserve">
+    <value>Acces Securizat</value>
+  </data>
+  <data name="Secure, reliable, and fully automated." xml:space="preserve">
+    <value>Secur, fiabil și complet automatizat.</value>
+  </data>
   <data name="Smart Configuration Overrides" xml:space="preserve">
     <value>Supraîncărcări de Configurații Inteligente</value>
   </data>
@@ -231,8 +288,14 @@
   <data name="Start a new project" xml:space="preserve">
     <value>Începe un proiect nou</value>
   </data>
+  <data name="Start mirroring your repositories today and ensure your code is always backed up and accessible." xml:space="preserve">
+    <value>Începeți să faceți mirror pentru repository-urile dvs. astăzi și asigurați-vă că codul dvs. este întotdeauna salvat și accesibil.</value>
+  </data>
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Suportă atât variabilele de mediu, cât și setările stocate în baza de date, cu prioritate automată acordată variabilelor de mediu pentru actualizări fără probleme.</value>
+  </data>
+  <data name="Supports mirroring between GitHub, GitLab, and any standard Git server. Handles branches, tags, and commits." xml:space="preserve">
+    <value>Suportă mirroring între GitHub, GitLab și orice server Git standard. Gestionează ramurile, etichetele și confirmările.</value>
   </data>
   <data name="Technical Lead" xml:space="preserve">
     <value>Conducător Tehnic</value>
@@ -249,11 +312,20 @@
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Acesta este un proiect tipic, de unde începem călătoria...</value>
   </data>
+  <data name="Track every synchronization job. View success/failure status and detailed logs for every repository." xml:space="preserve">
+    <value>Urmărește fiecare sarcină de sincronizare. Afișează starea de succes/eșec și jurnale detaliate pentru fiecare depozit.</value>
+  </data>
+  <data name="Universal Compatibility" xml:space="preserve">
+    <value>Compatibilitate universală</value>
+  </data>
   <data name="Usage" xml:space="preserve">
     <value>Utilizare</value>
   </data>
   <data name="Use it as a foundation for your SaaS, a backend for your mobile app, a corporate website, or a personal blog. The possibilities are endless." xml:space="preserve">
     <value>Folosește-l ca fundație pentru SaaS-ul tău, ca backend pentru aplicația ta mobilă, ca site corporativ sau ca blog personal. Posibilitățile sunt nelimitate.</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Vizualizează pe GitHub</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Bun venit</value>
@@ -263,6 +335,9 @@
   </data>
   <data name="What our developers say" xml:space="preserve">
     <value>Ce spun dezvoltatorii noștri</value>
+  </data>
+  <data name="Why GitMirrorServer?" xml:space="preserve">
+    <value>De ce GitMirrorServer?</value>
   </data>
   <data name="Why use the Aiursoft Template?" xml:space="preserve">
     <value>De ce să folosești Șablonul Aiursoft?</value>

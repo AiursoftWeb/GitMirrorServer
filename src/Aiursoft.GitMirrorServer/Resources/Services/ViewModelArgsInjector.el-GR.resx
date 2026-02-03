@@ -51,6 +51,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Κάντε κλικ για σύνδεση</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Δημιουργία Αντικατοπτρισμού</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Δημιουργία Ρόλου</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Directory" xml:space="preserve">
     <value>Κατάλογος</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>Επεξεργασία Αντικατοπτρισμού</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Επεξεργασία Ρόλου</value>
   </data>
@@ -81,8 +87,14 @@
   <data name="Features" xml:space="preserve">
     <value>Λειτουργίες</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Καθολικές Ρυθμίσεις</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Ιστορικό</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Αρχική</value>
@@ -96,6 +108,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>Internal Server Error</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>Λεπτομέρειες Εργασίας</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>Ιστορικό Εργασιών</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Μπλοκάρισμα</value>
   </data>
@@ -107,6 +125,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Διαχείριση</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Αντιγραφή</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>Κοινοί φακοί</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>Λίστα Αντικατοπτρισμών</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Δεν βρέθηκε</value>

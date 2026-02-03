@@ -51,6 +51,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>Giriş yapmak için tıklayın</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Aynayı Oluştur</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>Rol Oluştur</value>
   </data>
@@ -69,6 +72,9 @@
   <data name="Directory" xml:space="preserve">
     <value>Dizin</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>Aynayı Düzenle</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>Rolü Düzenle</value>
   </data>
@@ -81,8 +87,14 @@
   <data name="Features" xml:space="preserve">
     <value>Özellikler</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>Genel Ayarlar</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Geçmiş</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Ana Sayfa</value>
@@ -96,6 +108,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>İç Sunucu Hatası</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>İş Detayları</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>İş Geçmişi</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>Kilitlendi</value>
   </data>
@@ -107,6 +125,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Yönet</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Yansıtma</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>Aynalar</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>Aynalar Listesi</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>Bulunamadı</value>

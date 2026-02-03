@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Alla beroenden registreras automatiskt och är alltid tillgängliga via konstruktorinjektion.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>App-uptime</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Automatiskt mörkt läge</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Omfattande dokumentation</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Konfigurerade lagringsplatser</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Konsekvensvalidering</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Instrumentbräda</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Utveckla uteslutande i UTC medan systemet automatiskt konverterar och visar datum i användarens lokala tidszon.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Integrerad filhantering</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Senaste körningstid</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Senaste körningsfel</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Senaste körning lyckades</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Senaste körningstid</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Livstid jobbkörningar</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Hantera speglar</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modeller valideras på både klient- och serversidan baserat på dataannotationer.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Stöd för flera databaser</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Aldrig</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect-integration</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Snabba åtgärder</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC-auktorisering</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Läs dokumentet</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Repos kunde inte synkroniseras</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Repositorier synkroniserades framgångsrikt</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Responsiv design</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Stöder både miljövariabler och inställningar som lagras i databasen, med automatisk prioritet till miljövariabler för smidiga åsidosättningar.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Systemstatus</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Navigeringsfältet anpassar sig automatiskt baserat på användarroller och behörigheter.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Det här är ett mallprojekt, där vi börjar resan...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Total körningar</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Total speglingar</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Visa historik</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Välkommen</value>

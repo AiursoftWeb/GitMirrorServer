@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>所有相依元件都會自動註冊，並始終可透過建構函式注入使用。</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>應用程式執行時間</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>自動深色模式</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>完整說明文件</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>已設定的程式庫</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>一致性驗證</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>儀表板</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>以 UTC 為唯一開發時區，系統會自動將日期轉換並顯示為使用者的本地時間。</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>整合式檔案管理</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>上次執行時間</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>上次執行失敗</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>上次執行成功</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>最後執行時間</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>累計任務執行次數</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>管理鏡像</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>模型會根據資料註解，在客戶端與伺服器端同時進行驗證。</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>多種資料庫支援</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>從未</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>OpenID Connect 整合</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>快速操作</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>RBAC 授權</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>閱讀文件</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>倉儲庫同步失敗</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>儲存庫同步成功</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>響應式設計</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>支援環境變數與資料庫儲存的設定，並自動優先使用環境變數以達成無縫覆蓋。</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>系統狀態</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>導覽列會根據使用者角色和權限自動調整。</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>這是一個模板專案，我們將在此開啟探索之旅...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>總執行次數</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>總鏡像數</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>檢視歷史</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>歡迎</value>

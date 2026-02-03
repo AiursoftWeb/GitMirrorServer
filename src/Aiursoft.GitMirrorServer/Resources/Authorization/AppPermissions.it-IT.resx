@@ -27,6 +27,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Consente di assegnare o rimuovere ruoli per qualsiasi utente.</value>
   </data>
+  <data name="Allows managing the mirror targets and configurations." xml:space="preserve">
+    <value>Permette di gestire i destinatari del mirror e le configurazioni.</value>
+  </data>
   <data name="Allows modification of role names and their assigned permissions." xml:space="preserve">
     <value>Consente la modifica dei nomi dei ruoli e dei permessi assegnati.</value>
   </data>
@@ -57,6 +60,9 @@
   <data name="Allows viewing the list of roles and their assigned permissions." xml:space="preserve">
     <value>Consente di visualizzare l&apos;elenco dei ruoli e le relative autorizzazioni assegnate.</value>
   </data>
+  <data name="Allows viewing the status of mirror jobs." xml:space="preserve">
+    <value>Consente di visualizzare lo stato dei processi di mirror.</value>
+  </data>
   <data name="Assign Roles to Users" xml:space="preserve">
     <value>Assegna Ruoli agli Utenti</value>
   </data>
@@ -84,6 +90,9 @@
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Gestisci Impostazioni Globali</value>
   </data>
+  <data name="Manage Mirror Targets" xml:space="preserve">
+    <value>Gestisci Destinazioni Mirror</value>
+  </data>
   <data name="Read Permissions" xml:space="preserve">
     <value>Leggere Permessi</value>
   </data>
@@ -98,6 +107,9 @@
   </data>
   <data name="View Background Jobs" xml:space="preserve">
     <value>Visualizza i processi in background</value>
+  </data>
+  <data name="View Mirror Status" xml:space="preserve">
+    <value>Visualizza Stato Mirror</value>
   </data>
   <data name="View System Context" xml:space="preserve">
     <value>Visualizza Contesto di Sistema</value>

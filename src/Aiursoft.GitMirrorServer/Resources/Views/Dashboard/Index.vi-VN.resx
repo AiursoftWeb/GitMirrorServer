@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Tất cả các dependency đều được tự động đăng ký và luôn sẵn sàng để sử dụng thông qua constructor injection.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>Thời gian hoạt động của ứng dụng</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Chế độ Tối Tự động</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Tài liệu Toàn diện</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Các kho lưu trữ đã được cấu hình</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Xác thực tính nhất quán</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Bảng điều khiển</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Phát triển riêng biệt bằng múi giờ UTC, trong khi hệ thống tự động chuyển đổi và hiển thị ngày tháng theo múi giờ địa phương của người dùng.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Quản lý Tập tin Tích hợp</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Thời gian chạy lần cuối</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Lỗi lần chạy trước</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Lần chạy cuối thành công</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Thời gian chạy cuối cùng</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Số lần chạy công việc trọn đời</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Quản lý bản sao</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Các mô hình được xác thực ở cả phía client và phía server dựa trên các chú thích dữ liệu.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Hỗ trợ Đa Cơ sở Dữ liệu</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Chưa bao giờ</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Tích hợp OpenID Connect</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Hành động nhanh</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Ủy quyền RBAC</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Đọc tài liệu</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Các kho lưu trữ không thể đồng bộ</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Các kho lưu trữ đã được đồng bộ thành công</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Thiết kế đáp ứng</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Hỗ trợ cả biến môi trường và cài đặt dựa trên cơ sở dữ liệu, với ưu tiên tự động dành cho biến môi trường để ghi đè một cách liền mạch.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Trạng thái hệ thống</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Thanh điều hướng sẽ tự động điều chỉnh dựa trên vai trò và quyền của người dùng.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Đây là một dự án mẫu, nơi chúng ta bắt đầu hành trình khám phá...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Tổng số lần thực thi</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Tổng số bản sao</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Xem lịch sử</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Chào mừng</value>

@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Όλες οι εξαρτήσεις καταχωρούνται αυτόματα και είναι πάντα διαθέσιμες μέσω της εισαγωγής στον κατασκευαστή.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>Χρόνος λειτουργίας εφαρμογής</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Αυτόματη Λειτουργία Σκούρου Θέματος</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Πληρέστερη Τεκμηρίωση</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Διαμορφωμένα αποθεματικά</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Έλεγχος Συνοχής</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Πίνακας Ελέγχου</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Αναπτύξτε αποκλειστικά στο UTC, ενώ το σύστημα μετατρέπει και εμφανίζει αυτόματα τις ημερομηνίες στην τοπική ώρα του χρήστη.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Ενσωματωμένη Διαχείριση Αρχείων</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Διάρκεια της Τελευταίας Εκτέλεσης</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Τελευταία Αποτυχία Εκτέλεσης</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Τελευταία Επιτυχής Εκτέλεση</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Τελευταία Ώρα Εκτέλεσης</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Εκτελέσεις εργασιών με διάρκεια ζωής</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Διαχείριση Αντιγράφων</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Τα μοντέλα ελέγχονται σε επίπεδο πελάτη και εξυπηρετητή βάσει σημειώσεων δεδομένων.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Υποστήριξη Πολλαπλών Βάσεων Δεδομένων</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Ποτέ</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Ενσωμάτωση OpenID Connect</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Γρήγορες ενέργειες</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Εξουσιοδότηση RBAC</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Διαβάστε την τεκμηρίωση</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Αποτυχία συγχρονισμού των αποθεμάτων</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Αποθήκες συγχρονίστηκαν επιτυχώς</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Αποκρισιμό Σχεδιασμό</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Υποστηρίζει και τις δύο μεταβλητές περιβάλλοντος και ρυθμίσεις που βασίζονται σε βάση δεδομένων, με αυτόματη προτεραιότητα προς τις μεταβλητές περιβάλλοντος για ομαλή αντικατάσταση.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Κατάσταση Συστήματος</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Η γραμμή πλοήγησης προσαρμόζεται αυτόματα με βάση τους ρόλους και τα δικαιώματα των χρηστών.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Αυτό είναι ένα πρότυπο έργο, από όπου ξεκινάμε το ταξίδι...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Συνολικές Εκτελέσεις</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Σύνολο Αντιγράφων</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Προβολή Ιστορικού</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Καλώς ορίσατε</value>

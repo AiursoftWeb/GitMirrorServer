@@ -54,6 +54,9 @@
   <data name="Click to login" xml:space="preserve">
     <value>點擊登入</value>
   </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>建立鏡像</value>
+  </data>
   <data name="Create Role" xml:space="preserve">
     <value>建立角色</value>
   </data>
@@ -72,6 +75,9 @@
   <data name="Directory" xml:space="preserve">
     <value>目錄</value>
   </data>
+  <data name="Edit Mirror" xml:space="preserve">
+    <value>編輯鏡像</value>
+  </data>
   <data name="Edit Role" xml:space="preserve">
     <value>編輯角色</value>
   </data>
@@ -84,8 +90,14 @@
   <data name="Features" xml:space="preserve">
     <value>功能</value>
   </data>
+  <data name="GitMirrorServer" xml:space="preserve">
+    <value>GitMirrorServer</value>
+  </data>
   <data name="Global Settings" xml:space="preserve">
     <value>全域設定</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>歷史</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>首頁</value>
@@ -99,6 +111,12 @@
   <data name="Internal Server Error" xml:space="preserve">
     <value>內部伺服器錯誤</value>
   </data>
+  <data name="Job Details" xml:space="preserve">
+    <value>工作詳細資訊</value>
+  </data>
+  <data name="Job History" xml:space="preserve">
+    <value>工作歷程</value>
+  </data>
   <data name="Lockout" xml:space="preserve">
     <value>帳戶鎖定</value>
   </data>
@@ -110,6 +128,15 @@
   </data>
   <data name="Manage" xml:space="preserve">
     <value>管理</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>同步中</value>
+  </data>
+  <data name="Mirrors" xml:space="preserve">
+    <value>鏡像</value>
+  </data>
+  <data name="Mirrors List" xml:space="preserve">
+    <value>鏡像清單</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>找不到</value>

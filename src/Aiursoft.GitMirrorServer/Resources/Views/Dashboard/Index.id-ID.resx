@@ -42,6 +42,9 @@
   <data name="All dependencies are automatically registered and always available via constructor injection." xml:space="preserve">
     <value>Semua dependensi terdaftar secara otomatis dan selalu tersedia melalui constructor injection.</value>
   </data>
+  <data name="App Uptime" xml:space="preserve">
+    <value>Waktu Aktif Aplikasi</value>
+  </data>
   <data name="Automatic Dark Mode" xml:space="preserve">
     <value>Mode Gelap Otomatis</value>
   </data>
@@ -72,8 +75,14 @@
   <data name="Comprehensive Documentation" xml:space="preserve">
     <value>Dokumentasi Komprehensif</value>
   </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Repositori yang telah dikonfigurasi</value>
+  </data>
   <data name="Consistency Validation" xml:space="preserve">
     <value>Validasi Konsistensi</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dasbor</value>
   </data>
   <data name="Develop exclusively in UTC while the system automatically converts and displays dates in the user&apos;s local time zone." xml:space="preserve">
     <value>Kembangkan secara eksklusif dalam UTC sementara sistem secara otomatis mengonversi dan menampilkan tanggal dalam zona waktu lokal pengguna.</value>
@@ -114,6 +123,24 @@
   <data name="Integrated File Management" xml:space="preserve">
     <value>Manajemen File Terintegrasi</value>
   </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Durasi Jalannya Terakhir</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Gagal Saat Jalankan Terakhir</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Berhasil Jalankan Terakhir</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Waktu Jalankan Terakhir</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Jalankan tugas seumur hidup</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Kelola Cerminan</value>
+  </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Model divalidasi di sisi klien dan server berdasarkan anotasi data.</value>
   </data>
@@ -123,14 +150,26 @@
   <data name="Multiple Database Support" xml:space="preserve">
     <value>Dukungan Banyak Basis Data</value>
   </data>
+  <data name="Never" xml:space="preserve">
+    <value>Tidak pernah</value>
+  </data>
   <data name="OpenID Connect Integration" xml:space="preserve">
     <value>Integrasi OpenID Connect</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Tindakan Cepat</value>
   </data>
   <data name="RBAC Authorization" xml:space="preserve">
     <value>Otorisasi RBAC</value>
   </data>
   <data name="Read the document" xml:space="preserve">
     <value>Baca dokumen</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Repositori gagal disinkronkan</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Repositori berhasil disinkronkan</value>
   </data>
   <data name="Responsive Design" xml:space="preserve">
     <value>Desain Responsif</value>
@@ -159,11 +198,23 @@
   <data name="Supports both environment variables and database-backed settings, with automatic priority given to environment variables for seamless overrides." xml:space="preserve">
     <value>Mendukung variabel lingkungan dan pengaturan berbasis basis data, dengan prioritas otomatis diberikan kepada variabel lingkungan untuk override yang mulus.</value>
   </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Status Sistem</value>
+  </data>
   <data name="The navigation bar automatically adjusts based on user roles and permissions." xml:space="preserve">
     <value>Bilah navigasi secara otomatis menyesuaikan berdasarkan peran dan izin pengguna.</value>
   </data>
   <data name="This is a template project, where we start the voyager..." xml:space="preserve">
     <value>Ini adalah proyek templat, di mana kita memulai perjalanan...</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Total Eksekusi</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Total Cerminan</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Lihat Riwayat</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Selamat datang</value>
