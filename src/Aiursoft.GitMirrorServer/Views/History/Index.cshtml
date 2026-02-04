@@ -1,3 +1,4 @@
+@using Aiursoft.WebTools
 @model Aiursoft.GitMirrorServer.Models.HistoryViewModels.IndexViewModel
 @inject IViewLocalizer Localizer
 
@@ -28,7 +29,7 @@
                         @foreach (var item in Model.History)
                         {
                             <tr>
-                                <td>@item.StartTime.ToLocalTime()</td>
+                                <td><label data-utc-time="@item.StartTime.ToHtmlDateTime()"></label></td>
                                 <td>
                                     @if(item.EndTime.HasValue)
                                     {
