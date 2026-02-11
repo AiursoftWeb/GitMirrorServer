@@ -39,6 +39,9 @@
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Khoảng thời gian đồng bộ (phút)</value>
   </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>Logo dự án</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>Tên dự án</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Khoảng cách thời gian tính bằng phút giữa các công việc sao chép tự động.</value>
+  </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>Logo của dự án được hiển thị trong thanh điều hướng và chân trang. Hỗ trợ định dạng jpg, png, svg.</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Tên dự án được hiển thị trên giao diện người dùng</value>

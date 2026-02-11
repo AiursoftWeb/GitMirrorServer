@@ -39,6 +39,9 @@
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Επανάληψη Αντιγραφής (Λεπτά)</value>
   </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>Λογότυπο Έργου</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>Όνομα Έργου</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Ο χρονικός διάστημα σε λεπτά μεταξύ των αυτόματων εργασιών αντικατοπτρισμού.</value>
+  </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>Το λογότυπο του έργου που εμφανίζεται στην ναβιγατόρια και στον πόδα. Υποστηρίζει jpg, png, svg.</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Το όνομα του έργου που εμφανίζεται στον προβολέα</value>

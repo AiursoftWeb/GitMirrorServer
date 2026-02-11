@@ -39,6 +39,9 @@
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>فترة المرايا (الدقائق)</value>
   </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>شعار المشروع</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>اسم المشروع</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>الفاصل الزمني بالدقائق بين مهام المرآة التلقائية.</value>
+  </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>الشعار الخاص بالمشروع يتم عرضه في شريط التنقل والقدم. يدعم jpg, png, svg.</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>اسم المشروع المُعرض في الواجهة الأمامية.</value>
