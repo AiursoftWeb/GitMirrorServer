@@ -39,6 +39,9 @@
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Spegelintervall (minuter)</value>
   </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>Projekts logotyp</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>Projektnamn</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Intervall i minuter mellan automatiska spegeljobb.</value>
+  </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>Logotypen för projektet som visas i navigeringsfältet och sidfoten. Stöd för jpg, png, svg.</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Projektets namn som visas i frontend</value>
