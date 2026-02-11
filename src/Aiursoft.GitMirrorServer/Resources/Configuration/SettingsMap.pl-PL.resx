@@ -39,6 +39,9 @@
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Czas między odzwierciedleniami (minuty)</value>
   </data>
+  <data name="Project Logo" xml:space="preserve">
+    <value>Logo projektu</value>
+  </data>
   <data name="Project Name" xml:space="preserve">
     <value>Nazwa projektu</value>
   </data>
@@ -50,6 +53,9 @@
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Odstęp w minutach między automatycznymi zadaniami odbijania.</value>
+  </data>
+  <data name="The logo of the project displayed in the navbar and footer. Support jpg, png, svg." xml:space="preserve">
+    <value>Logo projektu wyświetlany w pasku nawigacyjnym i stopce. Obsługiwane formaty: jpg, png, svg.</value>
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Nazwa projektu wyświetlana w interfejsie użytkownika</value>
