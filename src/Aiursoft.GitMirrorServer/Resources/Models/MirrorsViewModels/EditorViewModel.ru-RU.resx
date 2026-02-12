@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="From Organization/User" xml:space="preserve">
+    <value>Из организации/пользователя</value>
+  </data>
+  <data name="From Server URL" xml:space="preserve">
+    <value>Адрес сервера-источника</value>
+  </data>
+  <data name="From Token" xml:space="preserve">
+    <value>Токен источника</value>
+  </data>
+  <data name="From Type" xml:space="preserve">
+    <value>Тип источника</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Пожалуйста, введите действительный URL.</value>
+  </data>
+  <data name="Please specify if this is an Organization or a User." xml:space="preserve">
+    <value>Укажите, является ли это организацией или пользователем.</value>
+  </data>
+  <data name="Source Type (Org/User)" xml:space="preserve">
+    <value>Тип источника (Организация/Пользователь)</value>
+  </data>
+  <data name="Target Organization" xml:space="preserve">
+    <value>Целевая организация</value>
+  </data>
+  <data name="Target Server URL" xml:space="preserve">
+    <value>Целевой URL сервера</value>
+  </data>
+  <data name="Target Token" xml:space="preserve">
+    <value>Целевой токен</value>
+  </data>
+  <data name="Target Type" xml:space="preserve">
+    <value>Тип назначения</value>
+  </data>
+  <data name="The From Organization/User Name is required." xml:space="preserve">
+    <value>Имя организации/пользователя &quot;Источник&quot; обязательно для заполнения.</value>
+  </data>
+  <data name="The From Server URL is required." xml:space="preserve">
+    <value>URL-адрес сервера-источника обязателен.</value>
+  </data>
+  <data name="The From Type is required." xml:space="preserve">
+    <value>Тип &quot;Источник&quot; является обязательным.</value>
+  </data>
+  <data name="The Target Organization Name is required." xml:space="preserve">
+    <value>Имя целевой организации обязательно для заполнения.</value>
+  </data>
+  <data name="The Target Server URL is required." xml:space="preserve">
+    <value>URL-адрес целевого сервера обязателен.</value>
+  </data>
+  <data name="The Target Token is required." xml:space="preserve">
+    <value>Токен назначения обязателен.</value>
+  </data>
+  <data name="The Target Type is required." xml:space="preserve">
+    <value>Тип назначения является обязательным.</value>
+  </data>
+
+</root>
