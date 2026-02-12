@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="From Organization/User" xml:space="preserve">
+    <value>Da Organizzazione/Utente</value>
+  </data>
+  <data name="From Server URL" xml:space="preserve">
+    <value>URL server di origine</value>
+  </data>
+  <data name="From Token" xml:space="preserve">
+    <value>Token di origine</value>
+  </data>
+  <data name="From Type" xml:space="preserve">
+    <value>Tipo di origine</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Inserisci un URL valido.</value>
+  </data>
+  <data name="Please specify if this is an Organization or a User." xml:space="preserve">
+    <value>Si prega di specificare se si tratta di un&apos;Organizzazione o di un Utente.</value>
+  </data>
+  <data name="Source Type (Org/User)" xml:space="preserve">
+    <value>Tipo di origine (Org/Utente)</value>
+  </data>
+  <data name="Target Organization" xml:space="preserve">
+    <value>Organizzazione di destinazione</value>
+  </data>
+  <data name="Target Server URL" xml:space="preserve">
+    <value>URL server di destinazione</value>
+  </data>
+  <data name="Target Token" xml:space="preserve">
+    <value>Token di destinazione</value>
+  </data>
+  <data name="Target Type" xml:space="preserve">
+    <value>Tipo destinazione</value>
+  </data>
+  <data name="The From Organization/User Name is required." xml:space="preserve">
+    <value>Il nome dell&apos;organizzazione/utente di origine è obbligatorio.</value>
+  </data>
+  <data name="The From Server URL is required." xml:space="preserve">
+    <value>L&apos;URL del server di origine è obbligatorio.</value>
+  </data>
+  <data name="The From Type is required." xml:space="preserve">
+    <value>Il tipo di origine è obbligatorio.</value>
+  </data>
+  <data name="The Target Organization Name is required." xml:space="preserve">
+    <value>Il nome dell&apos;organizzazione di destinazione è obbligatorio.</value>
+  </data>
+  <data name="The Target Server URL is required." xml:space="preserve">
+    <value>L&apos;URL del server di destinazione è obbligatorio.</value>
+  </data>
+  <data name="The Target Token is required." xml:space="preserve">
+    <value>Il token di destinazione è obbligatorio.</value>
+  </data>
+  <data name="The Target Type is required." xml:space="preserve">
+    <value>Il tipo di destinazione è obbligatorio.</value>
+  </data>
+
+</root>

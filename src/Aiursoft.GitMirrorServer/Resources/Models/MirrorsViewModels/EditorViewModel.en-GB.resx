@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="From Organization/User" xml:space="preserve">
+    <value>From Organization/User</value>
+  </data>
+  <data name="From Server URL" xml:space="preserve">
+    <value>From Server URL</value>
+  </data>
+  <data name="From Token" xml:space="preserve">
+    <value>From Token</value>
+  </data>
+  <data name="From Type" xml:space="preserve">
+    <value>From Type</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Please enter a valid URL.</value>
+  </data>
+  <data name="Please specify if this is an Organization or a User." xml:space="preserve">
+    <value>Please specify whether this is an Organization or a User.</value>
+  </data>
+  <data name="Source Type (Org/User)" xml:space="preserve">
+    <value>Source Type (Org/User)</value>
+  </data>
+  <data name="Target Organization" xml:space="preserve">
+    <value>Target Organisation</value>
+  </data>
+  <data name="Target Server URL" xml:space="preserve">
+    <value>Target Server URL</value>
+  </data>
+  <data name="Target Token" xml:space="preserve">
+    <value>Target Token</value>
+  </data>
+  <data name="Target Type" xml:space="preserve">
+    <value>Target Type</value>
+  </data>
+  <data name="The From Organization/User Name is required." xml:space="preserve">
+    <value>The From Organization/User Name is required.</value>
+  </data>
+  <data name="The From Server URL is required." xml:space="preserve">
+    <value>The From Server URL is required.</value>
+  </data>
+  <data name="The From Type is required." xml:space="preserve">
+    <value>The From Type is required.</value>
+  </data>
+  <data name="The Target Organization Name is required." xml:space="preserve">
+    <value>The Target Organization Name is required.</value>
+  </data>
+  <data name="The Target Server URL is required." xml:space="preserve">
+    <value>The Target Server URL is required.</value>
+  </data>
+  <data name="The Target Token is required." xml:space="preserve">
+    <value>The Target Token is required.</value>
+  </data>
+  <data name="The Target Type is required." xml:space="preserve">
+    <value>The Target Type is required.</value>
+  </data>
+
+</root>

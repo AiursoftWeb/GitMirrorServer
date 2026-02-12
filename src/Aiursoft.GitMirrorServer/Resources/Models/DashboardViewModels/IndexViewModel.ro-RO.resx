@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Last run duration" xml:space="preserve">
+    <value>Durata ultimei rulări</value>
+  </data>
+  <data name="Last run failure count" xml:space="preserve">
+    <value>Numărul ultimei rulări cu eșec</value>
+  </data>
+  <data name="Last run success count" xml:space="preserve">
+    <value>Numărul ultimei rulări cu succes</value>
+  </data>
+  <data name="Last run time" xml:space="preserve">
+    <value>Ultima execuție</value>
+  </data>
+  <data name="Total history count" xml:space="preserve">
+    <value>Număr total istoric</value>
+  </data>
+  <data name="Total mirrors" xml:space="preserve">
+    <value>Total oglinzi</value>
+  </data>
+
+</root>
