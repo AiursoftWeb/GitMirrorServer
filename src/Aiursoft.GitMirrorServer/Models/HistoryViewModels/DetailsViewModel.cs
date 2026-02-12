@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -10,5 +11,6 @@ public class DetailsViewModel : UiStackLayoutViewModel
         PageTitle = "Job Details";
     }
 
+    [Display(Name = "Job")]
     public required MirrorJobExecution Job { get; set; }
 }

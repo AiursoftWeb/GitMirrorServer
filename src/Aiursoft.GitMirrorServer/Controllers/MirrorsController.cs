@@ -41,13 +41,6 @@ public class MirrorsController(
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(EditorViewModel model)
     {
-        // Manual validation because model.Mirror might not be fully populated if we bound to EditorViewModel
-        // Actually, if we use <input asp-for="Mirror.FromServer" />, it binds to model.Mirror.FromServer.
-        // But validation errors might be tricky.
-        
-        // Let's re-bind or check validity.
-        // If we bind to EditorViewModel, the Mirror property is populated.
-        
         if (!ModelState.IsValid)
         {
              model.IsCreate = true;
@@ -55,11 +48,20 @@ public class MirrorsController(
              return this.StackView(model);
         }
 
-        // We need to ensure Mirror properties are valid.
-        // Manually trigger validation on Mirror object if needed, or trust ModelState if recursion works.
-        // DataAnnotations on MirrorConfiguration should work.
+        var mirror = new MirrorConfiguration
+        {
+            FromType = model.FromType,
+            FromServer = model.FromServer,
+            FromToken = model.FromToken,
+            FromOrgName = model.FromOrgName,
+            OrgOrUser = model.OrgOrUser,
+            TargetType = model.TargetType,
+            TargetServer = model.TargetServer,
+            TargetToken = model.TargetToken,
+            TargetOrgName = model.TargetOrgName
+        };
 
-        dbContext.MirrorConfigurations.Add(model.Mirror);
+        dbContext.MirrorConfigurations.Add(mirror);
         await dbContext.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
@@ -72,7 +74,21 @@ public class MirrorsController(
         {
             return NotFound();
         }
-        return this.StackView(new EditorViewModel { Mirror = mirror, IsCreate = false, PageTitle = "Edit Mirror" });
+        return this.StackView(new EditorViewModel
+        {
+            Id = mirror.Id,
+            FromType = mirror.FromType,
+            FromServer = mirror.FromServer,
+            FromToken = mirror.FromToken,
+            FromOrgName = mirror.FromOrgName,
+            OrgOrUser = mirror.OrgOrUser,
+            TargetType = mirror.TargetType,
+            TargetServer = mirror.TargetServer,
+            TargetToken = mirror.TargetToken,
+            TargetOrgName = mirror.TargetOrgName,
+            IsCreate = false,
+            PageTitle = "Edit Mirror"
+        });
     }
 
     [HttpPost]
@@ -87,7 +103,23 @@ public class MirrorsController(
             return this.StackView(model);
         }
 
-        dbContext.MirrorConfigurations.Update(model.Mirror);
+        var mirror = await dbContext.MirrorConfigurations.FindAsync(model.Id);
+        if (mirror == null)
+        {
+            return NotFound();
+        }
+
+        mirror.FromType = model.FromType;
+        mirror.FromServer = model.FromServer;
+        mirror.FromToken = model.FromToken;
+        mirror.FromOrgName = model.FromOrgName;
+        mirror.OrgOrUser = model.OrgOrUser;
+        mirror.TargetType = model.TargetType;
+        mirror.TargetServer = model.TargetServer;
+        mirror.TargetToken = model.TargetToken;
+        mirror.TargetOrgName = model.TargetOrgName;
+
+        dbContext.MirrorConfigurations.Update(mirror);
         await dbContext.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }

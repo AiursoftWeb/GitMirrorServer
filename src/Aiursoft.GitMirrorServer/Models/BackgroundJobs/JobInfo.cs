@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Aiursoft.GitMirrorServer.Models.BackgroundJobs;
 
 /// <summary>
@@ -5,23 +7,33 @@ namespace Aiursoft.GitMirrorServer.Models.BackgroundJobs;
 /// </summary>
 public class JobInfo
 {
+    [Display(Name = "Job ID")]
     public Guid JobId { get; init; } = Guid.NewGuid();
 
+    [Display(Name = "Queue name")]
     public required string QueueName { get; init; }
 
+    [Display(Name = "Job name")]
     public required string JobName { get; init; }
 
+    [Display(Name = "Status")]
     public JobStatus Status { get; set; } = JobStatus.Pending;
 
+    [Display(Name = "Queued at")]
     public DateTime QueuedAt { get; init; } = DateTime.UtcNow;
 
+    [Display(Name = "Started at")]
     public DateTime? StartedAt { get; set; }
 
+    [Display(Name = "Completed at")]
     public DateTime? CompletedAt { get; set; }
 
+    [Display(Name = "Error message")]
     public string? ErrorMessage { get; set; }
 
+    [Display(Name = "Service type")]
     public required Type ServiceType { get; init; }
 
+    [Display(Name = "Job action")]
     public required Func<object, Task> JobAction { get; init; }
 }

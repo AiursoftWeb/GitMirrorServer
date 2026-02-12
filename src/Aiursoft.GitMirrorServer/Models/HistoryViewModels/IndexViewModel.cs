@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -10,5 +11,6 @@ public class IndexViewModel : UiStackLayoutViewModel
         PageTitle = "Job History";
     }
 
+    [Display(Name = "History")]
     public required List<MirrorJobExecution> History { get; set; }
 }

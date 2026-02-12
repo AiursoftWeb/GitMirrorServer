@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -9,5 +10,7 @@ public class IndexViewModel : UiStackLayoutViewModel
     {
         PageTitle = "Mirrors List";
     }
+
+    [Display(Name = "Mirrors")]
     public required List<MirrorConfiguration> Mirrors { get; set; }
 }

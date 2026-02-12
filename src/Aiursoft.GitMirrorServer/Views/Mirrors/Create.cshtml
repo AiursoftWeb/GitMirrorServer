@@ -10,69 +10,68 @@
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 @if(!Model.IsCreate)
                 {
-                    <input type="hidden" asp-for="Mirror.Id" />
-                    <input type="hidden" asp-for="Mirror.CreationTime" />
+                    <input type="hidden" asp-for="Id" />
                 }
                 
                 <div class="row">
                     <div class="col-md-6">
                         <h4>Source (From)</h4>
                         <div class="mb-3">
-                            <label asp-for="Mirror.FromType" class="form-label"></label>
-                            <select asp-for="Mirror.FromType" class="form-control">
+                            <label asp-for="FromType" class="form-label"></label>
+                            <select asp-for="FromType" class="form-control">
                                 <option value="GitLab">GitLab</option>
                                 <option value="GitHub">GitHub</option>
                             </select>
-                            <span asp-validation-for="Mirror.FromType" class="text-danger"></span>
+                            <span asp-validation-for="FromType" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <label asp-for="Mirror.FromServer" class="form-label"></label>
-                            <input asp-for="Mirror.FromServer" class="form-control" />
-                            <span asp-validation-for="Mirror.FromServer" class="text-danger"></span>
+                            <label asp-for="FromServer" class="form-label"></label>
+                            <input asp-for="FromServer" class="form-control" />
+                            <span asp-validation-for="FromServer" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <label asp-for="Mirror.FromOrgName" class="form-label"></label>
-                            <input asp-for="Mirror.FromOrgName" class="form-control" />
-                            <span asp-validation-for="Mirror.FromOrgName" class="text-danger"></span>
+                            <label asp-for="FromOrgName" class="form-label"></label>
+                            <input asp-for="FromOrgName" class="form-control" />
+                            <span asp-validation-for="FromOrgName" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <label asp-for="Mirror.FromToken" class="form-label"></label>
-                            <input asp-for="Mirror.FromToken" class="form-control" type="password" />
-                            <span asp-validation-for="Mirror.FromToken" class="text-danger"></span>
+                            <label asp-for="FromToken" class="form-label"></label>
+                            <input asp-for="FromToken" class="form-control" type="password" />
+                            <span asp-validation-for="FromToken" class="text-danger"></span>
                         </div>
                          <div class="mb-3">
-                            <label asp-for="Mirror.OrgOrUser" class="form-label"></label>
-                            <select asp-for="Mirror.OrgOrUser" class="form-control">
+                            <label asp-for="OrgOrUser" class="form-label"></label>
+                            <select asp-for="OrgOrUser" class="form-control">
                                 <option value="Org">Organization (Group)</option>
                                 <option value="User">User</option>
                             </select>
-                            <span asp-validation-for="Mirror.OrgOrUser" class="text-danger"></span>
+                            <span asp-validation-for="OrgOrUser" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <h4>Target (To)</h4>
                         <div class="mb-3">
-                            <label asp-for="Mirror.TargetType" class="form-label"></label>
-                             <select asp-for="Mirror.TargetType" class="form-control">
+                            <label asp-for="TargetType" class="form-label"></label>
+                             <select asp-for="TargetType" class="form-control">
                                 <option value="GitHub">GitHub</option>
                                 <option value="GitLab">GitLab</option>
                             </select>
-                            <span asp-validation-for="Mirror.TargetType" class="text-danger"></span>
+                            <span asp-validation-for="TargetType" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <label asp-for="Mirror.TargetServer" class="form-label"></label>
-                            <input asp-for="Mirror.TargetServer" class="form-control" />
-                            <span asp-validation-for="Mirror.TargetServer" class="text-danger"></span>
+                            <label asp-for="TargetServer" class="form-label"></label>
+                            <input asp-for="TargetServer" class="form-control" />
+                            <span asp-validation-for="TargetServer" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <label asp-for="Mirror.TargetOrgName" class="form-label"></label>
-                            <input asp-for="Mirror.TargetOrgName" class="form-control" />
-                            <span asp-validation-for="Mirror.TargetOrgName" class="text-danger"></span>
+                            <label asp-for="TargetOrgName" class="form-label"></label>
+                            <input asp-for="TargetOrgName" class="form-control" />
+                            <span asp-validation-for="TargetOrgName" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
-                            <label asp-for="Mirror.TargetToken" class="form-label"></label>
-                            <input asp-for="Mirror.TargetToken" class="form-control" type="password" />
-                            <span asp-validation-for="Mirror.TargetToken" class="text-danger"></span>
+                            <label asp-for="TargetToken" class="form-label"></label>
+                            <input asp-for="TargetToken" class="form-control" type="password" />
+                            <span asp-validation-for="TargetToken" class="text-danger"></span>
                         </div>
                     </div>
                 </div>
