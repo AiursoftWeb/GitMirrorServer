@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.UiStack.Layout;
 using Microsoft.AspNetCore.Identity;
 
@@ -10,5 +11,6 @@ public class DeleteViewModel : UiStackLayoutViewModel
         PageTitle = "Delete Role";
     }
 
+    [Display(Name = "Role")]
     public required IdentityRole Role { get; set; }
 }

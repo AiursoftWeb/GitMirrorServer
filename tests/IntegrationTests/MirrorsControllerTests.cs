@@ -21,15 +21,15 @@ public class MirrorsControllerTests : TestBase
         var fromOrg = "TestFromOrg-" + Guid.NewGuid();
         var createResponse = await PostForm("/Mirrors/Create", new Dictionary<string, string>
         {
-            { "Mirror.FromType", "GitLab" },
-            { "Mirror.FromServer", "https://gitlab.com" },
-            { "Mirror.FromOrgName", fromOrg },
-            { "Mirror.FromToken", "test-token" },
-            { "Mirror.OrgOrUser", "Org" },
-            { "Mirror.TargetType", "GitHub" },
-            { "Mirror.TargetServer", "https://api.github.com" },
-            { "Mirror.TargetOrgName", "TestTargetOrg" },
-            { "Mirror.TargetToken", "test-target-token" }
+            { "FromType", "GitLab" },
+            { "FromServer", "https://gitlab.com" },
+            { "FromOrgName", fromOrg },
+            { "FromToken", "test-token" },
+            { "OrgOrUser", "Org" },
+            { "TargetType", "GitHub" },
+            { "TargetServer", "https://api.github.com" },
+            { "TargetOrgName", "TestTargetOrg" },
+            { "TargetToken", "test-target-token" }
         });
         AssertRedirect(createResponse, "/Mirrors");
 
@@ -47,17 +47,16 @@ public class MirrorsControllerTests : TestBase
         var newFromServer = "https://gitlab.example.com";
         var editResponse = await PostForm("/Mirrors/Edit", new Dictionary<string, string>
         {
-            { "Mirror.Id", mirror.Id.ToString() }, // Binding to Mirror.Id based on View/Model
-            { "Mirror.CreationTime", mirror.CreationTime.ToString("O") },
-            { "Mirror.FromType", "GitLab" },
-            { "Mirror.FromServer", newFromServer },
-            { "Mirror.FromOrgName", fromOrg },
-            { "Mirror.FromToken", "test-token" },
-            { "Mirror.OrgOrUser", "Org" },
-            { "Mirror.TargetType", "GitHub" },
-            { "Mirror.TargetServer", "https://api.github.com" },
-            { "Mirror.TargetOrgName", "TestTargetOrg" },
-            { "Mirror.TargetToken", "test-target-token" }
+            { "Id", mirror.Id.ToString() }, 
+            { "FromType", "GitLab" },
+            { "FromServer", newFromServer },
+            { "FromOrgName", fromOrg },
+            { "FromToken", "test-token" },
+            { "OrgOrUser", "Org" },
+            { "TargetType", "GitHub" },
+            { "TargetServer", "https://api.github.com" },
+            { "TargetOrgName", "TestTargetOrg" },
+            { "TargetToken", "test-target-token" }
         });
         AssertRedirect(editResponse, "/Mirrors");
 

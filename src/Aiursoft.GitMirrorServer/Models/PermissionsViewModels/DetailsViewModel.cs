@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.GitMirrorServer.Authorization;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.UiStack.Layout;
@@ -12,9 +13,12 @@ public class DetailsViewModel : UiStackLayoutViewModel
         PageTitle = "Permission Details";
     }
 
+    [Display(Name = "Permission")]
     public required PermissionDescriptor Permission { get; set; }
 
+    [Display(Name = "Roles")]
     public required List<IdentityRole> Roles { get; set; }
 
+    [Display(Name = "Users")]
     public required List<User> Users { get; set; }
 }

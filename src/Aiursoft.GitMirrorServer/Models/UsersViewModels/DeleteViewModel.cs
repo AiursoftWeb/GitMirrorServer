@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.UiStack.Layout;
 
@@ -10,5 +11,6 @@ public class DeleteViewModel : UiStackLayoutViewModel
         PageTitle = "Delete User";
     }
 
+    [Display(Name = "User")]
     public required User User { get; set; }
 }
