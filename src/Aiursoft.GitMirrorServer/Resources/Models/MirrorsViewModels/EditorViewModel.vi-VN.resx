@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="From Organization/User" xml:space="preserve">
+    <value>Từ Tổ chức/Người dùng</value>
+  </data>
+  <data name="From Server URL" xml:space="preserve">
+    <value>URL máy chủ nguồn</value>
+  </data>
+  <data name="From Token" xml:space="preserve">
+    <value>Mã truy cập nguồn</value>
+  </data>
+  <data name="From Type" xml:space="preserve">
+    <value>Loại nguồn</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>Vui lòng nhập một URL hợp lệ.</value>
+  </data>
+  <data name="Please specify if this is an Organization or a User." xml:space="preserve">
+    <value>Vui lòng xác định đây là Tổ chức hay Người dùng.</value>
+  </data>
+  <data name="Source Type (Org/User)" xml:space="preserve">
+    <value>Loại nguồn (Tổ chức/Người dùng)</value>
+  </data>
+  <data name="Target Organization" xml:space="preserve">
+    <value>Tổ chức đích</value>
+  </data>
+  <data name="Target Server URL" xml:space="preserve">
+    <value>URL máy chủ đích</value>
+  </data>
+  <data name="Target Token" xml:space="preserve">
+    <value>Token mục tiêu</value>
+  </data>
+  <data name="Target Type" xml:space="preserve">
+    <value>Loại mục tiêu</value>
+  </data>
+  <data name="The From Organization/User Name is required." xml:space="preserve">
+    <value>Tên tổ chức/người dùng nguồn là bắt buộc.</value>
+  </data>
+  <data name="The From Server URL is required." xml:space="preserve">
+    <value>URL máy chủ nguồn là bắt buộc.</value>
+  </data>
+  <data name="The From Type is required." xml:space="preserve">
+    <value>Loại nguồn là bắt buộc.</value>
+  </data>
+  <data name="The Target Organization Name is required." xml:space="preserve">
+    <value>Tên tổ chức đích là bắt buộc.</value>
+  </data>
+  <data name="The Target Server URL is required." xml:space="preserve">
+    <value>URL máy chủ đích là bắt buộc.</value>
+  </data>
+  <data name="The Target Token is required." xml:space="preserve">
+    <value>Token mục tiêu là bắt buộc.</value>
+  </data>
+  <data name="The Target Type is required." xml:space="preserve">
+    <value>Loại mục tiêu là bắt buộc.</value>
+  </data>
+
+</root>

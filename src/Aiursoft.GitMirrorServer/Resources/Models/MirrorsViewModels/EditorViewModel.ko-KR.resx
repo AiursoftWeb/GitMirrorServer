@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="From Organization/User" xml:space="preserve">
+    <value>원본 조직/사용자</value>
+  </data>
+  <data name="From Server URL" xml:space="preserve">
+    <value>원본 서버 URL</value>
+  </data>
+  <data name="From Token" xml:space="preserve">
+    <value>From 토큰</value>
+  </data>
+  <data name="From Type" xml:space="preserve">
+    <value>원본 유형</value>
+  </data>
+  <data name="Please enter a valid URL." xml:space="preserve">
+    <value>올바른 URL을 입력해 주세요.</value>
+  </data>
+  <data name="Please specify if this is an Organization or a User." xml:space="preserve">
+    <value>조직인지 사용자인지 지정해 주세요.</value>
+  </data>
+  <data name="Source Type (Org/User)" xml:space="preserve">
+    <value>소스 유형 (조직/사용자)</value>
+  </data>
+  <data name="Target Organization" xml:space="preserve">
+    <value>대상 조직</value>
+  </data>
+  <data name="Target Server URL" xml:space="preserve">
+    <value>대상 서버 URL</value>
+  </data>
+  <data name="Target Token" xml:space="preserve">
+    <value>대상 토큰</value>
+  </data>
+  <data name="Target Type" xml:space="preserve">
+    <value>대상 유형</value>
+  </data>
+  <data name="The From Organization/User Name is required." xml:space="preserve">
+    <value>&quot;From Organization/User Name&quot;은 필수 항목입니다.</value>
+  </data>
+  <data name="The From Server URL is required." xml:space="preserve">
+    <value>&quot;From Server URL은 필수 항목입니다.&quot;</value>
+  </data>
+  <data name="The From Type is required." xml:space="preserve">
+    <value>&apos;From Type&apos;은 필수 항목입니다.</value>
+  </data>
+  <data name="The Target Organization Name is required." xml:space="preserve">
+    <value>대상 조직 이름은 필수입니다.</value>
+  </data>
+  <data name="The Target Server URL is required." xml:space="preserve">
+    <value>대상 서버 URL은 필수 항목입니다.</value>
+  </data>
+  <data name="The Target Token is required." xml:space="preserve">
+    <value>대상 토큰이 필요합니다.</value>
+  </data>
+  <data name="The Target Type is required." xml:space="preserve">
+    <value>대상 유형은 필수입니다.</value>
+  </data>
+
+</root>
