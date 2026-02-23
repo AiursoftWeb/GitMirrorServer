@@ -28,8 +28,4 @@
     <ProjectReference Include="..\Aiursoft.GitMirrorServer.MySql\Aiursoft.GitMirrorServer.MySql.csproj" />
     <ProjectReference Include="..\Aiursoft.GitMirrorServer.Sqlite\Aiursoft.GitMirrorServer.Sqlite.csproj" />
   </ItemGroup>
-  <Target Name="NpmInstall" AfterTargets="Restore">
-    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
-    <Exec Command="npm install" WorkingDirectory="./wwwroot" />
-  </Target>
 </Project>
