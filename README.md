@@ -1,4 +1,4 @@
-# GitMirrorServer - A sample project
+# GitMirrorServer
 
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/blob/master/LICENSE)
 [![Pipeline stat](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/badges/master/pipeline.svg)](https://gitlab.aiursoft.com/aiursoft/gitMirrorServer/-/pipelines)
