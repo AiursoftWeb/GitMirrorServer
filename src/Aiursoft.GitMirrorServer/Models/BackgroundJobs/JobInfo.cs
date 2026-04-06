@@ -10,10 +10,10 @@ public class JobInfo
     [Display(Name = "Job ID")]
     public Guid JobId { get; init; } = Guid.NewGuid();
 
-    [Display(Name = "Queue name")]
+    [Display(Name = "Queue Name")]
     public required string QueueName { get; init; }
 
-    [Display(Name = "Job name")]
+    [Display(Name = "Job Name")]
     public required string JobName { get; init; }
 
     [Display(Name = "Status")]
@@ -34,6 +34,5 @@ public class JobInfo
     [Display(Name = "Service type")]
     public required Type ServiceType { get; init; }
 
-    [Display(Name = "Job action")]
     public required Func<object, Task> JobAction { get; init; }
 }

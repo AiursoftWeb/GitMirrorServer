@@ -1,7 +1,7 @@
+using Aiursoft.Canon.BackgroundJobs;
 using Aiursoft.GitMirrorServer.Authorization;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.GitMirrorServer.Services;
-using Aiursoft.GitMirrorServer.Services.BackgroundJobs;
 using Aiursoft.GitMirrorServer.Models.MirrorsViewModels;
 using Aiursoft.UiStack.Navigation;
 using Microsoft.AspNetCore.Authorization;
@@ -13,7 +13,7 @@ namespace Aiursoft.GitMirrorServer.Controllers;
 [Authorize]
 public class MirrorsController(
     GitMirrorServerDbContext dbContext,
-    BackgroundJobQueue backgroundJobQueue) : Controller
+    BackgroundJobRegistry jobRegistry) : Controller
 {
     [Authorize(Policy = AppPermissionNames.CanViewMirrorStatus)]
     [RenderInNavBar(
@@ -143,11 +143,7 @@ public class MirrorsController(
     [ValidateAntiForgeryToken]
     public IActionResult Trigger()
     {
-        backgroundJobQueue.QueueWithDependency<MirrorService>(
-            queueName: "MirrorQueue",
-            jobName: "Manually Triggered Mirror Job",
-            job: async (service) => await service.RunMirrorAsync()
-        );
+        jobRegistry.TriggerNow(nameof(Services.BackgroundJobs.MirrorJob));
         return RedirectToAction("Index", "History");
     }
 }
