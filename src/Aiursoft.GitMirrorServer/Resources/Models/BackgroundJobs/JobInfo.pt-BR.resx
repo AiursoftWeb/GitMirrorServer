@@ -33,8 +33,14 @@
   <data name="Job name" xml:space="preserve">
     <value>Nome do trabalho</value>
   </data>
+  <data name="Job Name" xml:space="preserve">
+    <value>Nome do Trabalho</value>
+  </data>
   <data name="Queue name" xml:space="preserve">
     <value>Nome da fila</value>
+  </data>
+  <data name="Queue Name" xml:space="preserve">
+    <value>Nome da Fila</value>
   </data>
   <data name="Queued at" xml:space="preserve">
     <value>Iniciado em</value>

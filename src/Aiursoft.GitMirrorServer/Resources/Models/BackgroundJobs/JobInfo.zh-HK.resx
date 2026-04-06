@@ -33,8 +33,14 @@
   <data name="Job name" xml:space="preserve">
     <value>工作名稱</value>
   </data>
+  <data name="Job Name" xml:space="preserve">
+    <value>工作名稱</value>
+  </data>
   <data name="Queue name" xml:space="preserve">
     <value>佇列名稱</value>
+  </data>
+  <data name="Queue Name" xml:space="preserve">
+    <value>隊列名稱</value>
   </data>
   <data name="Queued at" xml:space="preserve">
     <value>排隊於</value>
