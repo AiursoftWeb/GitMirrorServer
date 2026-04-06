@@ -33,8 +33,14 @@
   <data name="Job name" xml:space="preserve">
     <value>Имя задания</value>
   </data>
+  <data name="Job Name" xml:space="preserve">
+    <value>Название задачи</value>
+  </data>
   <data name="Queue name" xml:space="preserve">
     <value>Имя очереди</value>
+  </data>
+  <data name="Queue Name" xml:space="preserve">
+    <value>Название очереди</value>
   </data>
   <data name="Queued at" xml:space="preserve">
     <value>Очередность в</value>
