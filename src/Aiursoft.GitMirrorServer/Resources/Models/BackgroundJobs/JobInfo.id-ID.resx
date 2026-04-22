@@ -33,14 +33,8 @@
   <data name="Job name" xml:space="preserve">
     <value>Nama pekerjaan</value>
   </data>
-  <data name="Job Name" xml:space="preserve">
-    <value>Nama Pekerjaan</value>
-  </data>
   <data name="Queue name" xml:space="preserve">
     <value>Nama antrian</value>
-  </data>
-  <data name="Queue Name" xml:space="preserve">
-    <value>Nama Antrian</value>
   </data>
   <data name="Queued at" xml:space="preserve">
     <value>Ditambahkan ke antrian pada</value>
