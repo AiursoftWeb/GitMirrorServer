@@ -33,7 +33,7 @@ public class MirrorsController(
     [Authorize(Policy = AppPermissionNames.CanManageMirrorTargets)]
     public IActionResult Create()
     {
-        return this.StackView(new EditorViewModel { IsCreate = true, PageTitle = "Create Mirror" });
+        return this.StackView(new EditorViewModel("Create Mirror") { IsCreate = true });
     }
 
     [HttpPost]
@@ -74,7 +74,7 @@ public class MirrorsController(
         {
             return NotFound();
         }
-        return this.StackView(new EditorViewModel
+        return this.StackView(new EditorViewModel("Edit Mirror")
         {
             Id = mirror.Id,
             FromType = mirror.FromType,
@@ -86,8 +86,7 @@ public class MirrorsController(
             TargetServer = mirror.TargetServer,
             TargetToken = mirror.TargetToken,
             TargetOrgName = mirror.TargetOrgName,
-            IsCreate = false,
-            PageTitle = "Edit Mirror"
+            IsCreate = false
         });
     }
 
