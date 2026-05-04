@@ -5,9 +5,14 @@ namespace Aiursoft.GitMirrorServer.Models.MirrorsViewModels;
 
 public class EditorViewModel : UiStackLayoutViewModel
 {
+    [Obsolete("Only for model binding")]
     public EditorViewModel()
     {
-        PageTitle = "Edit Mirror";
+    }
+
+    public EditorViewModel(string pageTitle)
+    {
+        PageTitle = pageTitle;
     }
 
     public Guid Id { get; set; }

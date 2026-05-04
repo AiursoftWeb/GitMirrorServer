@@ -52,10 +52,12 @@ public class StorageService(
         try
         {
             var expectedFileName = Path.GetFileName(physicalPath);
-            while (File.Exists(physicalPath))
+            var iterations = 0;
+            while (File.Exists(physicalPath) && iterations < 100)
             {
                 expectedFileName = "_" + expectedFileName;
                 physicalPath = Path.Combine(directory!, expectedFileName);
+                iterations++;
             }
 
             // Create placeholder to reserve name
