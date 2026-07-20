@@ -86,6 +86,8 @@ public class ViewModelArgsInjector(
         _ = localizer["Mirroring"];
         _ = localizer["Mirrors"];
         _ = localizer["Mirrors List"];
+    
+        _ = localizer["Delete Account"];
     }
 
     public void InjectSimple(
