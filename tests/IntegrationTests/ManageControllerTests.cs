@@ -3,7 +3,6 @@ using Aiursoft.GitMirrorServer.Services;
 using Aiursoft.GitMirrorServer.Entities;
 using System.Net;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.DependencyInjection;
 namespace Aiursoft.GitMirrorServer.Tests.IntegrationTests;
 
 [TestClass]
