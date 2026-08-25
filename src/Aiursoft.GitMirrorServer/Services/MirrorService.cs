@@ -76,56 +76,54 @@ public class MirrorService(
                         };
 
                         var repoPath = Path.Combine(diskRoot, config.FromOrgName, repo.Name);
-                        if (!Directory.Exists(repoPath))
-                        {
-                             Directory.CreateDirectory(repoPath);
-                        }
-
                         Log($"Processing repository: {repo.Name}");
 
                         try
                         {
-                            Log($"Ensuring target repository {repo.Name} exists");
-                            await targetService.EnsureRepositoryExistsAsync(config.TargetOrgName, repo.Name,
-                                isOrg: config.TargetType.ToLowerInvariant() == "org");
+                            await RepositoryMirrorRetryRunner.RunAsync(
+                                repo.Name,
+                                jobExecution,
+                                repoExecution,
+                                async () =>
+                                {
+                                    Log($"Ensuring target repository {repo.Name} exists");
+                                    await targetService.EnsureRepositoryExistsAsync(config.TargetOrgName, repo.Name,
+                                        isOrg: config.TargetType.ToLowerInvariant() == "org");
 
-                            var sourceUrl = sourceService.GetCloneUrl(config.FromOrgName, repo.Name);
-                            var targetUrl = targetService.GetPushUrl(config.TargetOrgName, repo.Name, config.TargetToken);
+                                    var sourceUrl = sourceService.GetCloneUrl(config.FromOrgName, repo.Name);
+                                    var targetUrl = targetService.GetPushUrl(
+                                        config.TargetOrgName,
+                                        repo.Name,
+                                        config.TargetToken);
 
-                            Log($"Setting up local repository at {repoPath}");
+                                    Directory.CreateDirectory(repoPath);
+                                    Log($"Setting up local repository at {repoPath}");
 
-                            // We are calling external tool, we might not capture its stdout/stderr easily unless GitRunner exposes it
-                            // Assuming GitRunner just does the job or throws.
-                            
-                            await workspaceManager.ResetRepo(
-                                repoPath,
-                                null, 
-                                sourceUrl,
-                                CloneMode.Full);
+                                    await workspaceManager.ResetRepo(
+                                        repoPath,
+                                        null,
+                                        sourceUrl,
+                                        CloneMode.Full);
 
-                            Log($"Updating all branches for {repo.Name}");
-                            await workspaceManager.EnsureAllLocalBranchesUpToDateWithRemote(repoPath);
+                                    Log($"Updating all branches for {repo.Name}");
+                                    await workspaceManager.EnsureAllLocalBranchesUpToDateWithRemote(repoPath);
 
-                            Log($"Setting up target remote for {repo.Name}");
-                            await workspaceManager.AddOrSetRemoteUrl(repoPath, "target", targetUrl);
+                                    Log($"Setting up target remote for {repo.Name}");
+                                    await workspaceManager.AddOrSetRemoteUrl(repoPath, "target", targetUrl);
 
-                            Log($"Pushing all branches and tags for {repo.Name} to target");
-                            await workspaceManager.PushAllBranchesAndTags(repoPath, "target", force: true);
+                                    Log($"Pushing all branches and tags for {repo.Name} to target");
+                                    await workspaceManager.PushAllBranchesAndTags(repoPath, "target", force: true);
 
-                            Log($"Successfully mirrored repository {repo.Name}");
-                            
-                            repoExecution.IsSuccess = true;
-                            jobExecution.SuccessCount++;
-                        }
-                        catch (Exception ex)
-                        {
-                            Log($"Error mirroring repository {repo.Name}: {ex}");
-                            logger.LogError(ex, "Error mirroring repository {repo}", repo.Name);
-                            repoExecution.ErrorMessage = ex.Message;
-                            repoExecution.IsSuccess = false;
-                            jobExecution.FailureCount++;
-                            jobExecution.IsSuccess = false; // Job isn't fully successful if one fails
-                            FolderDeleter.DeleteByForce(repoPath);
+                                    Log($"Successfully mirrored repository {repo.Name}");
+                                },
+                                () => FolderDeleter.DeleteByForce(repoPath),
+                                Log,
+                                (attempt, exception) => logger.LogError(
+                                    exception,
+                                    "Attempt {Attempt}/{MaximumAttempts} failed while mirroring repository {Repo}",
+                                    attempt,
+                                    RepositoryMirrorRetryRunner.MaximumAttempts,
+                                    repo.Name));
                         }
                         finally
                         {
