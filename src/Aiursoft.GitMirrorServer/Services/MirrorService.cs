@@ -88,7 +88,7 @@ public class MirrorService(
                                 {
                                     Log($"Ensuring target repository {repo.Name} exists");
                                     await targetService.EnsureRepositoryExistsAsync(config.TargetOrgName, repo.Name,
-                                        isOrg: config.TargetType.ToLowerInvariant() == "org");
+                                        isOrg: true);
 
                                     var sourceUrl = sourceService.GetCloneUrl(config.FromOrgName, repo.Name);
                                     var targetUrl = targetService.GetPushUrl(

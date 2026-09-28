@@ -11,10 +11,10 @@ public class GitHubService : IGitService
     private readonly HttpClient _httpClient;
     private readonly string _baseUrl;
 
-    public GitHubService(string baseUrl, string? token)
+    public GitHubService(string baseUrl, string? token, HttpMessageHandler? handler = null)
     {
         _baseUrl = baseUrl;
-        _httpClient = new HttpClient();
+        _httpClient = handler == null ? new HttpClient() : new HttpClient(handler);
         _httpClient.DefaultRequestHeaders.Accept.Add(
             new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
         if (!string.IsNullOrWhiteSpace(token))
@@ -60,6 +60,18 @@ public class GitHubService : IGitService
         string createEndpoint;
         if (!isOrg)
         {
+            // /user/repos always creates under the token owner, regardless of orgOrUser.
+            // Refuse to create a repository under a different account by accident.
+            var userResponse = await _httpClient.GetAsync($"{_baseUrl}/user");
+            userResponse.EnsureSuccessStatusCode();
+            using var user = JsonDocument.Parse(await userResponse.Content.ReadAsStreamAsync());
+            var login = user.RootElement.GetProperty("login").GetString();
+            if (!string.Equals(login, orgOrUser, StringComparison.OrdinalIgnoreCase))
+            {
+                throw new InvalidOperationException(
+                    $"Authenticated GitHub user '{login}' does not match target owner '{orgOrUser}'.");
+            }
+
             // For user repositories
             createEndpoint = $"{_baseUrl}/user/repos";
         }
