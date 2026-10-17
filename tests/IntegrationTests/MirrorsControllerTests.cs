@@ -1,4 +1,5 @@
 using Aiursoft.GitMirrorServer.Entities;
+using Aiursoft.GitMirrorServer.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace Aiursoft.GitMirrorServer.Tests.IntegrationTests;
@@ -6,6 +7,50 @@ namespace Aiursoft.GitMirrorServer.Tests.IntegrationTests;
 [TestClass]
 public class MirrorsControllerTests : TestBase
 {
+    [TestMethod]
+    public async Task FailedHistorySave_DoesNotPreventRecordingNextRepositoryOrJobCompletion()
+    {
+        using var scope = Server!.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<GitMirrorServerDbContext>();
+        var service = scope.ServiceProvider.GetRequiredService<MirrorService>();
+        var job = new MirrorJobExecution { Id = Guid.NewGuid(), FailureCount = 1, SuccessCount = 1 };
+        db.MirrorJobExecutions.Add(job);
+        await db.SaveChangesAsync();
+        var failed = new MirrorRepoExecution
+        {
+            JobExecutionId = job.Id, FromOrg = "source", TargetOrg = "target", RepoName = "blocked"
+        };
+        EventHandler<SavingChangesEventArgs> failSave = (_, _) =>
+            throw new DbUpdateException(new string('x', 10000));
+        db.SavingChanges += failSave;
+        try
+        {
+            await service.RecordRepositoryExecutionAsync(job, failed, new string('x', 120000));
+        }
+        finally
+        {
+            db.SavingChanges -= failSave;
+        }
+        Assert.AreEqual(EntityState.Detached, db.Entry(failed).State);
+        Assert.IsFalse(job.IsSuccess);
+        Assert.AreEqual(2000, job.ErrorMessage!.Length);
+
+        var next = new MirrorRepoExecution
+        {
+            JobExecutionId = job.Id, FromOrg = "source", TargetOrg = "target",
+            RepoName = "next", IsSuccess = true
+        };
+        await service.RecordRepositoryExecutionAsync(job, next, "Mirrored successfully");
+        job.EndTime = DateTime.UtcNow;
+        await db.SaveChangesAsync();
+        db.ChangeTracker.Clear();
+        Assert.IsNull(await db.MirrorRepoExecutions.FindAsync(failed.Id));
+        Assert.IsTrue((await db.MirrorRepoExecutions.FindAsync(next.Id))!.IsSuccess);
+        var savedJob = await db.MirrorJobExecutions.FindAsync(job.Id);
+        Assert.IsNotNull(savedJob!.EndTime);
+        Assert.IsFalse(savedJob.IsSuccess);
+    }
+
     [TestMethod]
     public async Task MirrorsWorkflowTest()
     {

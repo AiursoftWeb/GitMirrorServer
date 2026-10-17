@@ -31,4 +31,7 @@
     <ProjectReference Include="..\Aiursoft.GitMirrorServer.MySql\Aiursoft.GitMirrorServer.MySql.csproj" />
     <ProjectReference Include="..\Aiursoft.GitMirrorServer.Sqlite\Aiursoft.GitMirrorServer.Sqlite.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Aiursoft.GitMirrorServer.Tests" />
+  </ItemGroup>
 </Project>

@@ -127,11 +127,7 @@ public class MirrorService(
                         }
                         finally
                         {
-                            repoExecution.Log = repoLog.ToString();
-                            dbContext.MirrorRepoExecutions.Add(repoExecution);
-                            // We save progressively or at batch?
-                            // Saving progressively is safer for long jobs.
-                            await dbContext.SaveChangesAsync(); 
+                            await RecordRepositoryExecutionAsync(jobExecution, repoExecution, repoLog.ToString());
                         }
                     }
                 }
@@ -163,4 +159,29 @@ public class MirrorService(
             await dbContext.SaveChangesAsync();
         }
     }
+
+    internal async Task RecordRepositoryExecutionAsync(
+        MirrorJobExecution jobExecution,
+        MirrorRepoExecution repoExecution,
+        string log)
+    {
+        repoExecution.Log = log;
+        dbContext.MirrorRepoExecutions.Add(repoExecution);
+        try
+        {
+            await dbContext.SaveChangesAsync();
+        }
+        catch (DbUpdateException ex)
+        {
+            // Do not retry an unsaved repository record when saving the next repository.
+            dbContext.Entry(repoExecution).State = EntityState.Detached;
+            logger.LogError(ex, "Failed to record mirror result for {Repo}", repoExecution.RepoName);
+            jobExecution.IsSuccess = false;
+            var error = $"Failed to record mirror result for {repoExecution.RepoName}: {ex.Message}";
+            jobExecution.ErrorMessage = string.IsNullOrEmpty(jobExecution.ErrorMessage)
+                ? error
+                : $"{jobExecution.ErrorMessage}; {error}";
+        }
+    }
+
 }
