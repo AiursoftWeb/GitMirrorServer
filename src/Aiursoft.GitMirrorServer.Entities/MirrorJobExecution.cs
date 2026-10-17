@@ -28,7 +28,13 @@ public class MirrorJobExecution
 
     [MaxLength(2000)]
     [Display(Name = "Error message")]
-    public string? ErrorMessage { get; set; }
+    public string? ErrorMessage
+    {
+        get;
+        set => field = value is { Length: > 2000 }
+            ? value[..(char.IsHighSurrogate(value[1999]) ? 1999 : 2000)]
+            : value;
+    }
 
     [InverseProperty(nameof(MirrorRepoExecution.JobExecution))]
     [Display(Name = "Repo executions")]

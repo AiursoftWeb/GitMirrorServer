@@ -133,6 +133,50 @@ public class RepositoryMirrorRetryRunnerTests
         }
     }
 
+    [TestMethod]
+    public async Task RunAsync_LongFailure_RemainsPersistableAndAllowsNextRepository()
+    {
+        var state = CreateState();
+        var logs = new List<string>();
+        await RepositoryMirrorRetryRunner.RunAsync(
+            "blocked", state.Job, state.Repository,
+            () => Task.FromException(new InvalidOperationException(new string('x', 120000))),
+            () => { }, logs.Add, (_, _) => { }, _ => Task.CompletedTask);
+        state.Repository.Log = string.Join(Environment.NewLine, logs);
+        state.Job.ErrorMessage = new string('x', 10000);
+
+        Assert.AreEqual(5000, state.Repository.ErrorMessage!.Length);
+        Assert.AreEqual(100000, state.Repository.Log.Length);
+        Assert.AreEqual(2000, state.Job.ErrorMessage.Length);
+
+        var next = CreateState().Repository;
+        await RepositoryMirrorRetryRunner.RunAsync(
+            "next", state.Job, next, () => Task.CompletedTask,
+            () => { }, _ => { }, (_, _) => { });
+        Assert.IsTrue(next.IsSuccess);
+        Assert.AreEqual(1, state.Job.SuccessCount);
+        Assert.AreEqual(1, state.Job.FailureCount);
+        Assert.IsFalse(state.Job.IsSuccess);
+    }
+
+    [TestMethod]
+    public void ExecutionHistory_TruncationPreservesUnicodeAndShortMessages()
+    {
+        var state = CreateState();
+        state.Repository.ErrorMessage = new string('x', 4999) + "😀";
+        state.Repository.Log = new string('x', 99999) + "😀";
+        state.Job.ErrorMessage = new string('x', 1999) + "😀";
+        Assert.AreEqual(4999, state.Repository.ErrorMessage.Length);
+        Assert.AreEqual(99999, state.Repository.Log.Length);
+        Assert.AreEqual(1999, state.Job.ErrorMessage.Length);
+        state.Repository.ErrorMessage = "failure";
+        state.Repository.Log = null;
+        state.Job.ErrorMessage = null;
+        Assert.AreEqual("failure", state.Repository.ErrorMessage);
+        Assert.IsNull(state.Repository.Log);
+        Assert.IsNull(state.Job.ErrorMessage);
+    }
+
     private static (MirrorJobExecution Job, MirrorRepoExecution Repository) CreateState()
     {
         var job = new MirrorJobExecution

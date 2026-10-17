@@ -40,9 +40,21 @@ public class MirrorRepoExecution
     
     [MaxLength(100000)] 
     [Display(Name = "Log")]
-    public string? Log { get; set; }
+    public string? Log
+    {
+        get;
+        set => field = value is { Length: > 100000 }
+            ? value[..(char.IsHighSurrogate(value[99999]) ? 99999 : 100000)]
+            : value;
+    }
 
     [MaxLength(5000)]
     [Display(Name = "Error message")]
-    public string? ErrorMessage { get; set; }
+    public string? ErrorMessage
+    {
+        get;
+        set => field = value is { Length: > 5000 }
+            ? value[..(char.IsHighSurrogate(value[4999]) ? 4999 : 5000)]
+            : value;
+    }
 }
