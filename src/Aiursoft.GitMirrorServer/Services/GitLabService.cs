@@ -35,14 +35,23 @@ public class GitLabService : IGitService
             endpoint = $"{_baseUrl}/users/{orgOrUser}/projects?per_page=100&archived=false";
         }
 
-        var response = await _httpClient.GetAsync(endpoint);
-        response.EnsureSuccessStatusCode();
+        var repos = new List<GitLabRepo>();
+        string? nextPage = null;
+        do
+        {
+            using var response = await _httpClient.GetAsync(
+                nextPage == null ? endpoint : $"{endpoint}&page={nextPage}");
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            repos.AddRange(JsonSerializer.Deserialize<List<GitLabRepo>>(content,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<GitLabRepo>());
+            nextPage = response.Headers.TryGetValues("X-Next-Page", out var pages)
+                ? pages.SingleOrDefault()
+                : null;
+        } while (!string.IsNullOrEmpty(nextPage));
 
-        var content = await response.Content.ReadAsStringAsync();
-        var repos = JsonSerializer.Deserialize<List<GitLabRepo>>(content,
-            new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<GitLabRepo>();
-
-        return repos.Select(r => new GitRepository
+        // Authentication may reveal private projects. They must never enter the public mirror.
+        return repos.Where(r => r.Visibility is "public" or "internal").Select(r => new GitRepository
         {
             Name = r.Path,
             Description = r.Description ?? string.Empty,

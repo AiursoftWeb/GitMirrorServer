@@ -12,6 +12,77 @@ public class GitLabServiceTests
         """;
 
     [TestMethod]
+    [DataRow(true)]
+    [DataRow(false)]
+    public async Task GetRepositoriesAsync_AuthenticatedDiscoveryMirrorsInternalButNeverPrivateProjects(bool isOrg)
+    {
+        var handler = new StubHandler(request =>
+        {
+            Assert.AreEqual("source-token", request.Headers.GetValues("PRIVATE-TOKEN").Single());
+            return new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent("""
+                    [{"path":"public-project","visibility":"public"},
+                     {"path":"internal-project","visibility":"internal"},
+                     {"path":"secret-project","visibility":"private"},
+                     {"path":"unknown-visibility","visibility":"unknown"}]
+                    """, Encoding.UTF8, "application/json")
+            };
+        });
+        var service = new GitLabService("https://gitlab.example.com", "source-token", handler);
+
+        var repositories = await service.GetRepositoriesAsync("source", isOrg);
+
+        CollectionAssert.AreEqual(new[] { "public-project", "internal-project" },
+            repositories.Select(r => r.Name).ToArray());
+    }
+
+    [TestMethod]
+    [DataRow(true)]
+    [DataRow(false)]
+    public async Task GetRepositoriesAsync_AuthenticatedDiscoveryReadsAllPages(bool isOrg)
+    {
+        var requestCount = 0;
+        var handler = new StubHandler(request =>
+        {
+            Assert.AreEqual("source-token", request.Headers.GetValues("PRIVATE-TOKEN").Single());
+            requestCount++;
+            var secondPage = request.RequestUri!.Query.Contains("&page=2", StringComparison.Ordinal);
+            var response = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(secondPage
+                    ? """[{"path":"last-project","visibility":"internal"}]"""
+                    : Projects, Encoding.UTF8, "application/json")
+            };
+            response.Headers.Add("X-Next-Page", secondPage ? "" : "2");
+            return response;
+        });
+        var service = new GitLabService("https://gitlab.example.com", "source-token", handler);
+
+        var repositories = await service.GetRepositoriesAsync("source", isOrg);
+
+        Assert.AreEqual(2, requestCount);
+        CollectionAssert.AreEqual(new[] { "Video-float", "last-project" },
+            repositories.Select(r => r.Name).ToArray());
+    }
+
+    [TestMethod]
+    public async Task GetRepositoriesAsync_InvalidTokenDoesNotFallBackToAnonymousDiscovery()
+    {
+        var requestCount = 0;
+        var handler = new StubHandler(_ =>
+        {
+            requestCount++;
+            return new HttpResponseMessage(HttpStatusCode.Unauthorized);
+        });
+        var service = new GitLabService("https://gitlab.example.com", "invalid-token", handler);
+
+        await Assert.ThrowsExactlyAsync<HttpRequestException>(() => service.GetRepositoriesAsync("source", true));
+
+        Assert.AreEqual(1, requestCount);
+    }
+
+    [TestMethod]
     [DataRow(true, "groups")]
     [DataRow(false, "users")]
     public async Task GetRepositoriesAsync_UsesRepositoryPathForMirroring(bool isOrg, string collection)

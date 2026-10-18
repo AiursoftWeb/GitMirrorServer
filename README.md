@@ -15,6 +15,12 @@ Default user name is `admin@default.com` and default password is `Admin@123456!`
 
 ## Try
 
+For GitLab sources that require authentication, set **From Token** to a token with
+`read_api` and `read_repository` access. The token is used for both project discovery
+and HTTPS clone/fetch. Public and internal projects are mirrored; private and archived
+projects are excluded. Internal projects selected by a mirror configuration are published
+to its target, so use a source account with access only to repositories intended for mirroring.
+
 Try a running GitMirrorServer [here](https://gitmirror.aiursoft.com).
 
 ## Run in Ubuntu
