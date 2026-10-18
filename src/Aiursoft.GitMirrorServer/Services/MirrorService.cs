@@ -12,6 +12,7 @@ public class MirrorService(
     GitMirrorServerDbContext dbContext,
     GitServiceFactory serviceFactory,
     WorkspaceManager workspaceManager,
+    GitLabSourceService gitLabSourceService,
     ILogger<MirrorService> logger,
     IConfiguration configuration) : IScopedDependency
 {
@@ -99,11 +100,19 @@ public class MirrorService(
                                     Directory.CreateDirectory(repoPath);
                                     Log($"Setting up local repository at {repoPath}");
 
-                                    await workspaceManager.ResetRepo(
-                                        repoPath,
-                                        null,
-                                        sourceUrl,
-                                        CloneMode.Full);
+                                    if (config.FromType.Equals("GitLab", StringComparison.OrdinalIgnoreCase) &&
+                                        !string.IsNullOrWhiteSpace(config.FromToken))
+                                    {
+                                        await gitLabSourceService.UpdateAsync(repoPath, sourceUrl, config.FromToken);
+                                    }
+                                    else
+                                    {
+                                        await workspaceManager.ResetRepo(
+                                            repoPath,
+                                            null,
+                                            sourceUrl,
+                                            CloneMode.Full);
+                                    }
 
                                     Log($"Updating all branches for {repo.Name}");
                                     await workspaceManager.EnsureAllLocalBranchesUpToDateWithRemote(repoPath);
