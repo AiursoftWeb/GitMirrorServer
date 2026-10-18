@@ -27,12 +27,12 @@ public class GitLabService : IGitService
         if (isOrg)
         {
             // For GitLab, organizations are called "groups"
-            endpoint = $"{_baseUrl}/groups/{orgOrUser}/projects?per_page=100&include_subgroups=true";
+            endpoint = $"{_baseUrl}/groups/{orgOrUser}/projects?per_page=100&include_subgroups=true&archived=false";
         }
         else
         {
             // For user-owned repos
-            endpoint = $"{_baseUrl}/users/{orgOrUser}/projects?per_page=100";
+            endpoint = $"{_baseUrl}/users/{orgOrUser}/projects?per_page=100&archived=false";
         }
 
         var response = await _httpClient.GetAsync(endpoint);

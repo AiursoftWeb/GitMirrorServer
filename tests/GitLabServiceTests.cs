@@ -37,8 +37,32 @@ public class GitLabServiceTests
         Assert.AreEqual("https://gitlab.example.com/Anduin/Video-float.git",
             service.GetCloneUrl("Anduin", repository.Name));
         CollectionAssert.AreEqual(
-            new[] { $"/api/v4/{collection}/Anduin/projects?per_page=100{(isOrg ? "&include_subgroups=true" : "")}" },
+            new[] { $"/api/v4/{collection}/Anduin/projects?per_page=100{(isOrg ? "&include_subgroups=true" : "")}&archived=false" },
             requests);
+    }
+
+    [TestMethod]
+    [DataRow(true)]
+    [DataRow(false)]
+    public async Task GetRepositoriesAsync_ExcludesArchivedProjectsWhenResponseOmitsArchiveMetadata(bool isOrg)
+    {
+        var handler = new StubHandler(request =>
+        {
+            // Anonymous GitLab lists may omit archived, even for archived projects.
+            var json = request.RequestUri!.Query.TrimStart('?').Split('&').Contains("archived=false")
+                ? """[{"path":"active","visibility":"public"}]"""
+                : """[{"path":"active","visibility":"public"},{"path":"archived","visibility":"public"}]""";
+            return new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(json, Encoding.UTF8, "application/json")
+            };
+        });
+        var service = new GitLabService("https://gitlab.example.com", null, handler);
+
+        var repositories = await service.GetRepositoriesAsync("Anduin", isOrg);
+
+        Assert.AreEqual(1, repositories.Count);
+        Assert.AreEqual("active", repositories.Single().Name);
     }
 
     [TestMethod]
