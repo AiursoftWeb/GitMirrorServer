@@ -10,10 +10,10 @@ public class GitLabService : IGitService
     private readonly HttpClient _httpClient;
     private readonly string _baseUrl;
 
-    public GitLabService(string baseUrl, string? token)
+    public GitLabService(string baseUrl, string? token, HttpMessageHandler? handler = null)
     {
         _baseUrl = baseUrl.TrimEnd('/') + "/api/v4";
-        _httpClient = new HttpClient();
+        _httpClient = handler == null ? new HttpClient() : new HttpClient(handler);
         if (!string.IsNullOrWhiteSpace(token))
         {
             _httpClient.DefaultRequestHeaders.Add("PRIVATE-TOKEN", token);
@@ -44,7 +44,7 @@ public class GitLabService : IGitService
 
         return repos.Select(r => new GitRepository
         {
-            Name = r.Name,
+            Name = r.Path,
             Description = r.Description ?? string.Empty,
             IsPrivate = r.Visibility != "public",
             Archived = r.Archived
@@ -118,7 +118,7 @@ public class GitLabService : IGitService
         var repos = JsonSerializer.Deserialize<List<GitLabRepo>>(content,
             new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<GitLabRepo>();
 
-        return repos.Any(r => r.Name.Equals(repositoryName, StringComparison.OrdinalIgnoreCase));
+        return repos.Any(r => r.Path.Equals(repositoryName, StringComparison.OrdinalIgnoreCase));
     }
 
     private async Task<int?> GetGroupIdAsync(string groupPath)

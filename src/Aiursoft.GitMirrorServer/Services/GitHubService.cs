@@ -56,6 +56,13 @@ public class GitHubService : IGitService
             return;
         }
 
+        // Resolve the target account itself; a mirror may target a user or an organization.
+        using var ownerResponse = await _httpClient.GetAsync($"{_baseUrl}/users/{orgOrUser}");
+        ownerResponse.EnsureSuccessStatusCode();
+        using var owner = JsonDocument.Parse(await ownerResponse.Content.ReadAsStreamAsync());
+        isOrg = string.Equals(owner.RootElement.GetProperty("type").GetString(),
+            "Organization", StringComparison.OrdinalIgnoreCase);
+
         // Create the repo
         string createEndpoint;
         if (!isOrg)
