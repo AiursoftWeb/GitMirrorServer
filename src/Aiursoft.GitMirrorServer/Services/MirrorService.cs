@@ -100,10 +100,11 @@ public class MirrorService(
                                     Directory.CreateDirectory(repoPath);
                                     Log($"Setting up local repository at {repoPath}");
 
-                                    if (config.FromType.Equals("GitLab", StringComparison.OrdinalIgnoreCase) &&
-                                        !string.IsNullOrWhiteSpace(config.FromToken))
+                                    var authenticatedGitLab = config.FromType.Equals("GitLab", StringComparison.OrdinalIgnoreCase) &&
+                                        !string.IsNullOrWhiteSpace(config.FromToken);
+                                    if (authenticatedGitLab)
                                     {
-                                        await gitLabSourceService.UpdateAsync(repoPath, sourceUrl, config.FromToken);
+                                        await gitLabSourceService.UpdateAsync(repoPath, sourceUrl, config.FromToken!);
                                     }
                                     else
                                     {
@@ -115,7 +116,14 @@ public class MirrorService(
                                     }
 
                                     Log($"Updating all branches for {repo.Name}");
-                                    await workspaceManager.EnsureAllLocalBranchesUpToDateWithRemote(repoPath);
+                                    if (authenticatedGitLab)
+                                    {
+                                        await gitLabSourceService.UpdateBranchesAsync(repoPath, sourceUrl, config.FromToken!);
+                                    }
+                                    else
+                                    {
+                                        await workspaceManager.EnsureAllLocalBranchesUpToDateWithRemote(repoPath);
+                                    }
 
                                     Log($"Setting up target remote for {repo.Name}");
                                     await workspaceManager.AddOrSetRemoteUrl(repoPath, "target", targetUrl);
