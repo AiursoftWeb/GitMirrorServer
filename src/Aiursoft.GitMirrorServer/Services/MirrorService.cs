@@ -192,9 +192,10 @@ public class MirrorService(
     internal static string GetRepositoryCachePath(
         string diskRoot, MirrorConfiguration config, GitRepository repository)
     {
-        // A source account can be named Workspace, which is also the public attachment root.
-        // Keep private Git contents outside every attachment area, independently of source names.
-        return repository.Visibility == "private"
+        // Source account names can overlap attachment areas. Git caches also contain target credentials.
+        var sourceRoot = config.FromOrgName.Replace('\\', '/').Split('/')[0].ToLowerInvariant();
+        var overlapsAttachments = sourceRoot is "workspace" or "vault" or "clearexif" or "compressed";
+        return repository.Visibility == "private" || overlapsAttachments
             ? Path.Combine(diskRoot, ".private-mirrors", config.Id.ToString("N"), repository.Name)
             : Path.Combine(diskRoot, config.FromOrgName, repository.Name);
     }

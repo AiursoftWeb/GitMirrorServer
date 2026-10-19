@@ -16,10 +16,12 @@ public class FilesControllerTests : TestBase
         new HttpClientHandler { AllowAutoRedirect = false });
 
     [TestMethod]
-    [DataRow("Workspace")]
-    [DataRow("Compressed")]
-    [DataRow("company")]
-    public async Task PrivateMirrorContentsCannotBeDownloadedAsPublicAttachments(string sourceOwner)
+    [DataRow("Workspace", "private")]
+    [DataRow("Workspace", "internal")]
+    [DataRow("Workspace", "public")]
+    [DataRow("Compressed", "private")]
+    [DataRow("company", "private")]
+    public async Task MirrorCacheContentsCannotBeDownloadedAsPublicAttachments(string sourceOwner, string visibility)
     {
         var root = GetService<StorageRootPathProvider>().GetStorageRootPath();
         var config = new MirrorConfiguration
@@ -31,7 +33,7 @@ public class FilesControllerTests : TestBase
         var repository = new GitRepository
         {
             Name = "private-" + Guid.NewGuid().ToString("N"), Description = string.Empty,
-            Visibility = "private", IsPrivate = true
+            Visibility = visibility, IsPrivate = visibility != "public"
         };
         var cache = MirrorService.GetRepositoryCachePath(root, config, repository);
         Directory.CreateDirectory(cache);
