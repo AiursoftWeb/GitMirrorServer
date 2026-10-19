@@ -1,6 +1,7 @@
 using System.Text;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.GitMirrorServer.Entities;
+using Aiursoft.GitMirrorServer.Models;
 using Aiursoft.GitRunner;
 using Aiursoft.GitRunner.Models;
 using Aiursoft.Scanner.Abstractions;
@@ -12,7 +13,7 @@ public class MirrorService(
     GitMirrorServerDbContext dbContext,
     GitServiceFactory serviceFactory,
     WorkspaceManager workspaceManager,
-    GitLabSourceService gitLabSourceService,
+    GitSourceService gitSourceService,
     ILogger<MirrorService> logger,
     IConfiguration configuration) : IScopedDependency
 {
@@ -50,8 +51,17 @@ public class MirrorService(
 
                     var repos = (await sourceService
                             .GetRepositoriesAsync(config.FromOrgName,
-                                isOrg: config.OrgOrUser.ToLower().StartsWith("org")))
-                        .Where(r => !r.Archived)
+                                isOrg: config.OrgOrUser.ToLower().StartsWith("org"),
+                                includePrivate: config.IncludePrivateRepositories,
+                                includeArchived: config.IncludeArchivedRepositories))
+                        .Where(r => config.IncludeArchivedRepositories || !r.Archived)
+                        .Where(r => r.Visibility switch
+                        {
+                            "public" => config.IncludePublicRepositories,
+                            "internal" => config.IncludeInternalRepositories,
+                            "private" => config.IncludePrivateRepositories,
+                            _ => false
+                        })
                         .ToList();
                     
                     logger.LogInformation("Found {count} repositories to mirror", repos.Count());
@@ -76,7 +86,7 @@ public class MirrorService(
                             IsSuccess = false
                         };
 
-                        var repoPath = Path.Combine(diskRoot, config.FromOrgName, repo.Name);
+                        var repoPath = GetRepositoryCachePath(diskRoot, config, repo);
                         Log($"Processing repository: {repo.Name}");
 
                         try
@@ -89,7 +99,10 @@ public class MirrorService(
                                 {
                                     Log($"Ensuring target repository {repo.Name} exists");
                                     await targetService.EnsureRepositoryExistsAsync(config.TargetOrgName, repo.Name,
-                                        isOrg: true);
+                                        isOrg: true,
+                                        isPrivate: config.TargetType.Equals("GitHub", StringComparison.OrdinalIgnoreCase)
+                                            ? config.NewGitHubRepositoriesPrivate : null,
+                                        requirePrivate: repo.Visibility == "private" && config.NewGitHubRepositoriesPrivate);
 
                                     var sourceUrl = sourceService.GetCloneUrl(config.FromOrgName, repo.Name);
                                     var targetUrl = targetService.GetPushUrl(
@@ -100,11 +113,10 @@ public class MirrorService(
                                     Directory.CreateDirectory(repoPath);
                                     Log($"Setting up local repository at {repoPath}");
 
-                                    var authenticatedGitLab = config.FromType.Equals("GitLab", StringComparison.OrdinalIgnoreCase) &&
-                                        !string.IsNullOrWhiteSpace(config.FromToken);
-                                    if (authenticatedGitLab)
+                                    var authenticatedSource = !string.IsNullOrWhiteSpace(config.FromToken);
+                                    if (authenticatedSource)
                                     {
-                                        await gitLabSourceService.UpdateAsync(repoPath, sourceUrl, config.FromToken!);
+                                        await gitSourceService.UpdateAsync(repoPath, sourceUrl, config.FromToken!);
                                     }
                                     else
                                     {
@@ -116,9 +128,9 @@ public class MirrorService(
                                     }
 
                                     Log($"Updating all branches for {repo.Name}");
-                                    if (authenticatedGitLab)
+                                    if (authenticatedSource)
                                     {
-                                        await gitLabSourceService.UpdateBranchesAsync(repoPath, sourceUrl, config.FromToken!);
+                                        await gitSourceService.UpdateBranchesAsync(repoPath, sourceUrl, config.FromToken!);
                                     }
                                     else
                                     {
@@ -175,6 +187,17 @@ public class MirrorService(
             dbContext.MirrorJobExecutions.Update(jobExecution);
             await dbContext.SaveChangesAsync();
         }
+    }
+
+    internal static string GetRepositoryCachePath(
+        string diskRoot, MirrorConfiguration config, GitRepository repository)
+    {
+        // Source account names can overlap attachment areas. Git caches also contain target credentials.
+        var sourceRoot = config.FromOrgName.Replace('\\', '/').Split('/')[0].ToLowerInvariant();
+        var overlapsAttachments = sourceRoot is "workspace" or "vault" or "clearexif" or "compressed";
+        return repository.Visibility == "private" || overlapsAttachments
+            ? Path.Combine(diskRoot, ".private-mirrors", config.Id.ToString("N"), repository.Name)
+            : Path.Combine(diskRoot, config.FromOrgName, repository.Name);
     }
 
     internal async Task RecordRepositoryExecutionAsync(

@@ -15,7 +15,7 @@ namespace Aiursoft.GitMirrorServer.Sqlite.Migrations
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "10.0.2");
+            modelBuilder.HasAnnotation("ProductVersion", "10.0.13");
 
             modelBuilder.Entity("Aiursoft.GitMirrorServer.Entities.GlobalSetting", b =>
                 {
@@ -57,6 +57,21 @@ namespace Aiursoft.GitMirrorServer.Sqlite.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("IncludeArchivedRepositories")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IncludeInternalRepositories")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IncludePrivateRepositories")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IncludePublicRepositories")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("NewGitHubRepositoriesPrivate")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("OrgOrUser")
                         .IsRequired()

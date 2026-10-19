@@ -5,7 +5,7 @@ using Aiursoft.Scanner.Abstractions;
 
 namespace Aiursoft.GitMirrorServer.Services;
 
-public class GitLabSourceService(CommandService commandService, WorkspaceManager workspaceManager) : ITransientDependency
+public class GitSourceService(CommandService commandService, WorkspaceManager workspaceManager) : ITransientDependency
 {
     public async Task UpdateAsync(string path, string sourceUrl, string token)
     {
@@ -19,7 +19,7 @@ public class GitLabSourceService(CommandService commandService, WorkspaceManager
             if (code != 0)
             {
                 var diagnostic = Redact(error, token);
-                throw new InvalidOperationException($"GitLab source update failed (exit {code}): {diagnostic}");
+                throw new InvalidOperationException($"Git source update failed (exit {code}): {diagnostic}");
             }
 
             return output;
@@ -34,7 +34,7 @@ public class GitLabSourceService(CommandService commandService, WorkspaceManager
         var remote = (await RunAsync("remote get-url origin")).Trim();
         if (!string.Equals(remote, source.AbsoluteUri, StringComparison.OrdinalIgnoreCase))
         {
-            throw new InvalidOperationException("The cached repository does not match the configured GitLab source.");
+            throw new InvalidOperationException("The cached repository does not match the configured Git source.");
         }
 
         await RunAsync("reset --hard HEAD");
@@ -51,7 +51,7 @@ public class GitLabSourceService(CommandService commandService, WorkspaceManager
         }
         catch (Exception exception)
         {
-            throw new InvalidOperationException($"GitLab branch update failed: {Redact(exception.Message, token)}");
+            throw new InvalidOperationException($"Git branch update failed: {Redact(exception.Message, token)}");
         }
     }
 
@@ -65,7 +65,7 @@ public class GitLabSourceService(CommandService commandService, WorkspaceManager
         var source = new Uri(sourceUrl);
         if (source.Scheme != Uri.UriSchemeHttps || !string.IsNullOrEmpty(source.UserInfo))
         {
-            throw new InvalidOperationException("Authenticated GitLab sources require an HTTPS URL without credentials.");
+            throw new InvalidOperationException("Authenticated Git sources require an HTTPS URL without credentials.");
         }
 
         var encodedCredential = Convert.ToBase64String(Encoding.UTF8.GetBytes($"oauth2:{token}"));

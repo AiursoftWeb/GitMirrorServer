@@ -24,36 +24,76 @@ public class GitHubService : IGitService
         _httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("GitMirror", "1.0"));
     }
 
-    public async Task<IReadOnlyCollection<GitRepository>> GetRepositoriesAsync(string orgOrUser, bool isOrg)
+    public async Task<IReadOnlyCollection<GitRepository>> GetRepositoriesAsync(string orgOrUser, bool isOrg,
+        bool includePrivate = false, bool includeArchived = false)
     {
         string endpoint = isOrg
             ? $"{_baseUrl}/orgs/{orgOrUser}/repos?per_page=100"
             : $"{_baseUrl}/users/{orgOrUser}/repos?per_page=100";
 
-        var response = await _httpClient.GetAsync(endpoint);
-        response.EnsureSuccessStatusCode();
+        if (!isOrg && includePrivate)
+        {
+            // GitHub's public /users/{name}/repos endpoint never returns private repositories.
+            using var userResponse = await _httpClient.GetAsync($"{_baseUrl}/user");
+            userResponse.EnsureSuccessStatusCode();
+            using var user = JsonDocument.Parse(await userResponse.Content.ReadAsStringAsync());
+            if (!string.Equals(user.RootElement.GetProperty("login").GetString(), orgOrUser,
+                    StringComparison.OrdinalIgnoreCase))
+            {
+                throw new InvalidOperationException(
+                    "To include Private personal GitHub repositories, the source token must belong to the configured source user.");
+            }
+            endpoint = $"{_baseUrl}/user/repos?per_page=100&affiliation=owner";
+        }
 
-        var content = await response.Content.ReadAsStringAsync();
-        var repos = JsonSerializer.Deserialize<List<GitHubRepo>>(content,
-            new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<GitHubRepo>();
+        var repos = new List<GitHubRepo>();
+        for (var page = 1; ; page++)
+        {
+            using var response = await _httpClient.GetAsync(page == 1 ? endpoint : $"{endpoint}&page={page}");
+            response.EnsureSuccessStatusCode();
+            var content = await response.Content.ReadAsStringAsync();
+            var batch = JsonSerializer.Deserialize<List<GitHubRepo>>(content,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<GitHubRepo>();
+            repos.AddRange(batch);
+            if (batch.Count < 100)
+            {
+                break;
+            }
+        }
 
-        return repos.Select(r => new GitRepository
+        return repos.Where(r => (includePrivate || !r.Private) && (includeArchived || !r.Archived))
+            .Select(r => new GitRepository
         {
             Name = r.Name,
             Description = r.Description ?? string.Empty,
+            Visibility = r.Private ? "private" : "public",
             IsPrivate = r.Private,
             Archived = r.Archived
         }).ToList();
     }
 
-    public async Task EnsureRepositoryExistsAsync(string orgOrUser, string repositoryName, bool isOrg)
+    public async Task EnsureRepositoryExistsAsync(string orgOrUser, string repositoryName, bool isOrg,
+        bool? isPrivate = null, bool requirePrivate = false)
     {
         // First check if repo exists
         var checkEndpoint = $"{_baseUrl}/repos/{orgOrUser}/{repositoryName}";
         var checkResponse = await _httpClient.GetAsync(checkEndpoint);
         if (checkResponse.IsSuccessStatusCode)
         {
+            if (requirePrivate)
+            {
+                using var existing = JsonDocument.Parse(await checkResponse.Content.ReadAsStringAsync());
+                if (!existing.RootElement.GetProperty("private").GetBoolean())
+                {
+                    throw new InvalidOperationException(
+                        "The existing GitHub target is Public. Make it Private before mirroring a Private source, or explicitly configure Public publication.");
+                }
+            }
             return;
+        }
+        if (checkResponse.StatusCode != System.Net.HttpStatusCode.NotFound)
+        {
+            checkResponse.EnsureSuccessStatusCode();
         }
 
         // Resolve the target account itself; a mirror may target a user or an organization.
@@ -91,7 +131,7 @@ public class GitHubService : IGitService
         var createContent = new
         {
             name = repositoryName,
-            @private = false // Adjust as needed
+            @private = isPrivate ?? false
         };
 
         var jsonContent = new StringContent(

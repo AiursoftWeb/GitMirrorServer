@@ -9,12 +9,14 @@ using Microsoft.Extensions.Logging.Abstractions;
 namespace Aiursoft.GitMirrorServer.Tests;
 
 [TestClass]
-public class GitLabSourceServiceTests
+public class GitSourceServiceTests
 {
     private const string Source = "https://gitlab.example.com/source/project.git";
 
     [TestMethod]
-    public async Task UpdateAsync_CloneAndCachedFetchUseCurrentCredentialWithoutPersistingIt()
+    [DataRow(Source)]
+    [DataRow("https://github.com/source/project.git")]
+    public async Task UpdateAsync_CloneAndCachedFetchUseCurrentCredentialWithoutPersistingIt(string source)
     {
         var path = Path.Combine(Path.GetTempPath(), $"gitmirror-auth-{Guid.NewGuid():N}");
         var credentials = new List<string>();
@@ -23,20 +25,20 @@ public class GitLabSourceServiceTests
         {
             Assert.IsFalse(arguments.Contains("first-token", StringComparison.Ordinal));
             Assert.IsFalse(arguments.Contains("rotated-token", StringComparison.Ordinal));
-            Assert.AreEqual($"http.{Source}.extraHeader", environment["GIT_CONFIG_KEY_0"]);
+            Assert.AreEqual($"http.{source}.extraHeader", environment["GIT_CONFIG_KEY_0"]);
             Assert.AreEqual("credential.helper", environment["GIT_CONFIG_KEY_1"]);
             Assert.AreEqual(string.Empty, environment["GIT_CONFIG_VALUE_1"]);
             Assert.AreEqual("false", environment["GIT_CONFIG_VALUE_2"]);
             credentials.Add(environment["GIT_CONFIG_VALUE_0"]!);
             commands.Add(arguments);
-            return (0, arguments == "remote get-url origin" ? Source + "\n" : string.Empty, string.Empty);
+            return (0, arguments == "remote get-url origin" ? source + "\n" : string.Empty, string.Empty);
         });
         var service = CreateService(runner);
         try
         {
-            await service.UpdateAsync(path, Source, "first-token");
+            await service.UpdateAsync(path, source, "first-token");
             Directory.CreateDirectory(Path.Combine(path, ".git"));
-            await service.UpdateAsync(path, Source, "rotated-token");
+            await service.UpdateAsync(path, source, "rotated-token");
 
             Assert.IsTrue(commands.First().StartsWith("clone -- ", StringComparison.Ordinal));
             Assert.AreEqual("fetch origin", commands.Last());
@@ -84,14 +86,16 @@ public class GitLabSourceServiceTests
     }
 
     [TestMethod]
-    public async Task UpdateBranchesAsync_AuthenticatesEveryNestedFetchWithTheCurrentCredential()
+    [DataRow(Source)]
+    [DataRow("https://github.com/source/project.git")]
+    public async Task UpdateBranchesAsync_AuthenticatesEveryNestedFetchWithTheCurrentCredential(string source)
     {
         var fetches = 0;
         var commands = new List<string>();
         var runner = new StubCommandService((arguments, environment) =>
         {
             Assert.AreEqual("Authorization: " + Basic("branch-token"), environment["GIT_CONFIG_VALUE_0"]);
-            Assert.AreEqual($"http.{Source}.extraHeader", environment["GIT_CONFIG_KEY_0"]);
+            Assert.AreEqual($"http.{source}.extraHeader", environment["GIT_CONFIG_KEY_0"]);
             Assert.IsFalse(arguments.Contains("branch-token", StringComparison.Ordinal));
             commands.Add(arguments);
             if (arguments.EndsWith("fetch --verbose", StringComparison.Ordinal)) fetches++;
@@ -100,7 +104,7 @@ public class GitLabSourceServiceTests
                 : arguments.Contains("branch --format", StringComparison.Ordinal) ? "master\n" : string.Empty,
                 string.Empty);
         });
-        await CreateService(runner).UpdateBranchesAsync(Path.GetTempPath(), Source, "branch-token");
+        await CreateService(runner).UpdateBranchesAsync(Path.GetTempPath(), source, "branch-token");
 
         Assert.AreEqual(2, fetches, "Both branch discovery passes must authenticate their fetch.");
         Assert.IsTrue(commands.Any(command => command.Contains("checkout -b feature", StringComparison.Ordinal)));
@@ -122,7 +126,7 @@ public class GitLabSourceServiceTests
         Assert.IsFalse(exception.ToString().Contains(Basic(token), StringComparison.Ordinal));
     }
 
-    private static GitLabSourceService CreateService(CommandService runner) => new(runner,
+    private static GitSourceService CreateService(CommandService runner) => new(runner,
         new WorkspaceManager(NullLogger<WorkspaceManager>.Instance,
             new RetryEngine(NullLogger<RetryEngine>.Instance),
             new GitCommandRunner(runner, NullLogger<GitCommandRunner>.Instance)));

@@ -1,6 +1,9 @@
 // ReSharper disable RedundantUsingDirective
 
 using System.Net;
+using Aiursoft.GitMirrorServer.Entities;
+using Aiursoft.GitMirrorServer.Models;
+using Aiursoft.GitMirrorServer.Services;
 using Aiursoft.GitMirrorServer.Services.FileStorage;
 
 namespace Aiursoft.GitMirrorServer.Tests.IntegrationTests;
@@ -11,6 +14,51 @@ public class FilesControllerTests : TestBase
 {
     private static readonly HttpClient AnonymousClient = new(
         new HttpClientHandler { AllowAutoRedirect = false });
+
+    [TestMethod]
+    [DataRow("Workspace", "private")]
+    [DataRow("Workspace", "internal")]
+    [DataRow("Workspace", "public")]
+    [DataRow("Compressed", "private")]
+    [DataRow("company", "private")]
+    public async Task MirrorCacheContentsCannotBeDownloadedAsPublicAttachments(string sourceOwner, string visibility)
+    {
+        var root = GetService<StorageRootPathProvider>().GetStorageRootPath();
+        var config = new MirrorConfiguration
+        {
+            Id = Guid.NewGuid(), FromType = "GitLab", FromServer = "https://gitlab.example.com",
+            FromOrgName = sourceOwner, OrgOrUser = "Org", TargetType = "GitHub",
+            TargetServer = "https://api.github.com", TargetToken = "target-token", TargetOrgName = "target"
+        };
+        var repository = new GitRepository
+        {
+            Name = "private-" + Guid.NewGuid().ToString("N"), Description = string.Empty,
+            Visibility = visibility, IsPrivate = visibility != "public"
+        };
+        var cache = MirrorService.GetRepositoryCachePath(root, config, repository);
+        Directory.CreateDirectory(cache);
+        await File.WriteAllTextAsync(Path.Combine(cache, "contents.txt"), "private-mirror-content");
+        try
+        {
+            foreach (var path in new[]
+                     {
+                         $"/download/{repository.Name}/contents.txt",
+                         $"/download/.private-mirrors/{config.Id:N}/{repository.Name}/contents.txt"
+                     })
+            {
+                var response = await AnonymousClient.GetAsync(new Uri(Http.BaseAddress!, path));
+                Assert.AreEqual(HttpStatusCode.NotFound, response.StatusCode);
+                Assert.DoesNotContain("private-mirror-content", await response.Content.ReadAsStringAsync());
+            }
+            var traversal = await AnonymousClient.GetAsync(new Uri(Http.BaseAddress!,
+                $"/download/..%5c.private-mirrors/{config.Id:N}/{repository.Name}/contents.txt"));
+            Assert.AreEqual(HttpStatusCode.BadRequest, traversal.StatusCode);
+        }
+        finally
+        {
+            Directory.Delete(Path.GetDirectoryName(cache)!, true);
+        }
+    }
 
     [TestMethod]
     public async Task TestUploadAndDownload()
