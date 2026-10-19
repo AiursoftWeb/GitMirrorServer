@@ -12,7 +12,7 @@ public class MirrorService(
     GitMirrorServerDbContext dbContext,
     GitServiceFactory serviceFactory,
     WorkspaceManager workspaceManager,
-    GitLabSourceService gitLabSourceService,
+    GitSourceService gitSourceService,
     ILogger<MirrorService> logger,
     IConfiguration configuration) : IScopedDependency
 {
@@ -112,11 +112,10 @@ public class MirrorService(
                                     Directory.CreateDirectory(repoPath);
                                     Log($"Setting up local repository at {repoPath}");
 
-                                    var authenticatedGitLab = config.FromType.Equals("GitLab", StringComparison.OrdinalIgnoreCase) &&
-                                        !string.IsNullOrWhiteSpace(config.FromToken);
-                                    if (authenticatedGitLab)
+                                    var authenticatedSource = !string.IsNullOrWhiteSpace(config.FromToken);
+                                    if (authenticatedSource)
                                     {
-                                        await gitLabSourceService.UpdateAsync(repoPath, sourceUrl, config.FromToken!);
+                                        await gitSourceService.UpdateAsync(repoPath, sourceUrl, config.FromToken!);
                                     }
                                     else
                                     {
@@ -128,9 +127,9 @@ public class MirrorService(
                                     }
 
                                     Log($"Updating all branches for {repo.Name}");
-                                    if (authenticatedGitLab)
+                                    if (authenticatedSource)
                                     {
-                                        await gitLabSourceService.UpdateBranchesAsync(repoPath, sourceUrl, config.FromToken!);
+                                        await gitSourceService.UpdateBranchesAsync(repoPath, sourceUrl, config.FromToken!);
                                     }
                                     else
                                     {
