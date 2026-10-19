@@ -2,13 +2,7 @@
 
 <div class="container-fluid">
     <h1 class="h3 mb-4">@Model.PageTitle</h1>
-    <p>@Localizer["A mirror copies Git branches and tags from a source account to a target account. The source remains where your team develops; the target provides another copy."]</p>
-    <div class="alert alert-info" role="note">
-        <div class="alert-message">
-            <strong>@Localizer["Default: publish Public and Internal repositories to GitHub."]</strong>
-            @Localizer["Private and archived source repositories are skipped. Internal is a GitLab access level, not an open-source license: only include it when you are authorized to publish that content."]
-        </div>
-    </div>
+    <p class="text-muted">@Localizer["Choose what to copy and where to send it."]</p>
     <div class="card shadow mb-4">
         <div class="card-body">
             <form asp-action="@(Model.IsCreate ? "Create" : "Edit")" method="post">
@@ -19,7 +13,7 @@
                 }
                 <div class="row">
                     <div class="col-md-6">
-                        <h4>@Localizer["Source: where to read repositories"]</h4>
+                        <h4>@Localizer["Source"]</h4>
                         <div class="mb-3">
                             <label asp-for="FromType" class="form-label"></label>
                             <select asp-for="FromType" class="form-control">
@@ -30,71 +24,65 @@
                         </div>
                         <div class="mb-3">
                             <label asp-for="FromServer" class="form-label"></label>
-                            <input asp-for="FromServer" class="form-control" aria-describedby="source-server-help" />
-                            <div id="source-server-help" class="form-text">@Localizer["For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com."]</div>
+                            <button type="button" id="source-server-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com."].Value" aria-label="@Localizer["Help: source server"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
+                            <input asp-for="FromServer" class="form-control" />
                             <span asp-validation-for="FromServer" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label asp-for="FromOrgName" class="form-label"></label>
-                            <input asp-for="FromOrgName" class="form-control" aria-describedby="source-owner-help" />
-                            <div id="source-owner-help" class="form-text">@Localizer["Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account's repositories are considered."]</div>
+                            <button type="button" id="source-owner-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account's repositories are considered."].Value" aria-label="@Localizer["Help: source account"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
+                            <input asp-for="FromOrgName" class="form-control" />
                             <span asp-validation-for="FromOrgName" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label asp-for="OrgOrUser" class="form-label"></label>
-                            <select asp-for="OrgOrUser" class="form-control" aria-describedby="source-kind-help">
+                            <button type="button" id="source-kind-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account."].Value" aria-label="@Localizer["Help: account type"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
+                            <select asp-for="OrgOrUser" class="form-control">
                                 <option value="Org">@Localizer["Organization / GitLab group"]</option>
                                 <option value="User">@Localizer["Personal user account"]</option>
                             </select>
-                            <div id="source-kind-help" class="form-text">@Localizer["Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account."]</div>
                             <span asp-validation-for="OrgOrUser" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label asp-for="FromToken" class="form-label"></label>
-                            <input asp-for="FromToken" class="form-control" type="password" autocomplete="off" aria-describedby="source-token-help" />
-                            <div id="source-token-help" class="form-text">
-                                <p>@Localizer["An access token is a credential created in your Git provider's account settings. Use a dedicated automation account and grant only the access needed. The token must remain valid while scheduled mirroring runs."]</p>
-                                <p>@Localizer["For GitLab, create a personal access token with read_api (list projects) and read_repository (download Git content). The account must be allowed to read the selected projects. External users and service accounts may need explicit group or project membership for Internal repositories."]</p>
-                                <p class="mb-0">@Localizer["For GitHub, grant the source token read access to the selected repositories. To include Private personal repositories, the source token must belong to the configured source user. Leave the source token empty only for anonymous Public mirroring, with Internal and Private disabled. A token never makes a repository eligible unless its visibility is selected below."]</p>
-                            </div>
-                            <p class="form-text"><a href="https://docs.gitlab.com/user/profile/personal_access_tokens/" target="_blank" rel="noopener noreferrer">@Localizer["GitLab token instructions"]</a> · <a href="https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" target="_blank" rel="noopener noreferrer">@Localizer["GitHub token instructions"]</a></p>
+                            <button type="button" id="source-token-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied."].Value" aria-label="@Localizer["Help: source token"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
+                            <input asp-for="FromToken" class="form-control" type="password" autocomplete="off" />
                             <span asp-validation-for="FromToken" class="text-danger"></span>
                         </div>
                         <fieldset class="mb-4">
-                            <legend class="h5">@Localizer["Which source repositories should be copied?"]</legend>
-                            <p class="form-text">@Localizer["Visibility controls who can read a repository on the source server. Select the categories you intend to copy; the token must also have access. These choices do not change source permissions."]</p>
-                            <div class="mb-3">
+                            <legend class="h5">@Localizer["Repositories to copy"]</legend>
+                            <div class="mb-2">
                                 <div class="form-check">
-                                    <input asp-for="IncludePublicRepositories" class="form-check-input" aria-describedby="IncludePublicRepositories-help" />
+                                    <input asp-for="IncludePublicRepositories" class="form-check-input" />
                                     <label asp-for="IncludePublicRepositories" class="form-check-label"></label>
+                                    <button type="button" id="IncludePublicRepositories-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Public: anyone can read the source without signing in."].Value" aria-label="@Localizer["Help: public repositories"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
                                 </div>
-                                <div id="IncludePublicRepositories-help" class="form-text">@Localizer["Public: anyone can read the source without signing in."]</div>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-2">
                                 <div class="form-check">
-                                    <input asp-for="IncludeInternalRepositories" class="form-check-input" aria-describedby="IncludeInternalRepositories-help" />
+                                    <input asp-for="IncludeInternalRepositories" class="form-check-input" />
                                     <label asp-for="IncludeInternalRepositories" class="form-check-label"></label>
+                                    <button type="button" id="IncludeInternalRepositories-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share."].Value" aria-label="@Localizer["Help: internal repositories"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
                                 </div>
-                                <div id="IncludeInternalRepositories-help" class="form-text">@Localizer["Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet."]</div>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-2">
                                 <div class="form-check">
-                                    <input asp-for="IncludePrivateRepositories" class="form-check-input" aria-describedby="IncludePrivateRepositories-help" />
+                                    <input asp-for="IncludePrivateRepositories" class="form-check-input" />
                                     <label asp-for="IncludePrivateRepositories" class="form-check-label"></label>
+                                    <button type="button" id="IncludePrivateRepositories-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories."].Value" aria-label="@Localizer["Help: private repositories"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
                                 </div>
-                                <div id="IncludePrivateRepositories-help" class="form-text">@Localizer["Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories."]</div>
                             </div>
-                            <div class="mb-3">
+                            <div class="mb-2">
                                 <div class="form-check">
-                                    <input asp-for="IncludeArchivedRepositories" class="form-check-input" aria-describedby="IncludeArchivedRepositories-help" />
+                                    <input asp-for="IncludeArchivedRepositories" class="form-check-input" />
                                     <label asp-for="IncludeArchivedRepositories" class="form-check-label"></label>
+                                    <button type="button" id="IncludeArchivedRepositories-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target."].Value" aria-label="@Localizer["Help: archived repositories"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
                                 </div>
-                                <div id="IncludeArchivedRepositories-help" class="form-text">@Localizer["Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target."]</div>
                             </div>
                         </fieldset>
                     </div>
                     <div class="col-md-6">
-                        <h4>@Localizer["Target: where to write the copy"]</h4>
+                        <h4>@Localizer["Target"]</h4>
                         <div class="mb-3">
                             <label asp-for="TargetType" class="form-label"></label>
                             <select asp-for="TargetType" class="form-control">
@@ -105,40 +93,39 @@
                         </div>
                         <div class="mb-3">
                             <label asp-for="TargetServer" class="form-label"></label>
-                            <input asp-for="TargetServer" class="form-control" aria-describedby="target-server-help" />
-                            <div id="target-server-help" class="form-text">@Localizer["For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4."]</div>
+                            <button type="button" id="target-server-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4."].Value" aria-label="@Localizer["Help: target server"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
+                            <input asp-for="TargetServer" class="form-control" />
                             <span asp-validation-for="TargetServer" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label asp-for="TargetOrgName" class="form-label"></label>
-                            <input asp-for="TargetOrgName" class="form-control" aria-describedby="target-owner-help" />
-                            <div id="target-owner-help" class="form-text">@Localizer["Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user."]</div>
+                            <button type="button" id="target-owner-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user."].Value" aria-label="@Localizer["Help: target account"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
+                            <input asp-for="TargetOrgName" class="form-control" />
                             <span asp-validation-for="TargetOrgName" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label asp-for="TargetToken" class="form-label"></label>
-                            <input asp-for="TargetToken" class="form-control" type="password" autocomplete="off" aria-describedby="target-token-help" />
-                            <div id="target-token-help" class="form-text">@Localizer["Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough."]</div>
+                            <button type="button" id="target-token-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough."].Value" aria-label="@Localizer["Help: target token"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
+                            <input asp-for="TargetToken" class="form-control" type="password" autocomplete="off" />
                             <span asp-validation-for="TargetToken" class="text-danger"></span>
                         </div>
                         <div class="mb-3">
                             <label asp-for="NewGitHubRepositoriesPrivate" class="form-label"></label>
-                            <select asp-for="NewGitHubRepositoriesPrivate" class="form-control" aria-describedby="target-visibility-help">
+                            <button type="button" id="target-visibility-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them."].Value" aria-label="@Localizer["Help: target visibility"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
+                            <select asp-for="NewGitHubRepositoriesPrivate" class="form-control">
                                 <option value="false">@Localizer["Public: anyone on the internet can read the copy"]</option>
                                 <option value="true">@Localizer["Private: access is controlled by the target account"]</option>
                             </select>
-                            <div id="target-visibility-help" class="form-text">@Localizer["Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them."]</div>
                             <span asp-validation-for="NewGitHubRepositoriesPrivate" class="text-danger"></span>
                         </div>
                         <div class="alert alert-warning" role="note">
                             <div class="alert-message">
-                                <strong>@Localizer["Check existing target permissions before saving."]</strong>
-                                <p>@Localizer["Selecting Private above does not make an existing Public target Private. When copying a Private source with Private selected, mirroring refuses an existing Public GitHub target until you change its permissions yourself."]</p>
                                 <div class="form-check">
-                                    <input asp-for="ConfirmPrivatePublication" class="form-check-input" aria-describedby="publication-confirmation-help" />
+                                    <input asp-for="ConfirmPrivatePublication" class="form-check-input" />
                                     <label asp-for="ConfirmPrivatePublication" class="form-check-label"></label>
+                                    <button type="button" id="publication-confirmation-help" class="btn btn-link btn-sm p-0 ms-1 align-baseline" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="top" data-bs-content="@Localizer["Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately."].Value" aria-label="@Localizer["Help: publication confirmation"]"><i class="align-middle" data-lucide="circle-help" aria-hidden="true"></i></button>
                                 </div>
-                                <div id="publication-confirmation-help" class="form-text">@Localizer["Required only when Private source repositories are included and new GitHub repositories are set to Public. This confirmation must be given again when saving that configuration."]</div>
+
                                 <span asp-validation-for="ConfirmPrivatePublication" class="text-danger"></span>
                             </div>
                         </div>
@@ -146,6 +133,7 @@
                 </div>
                 <details class="mb-4">
                     <summary>@Localizer["What happens after I save?"]</summary>
+                    <p><a href="https://docs.gitlab.com/user/profile/personal_access_tokens/" target="_blank" rel="noopener noreferrer">@Localizer["GitLab token instructions"]</a> · <a href="https://docs.github.com/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens" target="_blank" rel="noopener noreferrer">@Localizer["GitHub token instructions"]</a></p>
                     <p>@Localizer["Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results."]</p>
                     <p>@Localizer["Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied."]</p>
                     <p>@Localizer["Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access."]</p>
