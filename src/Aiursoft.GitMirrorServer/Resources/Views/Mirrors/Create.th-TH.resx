@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>ใช้ได้เฉพาะเมื่อสร้างที่เก็บโค้ด GitHub ที่ยังไม่มีอยู่ ค่าเริ่มต้นคือสาธารณะ การมองเห็นของที่เก็บโค้ดปลายทางที่มีอยู่จะไม่ถูกเปลี่ยนโดยอัตโนมัติ ปลายทาง GitLab ยังคงสร้างที่เก็บโค้ดที่ขาดหายไปในรูปแบบส่วนตัว ตัวเลือก GitHub นี้ไม่ใช้กับ GitLab</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>รีพอสิทอรีที่ถูกรายการเก็บถาวรโดยทั่วไปจะถูกระงับการใช้งานหรือเป็นแบบอ่านอย่างเดียว ปิดใช้งานไว้โดยค่าเริ่มต้น เปิดใช้งานตัวเลือกนี้เพื่อคัดลอกเนื้อหา Git ของรีพอสิทอรีเหล่านี้ด้วยเช่นกัน; สถานะการเก็บถาวรของรีพอสิทอรีต้นทางจะไม่ถูกนำไปใช้กับรีพอสิทอรีปลายทาง</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>กลับไปยังรายการ</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>เลือกกลุ่มสำหรับที่เก็บข้อมูล GitLab ของบริษัท หรือเลือกองค์กรสำหรับ GitHub เลือกผู้ใช้สำหรับที่เก็บข้อมูลที่เป็นของบัญชีบุคคล</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>เลือกสิ่งที่ต้องการคัดลอกและตำแหน่งปลายทางที่จะส่ง</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>สร้างมิเรอร์</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>กรอกชื่อองค์กร กลุ่ม หรือชื่อผู้ใช้ปลายทาง หากปลายทางเป็นบัญชี GitHub ส่วนบุคคล โทเค็นปลายทางต้องเป็นของผู้ใช้รายเดียวกัน</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>กรอกชื่อกลุ่ม องค์กร หรือชื่อผู้ใช้จาก URL ของ repository ไม่ใช่ชื่อที่แสดงหรือ URL repository เต็ม โดยจะพิจารณาเฉพาะ repository ของบัญชีนี้เท่านั้น</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>การยกเว้นหมวดหมู่ในภายหลัง การเก็บแหล่งข้อมูลในคลัง หรือการเปลี่ยนสถานะเป็นส่วนตัว (Private) จะไม่ลบหรือซ่อนสำเนาที่เผยแพร่ไปแล้ว คุณต้องตรวจสอบคลังเป้าหมายที่มีอยู่แยกกันเมื่อต้องการเพิกถอนการเข้าถึง</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>สำหรับ GitHub ให้ใช้ https://api.github.com ส่วน GitLab ให้กรอกที่อยู่เว็บไซต์โดยไม่ต้องใส่ /api/v4</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>สำหรับ GitLab ให้กรอกที่อยู่เว็บไซต์ เช่น https://gitlab.example.com โดยไม่รวม /api/v4 สำหรับ GitHub ให้ใช้ https://api.github.com</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>สำหรับ GitLab ให้ใช้บัญชีเฉพาะที่มีสิทธิ์ read_api และ read_repository บัญชีดังกล่าวต้องได้รับอนุญาตให้อ่านโปรเจกต์ที่เลือก โปรเจกต์แบบ Internal อาจต้องมีการเป็นสมาชิกสำหรับบัญชีภายนอกหรือบัญชีบริการ สำหรับ GitHub ให้มอบสิทธิ์การอ่าน; รีโพสิทอรีส่วนตัวแบบ Private ต้องใช้โทเคนที่เป็นของผู้ใช้ต้นทาง ปล่อยว่างไว้เฉพาะในกรณีทำสำเนารูปแบบ Public แบบไม่ระบุตัวตน โดยปิดใช้งาน Internal และ Private ไว้ ปล่อยให้โทเคนมีผลบังคับใช้สำหรับการดำเนินการตามกำหนดการ ระดับการมองเห็นที่เลือกยังคงจำกัดขอบเขตของสิ่งที่ถูกคัดลอก</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>คำแนะนำโทเคน GitHub</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>คำแนะนำเกี่ยวกับโทเค็น GitLab</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>วิธีใช้: ประเภทบัญชี</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>วิธีใช้: ที่เก็บโค้ดที่เก็บถาวร</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>ความช่วยเหลือ: รีโพสิทอรีภายใน</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>ช่วยเหลือ: คลังข้อมูลส่วนตัว</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>ความช่วยเหลือ: ที่เก็บข้อมูลสาธารณะ</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>ความช่วยเหลือ: การยืนยันการเผยแพร่</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>ช่วยเหลือ: บัญชีต้นทาง</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>ความช่วยเหลือ: เซิร์ฟเวอร์ต้นทาง</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>วิธีใช้: โทเค็นต้นทาง</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>ความช่วยเหลือ: บัญชีปลายทาง</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>วิธีใช้: เซิร์ฟเวอร์ปลายทาง</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>วิธีใช้: โทเค็นปลายทาง</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>ความช่วยเหลือ: การมองเห็นเป้าหมาย</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>ภายใน (เฉพาะ GitLab): ผู้ใช้ที่ลงชื่อเข้าใช้และได้รับอนุญาตจากอินสแตนซ์ GitLab ของคุณสามารถอ่านซอร์สได้ หากเลือกตัวเลือกนี้ร่วมกับ GitHub ปลายทางที่เป็นสาธารณะ โค้ดที่คัดลอกจะเผยแพร่ให้ทุกคนบนอินเทอร์เน็ตเข้าถึงได้ Internal เป็นระดับการเข้าถึง ไม่ใช่ใบอนุญาตโอเพนซอร์ส โปรดเผยแพร่เฉพาะเนื้อหาที่คุณได้รับอนุญาตให้แบ่งปันเท่านั้น</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>การทำมิเรอร์จะบังคับพุชบร랜ชและแท็กจากต้นทางไปยังปลายทาง ควรใช้ปลายทางเฉพาะสำหรับการนี้ เพราะการเปลี่ยนแปลงที่ทำแยกต่างหากในปลายทางอาจถูกเขียนทับ โดยจะไม่มีการคัดลอก Issues, merge requests, สิทธิ์ และการตั้งค่าโปรเจกต์</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>องค์กร / กลุ่ม GitLab</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>บัญชีผู้ใช้ส่วนบุคคล</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>ส่วนตัว: บัญชีปลายทางเป็นผู้ควบคุมการเข้าถึง</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>ส่วนตัว (Private): เฉพาะผู้ใช้ที่ได้รับอนุญาตอย่างชัดเจนเท่านั้นที่อ่านซอร์สโค้ดได้ ปิดใช้งานโดยค่าเริ่มต้น เปิดใช้งานเฉพาะเมื่อองค์กรของคุณอนุมัติให้คัดลอก repository เหล่านี้</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>สาธารณะ: ทุกคนสามารถอ่านซอร์สได้โดยไม่ต้องลงชื่อเข้าใช้</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>สาธารณะ: ทุกคนบนอินเทอร์เน็ตสามารถอ่านสำเนาได้</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>รีพอสิตารีที่จะคัดลอก</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>จำเป็นเฉพาะเมื่อรวมแหล่งข้อมูลแบบ Private กับคลัง GitHub ใหม่แบบ Public ยืนยันอีกครั้งในการบันทึกทุกครั้ง การเลือก Private จะไม่เปลี่ยนแปลงเป้าหมายแบบ Public ที่มีอยู่เดิม; การทำมิร์roring จะปฏิเสธเป้าหมายนั้นเมื่อคัดลอกแหล่งข้อมูลแบบ Private ตรวจสอบสิทธิ์ของเป้าหมายที่มีอยู่เดิมแยกต่างหาก</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>บันทึกการเปลี่ยนแปลง</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>การบันทึกจะจัดเก็บความสัมพันธ์การซิงค์ (mirror) นี้สำหรับงานที่กำหนดเวลาไว้ ระบบจะไม่ตรวจสอบข้อมูลการเข้าสู่ระบบของคุณหรือเริ่มคัดลอกข้อมูลทันที โปรดตรวจสอบประวัติงานหลังจากการรันครั้งถัดไปเพื่อดูข้อผิดพลาดในการยืนยันตัวตนและผลลัพธ์รายคลังข้อมูล (repository)</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>แหล่งที่มา</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>เป้าหมาย</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>ใช้โทเคนปลายทางแยกต่างหากที่สามารถสร้างรีพอสิทอรีในบัญชีปลายทางและpushเนื้อหา Git ของรีพอสิทอรีเหล่านั้นได้ สำหรับโทเคนละเอียด (fine-grained token) ของ GitHub ให้อนุญาตการสร้างรีพอสิทอรี (Administration: write) และ Contents: write รวมถึง Workflows: write หากกำลังคัดลอกไฟล์เวิร์กโฟลว์ องค์กรของคุณอาจต้องมีการอนุมัติโทเคนหรือการรับรองสิทธิ์ SSO ด้วย สิทธิ์การอ่านจากแหล่งข้อมูลเพียงอย่างเดียวไม่เพียงพอ</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>เกิดอะไรขึ้นหลังจากฉันบันทึก?</value>
+  </data>
+
+</root>

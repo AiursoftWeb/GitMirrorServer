@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>只適用於建立尚未存在的 GitHub 儲存庫。預設為公開。系統不會自動更改現有目標儲存庫的可見性。GitLab 目標仍會以私人方式建立尚未存在的儲存庫；此 GitHub 選項不適用於 GitLab。</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>已封存的儲存庫通常已停止維護或只供讀取。預設為停用。啟用此選項亦會複製其 Git 內容；來源的封存狀態不會套用至目標。</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>返回列表</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>對於公司擁有的 GitLab 儲存庫，請選擇群組；對於 GitHub，請選擇組織。對於由個人帳戶擁有的儲存庫，請選擇使用者。</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>選擇要複製的內容，以及要傳送到哪裏。</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>建立鏡像</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>輸入目標組織、群組或使用者名稱。如目標為個人 GitHub 帳戶，目標權杖必須屬於同一位使用者。</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>請輸入儲存庫 URL 中的群組、組織或使用者名稱，而非顯示名稱或完整的儲存庫 URL。僅考慮此帳戶的儲存庫。</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>其後即使排除某個類別、將來源封存或改為私人，亦不會刪除或隱藏任何已發佈的副本。撤回存取權時，請另外檢查現有的目標儲存庫。</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>對於 GitHub，請使用 https://api.github.com。對於 GitLab，請輸入不包含 /api/v4 的網站位址。</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>對於 GitLab，請輸入網站地址，例如 https://gitlab.example.com，不要包含 /api/v4。對於 GitHub，請使用 https://api.github.com。</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>對於 GitLab，請使用具有 read_api 及 read_repository 權限的專用帳戶。該帳戶必須獲准讀取所選取的项目；內部项目可能要求外部或服務帳戶具備成員身分。對於 GitHub，請授予讀取權限；私人的個人儲存庫需要使用屬於來源使用者的令牌。僅當匿名複製公開内容，且已停用內部及私人選項時，方可留空。請確保令牌在排程運行期間保持有效。所選的能見度仍會限制被複製的內容。</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>GitHub 權杖使用說明</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>GitLab 令牌說明</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>幫助：帳戶類型</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>協助：已封存的儲存庫</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>幫助：內部儲存庫</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>說明：私人儲存庫</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>說明：公開儲存庫</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>說明：發佈確認</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>協助：來源帳戶</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>幫助：來源伺服器</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>說明：來源權杖</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>協助：目標帳戶</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>協助：目標伺服器</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>說明：目標權杖</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>說明：目標可見性</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>內部（僅限 GitLab）：獲你的 GitLab 實例授權的已驗證用戶可讀取來源。若選擇此選項並搭配公開的 GitHub 目標，將把複製的代碼發佈給互聯網上的所有人。內部是一種存取權限層級，並非開源授權條款；僅發佈你獲授權分享的內容。</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>鏡像會強制推送來源分支及標籤。請使用專用目標：該處的任何獨立變更可能會被覆蓋。問題、合併請求、權限及專案設定均不會被複製。</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>組織 / GitLab 群組</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>個人用戶帳戶</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>私人：存取權限由目標帳戶控制</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>私人：只有獲明確授權的使用者才能讀取來源。預設停用。只有在你的機構授權複製這些儲存庫時，才啟用此選項。</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>公開：任何人毋須登入即可讀取來源。</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>公開：互聯網上任何人都可以讀取副本</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>要複製的儲存庫</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>只有在包含私人來源並將新建立的 GitHub 儲存庫設為公開時，才需要確認。每次儲存時都必須再次確認。選擇「私人」絕不會更改現有的公開目標；複製私人來源時，鏡像程序會拒絕使用該目標。請另外檢查現有目標的權限。</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>儲存變更</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>儲存後，系統會為排程工作儲存此鏡像關係。此操作不會驗證你的憑證，也不會立即開始複製。下次執行後，請查看工作記錄，檢查是否有驗證錯誤及各個儲存庫的結果。</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>來源</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>目標</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>請使用專用的目標令牌，讓它可以在目的地帳戶建立儲存庫，並推送其 Git 內容。GitHub 細粒度令牌須允許建立儲存庫（Administration: write）及寫入 Contents；如要複製工作流程檔案，亦須加入 Workflows: write。你的組織可能還要求核准令牌或授權 SSO。只有來源端的讀取權限並不足夠。</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>儲存後會怎樣？</value>
+  </data>
+
+</root>

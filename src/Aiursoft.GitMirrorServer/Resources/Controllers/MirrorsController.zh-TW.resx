@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A source access token is required to include Internal or Private repositories." xml:space="preserve">
+    <value>若要包含內部或私有儲存庫，需要來源存取權杖。</value>
+  </data>
+  <data name="Confirm Public publication of Private source repositories, or choose Private for new GitHub repositories." xml:space="preserve">
+    <value>確認將私人來源儲存庫公開發布，或將新的 GitHub 儲存庫設為私人。</value>
+  </data>
+  <data name="Select at least one source repository visibility." xml:space="preserve">
+    <value>請至少選擇一個來源儲存庫可見性。</value>
+  </data>
+
+</root>

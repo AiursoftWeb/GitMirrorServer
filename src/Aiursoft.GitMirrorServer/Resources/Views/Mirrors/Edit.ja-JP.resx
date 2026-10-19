@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>GitHubリポジトリが存在しない場合に新規作成するときのみ適用されます。デフォルトはPublicです。既存の対象リポジトリの公開設定が自動的に変更されることはありません。GitLabでは引き続き、存在しないリポジトリはPrivateとして作成されます。このGitHubのオプションはGitLabには適用されません。</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>アーカイブ済みリポジトリは通常、廃止されているか読み取り専用です。デフォルトでは無効です。有効にすると、Gitのコンテンツもコピーされます。ソースのアーカイブ状態はコピー先には適用されません。</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>一覧に戻る</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>GitLabの企業所有リポジトリにはグループを、GitHubには組織を選択してください。個人アカウントが所有するリポジトリにはユーザーを選択してください。</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>コピーする対象と送信先を選択してください。</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>ミラーを作成</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>移行先の組織、グループ、またはユーザー名を入力してください。個人のGitHubアカウントを移行先にする場合、移行先トークンは同じユーザーに紐づいている必要があります。</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>リポジトリ URL に記載されているグループ名、組織名、またはユーザー名を入力してください。表示名やリポジトリ URL 全体は入力しないでください。このアカウントのリポジトリのみが対象となります。</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>後からカテゴリを除外したり、ソースをアーカイブしたり、非公開に変更したりしても、すでに公開されたコピーが削除されたり非表示になったりすることはありません。アクセスを取り消す場合は、既存のコピー先リポジトリを個別に確認してください。</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>GitHub の場合は https://api.github.com を使用してください。GitLab の場合は、/api/v4 を付けずにWebサイトのアドレスを入力してください。</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>GitLab の場合は、https://gitlab.example.com のように、/api/v4 を含まないウェブサイトアドレスを入力してください。GitHub の場合は、https://api.github.com を使用してください。</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>GitLabの場合、read_apiとread_repository権限を持つ専用アカウントを使用してください。選択したプロジェクトの読み取りが許可されている必要があります。Internalプロジェクトでは、外部アカウントまたはサービスアカウントにメンバーシップが求められる場合があります。GitHubの場合、読み取りアクセスを付与してください。Privateの個人リポジトリには、ソースユーザーに属するトークンが必要です。InternalとPrivateを無効化し、匿名のPublicコピーを行う場合のみ、空欄にしてください。スケジュール実行のために、トークンを有効な状態に保ってください。選択した公開範囲は、コピーされる内容を制限し続けます。</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>GitHubトークンの設定手順</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>GitLabトークンの説明</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>ヘルプ: アカウントタイプ</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>ヘルプ: アーカイブされたリポジトリ</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>ヘルプ: 内部リポジトリ</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>ヘルプ: 非公開リポジトリ</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>ヘルプ：公開リポジトリ</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>ヘルプ: 公開確認</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>ヘルプ：ソースアカウント</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>ヘルプ：ソースサーバー</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>ヘルプ: ソーストークン</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>ヘルプ: ターゲットアカウント</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>ターゲットサーバーのヘルプ</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>ヘルプ：宛先トークン</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>ヘルプ：ターゲットの可視性</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>Internal（GitLab のみ）：お使いの GitLab インスタンスで許可された認証済みユーザーは、ソースを閲覧できます。これを選択して公開 GitHub をコピー先にすると、コピーされたコードはインターネット上のすべての人に公開されます。Internal はアクセスレベルであり、オープンソースライセンスではありません。共有する権限のあるコンテンツのみを公開してください。</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>ミラーリングでは、ソースのブランチとタグを強制プッシュします。専用のターゲットを使用してください。ターゲット側での独立した変更は上書きされる可能性があります。イシュー、マージリクエスト、権限、プロジェクト設定はコピーされません。</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>組織 / GitLab グループ</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>個人ユーザーアカウント</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>非公開：アクセスはターゲットアカウントによって管理されます</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>プライベート：明示的に許可されたユーザーのみがソースを閲覧できます。デフォルトでは無効です。組織がこれらのリポジトリのコピーを許可している場合にのみ有効にしてください。</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>公開：サインインせずに誰でもソースを読み取れます。</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>公開: インターネット上の誰でもコピーを読み取れます</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>コピーするリポジトリ</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>新規のGitHubリポジトリをPublicにしてPrivateソースを含める場合にのみ必要です。保存するたびに再確認してください。Privateを選択しても、既存のPublicターゲットが変更されることはありません。Privateソースをコピーする際、ミラーリングはそのターゲットを拒否します。既存のターゲットの権限は別途確認してください。</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>変更を保存</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>保存すると、このミラーリング関係がスケジュールされたジョブに保存されます。認証情報の確認やコピーの開始は行われません。次回実行後にジョブ履歴を確認し、認証エラーやリポジトリごとの結果をチェックしてください。</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>ソース</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>対象</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>移行先アカウントでリポジトリを作成し、Git の内容をプッシュできる専用の移行先トークンを使用してください。GitHub の fine-grained token では、リポジトリの作成（Administration: write）と Contents: write を許可してください。ワークフローファイルをコピーする場合は、Workflows: write も含めてください。組織によっては、トークンの承認または SSO 認証も必要です。ソースの読み取り権限だけでは不十分です。</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>保存後はどうなりますか？</value>
+  </data>
+
+</root>
