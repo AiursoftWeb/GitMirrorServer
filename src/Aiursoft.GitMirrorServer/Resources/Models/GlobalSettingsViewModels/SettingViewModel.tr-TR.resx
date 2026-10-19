@@ -30,11 +30,17 @@
   <data name="Description" xml:space="preserve">
     <value>Açıklama</value>
   </data>
+  <data name="Is Configured" xml:space="preserve">
+    <value>Yapılandırıldı</value>
+  </data>
   <data name="Is Overridden By Config" xml:space="preserve">
     <value>Yapılandırmayla Geçersiz Kılınmış</value>
   </data>
   <data name="Key" xml:space="preserve">
     <value>Anahtar</value>
+  </data>
+  <data name="Max Size (MB)" xml:space="preserve">
+    <value>Maksimum Boyut (MB)</value>
   </data>
   <data name="Max Size In Mb" xml:space="preserve">
     <value>Maksimum Boyut MB cinsinden</value>
@@ -44,6 +50,9 @@
   </data>
   <data name="Subfolder" xml:space="preserve">
     <value>Alt klasör</value>
+  </data>
+  <data name="The {0} is required." xml:space="preserve">
+    <value>{0} alanı zorunludur.</value>
   </data>
   <data name="Type" xml:space="preserve">
     <value>Tür</value>
