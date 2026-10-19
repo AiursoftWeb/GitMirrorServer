@@ -1,6 +1,7 @@
 using System.Text;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.GitMirrorServer.Entities;
+using Aiursoft.GitMirrorServer.Models;
 using Aiursoft.GitRunner;
 using Aiursoft.GitRunner.Models;
 using Aiursoft.Scanner.Abstractions;
@@ -85,7 +86,7 @@ public class MirrorService(
                             IsSuccess = false
                         };
 
-                        var repoPath = Path.Combine(diskRoot, config.FromOrgName, repo.Name);
+                        var repoPath = GetRepositoryCachePath(diskRoot, config, repo);
                         Log($"Processing repository: {repo.Name}");
 
                         try
@@ -186,6 +187,16 @@ public class MirrorService(
             dbContext.MirrorJobExecutions.Update(jobExecution);
             await dbContext.SaveChangesAsync();
         }
+    }
+
+    internal static string GetRepositoryCachePath(
+        string diskRoot, MirrorConfiguration config, GitRepository repository)
+    {
+        // A source account can be named Workspace, which is also the public attachment root.
+        // Keep private Git contents outside every attachment area, independently of source names.
+        return repository.Visibility == "private"
+            ? Path.Combine(diskRoot, ".private-mirrors", config.Id.ToString("N"), repository.Name)
+            : Path.Combine(diskRoot, config.FromOrgName, repository.Name);
     }
 
     internal async Task RecordRepositoryExecutionAsync(
