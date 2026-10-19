@@ -2,72 +2,74 @@
 @model Aiursoft.GitMirrorServer.Models.HistoryViewModels.IndexViewModel
 @inject IViewLocalizer Localizer
 
-@{
-}
+<h1 class="h3 mb-2">@Localizer["Mirror history"]</h1>
+<p class="text-muted mb-4">@Localizer["The latest 50 mirror runs. Open a run to inspect repository results and logs."]</p>
 
-<div class="container-fluid">
-    <h1 class="h3 mb-4 text-gray-800">@Localizer["Job History"]</h1>
-    
-    <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">@Localizer["Execution Logs"]</h6>
-        </div>
-        <div class="card-body">
+<div class="card">
+    <div class="card-body">
+        @if (!Model.History.Any())
+        {
+            <div class="text-center py-4">
+                <i class="text-muted mb-3" data-lucide="history" aria-hidden="true"></i>
+                <h2 class="h5">@Localizer["No mirror runs yet"]</h2>
+                <p class="text-muted mb-0">@Localizer["Results appear here after a scheduled or manual mirror run starts."]</p>
+            </div>
+        }
+        else
+        {
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%">
+                <table class="table align-middle mb-0">
                     <thead>
                         <tr>
-                            <th>@Localizer["Start Time"]</th>
+                            <th>@Localizer["Started"]</th>
                             <th>@Localizer["Duration"]</th>
                             <th>@Localizer["Status"]</th>
-                            <th>@Localizer["Stats (Success/Fail/Total)"]</th>
-                            <th>@Localizer["Action"]</th>
+                            <th>@Localizer["Succeeded"]</th>
+                            <th>@Localizer["Failed"]</th>
+                            <th>@Localizer["Total repositories"]</th>
+                            <th><span class="visually-hidden">@Localizer["Actions"]</span></th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var item in Model.History)
                         {
                             <tr>
-                                <td><label data-utc-time="@item.StartTime.ToHtmlDateTime()"></label></td>
+                                <td class="text-nowrap"><span data-utc-time="@item.StartTime.ToHtmlDateTime()"></span></td>
                                 <td>
-                                    @if(item.EndTime.HasValue)
+                                    @if (item.EndTime.HasValue)
                                     {
-                                        var duration = item.EndTime.Value - item.StartTime;
-                                        <span>@duration.ToString(@"hh\:mm\:ss")</span>
+                                        <span>@((item.EndTime.Value - item.StartTime).ToString(@"d\.hh\:mm\:ss"))</span>
                                     }
                                     else
                                     {
-                                        <div class="spinner-border spinner-border-sm text-warning" role="status">
-                                            <span class="sr-only">Running...</span>
-                                        </div>
-                                        <span class="text-warning">@Localizer["Running..."]</span>
+                                        <span class="text-muted">@Localizer["In progress"]</span>
                                     }
                                 </td>
                                 <td>
-                                    @if (item.IsSuccess && string.IsNullOrEmpty(item.ErrorMessage))
+                                    @if (!item.EndTime.HasValue)
                                     {
-                                        <span class="badge badge-success">@Localizer["Success"]</span>
+                                        <span class="badge bg-primary">@Localizer["Running"]</span>
+                                    }
+                                    else if (item.IsSuccess && string.IsNullOrEmpty(item.ErrorMessage))
+                                    {
+                                        <span class="badge bg-success">@Localizer["Succeeded"]</span>
                                     }
                                     else
                                     {
-                                        <span class="badge badge-danger">@Localizer["Failed"]</span>
+                                        <span class="badge bg-danger">@Localizer["Failed"]</span>
                                     }
                                 </td>
-                                <td>
-                                    <span class="text-success font-weight-bold">@item.SuccessCount</span> / 
-                                    <span class="text-danger font-weight-bold">@item.FailureCount</span> / 
-                                    <span class="text-dark">@item.TotalCount</span>
-                                </td>
-                                <td>
-                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary btn-sm shadow-sm">
-                                        <i class="fas fa-info-circle"></i> @Localizer["Details"]
-                                    </a>
+                                <td>@item.SuccessCount</td>
+                                <td>@item.FailureCount</td>
+                                <td>@item.TotalCount</td>
+                                <td class="text-end text-nowrap">
+                                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-primary btn-sm">@Localizer["View results"]</a>
                                 </td>
                             </tr>
                         }
                     </tbody>
                 </table>
             </div>
-        </div>
+        }
     </div>
 </div>
