@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>Chỉ áp dụng khi tạo kho lưu trữ GitHub chưa tồn tại. Mặc định là Công khai. Mức độ hiển thị của kho lưu trữ đích hiện có sẽ không bao giờ được tự động thay đổi. Với GitLab, kho lưu trữ còn thiếu vẫn được tạo ở chế độ Riêng tư; tùy chọn GitHub này không áp dụng cho GitLab.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>Các kho lưu trữ đã lưu trữ thường đã ngừng hoạt động hoặc chỉ đọc. Tắt theo mặc định. Bật tùy chọn này để sao chép nội dung Git của chúng; trạng thái lưu trữ của nguồn sẽ không được áp dụng cho đích.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>Quay lại danh sách</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>Chọn nhóm cho các kho lưu trữ GitLab thuộc sở hữu của công ty hoặc tổ chức cho GitHub. Chọn người dùng cho các kho lưu trữ thuộc sở hữu của tài khoản cá nhân.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>Chọn nội dung cần sao chép và nơi gửi đến.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Tạo bản sao gương</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>Nhập tên tổ chức, nhóm hoặc tên người dùng đích. Nếu đích đến trên GitHub là tài khoản cá nhân, mã thông báo đích phải thuộc về chính người dùng đó.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>Nhập tên nhóm, tổ chức hoặc tên người dùng từ URL kho lưu trữ, không phải tên hiển thị hoặc URL kho lưu trữ hoàn chỉnh. Chỉ các kho lưu trữ của tài khoản này được xem xét.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>Việc loại trừ một danh mục sau này, lưu trữ nguồn hoặc chuyển nguồn sang chế độ Riêng tư sẽ không xóa hay ẩn bất kỳ bản sao nào đã được công bố. Khi thu hồi quyền truy cập, hãy kiểm tra riêng các kho lưu trữ đích hiện có.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>Đối với GitHub, hãy sử dụng https://api.github.com. Đối với GitLab, hãy nhập địa chỉ trang web không có /api/v4.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>Đối với GitLab, hãy nhập địa chỉ trang web, chẳng hạn như https://gitlab.example.com, không kèm /api/v4. Đối với GitHub, hãy dùng https://api.github.com.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>Đối với GitLab, hãy dùng một tài khoản riêng có quyền read_api và read_repository. Tài khoản này phải được phép đọc các dự án đã chọn; các dự án Internal có thể yêu cầu tài khoản bên ngoài hoặc tài khoản dịch vụ phải là thành viên. Đối với GitHub, hãy cấp quyền đọc; kho lưu trữ cá nhân Private cần token thuộc về người dùng nguồn. Chỉ để trống nếu sao chép Public ẩn danh, đồng thời tắt Internal và Private. Đảm bảo token còn hiệu lực cho các lần chạy theo lịch. Phạm vi hiển thị đã chọn vẫn giới hạn nội dung được sao chép.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>Hướng dẫn token GitHub</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>Hướng dẫn token GitLab</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>Giúp đỡ: loại tài khoản</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>Trợ giúp: kho lưu trữ đã lưu trữ</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>Trợ giúp: kho lưu trữ nội bộ</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>Trợ giúp: kho lưu trữ riêng tư</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>Trợ giúp: kho lưu trữ công khai</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>Trợ giúp: xác nhận xuất bản</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>Giúp đỡ: tài khoản nguồn</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>Trợ giúp: máy chủ nguồn</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>Trợ giúp: token nguồn</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>Giúp đỡ: tài khoản đích</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>Giúp đỡ: máy chủ đích</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>Trợ giúp: mã thông báo đích</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>Trợ giúp: chế độ hiển thị của đích đến</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>Internal (chỉ có trên GitLab): người dùng đã xác thực được cho phép bởi instance GitLab của bạn có thể đọc mã nguồn. Việc chọn mục này với đích GitHub Công khai sẽ công bố mã đã sao chép cho tất cả mọi người trên internet. Internal là một mức độ truy cập, không phải là giấy phép mã nguồn mở; chỉ công bố nội dung mà bạn được ủy quyền chia sẻ.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>Gương chiếu thực hiện force-push các nhánh và thẻ nguồn. Hãy sử dụng đích riêng: các thay đổi độc lập tại đó có thể bị ghi đè. Các vấn đề, yêu cầu hợp nhất, quyền và cài đặt dự án sẽ không được sao chép.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>Tổ chức / Nhóm GitLab</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>Tài khoản người dùng cá nhân</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>Riêng tư: quyền truy cập được kiểm soát bởi tài khoản đích</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>Riêng tư: chỉ những người dùng được cấp quyền rõ ràng mới có thể đọc mã nguồn. Tùy chọn này mặc định bị tắt. Chỉ bật khi tổ chức của bạn cho phép sao chép các kho lưu trữ này.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>Công khai: bất kỳ ai cũng có thể đọc mã nguồn mà không cần đăng nhập.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>Công khai: bất kỳ ai trên internet đều có thể đọc bản sao</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>Kho lưu trữ cần sao chép</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>Chỉ bắt buộc khi bao gồm các nguồn Private cùng với các kho GitHub mới Public. Xác nhận lại mỗi lần lưu. Việc chọn Private không bao giờ thay đổi mục tiêu Public hiện có; quá trình mirror sẽ từ chối mục tiêu đó khi sao chép các nguồn Private. Xem xét quyền của các mục tiêu hiện có riêng biệt.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Lưu thay đổi</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>Lưu sẽ lưu mối quan hệ phản chiếu này cho tác vụ được lên lịch. Thao tác này không xác minh thông tin xác thực của bạn hoặc bắt đầu sao chép ngay lập tức. Sau lần chạy tiếp theo, hãy kiểm tra lịch sử tác vụ để xem lỗi xác thực và kết quả của từng kho lưu trữ.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Nguồn</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Đích</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>Sử dụng một token đích riêng biệt có thể tạo kho lưu trữ trong tài khoản đích và đẩy nội dung Git của chúng. Đối với token chi tiết (fine-grained) của GitHub, cho phép tạo kho lưu trữ (Quản trị: ghi) và Nội dung: ghi; bao gồm Quy trình: ghi nếu sao chép các tệp quy trình. Tổ chức của bạn cũng có thể yêu cầu phê duyệt token hoặc xác thực SSO. Chỉ có quyền đọc nguồn là chưa đủ.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>Điều gì xảy ra sau khi tôi lưu?</value>
+  </data>
+
+</root>

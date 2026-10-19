@@ -30,17 +30,56 @@
   <data name="From Type" xml:space="preserve">
     <value>元の種類</value>
   </data>
+  <data name="I confirm that Private source repositories may be published to Public GitHub repositories." xml:space="preserve">
+    <value>プライベートなソースリポジトリが公開 GitHub リポジトリに公開される可能性があることを確認します。</value>
+  </data>
+  <data name="Include archived repositories" xml:space="preserve">
+    <value>アーカイブされたリポジトリを含む</value>
+  </data>
+  <data name="Include Internal repositories (GitLab)" xml:space="preserve">
+    <value>内部リポジトリを含める（GitLab）</value>
+  </data>
+  <data name="Include Private repositories" xml:space="preserve">
+    <value>プライベートリポジトリを含める</value>
+  </data>
+  <data name="Include Public repositories" xml:space="preserve">
+    <value>パブリックリポジトリを含める</value>
+  </data>
   <data name="Please enter a valid URL." xml:space="preserve">
     <value>有効なURLを入力してください。</value>
   </data>
   <data name="Please specify if this is an Organization or a User." xml:space="preserve">
     <value>Organization か User のどちらかを指定してください。</value>
   </data>
+  <data name="Source access token" xml:space="preserve">
+    <value>ソースアクセストークン</value>
+  </data>
+  <data name="Source account type" xml:space="preserve">
+    <value>ソースアカウントの種類</value>
+  </data>
+  <data name="Source Git provider" xml:space="preserve">
+    <value>ソースのGitプロバイダー</value>
+  </data>
+  <data name="Source organization or username" xml:space="preserve">
+    <value>ソースの組織またはユーザー名</value>
+  </data>
+  <data name="Source server URL" xml:space="preserve">
+    <value>ソースサーバーURL</value>
+  </data>
   <data name="Source Type (Org/User)" xml:space="preserve">
     <value>ソースタイプ (組織/ユーザー)</value>
   </data>
+  <data name="Target access token" xml:space="preserve">
+    <value>ターゲットアクセストークン</value>
+  </data>
+  <data name="Target Git provider" xml:space="preserve">
+    <value>対象のGitプロバイダー</value>
+  </data>
   <data name="Target Organization" xml:space="preserve">
     <value>ターゲット組織</value>
+  </data>
+  <data name="Target organization or username" xml:space="preserve">
+    <value>ターゲットの組織名またはユーザー名</value>
   </data>
   <data name="Target Server URL" xml:space="preserve">
     <value>ターゲットサーバーURL</value>
@@ -71,6 +110,9 @@
   </data>
   <data name="The Target Type is required." xml:space="preserve">
     <value>ターゲットの種類は必須です。</value>
+  </data>
+  <data name="Visibility of new GitHub repositories" xml:space="preserve">
+    <value>新しい GitHub リポジトリの公開設定</value>
   </data>
 
 </root>

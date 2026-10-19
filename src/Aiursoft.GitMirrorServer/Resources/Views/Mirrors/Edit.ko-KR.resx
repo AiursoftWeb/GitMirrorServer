@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>이 설정은 누락된 GitHub 저장소를 생성할 때만 적용됩니다. 기본값은 공개입니다. 기존 대상 저장소의 공개 범위는 자동으로 변경되지 않습니다. GitLab 대상에는 계속 비공개 저장소가 생성되며, 이 GitHub 옵션은 GitLab 대상에 적용되지 않습니다.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>보관된 저장소는 대개 사용이 중단되었거나 읽기 전용입니다. 기본적으로 비활성화되어 있습니다. 보관된 저장소의 Git 콘텐츠도 복사하려면 이 옵션을 활성화하세요. 원본의 보관 상태는 대상에 적용되지 않습니다.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>목록으로 돌아가기</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>회사 소유 GitLab 저장소의 경우 그룹을, GitHub의 경우 조직을 선택하세요. 개인 계정 소유 저장소의 경우 사용자를 선택하세요.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>복사할 대상과 전송할 위치를 선택하세요.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>미러 만들기</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>대상 조직, 그룹 또는 사용자 이름을 입력하세요. 개인 GitHub 계정을 대상으로 하는 경우 대상 토큰은 해당 사용자에게 속해야 합니다.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>레포지토리 URL에서 그룹, 조직 또는 사용자 이름을 입력하세요. 표시 이름이나 전체 레포지토리 URL은 입력하지 마세요. 해당 계정의 레포지토리만 고려됩니다.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>나중에 범주를 제외하거나 소스를 아카이브로 이동하거나 Private으로 변경해도 이미 게시된 사본은 삭제되거나 숨겨지지 않습니다. 액세스를 철회할 때는 기존 대상 저장소를 별도로 검토하십시오.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>GitHub의 경우 https://api.github.com을 사용하세요. GitLab의 경우 /api/v4를 제외한 웹사이트 주소를 입력하세요.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>GitLab의 경우 https://gitlab.example.com과 같은 웹사이트 주소를 /api/v4 없이 입력하세요. GitHub의 경우 https://api.github.com을 사용하세요.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>GitLab의 경우 read_api 및 read_repository 권한이 있는 전용 계정을 사용하세요. 선택한 프로젝트에 대한 읽기 권한이 허용되어야 하며, 외부 또는 서비스 계정의 경우 내부(Internal) 프로젝트는 멤버십이 필요할 수 있습니다. GitHub의 경우 읽기 액세스를 허용하세요. 비공개(Private) 개인 저장소의 경우 소스 사용자의 토큰이 필요합니다. 내부(Internal) 및 비공개(Private)가 비활성화된 상태에서 익명 공개(Public) 복사 시에만 빈 값으로 두세요. 예약 실행을 위해 토큰이 유효한 상태를 유지해야 합니다. 선택된 가시성은 복사되는 내용을 제한합니다.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>GitHub 토큰 지침</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>GitLab 토큰 안내</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>도움말: 계정 유형</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>도움말: 아카이브된 저장소</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>도움말: 내부 저장소</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>도움말: 비공개 리포지토리</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>도움말: 공개 저장소</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>도움말: 게시 확인</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>원본 계정 도움말</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>도움말: 소스 서버</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>도움말: 소스 토큰</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>도움말: 대상 계정</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>도움말: 대상 서버</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>도움말: 대상 토큰</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>도움말: 대상 가시성</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>내부( GitLab 전용): GitLab 인스턴스에서 허용된 인증 사용자는 소스에 접근할 수 있습니다. 이 옵션을 선택하고 대상 GitHub 저장소를 공개로 설정하면 복사된 코드가 인터넷상의 모든 사람에게 공개됩니다. 내부는 오픈 소스 라이선스가 아니라 접근 수준입니다. 공유 권한이 있는 콘텐츠만 게시하세요.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>미러링은 소스 브랜치와 태그를 강제 푸시합니다. 전용 대상 저장소를 사용하세요. 대상 저장소의 독립적인 변경 사항은 덮어써질 수 있습니다. 이슈, 머지 요청, 권한 및 프로젝트 설정은 복사되지 않습니다.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>조직 / GitLab 그룹</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>개인 사용자 계정</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>비공개: 대상 계정에 의해 액세스가 제어됩니다</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>비공개: 명시적으로 권한을 부여받은 사용자만 소스 저장소를 읽을 수 있습니다. 기본적으로 비활성화되어 있습니다. 조직에서 이러한 저장소의 복사를 승인한 경우에만 활성화하세요.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>공개: 로그인 없이 누구나 소스를 읽을 수 있습니다.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>공개: 인터넷에 있는 누구나 복사본을 볼 수 있음</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>복사할 저장소</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>Private 소스와 Public 새 GitHub 리포지토리를 함께 포함하는 경우에만 필요합니다. 각 저장 시마다 다시 확인하십시오. Private을 선택해도 기존 Public 대상은 절대 변경되지 않으며, Private 소스를 복사할 때 해당 대상은 미러링에 의해 거부됩니다. 기존 대상 권한은 별도로 검토하십시오.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>변경 사항 저장</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>저장하면 이 미러 관계가 예약된 작업에 저장됩니다. 자격 증명을 확인하거나 즉시 복사를 시작하지 않습니다. 다음 실행 후 작업 기록에서 인증 오류 및 저장소별 결과를 확인하세요.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>소스</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>대상</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>대상 계정에 저장소를 만들고 해당 저장소에 Git 콘텐츠를 푸시할 수 있는 별도의 대상 토큰을 사용하세요. GitHub 세분화된 토큰의 경우 저장소 생성 권한(Administration: write)과 Contents: write를 허용하고, 워크플로 파일을 복사하려면 Workflows: write도 포함하세요. 조직에 따라 토큰 승인이나 SSO 인증이 추가로 필요할 수 있습니다. 소스 읽기 권한만으로는 충분하지 않습니다.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>저장 후 무엇이 발생합니까?</value>
+  </data>
+
+</root>
