@@ -21,7 +21,8 @@ public class GitLabService : IGitService
         _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
     }
 
-    public async Task<IReadOnlyCollection<GitRepository>> GetRepositoriesAsync(string orgOrUser, bool isOrg)
+    public async Task<IReadOnlyCollection<GitRepository>> GetRepositoriesAsync(string orgOrUser, bool isOrg,
+        bool includePrivate = false, bool includeArchived = false)
     {
         string endpoint;
         if (isOrg)
@@ -33,6 +34,11 @@ public class GitLabService : IGitService
         {
             // For user-owned repos
             endpoint = $"{_baseUrl}/users/{orgOrUser}/projects?per_page=100&archived=false";
+        }
+
+        if (includeArchived)
+        {
+            endpoint = endpoint.Replace("&archived=false", string.Empty, StringComparison.Ordinal);
         }
 
         var repos = new List<GitLabRepo>();
@@ -50,17 +56,21 @@ public class GitLabService : IGitService
                 : null;
         } while (!string.IsNullOrEmpty(nextPage));
 
-        // Authentication may reveal private projects. They must never enter the public mirror.
-        return repos.Where(r => r.Visibility is "public" or "internal").Select(r => new GitRepository
+        // Private repositories require an explicit selection, even when the token can read them.
+        return repos.Where(r => (r.Visibility is "public" or "internal" ||
+                                (includePrivate && r.Visibility == "private")) &&
+                               (includeArchived || !r.Archived)).Select(r => new GitRepository
         {
             Name = r.Path,
             Description = r.Description ?? string.Empty,
+            Visibility = r.Visibility,
             IsPrivate = r.Visibility != "public",
             Archived = r.Archived
         }).ToList();
     }
 
-    public async Task EnsureRepositoryExistsAsync(string orgOrUser, string repositoryName, bool isOrg)
+    public async Task EnsureRepositoryExistsAsync(string orgOrUser, string repositoryName, bool isOrg,
+        bool? isPrivate = null, bool requirePrivate = false)
     {
         try
         {

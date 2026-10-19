@@ -1,3 +1,4 @@
+using System.Net;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.GitMirrorServer.Services;
 using Microsoft.EntityFrameworkCore;
@@ -83,6 +84,11 @@ public class MirrorsControllerTests : TestBase
         var mirror = await db.MirrorConfigurations.FirstOrDefaultAsync(m => m.FromOrgName == fromOrg);
         Assert.IsNotNull(mirror);
         Assert.AreEqual("https://gitlab.com", mirror.FromServer);
+        Assert.IsTrue(mirror.IncludePublicRepositories);
+        Assert.IsTrue(mirror.IncludeInternalRepositories);
+        Assert.IsFalse(mirror.IncludePrivateRepositories);
+        Assert.IsFalse(mirror.IncludeArchivedRepositories);
+        Assert.IsFalse(mirror.NewGitHubRepositoriesPrivate);
 
         // 3. Edit (GET)
         var editPageResponse = await Http.GetAsync($"/Mirrors/Edit/{mirror.Id}");
@@ -95,6 +101,11 @@ public class MirrorsControllerTests : TestBase
             { "Id", mirror.Id.ToString() }, 
             { "FromType", "GitLab" },
             { "FromServer", newFromServer },
+            { "IncludePublicRepositories", "false" },
+            { "IncludeInternalRepositories", "false" },
+            { "IncludePrivateRepositories", "true" },
+            { "IncludeArchivedRepositories", "true" },
+            { "NewGitHubRepositoriesPrivate", "true" },
             { "FromOrgName", fromOrg },
             { "FromToken", "test-token" },
             { "OrgOrUser", "Org" },
@@ -110,6 +121,13 @@ public class MirrorsControllerTests : TestBase
         var editedMirror = await db.MirrorConfigurations.FindAsync(mirror.Id);
         Assert.IsNotNull(editedMirror);
         Assert.AreEqual(newFromServer, editedMirror.FromServer);
+        Assert.IsFalse(editedMirror.IncludePublicRepositories);
+        Assert.IsFalse(editedMirror.IncludeInternalRepositories);
+        Assert.IsTrue(editedMirror.IncludePrivateRepositories);
+        Assert.IsTrue(editedMirror.IncludeArchivedRepositories);
+        Assert.IsTrue(editedMirror.NewGitHubRepositoriesPrivate);
+        var editedHtml = await (await Http.GetAsync($"/Mirrors/Edit/{mirror.Id}")).Content.ReadAsStringAsync();
+        Assert.Contains("Private: access is controlled by the target account", editedHtml);
 
         // 5. Trigger
         var triggerResponse = await PostForm("/Mirrors/Trigger", new Dictionary<string, string>());
@@ -126,6 +144,75 @@ public class MirrorsControllerTests : TestBase
         Assert.IsNull(deletedMirror);
     }
     
+    [TestMethod]
+    [DataRow(false, false, false)]
+    [DataRow(false, true, true)]
+    [DataRow(true, false, true)]
+    public async Task PrivatePublicationRequiresConfirmationOrPrivateTarget(
+        bool targetPrivate, bool confirmPublication, bool accepted)
+    {
+        await LoginAsAdmin();
+        var fromOrg = "policy-" + Guid.NewGuid();
+        var response = await PostForm("/Mirrors/Create", new Dictionary<string, string>
+        {
+            ["FromType"] = "GitLab", ["FromServer"] = "https://gitlab.example.com",
+            ["FromOrgName"] = fromOrg, ["FromToken"] = "source-token", ["OrgOrUser"] = "Org",
+            ["TargetType"] = "GitHub", ["TargetServer"] = "https://api.github.com",
+            ["TargetOrgName"] = "target", ["TargetToken"] = "target-token",
+            ["IncludePrivateRepositories"] = "true",
+            ["NewGitHubRepositoriesPrivate"] = targetPrivate.ToString(),
+            ["ConfirmPrivatePublication"] = confirmPublication.ToString()
+        });
+        Assert.AreEqual(accepted ? HttpStatusCode.Found : HttpStatusCode.OK, response.StatusCode);
+        using var scope = Server!.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<GitMirrorServerDbContext>();
+        Assert.AreEqual(accepted, await db.MirrorConfigurations.AnyAsync(m => m.FromOrgName == fromOrg));
+        if (accepted)
+        {
+            var mirror = await db.MirrorConfigurations.SingleAsync(m => m.FromOrgName == fromOrg);
+            var editResponse = await PostForm("/Mirrors/Edit", new Dictionary<string, string>
+            {
+                ["Id"] = mirror.Id.ToString(), ["FromType"] = "GitLab",
+                ["FromServer"] = mirror.FromServer, ["FromOrgName"] = fromOrg, ["FromToken"] = "source-token",
+                ["OrgOrUser"] = "Org", ["TargetType"] = "GitHub", ["TargetServer"] = mirror.TargetServer,
+                ["TargetOrgName"] = "target", ["TargetToken"] = "target-token",
+                ["IncludePrivateRepositories"] = "true", ["NewGitHubRepositoriesPrivate"] = "false"
+            });
+            Assert.AreEqual(HttpStatusCode.OK, editResponse.StatusCode, "Editing cannot bypass publication confirmation.");
+            db.ChangeTracker.Clear();
+            Assert.AreEqual(targetPrivate, (await db.MirrorConfigurations.FindAsync(mirror.Id))!.NewGitHubRepositoriesPrivate);
+        }
+        else
+        {
+            Assert.Contains("Confirm Public publication", await response.Content.ReadAsStringAsync());
+        }
+    }
+
+    [TestMethod]
+    [DataRow(false, false, false, false)]
+    [DataRow(true, true, false, false)]
+    [DataRow(true, false, false, true)]
+    public async Task SourcePolicyValidatesSelectionAndAuthentication(
+        bool includePublic, bool includeInternal, bool includePrivate, bool accepted)
+    {
+        await LoginAsAdmin();
+        var fromOrg = "selection-" + Guid.NewGuid();
+        var response = await PostForm("/Mirrors/Create", new Dictionary<string, string>
+        {
+            ["FromType"] = "GitLab", ["FromServer"] = "https://gitlab.example.com",
+            ["FromOrgName"] = fromOrg, ["OrgOrUser"] = "Org",
+            ["TargetType"] = "GitHub", ["TargetServer"] = "https://api.github.com",
+            ["TargetOrgName"] = "target", ["TargetToken"] = "target-token",
+            ["IncludePublicRepositories"] = includePublic.ToString(),
+            ["IncludeInternalRepositories"] = includeInternal.ToString(),
+            ["IncludePrivateRepositories"] = includePrivate.ToString()
+        });
+        Assert.AreEqual(accepted ? HttpStatusCode.Found : HttpStatusCode.OK, response.StatusCode);
+        using var scope = Server!.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<GitMirrorServerDbContext>();
+        Assert.AreEqual(accepted, await db.MirrorConfigurations.AnyAsync(m => m.FromOrgName == fromOrg));
+    }
+
     [TestMethod]
     public async Task HistoryAccessTest()
     {

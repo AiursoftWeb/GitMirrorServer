@@ -17,7 +17,7 @@ namespace Aiursoft.GitMirrorServer.MySql.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "10.0.2")
+                .HasAnnotation("ProductVersion", "10.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
@@ -62,6 +62,21 @@ namespace Aiursoft.GitMirrorServer.MySql.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
+
+                    b.Property<bool>("IncludeArchivedRepositories")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IncludeInternalRepositories")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IncludePrivateRepositories")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("IncludePublicRepositories")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("NewGitHubRepositoriesPrivate")
+                        .HasColumnType("tinyint(1)");
 
                     b.Property<string>("OrgOrUser")
                         .IsRequired()

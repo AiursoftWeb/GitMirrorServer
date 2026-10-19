@@ -50,8 +50,17 @@ public class MirrorService(
 
                     var repos = (await sourceService
                             .GetRepositoriesAsync(config.FromOrgName,
-                                isOrg: config.OrgOrUser.ToLower().StartsWith("org")))
-                        .Where(r => !r.Archived)
+                                isOrg: config.OrgOrUser.ToLower().StartsWith("org"),
+                                includePrivate: config.IncludePrivateRepositories,
+                                includeArchived: config.IncludeArchivedRepositories))
+                        .Where(r => config.IncludeArchivedRepositories || !r.Archived)
+                        .Where(r => r.Visibility switch
+                        {
+                            "public" => config.IncludePublicRepositories,
+                            "internal" => config.IncludeInternalRepositories,
+                            "private" => config.IncludePrivateRepositories,
+                            _ => false
+                        })
                         .ToList();
                     
                     logger.LogInformation("Found {count} repositories to mirror", repos.Count());
@@ -89,7 +98,10 @@ public class MirrorService(
                                 {
                                     Log($"Ensuring target repository {repo.Name} exists");
                                     await targetService.EnsureRepositoryExistsAsync(config.TargetOrgName, repo.Name,
-                                        isOrg: true);
+                                        isOrg: true,
+                                        isPrivate: config.TargetType.Equals("GitHub", StringComparison.OrdinalIgnoreCase)
+                                            ? config.NewGitHubRepositoriesPrivate : null,
+                                        requirePrivate: repo.Visibility == "private" && config.NewGitHubRepositoriesPrivate);
 
                                     var sourceUrl = sourceService.GetCloneUrl(config.FromOrgName, repo.Name);
                                     var targetUrl = targetService.GetPushUrl(

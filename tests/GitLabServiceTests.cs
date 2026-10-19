@@ -158,6 +158,38 @@ public class GitLabServiceTests
             new[] { (HttpMethod.Get, $"/api/v4/{collection}/Anduin/projects?search=Video-float") }, requests);
     }
 
+    [TestMethod]
+    [DataRow(false, false, 2)]
+    [DataRow(true, false, 3)]
+    [DataRow(false, true, 3)]
+    [DataRow(true, true, 4)]
+    public async Task GetRepositoriesAsync_OnlyIncludesPrivateAndArchivedWhenSelected(
+        bool includePrivate, bool includeArchived, int expectedCount)
+    {
+        var handler = new StubHandler(request =>
+        {
+            Assert.AreEqual(!includeArchived, request.RequestUri!.Query.Contains("archived=false", StringComparison.Ordinal));
+            return new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent("""
+                    [{"path":"public","visibility":"public"},
+                     {"path":"internal","visibility":"internal"},
+                     {"path":"private","visibility":"private"},
+                     {"path":"archived","visibility":"public","archived":true},
+                     {"path":"unknown","visibility":"future-value"}]
+                    """, Encoding.UTF8, "application/json")
+            };
+        });
+        var service = new GitLabService("https://gitlab.example.com", "source-token", handler);
+
+        var repositories = await service.GetRepositoriesAsync("source", true, includePrivate, includeArchived);
+
+        Assert.AreEqual(expectedCount, repositories.Count);
+        Assert.AreEqual(includePrivate, repositories.Any(repo => repo.Visibility == "private"));
+        Assert.AreEqual(includeArchived, repositories.Any(repo => repo.Archived));
+        Assert.IsFalse(repositories.Any(repo => repo.Name == "unknown"));
+    }
+
     private sealed class StubHandler(Func<HttpRequestMessage, HttpResponseMessage> respond) : HttpMessageHandler
     {
         protected override Task<HttpResponseMessage> SendAsync(

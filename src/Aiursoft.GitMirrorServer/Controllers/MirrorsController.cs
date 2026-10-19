@@ -7,13 +7,15 @@ using Aiursoft.UiStack.Navigation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Localization;
 
 namespace Aiursoft.GitMirrorServer.Controllers;
 
 [Authorize]
 public class MirrorsController(
     GitMirrorServerDbContext dbContext,
-    BackgroundJobRegistry jobRegistry) : Controller
+    BackgroundJobRegistry jobRegistry,
+    IStringLocalizer<MirrorsController> localizer) : Controller
 {
     [Authorize(Policy = AppPermissionNames.CanViewMirrorStatus)]
     [RenderInNavBar(
@@ -41,6 +43,7 @@ public class MirrorsController(
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(EditorViewModel model)
     {
+        ValidatePolicy(model);
         if (!ModelState.IsValid)
         {
              model.IsCreate = true;
@@ -58,7 +61,12 @@ public class MirrorsController(
             TargetType = model.TargetType,
             TargetServer = model.TargetServer,
             TargetToken = model.TargetToken,
-            TargetOrgName = model.TargetOrgName
+            TargetOrgName = model.TargetOrgName,
+            IncludePublicRepositories = model.IncludePublicRepositories,
+            IncludeInternalRepositories = model.IncludeInternalRepositories,
+            IncludePrivateRepositories = model.IncludePrivateRepositories,
+            IncludeArchivedRepositories = model.IncludeArchivedRepositories,
+            NewGitHubRepositoriesPrivate = model.NewGitHubRepositoriesPrivate
         };
 
         dbContext.MirrorConfigurations.Add(mirror);
@@ -86,6 +94,11 @@ public class MirrorsController(
             TargetServer = mirror.TargetServer,
             TargetToken = mirror.TargetToken,
             TargetOrgName = mirror.TargetOrgName,
+            IncludePublicRepositories = mirror.IncludePublicRepositories,
+            IncludeInternalRepositories = mirror.IncludeInternalRepositories,
+            IncludePrivateRepositories = mirror.IncludePrivateRepositories,
+            IncludeArchivedRepositories = mirror.IncludeArchivedRepositories,
+            NewGitHubRepositoriesPrivate = mirror.NewGitHubRepositoriesPrivate,
             IsCreate = false
         });
     }
@@ -95,6 +108,7 @@ public class MirrorsController(
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(EditorViewModel model)
     {
+        ValidatePolicy(model);
         if (!ModelState.IsValid)
         {
             model.IsCreate = false;
@@ -117,10 +131,37 @@ public class MirrorsController(
         mirror.TargetServer = model.TargetServer;
         mirror.TargetToken = model.TargetToken;
         mirror.TargetOrgName = model.TargetOrgName;
+        mirror.IncludePublicRepositories = model.IncludePublicRepositories;
+        mirror.IncludeInternalRepositories = model.IncludeInternalRepositories;
+        mirror.IncludePrivateRepositories = model.IncludePrivateRepositories;
+        mirror.IncludeArchivedRepositories = model.IncludeArchivedRepositories;
+        mirror.NewGitHubRepositoriesPrivate = model.NewGitHubRepositoriesPrivate;
 
         dbContext.MirrorConfigurations.Update(mirror);
         await dbContext.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
+    }
+
+    private void ValidatePolicy(EditorViewModel model)
+    {
+        var gitLabSource = string.Equals(model.FromType, "GitLab", StringComparison.OrdinalIgnoreCase);
+        if (!model.IncludePublicRepositories && !model.IncludePrivateRepositories &&
+            !(gitLabSource && model.IncludeInternalRepositories))
+        {
+            ModelState.AddModelError(string.Empty, localizer["Select at least one source repository visibility."]);
+        }
+        if ((model.IncludePrivateRepositories || (gitLabSource && model.IncludeInternalRepositories)) &&
+            string.IsNullOrWhiteSpace(model.FromToken))
+        {
+            ModelState.AddModelError(nameof(model.FromToken),
+                localizer["A source access token is required to include Internal or Private repositories."]);
+        }
+        if (string.Equals(model.TargetType, "GitHub", StringComparison.OrdinalIgnoreCase) &&
+            model.IncludePrivateRepositories && !model.NewGitHubRepositoriesPrivate && !model.ConfirmPrivatePublication)
+        {
+            ModelState.AddModelError(nameof(model.ConfirmPrivatePublication),
+                localizer["Confirm Public publication of Private source repositories, or choose Private for new GitHub repositories."]);
+        }
     }
 
     [HttpPost]
