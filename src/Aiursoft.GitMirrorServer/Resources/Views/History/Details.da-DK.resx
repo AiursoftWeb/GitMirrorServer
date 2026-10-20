@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>Tilbage til historik</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Kopieringen mislykkedes. Markér logteksten, og kopiér den manuelt.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Kopiér log</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Fejl</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Udvid et repository for at se dets log. Mislykkede resultater udvides automatisk.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Fejlede</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>Fejl</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Job-fejl</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Log</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Log kopieret til udklipsholder!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Log kopieret.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Logfiler</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Resultater af spejlingskørslen</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Der er ikke registreret nogen repositorieresultater for denne kørsel.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Resultater for repositories</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Kørselsfejl</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Kører</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Kilde</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Starttid</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Startet</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Lykkedes</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Lykken</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Mål</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Denne kørsel er stadig i gang. Opdater siden for at se de nyeste resultater.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Samlede repositorier</value>
   </data>
 
 </root>

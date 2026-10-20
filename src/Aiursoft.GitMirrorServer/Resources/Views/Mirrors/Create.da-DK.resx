@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>Gælder kun ved oprettelse af en manglende GitHub-repository. Public er standard. Eksisterende målvisibilitet ændres aldrig automatisk. GitLab-mål fortsætter med at oprette manglende repositories som Private; dette GitHub-valg gælder ikke for dem.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>Arkiverede repositories er typisk afskaffede eller kun til læsning. Deaktiveret som standard. Aktivér dette for også at kopiere deres Git-indhold; arkivstatussen for kilden overføres ikke til målet.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>Tilbage til listen</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>Vælg en gruppe for virksomhedsejede GitLab-projekter eller en organisation for GitHub. Vælg en bruger for projekter, der ejes af en personlig konto.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>Vælg, hvad der skal kopieres, og hvor det skal sendes hen.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Opret spejl</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>Indtast organisationen, gruppen eller brugernavnet for destinationen. For en personlig GitHub-destination skal måltokens tilhøre samme bruger.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>Angiv gruppen, organisationen eller brugernavnet fra lagerets URL – ikke visningsnavnet eller en hel lager-URL. Der tages kun højde for denne kontos lagre.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>Hvis en kategori senere udelades, en kilde arkiveres eller ændres til privat, slettes eller skjules allerede offentliggjorte kopier ikke. Gennemgå eksisterende målrepositories separat, når adgangen trækkes tilbage.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>Til GitHub skal du bruge https://api.github.com. Til GitLab skal du indtaste webstedsadressen uden /api/v4.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>For GitLab skal du angive webadressen, f.eks. https://gitlab.example.com, uden /api/v4. For GitHub skal du bruge https://api.github.com.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>Til GitLab skal du bruge en dedikeret konto med read_api og read_repository. Kontoen skal have tilladelse til at læse de valgte projekter; interne projekter kan kræve medlemskab for eksterne eller servicekonti. Til GitHub skal du give læsetilladelse; private personlige repositorier kræver en token, der tilhører kildebrugeren. Lad feltet stå tomt kun for anonyme offentlige kopier, med interne og private fravalgt. Sørg for, at tokenen er gyldig for planlagte kørsler. Den valgte synlighed begrænser stadig, hvad der kopieres.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>Vejledning til GitHub-token</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>GitLab-tokeninstruktioner</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>Hjælp: kontotype</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>Hjælp: arkiverede repositorier</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>Hjælp: interne repositorier</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>Hjælp: private arkiver</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>Hjælp: offentlige repositories</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>Hjælp: bekræftelse af publicering</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>Hjælp: kildekonto</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>Hjælp: kilserver</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>Hjælp: kildetoken</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>Hjælp: målkonto</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>Hjælp: målserver</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>Hjælp: mål-token</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>Hjælp: målbarlighed</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>Intern (kun GitLab): Autentificerede brugere, som er tilladt af din GitLab-instans, kan læse kilden. Valg af dette med et offentligt GitHub-mål udgiver den kopierede kode for alle på internettet. Intern er et adgangsniveau, ikke en open source-licens; udgiv kun indhold, du har tilladelse til at dele.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>Spejling force-push&apos;er kildekoder og tags. Brug et dedikeret mål: uafhængige ændringer der kan blive overskrevet. Issues, merge requests, tilladelser og projektindstillinger kopieres ikke.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>Organisation / GitLab-gruppe</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>Personligt brugerkonto</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>Privat: Adgangen styres af målkontoen</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>Privat: Kun brugere med udtrykkelig tilladelse kan læse kilden. Deaktiveret som standard. Aktivér kun dette, hvis din organisation giver tilladelse til at kopiere disse repositories.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>Offentlig: Alle kan læse kilden uden at logge ind.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>Offentlig: alle på internettet kan læse kopien</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>Repositories der skal kopieres</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>Kun påkrævet, når Private-kilder inkluderes sammen med nye Public GitHub-arkiver. Bekræft igen ved hver lagring. Valget Private ændrer aldrig et eksisterende Public-mål; spejling afviser dette mål, når Private-kilder kopieres. Gennemgå tilladelserne for eksisterende mål separat.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Gem ændringer</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>Når du gemmer, gemmes denne spejlingsrelation til det planlagte job. Dine legitimationsoplysninger bliver ikke verificeret, og kopieringen starter ikke med det samme. Se jobhistorikken efter næste kørsel for at finde godkendelsesfejl og resultater for hvert repository.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Kilde</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Mål</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>Brug et separat måltoken, der kan oprette repositories på destinationskontoen og pushe deres Git-indhold. For et GitHub-fintmasketskåret token skal du tillade oprettelse af repositories (Administration: write) og Contents: write. Medtag Workflows: write, hvis workflowfiler skal kopieres. Din organisation kan også kræve godkendelse af tokenet eller SSO-autorisation. Læserettigheder til kilden alene er ikke nok.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>Hvad sker der, når jeg gemmer?</value>
+  </data>
+
+</root>

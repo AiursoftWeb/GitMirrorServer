@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>Retour à l&apos;historique</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Échec de la copie. Sélectionnez le texte du journal et copiez-le manuellement.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Copier le journal</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Erreur</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Développez un dépôt pour consulter son journal. Les résultats en échec sont développés automatiquement.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Échec</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>Échecs</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Erreur de tâche</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Journal</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Journal copié dans le presse-papiers !</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Journal copié.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Journaux</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Résultats d&apos;exécution du miroir</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Aucun résultat de dépôt n&apos;a été enregistré pour cette exécution.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Résultats des dépôts</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Erreur d&apos;exécution</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>En cours</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Source</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Heure de début</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Démarré</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Réussi</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Succès</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Cible</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Cette exécution est toujours en cours. Actualisez pour voir les derniers résultats.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Total des dépôts</value>
   </data>
 
 </root>

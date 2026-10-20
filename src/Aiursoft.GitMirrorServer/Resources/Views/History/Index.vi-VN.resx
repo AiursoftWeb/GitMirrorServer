@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>Hành động</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Thao tác</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Chi tiết</value>
   </data>
@@ -33,8 +36,23 @@
   <data name="Failed" xml:space="preserve">
     <value>Thất bại</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>Đang xử lý</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>Lịch sử công việc</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>Lịch sử đồng bộ bản sao</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>Chưa có phiên chạy gương nào</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>Kết quả sẽ xuất hiện tại đây sau khi quá trình đồng bộ bản sao được lên lịch hoặc bắt đầu thủ công.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Đang chạy</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Đang chạy...</value>
@@ -42,14 +60,29 @@
   <data name="Start Time" xml:space="preserve">
     <value>Thời gian bắt đầu</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Bắt đầu</value>
+  </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
     <value>Thống kê (Thành công/Thất bại/Tổng cộng)</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Trạng thái</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Thành công</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Thành công</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>50 lần chạy nhân bản gần đây nhất. Mở một lần chạy để kiểm tra kết quả và nhật ký của kho lưu trữ.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Tổng số kho lưu trữ</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>Xem kết quả</value>
   </data>
 
 </root>

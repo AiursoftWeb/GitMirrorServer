@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>ينطبق هذا الخيار فقط عند إنشاء مستودع GitHub غير موجود. يكون المستودع عامًا افتراضيًا. لا تتغير رؤية المستودعات الموجودة على الوجهة تلقائيًا أبدًا. تستمر وجهات GitLab في إنشاء المستودعات غير الموجودة كخاصة؛ ولا ينطبق عليها خيار GitHub هذا.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>عادةً ما تكون المستودعات المؤرشفة متوقفة أو للقراءة فقط. تكون معطّلة افتراضيًا. فعّل هذا الخيار لنسخ محتوى Git الخاص بها أيضًا؛ ولن تُطبّق حالة الأرشفة للمصدر على الوجهة.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>العودة إلى القائمة</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>اختر مجموعة للمستودعات المملوكة للشركة على GitLab أو منظمة على GitHub. اختر مستخدمًا للمستودعات المملوكة لحساب فردي.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>اختر ما تريد نسخه والوجهة التي تريد إرساله إليها.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>إنشاء مرآة</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>أدخل اسم المؤسسة أو المجموعة أو اسم المستخدم الوجهة. إذا كانت الوجهة حسابًا شخصيًا على GitHub، فيجب أن يكون الرمز المميز للوجهة تابعًا للمستخدم نفسه.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>أدخل اسم المجموعة أو المؤسسة أو اسم المستخدم من عنوان المستودع، وليس الاسم الظاهر أو عنوان المستودع الكامل. يتم أخذ مستودعات هذا الحساب فقط في الاعتبار.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>لا يؤدي استبعاد فئة لاحقًا، أو أرشفة مصدر، أو تغييره إلى خاص إلى حذف أي نسخة منشورة بالفعل أو إخفائها. راجع مستودعات الهدف الموجودة بشكل منفصل عند سحب الوصول.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>بالنسبة إلى GitHub، استخدم https://api.github.com. بالنسبة إلى GitLab، أدخل عنوان الموقع دون /api/v4.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>بالنسبة إلى GitLab، أدخل عنوان الموقع، مثل https://gitlab.example.com، من دون /api/v4. وبالنسبة إلى GitHub، استخدم https://api.github.com.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>بالنسبة إلى GitLab، استخدم حسابًا مخصصًا بصلاحيتَي read_api وread_repository. يجب أن يكون مسموحًا له بقراءة المشاريع المحددة؛ وقد تتطلب المشاريع الداخلية عضوية الحسابات الخارجية أو حسابات الخدمة. بالنسبة إلى GitHub، امنح صلاحية القراءة؛ إذ تتطلب المستودعات الشخصية الخاصة رمزًا مميزًا تابعًا للمستخدم المصدر. اترك الحقل فارغًا فقط عند نسخ المستودعات العامة دون تسجيل الدخول، مع تعطيل المستودعات الداخلية والخاصة. احرص على أن يظل الرمز المميز صالحًا لعمليات التشغيل المجدولة. تظل الرؤية المحددة هي التي تحدد المحتوى الذي سيُنسخ.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>تعليمات رمز GitHub</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>تعليمات رمز GitLab</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>مساعدة: نوع الحساب</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>مساعدة: المستودعات المؤرشفة</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>المساعدة: المستودعات الداخلية</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>مساعدة: المستودعات الخاصة</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>مساعدة: المستودعات العامة</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>مساعدة: تأكيد النشر</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>مساعدة: حساب المصدر</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>المساعدة: خادم المصدر</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>مساعدة: رمز المصدر</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>المساعدة: حساب الوجهة</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>مساعدة: الخادم الهدف</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>مساعدة: رمز الوصول للوجهة</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>مساعدة: مستوى ظهور الهدف</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>داخلي (لـ GitLab فقط): يمكن للمستخدمين الموثّقين المسموح لهم من قِبل مثيل GitLab الخاص بك قراءة المصدر. اختيار هذا الخيار مع هدف GitHub عام ينشر الكود المنسوخ على جميع الأشخاص في الإنترنت. «داخلي» هو مستوى وصول وليس رخصة مفتوحة المصدر؛ انشر فقط المحتوى الذي تفوّضك به المشاركة.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>يعمل المرآة على دفع الفروع والعلامات المصدرية بشكل قسري. استخدم هدفًا مخصصًا: فقد يتم تجاوز التغييرات المستقلة هناك. لا يتم نسخ المشكلات أو طلبات الدمج أو الصلاحيات أو إعدادات المشروع.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>منظمة / مجموعة GitLab</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>حساب مستخدم شخصي</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>خاص: يحدد الحساب المستهدف صلاحيات الوصول</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>خاص: لا يمكن قراءة المصدر إلا من قِبل المستخدمين المصرّح لهم صراحةً. هذا الخيار معطّل افتراضيًا. لا تفعّله إلا إذا كانت مؤسستك تسمح بنسخ هذه المستودعات.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>عام: يمكن لأي شخص قراءة المصدر دون تسجيل الدخول.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>عام: يمكن لأي شخص على الإنترنت الاطلاع على النسخة</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>المستودعات التي سيتم نسخها</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>مطلوب فقط عند تضمين مصادر خاصة مع مستودعات GitHub الجديدة العامة. قم بالتأكيد مرة أخرى عند كل حفظ. اختيار الخاص لا يغيّر أبدًا هدفًا عامًا موجودًا؛ يرفض التمرير ذلك الهدف عند نسخ المصادر الخاصة. راجع أذونات الهدف الموجودة بشكل منفصل.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>حفظ التغييرات</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>تُحفظ هذه العلاقة المرآتية للوظيفة المجدولة عند الحفظ. لا يتم التحقق من بيانات الاعتماد الخاصة بك أو بدء النسخ فورًا. تحقق من سجل الوظيفة بعد التشغيل التالي بحثًا عن أخطاء المصادقة والنتائج الخاصة بكل مستودع.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>المصدر</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>الهدف</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>استخدم رمز وصول منفصل للوجهة يمكنه إنشاء المستودعات في الحساب الوجهة ودفع محتويات Git الخاصة بها. بالنسبة لرمز وصول GitHub الدقيق، اسمح بإنشاء المستودعات (الإدارة: كتابة) والمحتويات: كتابة؛ شمل سير العمل: كتابة إذا كنت تنسخ ملفات سير العمل. قد تتطلب مؤسستك أيضًا موافقة على رمز الوصول أو تفويض SSO. صلاحيات القراءة من المصدر وحدها لا تكفي.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>ماذا يحدث بعد الحفظ؟</value>
+  </data>
+
+</root>

@@ -21,10 +21,19 @@
       <data name="Back to History" xml:space="preserve">
     <value>Volver a Historial</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Error al copiar. Seleccione el texto del registro y cópielo manualmente.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Copiar registro</value>
   </data>
   <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Expande un repositorio para consultar su registro. Los resultados fallidos se expanden automáticamente.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
     <value>Error</value>
   </data>
   <data name="Failures" xml:space="preserve">
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Error de trabajo</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Registro</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Registro copiado al portapapeles</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Registro copiado.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Registros</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Resultados de ejecución de la réplica</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>No se han registrado resultados de repositorios para esta ejecución.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Resultados de los repositorios</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Error de ejecución</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>En ejecución</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Origen</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Hora de inicio</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Iniciado</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Correcto</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Éxito</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Destino</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Esta ejecución sigue en curso. Actualiza la página para ver los resultados más recientes.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Repositorios totales</value>
   </data>
 
 </root>

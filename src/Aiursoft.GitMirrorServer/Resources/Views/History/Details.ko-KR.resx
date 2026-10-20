@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>이전 내역으로 돌아가기</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>복사 실패. 로그 텍스트를 선택하여 수동으로 복사하세요.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>로그 복사</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>오류</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>저장소를 펼쳐 로그를 확인하세요. 실패한 결과는 자동으로 펼쳐집니다.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>실패</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>실패</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>작업 오류</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>로그</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>로그가 클립보드에 복사되었습니다!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>로그가 복사되었습니다.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>로그</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>미러 실행 결과</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>이번 실행에서 기록된 저장소 결과가 없습니다.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>저장소 결과</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>실행 오류</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>실행 중</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>소스</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>시작 시간</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>시작</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>성공</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>성공</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>대상</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>이번 실행이 아직 진행 중입니다. 최신 결과를 확인하려면 새로고침을 해 주세요.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>총 저장소 수</value>
   </data>
 
 </root>

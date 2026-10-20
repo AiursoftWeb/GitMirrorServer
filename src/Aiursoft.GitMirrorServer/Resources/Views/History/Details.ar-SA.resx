@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>العودة إلى السجل</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>فشل النسخ. حدّد نص السجل وانسخه يدويًا.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>نسخ سجل</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>خطأ</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>قم بتوسيع المستودع لفحص سجله. يتم توسيع النتائج الفاشلة تلقائيًا.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>فشل</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>الإخفاقات</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>خطأ المهمة</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>سجل</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>تم نسخ السجل إلى الحافظة!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>تم نسخ السجل.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>سجلات</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>نتائج تشغيل المرآة</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>لم تُسجَّل أي نتائج للمستودعات في هذه العملية.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>نتائج المستودعات</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>خطأ التشغيل</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>قيد التنفيذ</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>المصدر</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>وقت البدء</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>بدأت</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>نجح</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>نجاح</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>الوجهة</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>لا يزال هذا التشغيل قيد التنفيذ. حدّث الصفحة للاطلاع على أحدث النتائج.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>إجمالي المستودعات</value>
   </data>
 
 </root>

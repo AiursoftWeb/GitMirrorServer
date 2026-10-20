@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>返回历史记录</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>复制失败。请选中日志文本并手动复制。</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>复制日志</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>错误</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>展开存储库以查看其日志。失败的结果会自动展开。</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>失败</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>失败</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>任务错误</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>日志</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>日志已复制到剪贴板！</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>日志已复制。</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>日志</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>镜像运行结果</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>本次运行未记录任何仓库结果。</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>仓库执行结果</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>运行错误</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>正在运行</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>源</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>开始时间</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>开始时间</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>成功</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>成功</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>目标</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>此运行仍在进行中。请刷新以查看最新结果。</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>仓库总数</value>
   </data>
 
 </root>

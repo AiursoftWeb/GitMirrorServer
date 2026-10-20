@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>Назад к истории</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Не удалось скопировать. Выделите текст журнала и скопируйте его вручную.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Копировать журнал</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Ошибка</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Разверните репозиторий, чтобы просмотреть его журнал. Результаты с ошибками разворачиваются автоматически.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Не удалось</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>Ошибки</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Ошибка задания</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Журнал</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Журнал скопирован в буфер обмена!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Журнал скопирован.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Журналы</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Результаты запуска зеркалирования</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Для этого запуска результаты по репозиториям не зафиксированы.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Результаты по репозиториям</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Ошибка запуска</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Выполняется</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Источник</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Время начала</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Начато</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Успешно</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Успех</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Цель</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Этот запуск всё ещё выполняется. Обновите страницу, чтобы увидеть последние результаты.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Всего репозиториев</value>
   </data>
 
 </root>

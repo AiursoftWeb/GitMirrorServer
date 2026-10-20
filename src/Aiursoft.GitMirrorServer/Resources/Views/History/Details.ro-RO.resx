@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>Înapoi la istoric</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Copierea a eșuat. Selectați textul jurnalului și copiați-l manual.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Copiază jurnalul</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Eroare</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Extindeți un depozit pentru a inspecta jurnalul acestuia. Rezultatele eșuate sunt extinse automat.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Eșuat</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>Eșecuri</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Eroare sarcină</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Jurnal</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Jurnal copiat în clipboard!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Jurnal copiat.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Jurnale</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Rezultatele rularei oglinzilor</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Nu s-au înregistrat rezultate pentru depozite în această execuție.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Rezultate depozite</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Eroare de execuție</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>În curs de execuție</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Sursă</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Ora de începere</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Început</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Reușit</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Reușit</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Destinație</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Această rulare este încă în curs. Reîmprospătați pentru a vedea cele mai recente rezultate.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Repositorii totale</value>
   </data>
 
 </root>

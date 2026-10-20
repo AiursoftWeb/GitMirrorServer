@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>الإجراء</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>إجراءات</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>التفاصيل</value>
   </data>
@@ -33,13 +36,31 @@
   <data name="Failed" xml:space="preserve">
     <value>فشل</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>قيد التنفيذ</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>سجل المهام</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>سجل المرآة</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>لا توجد عمليات مرآة بعد</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>تظهر النتائج هنا بعد بدء تشغيل المرآة المجدولة أو اليدوية.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>قيد التشغيل</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>جاري التشغيل...</value>
   </data>
   <data name="Start Time" xml:space="preserve">
+    <value>وقت البدء</value>
+  </data>
+  <data name="Started" xml:space="preserve">
     <value>وقت البدء</value>
   </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
@@ -48,8 +69,20 @@
   <data name="Status" xml:space="preserve">
     <value>الحالة</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>ناجح</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>نجاح</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>أحدث 50 عملية مرآة. افتح عملية واحدة لفحص نتائج المستودعات والسجلات.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>إجمالي المستودعات</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>عرض النتائج</value>
   </data>
 
 </root>

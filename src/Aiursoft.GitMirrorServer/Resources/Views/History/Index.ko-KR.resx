@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>작업</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>작업</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>세부 정보</value>
   </data>
@@ -33,8 +36,23 @@
   <data name="Failed" xml:space="preserve">
     <value>실패</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>진행 중</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>작업 기록</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>미러 기록</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>아직 미러 실행 기록이 없습니다</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>예약 또는 수동 미러링이 시작되면 여기에 결과가 표시됩니다.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>실행 중</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>실행 중...</value>
@@ -42,14 +60,29 @@
   <data name="Start Time" xml:space="preserve">
     <value>시작 시간</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>시작</value>
+  </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
     <value>통계 (성공/실패/총계)</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>상태</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>성공</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>성공</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>최근 미러링 실행 50건입니다. 실행 항목을 열어 저장소 결과와 로그를 확인하세요.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>전체 리포지토리 수</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>결과 보기</value>
   </data>
 
 </root>

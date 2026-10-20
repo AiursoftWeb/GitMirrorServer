@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>Azione</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Azioni</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Dettagli</value>
   </data>
@@ -33,8 +36,23 @@
   <data name="Failed" xml:space="preserve">
     <value>Fallito</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>In corso</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>Cronologia dei compiti</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>Cronologia mirror</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>Nessuna esecuzione di mirroring ancora</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>I risultati appariranno qui all&apos;avvio di un&apos;esecuzione di mirroring pianificata o manuale.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>In esecuzione</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>In esecuzione...</value>
@@ -42,14 +60,29 @@
   <data name="Start Time" xml:space="preserve">
     <value>Ora di inizio</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Inizio</value>
+  </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
     <value>Statistiche (Riusciti/Falliti/Totali)</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Stato</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Completati</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Success</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>Le 50 esecuzioni di mirroring più recenti. Apri un&apos;esecuzione per consultare i risultati e i log dei repository.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Repository totali</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>Visualizza risultati</value>
   </data>
 
 </root>
