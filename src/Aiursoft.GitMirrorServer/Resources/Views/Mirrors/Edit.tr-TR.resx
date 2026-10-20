@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>Yalnızca eksik bir GitHub deposu oluşturulurken uygulanır. Varsayılan değer herkese açıktır. Mevcut hedef görünürlüğü asla otomatik olarak değiştirilmez. GitLab hedefleri, eksik depoları yine Özel olarak oluşturmaya devam eder; bu GitHub seçeneği onlara uygulanmaz.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>Arşivlenmiş depolar genellikle emekli edilmiş veya salt okunur durumdadır. Varsayılan olarak devre dışıdır. Git içeriklerini de kopyalamak için bunu etkinleştirin; kaynak arşiv durumu hedefe uygulanmaz.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>Listeye Dön</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>Şirkete ait GitLab depoları için bir grup, GitHub içinse bir kuruluş seçin. Bireysel bir hesaba ait depolar için bir kullanıcı seçin.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>Neyi kopyalayacağınızı ve nereye göndereceğinizi seçin.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Ayna Oluştur</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>Hedef kuruluşu, grubu veya kullanıcı adını girin. Kişisel bir GitHub hedefi için hedef belirteci aynı kullanıcıya ait olmalıdır.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>Depo URL’sindeki grup adını, kuruluş adını veya kullanıcı adını girin; görünen adı ya da depo URL’sinin tamamını girmeyin. Yalnızca bu hesaba ait depolar dikkate alınır.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>Bir kategoriyi daha sonra kapsam dışında bırakmak, bir kaynağı arşivlemek veya Özel olarak değiştirmek, daha önce yayımlanmış kopyaları silmez ya da gizlemez. Erişimi kaldırırken mevcut hedef depoları ayrıca gözden geçirin.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>GitHub için https://api.github.com adresini kullanın. GitLab için /api/v4 eklemeden web sitesi adresini girin.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>GitLab için /api/v4 olmadan, https://gitlab.example.com gibi web sitesi adresini girin. GitHub için https://api.github.com adresini kullanın.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>GitLab için read_api ve read_repository izinlerine sahip, bu iş için ayrılmış bir hesap kullanın. Bu hesabın seçilen projeleri okumasına izin verilmelidir; Harici veya hizmet hesaplarının Internal projelere erişebilmesi için üye olmaları gerekebilir. GitHub için okuma erişimi verin; kişisel Private depolar için kaynak kullanıcıya ait bir token gerekir. Yalnızca Internal ve Private seçenekleri devre dışıyken, kimlik doğrulaması gerektirmeyen Public kopyalar için boş bırakın. Zamanlanmış çalıştırmalar için token&apos;ın geçerliliğini koruyun. Seçilen görünürlük düzeyi, nelerin kopyalanabileceğini yine de sınırlar.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>GitHub jetonu talimatları</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>GitLab belirteci yönergeleri</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>Yardım: hesap türü</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>Yardım: arşivlenmiş depolar</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>Yardım: dahili depolar</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>Yardım: özel depolar</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>Yardım: herkese açık depolar</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>Yardım: yayın onayı</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>Yardım: kaynak hesap</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>Yardım: kaynak sunucu</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>Yardım: kaynak belirteci</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>Yardım: hedef hesap</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>Yardım: hedef sunucu</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>Yardım: hedef belirteç</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>Yardım: hedef görünürlüğü</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>Dahili (yalnızca GitLab): GitLab örneğinizin izin verdiği kimliği doğrulanmış kullanıcılar kaynak kodu okuyabilir. Bunu herkese açık bir GitHub hedefiyle seçerseniz kopyalanan kod internetteki herkesin erişimine açılır. Dahili, bir erişim düzeyidir; açık kaynak lisansı değildir. Yalnızca paylaşma yetkiniz olan içeriği yayınlayın.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>Aynalama, kaynak dalları ve etiketlerini zorla itme (force-push) ile gönderir. Özel bir hedef kullanın: oradaki bağımsız değişiklikler üzerine yazılabilir. Sorunlar, birleştirme istekleri, izinler ve proje ayarları kopyalanmaz.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>Örgüt / GitLab grubu</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>Kişisel kullanıcı hesabı</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>Özel: erişim, hedef hesap tarafından kontrol edilir</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>Özel: yalnızca açıkça yetkilendirilmiş kullanıcılar kaynağı okuyabilir. Varsayılan olarak devre dışıdır. Bu seçeneği yalnızca organizasyonunuz bu depoların kopyalanmasını yetkilendirdiğinde etkinleştirin.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>Herkese Açık: Giriş yapmadan herkes kaynağı okuyabilir.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>Herkese açık: İnternetteki herkes kopyayı okuyabilir</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>Kopyalanacak depolar</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>Yeni GitHub depoları herkese açık olarak oluşturulurken Özel kaynaklar da eklenecekse gereklidir. Her kaydetme işleminde yeniden onaylayın. Özel seçeneğinin belirlenmesi mevcut Herkese açık hedefi hiçbir zaman değiştirmez; Özel kaynakları kopyalarken yansılama işlemi bu hedefi reddeder. Mevcut hedefin izinlerini ayrıca gözden geçirin.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Değişiklikleri Kaydet</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>Kaydetme işlemi, bu ayna ilişkisini planlanan iş için saklar. Kimlik bilgilerinizi doğrulamaz veya bir kopyayı hemen başlatmaz. Sonraki çalıştırmadan sonra kimlik doğrulama hatalarını ve depoya özel sonuçları iş geçmişinde kontrol edin.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Kaynak</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Hedef</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>Hedef hesapta depolar oluşturabilen ve Git içeriklerini iletebilen ayrı bir hedef jetonu kullanın. GitHub ince ayarlı bir jeton için depolama oluşturma (Yönetim: yazma) ve İçerik: yazma iznini verin; iş akışı dosyalarını kopyalıyorsanız İş Akışları: yazma iznini de ekleyin. Kuruluşunuz ayrıca jeton onayı veya SSO yetkilendirmesi de isteyebilir. Yalnızca kaynak okuma izinleri yeterli değildir.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>Kaydettikten sonra ne olur?</value>
+  </data>
+
+</root>

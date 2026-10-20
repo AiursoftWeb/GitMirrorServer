@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>Dotyczy wyłącznie tworzenia brakującego repozytorium GitHub. Domyślnie repozytorium jest publiczne. Widoczność istniejącego repozytorium docelowego nigdy nie jest zmieniana automatycznie. W przypadku GitLaba brakujące repozytoria nadal są tworzone jako prywatne; ta opcja GitHub ich nie dotyczy.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>Repozytoria zarchiwizowane są zwykle wycofane lub tylko do odczytu. Wyłączone domyślnie. Włącz tę opcję, aby skopiować również ich zawartość Git; status archiwum źródłowego nie zostanie zastosowany do docelowego.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>Powrót do listy</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>Wybierz grupę dla repozytoriów GitLab należących do firmy lub organizację dla GitHub. Wybierz użytkownika dla repozytoriów należących do konta indywidualnego.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>Wybierz, co ma zostać skopiowane i dokąd ma zostać wysłane.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Utwórz kopię lustrzaną</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>Wpisz nazwę organizacji, grupy lub użytkownika będących miejscem docelowym. W przypadku prywatnego konta GitHub token docelowy musi należeć do tego samego użytkownika.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>Wpisz grupę, organizację lub nazwę użytkownika z adresu URL repozytorium, a nie nazwę wyświetlaną ani pełny adres URL repozytorium. Uwzględniane są tylko repozytoria tego konta.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>Późniejsze wykluczenie kategorii, zarchiwizowanie źródła lub zmiana jego widoczności na Prywatną nie usuwa ani nie ukrywa żadnej opublikowanej już kopii. Cofając dostęp, sprawdź osobno istniejące repozytoria docelowe.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>W przypadku GitHub użyj https://api.github.com. W przypadku GitLab wpisz adres strony internetowej bez /api/v4.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>Dla GitLab wpisz adres witryny, np. https://gitlab.example.com, bez /api/v4. Dla GitHub użyj https://api.github.com.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>W przypadku GitLaba użyj dedykowanego konta z uprawnieniami read_api i read_repository. Konto musi mieć możliwość odczytu wybranych projektów; dostęp do projektów Internal może wymagać członkostwa w przypadku kont zewnętrznych lub kont usługowych. W przypadku GitHuba przyznaj uprawnienia do odczytu; prywatne repozytoria osobiste wymagają tokenu należącego do użytkownika źródłowego. Pozostaw to pole puste tylko w przypadku anonimowego kopiowania repozytoriów Public, przy wyłączonych opcjach Internal i Private. Token musi być ważny podczas zaplanowanych uruchomień. Wybrany poziom widoczności nadal ogranicza zakres kopiowanych danych.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>Instrukcje dotyczące tokena GitHub</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>Instrukcje dotyczące tokenu GitLab</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>Pomoc: typ konta</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>Pomoc: zarchiwizowane repozytoria</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>Pomoc: repozytoria wewnętrzne</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>Pomoc: prywatne repozytoria</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>Pomoc: repozytoria publiczne</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>Pomoc: potwierdzenie publikacji</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>Pomoc: konto źródłowe</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>Pomoc: serwer źródłowy</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>Pomoc: token źródłowy</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>Pomoc: konto docelowe</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>Pomoc: serwer docelowy</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>Pomoc: token docelowy</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>Pomoc: widoczność celu</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>Wewnętrzne (tylko GitLab): uwierzytelnieni użytkownicy, którym Twoja instancja GitLab udzieliła uprawnień, mogą odczytać kod źródłowy. Wybranie tej opcji przy docelowym publicznym repositrorium GitHuba publikuje skopiowany kod dla wszystkich w internecie. Wewnętrzne to poziom dostępu, a nie licencja open source; publikuj wyłącznie treści, do których masz upoważnienie do udostępniania.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>Lustrzane kopiowanie wymusza nadpisywanie (force-push) gałęzi i znaczników źródłowych. Użyj dedykowanego celu: niezależne zmiany tam mogą zostać nadpisane. Zagadnienia, żądania scalenia, uprawnienia i ustawienia projektu nie są kopiowane.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>Organizacja / grupa GitLab</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>Prywatne konto użytkownika</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>Prywatne: dostępem zarządza konto docelowe</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>Prywatne: tylko wyraźnie upoważnieni użytkownicy mogą odczytać źródło. Wyłączone domyślnie. Włącz tę opcję tylko wtedy, gdy Twoja organizacja autoryzuje kopiowanie tych repozytoriów.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>Publiczne: każdy może odczytać źródło bez logowania.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>Publiczny: każdy w internecie może odczytać kopię</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>Repozytoria do skopiowania</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>Wymagane tylko w przypadku uwzględnienia prywatnych źródeł przy tworzeniu nowych publicznych repozytoriów GitHub. Potwierdź ponownie przy każdym zapisie. Wybranie opcji „Prywatne” nigdy nie zmienia istniejącego publicznego repozytorium docelowego; podczas kopiowania prywatnych źródeł synchronizacja odmówi użycia takiego repozytorium. Uprawnienia do istniejącego repozytorium docelowego sprawdź osobno.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Zapisz zmiany</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>Zapisanie powoduje zapisanie tej relacji lustrzanej dla zaplanowanego zadania. Nie weryfikuje danych logowania ani nie rozpoczyna natychmiast kopiowania. Po następnym uruchomieniu sprawdź historię zadań pod kątem błędów uwierzytelniania i wyników dla poszczególnych repozytoriów.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Źródło</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Cel</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>Użyj osobnego tokena docelowego, który może tworzyć repozytoria w docelowym koncie i wysyłać (push) ich zawartość Git. W przypadku fine-grained tokena GitHuba zezwól na tworzenie repozytoriów (Administration: write) oraz Contents: write; włącz Workflows: write, jeśli kopiujesz pliki workflow. Twoja organizacja może również wymagać zatwierdzenia tokena lub autoryzacji SSO. Sama uprawnienie do odczytu ze źródła nie są wystarczające.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>Co się stanie po zapisaniu?</value>
+  </data>
+
+</root>

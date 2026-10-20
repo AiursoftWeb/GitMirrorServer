@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>Takaisin historiaan</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Kopiointi epäonnistui. Valitse lokiteksti ja kopioi se manuaalisesti.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Kopioi lokitiedosto</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Virhe</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Avaa tietovarasto tarkastellaksesi sen lokia. Epäonnistuneet tulokset avataan automaattisesti.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Ehdoton</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>Epäonnistumiset</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Tehtävän virhe</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Loki</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Loki kopioitu leikepöydälle!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Loki kopioitu.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Lokit</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Peilikopiointien tulokset</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Tälle ajolle ei ole kirjattu repositorioiden tuloksia.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Tietovaraston tulokset</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Suorituksen virhe</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Käynnissä</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Lähde</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Aloitusaika</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Aloitettu</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Onnistui</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Onnistui</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Kohde</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Tämä ajo on edelleen käynnissä. Päivitä sivu nähdäksesi uusimmat tulokset.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Tietovarastoja yhteensä</value>
   </data>
 
 </root>

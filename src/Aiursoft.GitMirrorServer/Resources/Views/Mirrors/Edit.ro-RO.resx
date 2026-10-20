@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>Se aplică numai la crearea unui depozit GitHub care nu există. Public este opțiunea implicită. Vizibilitatea unei destinații existente nu se modifică niciodată automat. Pentru destinațiile GitLab, depozitele lipsă sunt create în continuare ca Private; această opțiune GitHub nu li se aplică.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>Depozitele arhivate sunt de obicei retrase sau doar pentru citire. Dezactivat implicit. Activați această opțiune pentru a copia și conținutul Git al acestora; statutul de arhivă al surselor nu este aplicat destinației.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>Înapoi la listă</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>Alegeți un grup pentru depozitele GitLab deținute de companie sau o organizație pentru GitHub. Alegeți un utilizator pentru depozitele deținute de un cont personal.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>Alegeți ce să copiați și unde să trimiteți.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Creează o oglindă</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>Introduceți organizația, grupul sau numele de utilizator de destinație. Pentru o destinație GitHub personală, tokenul de destinație trebuie să aparțină aceluiași utilizator.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>Introduceți grupul, organizația sau numele de utilizator din URL-ul depozitului, nu numele afișat sau un URL complet de depozit. Se iau în considerare doar depoziturile acestui cont.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>Excluderea unei categorii ulterior, arhivarea unei surse sau schimbarea acesteia în Private nu șterge și nu ascunde nicio copie deja publicată. Verificați separat depozitele de destinație existente la retragerea accesului.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>Pentru GitHub, folosiți https://api.github.com. Pentru GitLab, introduceți adresa site-ului web fără /api/v4.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>Pentru GitLab, introduceți adresa site-ului web, de exemplu https://gitlab.example.com, fără /api/v4. Pentru GitHub, folosiți https://api.github.com.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>Pentru GitLab, folosiți un cont dedicat cu permisiunile read_api și read_repository. Acesta trebuie să aibă dreptul de a citi proiectele selectate; proiectele Internal pot necesita ca utilizatorii externi sau conturile de serviciu să fie membri. Pentru GitHub, acordați acces de citire; pentru depozitele personale Private este necesar un token asociat utilizatorului sursă. Lăsați câmpul necompletat numai pentru copieri Public anonime, cu Internal și Private dezactivate. Asigurați-vă că tokenul rămâne valabil pentru execuțiile programate. Nivelul de vizibilitate selectat limitează în continuare ce se copiază.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>Instrucțiuni pentru tokenul GitHub</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>Instrucțiuni pentru tokenul GitLab</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>Ajutor: tip de cont</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>Ajutor: depozite arhivate</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>Ajutor: depozite interne</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>Ajutor: depozite private</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>Ajutor: depozite publice</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>Ajutor: confirmare publicare</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>Ajutor: cont sursă</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>Ajutor: serverul sursă</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>Ajutor: token sursă</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>Ajutor: contul de destinație</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>Ajutor: server țintă</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>Ajutor: token de destinație</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>Ajutor: vizibilitate țintă</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>Internal (doar pentru GitLab): utilizatorii autentificați cărora instanța dvs. GitLab le permite accesul pot citi sursa. Dacă selectați această opțiune pentru o destinație GitHub publică, codul copiat va fi publicat pentru toți utilizatorii de pe internet. „Intern” este un nivel de acces, nu o licență open source; publicați doar conținutul pe care sunteți autorizat să îl distribuiți.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>Oglindirea forțează împingerea ramurilor și a etichetelor sursă. Folosiți o destinație dedicată: modificările independente de acolo pot fi suprascrise. Problemele, cererile de îmbinare, permisiunile și setările proiectului nu sunt copiate.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>Organizație / grup GitLab</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>Cont personal</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>Privat: accesul este controlat de contul țintă</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>Privat: doar utilizatorii autorizați în mod explicit pot citi sursa. Dezactivat în mod implicit. Activați această opțiune numai dacă organizația dvs. autorizează copierea acestor depozite.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>Public: oricine poate citi sursa fără să se autentifice.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>Public: oricineva de pe internet poate citi copia</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>Depozite de copiat</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>Necesar doar atunci când includeți surse Private cu depozite GitHub noi Public. Confirmați din nou la fiecare salvare. Selectarea opțiunii Private nu modifică niciodată o destinație Public existentă; oglindirea refuză acea destinație la copierea surselor Private. Verificați separat permisiile destinației existente.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Salvează modificările</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>Salvarea înregistrează această relație de oglindire pentru sarcina programată. Nu verifică datele de autentificare și nici nu începe imediat o copiere. După următoarea rulare, verificați istoricul sarcinilor pentru erori de autentificare și rezultatele fiecărui depozit.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Sursă</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Destinație</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>Folosiți un token separat pentru destinație, care să poată crea depozite în contul de destinație și să trimită conținutul Git al acestora. Pentru un token GitHub cu permisiuni detaliate, permiteți crearea de depozite (Administration: write) și accesul de scriere la conținut (Contents: write); includeți Workflows: write dacă se copiază fișiere de fluxuri de lucru. Este posibil ca organizația dvs. să solicite și aprobarea tokenului sau autorizarea SSO. Permisiunile de citire pentru sursă, singure, nu sunt suficiente.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>Ce se întâmplă după ce salvez?</value>
+  </data>
+
+</root>

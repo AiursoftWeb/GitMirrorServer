@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>Acțiune</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Acțiuni</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Detalii</value>
   </data>
@@ -33,8 +36,23 @@
   <data name="Failed" xml:space="preserve">
     <value>Eșuat</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>În curs</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>Istoricul sarcinilor</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>Istoricul oglinzirii</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>Nicio rulare a oglindei încă</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>Rezultatele apar aici după ce începe o rulare planificată sau manuală a oglinzii.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>În curs de execuție</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Se execută...</value>
@@ -42,14 +60,29 @@
   <data name="Start Time" xml:space="preserve">
     <value>Ora de începere</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Început</value>
+  </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
     <value>Statistici (Reușite/Esuate/Total)</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Stare</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Reușit</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Reușit</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>Ultimele 50 de rulări de oglindire. Deschideți o rulare pentru a examina rezultatele și jurnalele depozitelor.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Număr total de depozite</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>Vizualizați rezultatele</value>
   </data>
 
 </root>

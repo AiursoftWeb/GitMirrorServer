@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>Åtgärd</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Åtgärder</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Detaljer</value>
   </data>
@@ -33,8 +36,23 @@
   <data name="Failed" xml:space="preserve">
     <value>Misslyckat</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>Pågår</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>Jobhistorik</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>Speglingshistorik</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>Inga spegelkörningar ännu</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>Resultaten visas här när en schemalagd eller manuell spegling har startat.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Körs</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Pågår...</value>
@@ -42,14 +60,29 @@
   <data name="Start Time" xml:space="preserve">
     <value>Starttid</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Startad</value>
+  </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
     <value>Statistik (Lyckat/Fel/Totalt)</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Lyckades</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Lyckat</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>De senaste 50 spegelkörningarna. Öppna en körning för att inspektera repositoryresultat och loggar.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Totala antalet repotor</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>Visa resultat</value>
   </data>
 
 </root>

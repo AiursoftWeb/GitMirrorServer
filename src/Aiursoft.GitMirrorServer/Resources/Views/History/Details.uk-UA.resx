@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>Назад до історії</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Не вдалося скопіювати. Виділіть текст журналу та скопіюйте його вручну.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Скопіювати журнал</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Помилка</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Розгорніть репозиторій, щоб переглянути його журнал. Результати з помилками розгортаються автоматично.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Не вдалося</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>Помилки</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Помилка завдання</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Журнал</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Лог скопійовано у буфер обміну!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Лога скопійовано.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Журнали</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Результати запуску дзеркала</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Для цього запуску не зафіксовано результатів для жодного репозиторію.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Результати репозиторіїв</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Помилка запущення</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Виконується</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>джерело</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Час початку</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Почато</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Успішно</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Успіх</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Ціль</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Цей запуск ще триває. Оновіть сторінку, щоб побачити найновіші результати.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Всього репозиторіїв</value>
   </data>
 
 </root>

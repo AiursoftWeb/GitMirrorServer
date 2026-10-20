@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>Aksi</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Tindakan</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Detail</value>
   </data>
@@ -33,8 +36,23 @@
   <data name="Failed" xml:space="preserve">
     <value>Gagal</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>Sedang berlangsung</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>Riwayat Pekerjaan</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>Riwayat pencerminan</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>Belum ada eksekusi mirror</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>Hasil akan muncul di sini setelah eksekusi mirror terjadwal atau manual dimulai.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Berjalan</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Berjalan...</value>
@@ -42,14 +60,29 @@
   <data name="Start Time" xml:space="preserve">
     <value>Waktu Mulai</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Waktu mulai</value>
+  </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
     <value>Statistik (Sukses/Gagal/Jumlah)</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Berhasil</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Berhasil</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>50 eksekusi mirror terbaru. Buka sebuah eksekusi untuk memeriksa hasil dan log repositori.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Total repositori</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>Lihat hasil</value>
   </data>
 
 </root>

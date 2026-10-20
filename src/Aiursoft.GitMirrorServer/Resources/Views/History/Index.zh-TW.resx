@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>動作</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>操作</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>詳細</value>
   </data>
@@ -33,13 +36,31 @@
   <data name="Failed" xml:space="preserve">
     <value>失敗</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>進行中</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>工作歷程</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>鏡像歷史</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>尚無鏡像執行記錄</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>排程或手動鏡像作業開始後，結果會顯示在這裡。</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>執行中</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>執行中...</value>
   </data>
   <data name="Start Time" xml:space="preserve">
+    <value>開始時間</value>
+  </data>
+  <data name="Started" xml:space="preserve">
     <value>開始時間</value>
   </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
@@ -48,8 +69,20 @@
   <data name="Status" xml:space="preserve">
     <value>狀態</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>成功</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>成功</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>最近 50 次鏡像執行。開啟執行紀錄以檢視儲存庫結果與日誌。</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>儲存庫總數</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>查看結果</value>
   </data>
 
 </root>

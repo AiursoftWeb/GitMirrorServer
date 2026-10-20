@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>履歴へ戻る</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>コピーに失敗しました。ログのテキストを選択して、手動でコピーしてください。</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>ログをコピー</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>エラー</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>リポジトリを展開してログを確認します。失敗した結果は自動的に展開されます。</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>失敗</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>失敗</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>ジョブエラー</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>ログ</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>ログをクリップボードにコピーしました！</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>ログをコピーしました。</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>ログ</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>ミラー実行結果</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>この実行ではリポジトリの結果は記録されていません。</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>リポジトリの結果</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>実行エラー</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>実行中</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>ソース</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>開始時間</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>成功</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>成功</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>ターゲット</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>この実行はまだ進行中です。最新の結果を表示するには、更新してください。</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>リポジトリ総数</value>
   </data>
 
 </root>

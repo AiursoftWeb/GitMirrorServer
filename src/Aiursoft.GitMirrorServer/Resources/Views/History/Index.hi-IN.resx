@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>क्रियाकलाप</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>कार्रवाएँ</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>विवरण</value>
   </data>
@@ -33,8 +36,23 @@
   <data name="Failed" xml:space="preserve">
     <value>असफल</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>प्रगति पर</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>कार्य इतिहास</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>मिरर इतिहास</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>अभी तक कोई मिरर रन नहीं हुआ है</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>जब कोई नियोजित या मैनुअल मिरर चालू शुरू होती है, तो परिणाम यहाँ दिखाई देते हैं।</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>चल रहा है</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>चल रहा है...</value>
@@ -42,14 +60,29 @@
   <data name="Start Time" xml:space="preserve">
     <value>प्रारंभ समय</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>शुरू हुआ</value>
+  </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
     <value>स्टैट्स (सफलता/असफलता/कुल)</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>स्थिति</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>सफल</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>सफलता</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>नवीनतम 50 मिरर रन। रिपॉज़िटरी परिणाम और लॉग की जांच करने के लिए एक रन खोलें।</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>कुल रिपॉज़िटरी</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>परिणाम देखें</value>
   </data>
 
 </root>

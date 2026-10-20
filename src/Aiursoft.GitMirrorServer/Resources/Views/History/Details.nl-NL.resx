@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>Terug naar Geschiedenis</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Kopiëren mislukt. Selecteer de logtekst en kopieer deze handmatig.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Kopieer Log</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Fout</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Kies een repository uit om de log te inspecteren. Mislukte resultaten worden automatisch uitgeklapt.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Mislukt</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>Mislukkingen</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Taakfout</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Log</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Log naar klembord gekopieerd!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Logboek gekopieerd.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Logboeken</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Resultaten van de mirroruitvoering</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Er zijn geen repositoryresultaten geregistreerd voor deze run.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Resultaten van de repositories</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Fout bij uitvoering</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Bezig</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Bron</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Starttijd</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Gestart</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Geslaagd</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Succes</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Doel</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Deze run is nog bezig. Vernieuw om de nieuwste resultaten te zien.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Totaal aantal repositories</value>
   </data>
 
 </root>

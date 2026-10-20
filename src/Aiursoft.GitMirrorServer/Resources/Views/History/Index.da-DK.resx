@@ -21,6 +21,9 @@
       <data name="Action" xml:space="preserve">
     <value>Handling</value>
   </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Handlinger</value>
+  </data>
   <data name="Details" xml:space="preserve">
     <value>Detaljer</value>
   </data>
@@ -33,8 +36,23 @@
   <data name="Failed" xml:space="preserve">
     <value>Mislykket</value>
   </data>
+  <data name="In progress" xml:space="preserve">
+    <value>I gang</value>
+  </data>
   <data name="Job History" xml:space="preserve">
     <value>Job Historik</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>Spejlingshistorik</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>Ingen mirror-kørsler endnu</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>Resultaterne vises her, når en planlagt eller manuel spejling starter.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Kører</value>
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Kører...</value>
@@ -42,14 +60,29 @@
   <data name="Start Time" xml:space="preserve">
     <value>Starttid</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Startet</value>
+  </data>
   <data name="Stats (Success/Fail/Total)" xml:space="preserve">
     <value>Statistik (Lykkedes/Fejlede/Totalt)</value>
   </data>
   <data name="Status" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Klar</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Lykkedes</value>
+  </data>
+  <data name="The latest 50 mirror runs. Open a run to inspect repository results and logs." xml:space="preserve">
+    <value>De seneste 50 spejlkørsler. Åbn en kørsel for at se resultater og logfiler for repositories.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Samlede repositorier</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>Se resultater</value>
   </data>
 
 </root>

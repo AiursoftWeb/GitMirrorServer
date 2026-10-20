@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>Is alleen van toepassing bij het aanmaken van een ontbrekende GitHub-repository. Openbaar is de standaardinstelling. De zichtbaarheid van bestaande doelrepositories wordt nooit automatisch gewijzigd. GitLab-doelen blijven ontbrekende repositories als privé aanmaken; deze GitHub-optie is daarop niet van toepassing.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>Gearchiveerde repositories zijn doorgaans uitgefaseerd of alleen-lezen. Standaard uitgeschakeld. Schakel dit in om ook hun Git-inhoud te kopiëren; de archiefstatus van de bron wordt niet toegepast op het doel.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>Terug naar de lijst</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>Kies een groep voor GitLab-repositories in eigendom van een bedrijf of een organisatie voor GitHub. Kies een gebruiker voor repositories in eigendom van een individueel account.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>Kies wat u wilt kopiëren en waar u het naartoe wilt sturen.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Spiegel maken</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>Voer de bestemmingsorganisatie, -groep of gebruikersnaam in. Voor een persoonlijke GitHub-bestemming moet het doeltoken toebehoren aan dezelfde gebruiker.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>Voer de groep, organisatie of gebruikersnaam uit de repository-URL in, niet de weergavenaam of een volledige repository-URL. Er wordt alleen gekeken naar de repositories van dit account.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>Het later uitsluiten van een categorie, het archiveren van een bron of het wijzigen ervan naar &apos;Privé&apos; verwijdert of verbergt geen al gepubliceerde kopie. Controleer bestaande doelbewaarplaatsen afzonderlijk bij het intrekken van toegang.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>Gebruik voor GitHub https://api.github.com. Voer voor GitLab het websiteadres in zonder /api/v4.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>Vul voor GitLab het websiteadres in, zoals https://gitlab.example.com, zonder /api/v4. Gebruik voor GitHub https://api.github.com.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>Voor GitLab, gebruik een toegewijd account met read_api en read_repository. Het moet toestemming hebben om de geselecteerde projecten te lezen; interne projecten kunnen lidmaatschap vereisen voor externe of service-accounts. Voor GitHub, verleen lees-toegang; privé-persoonlijke repositories vereisen een token dat aan de brongebruiker toebehoort. Laat leeg alleen voor anonieme openbare kopieën, met interne en privé uitgeschakeld. Houd het token geldig voor geplande uitvoeringen. De geselecteerde zichtbaarheid beperkt nog steeds wat wordt gekopieerd.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>GitHub-tokeninstructies</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>Instructies voor GitLab-tokens</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>Help: accounttype</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>Hulp: gearchiveerde repositories</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>Help: interne repositories</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>Help: privérepositories</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>Hulp: openbare repositories</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>Hulp: publicatiebevestiging</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>Hulp: bronaccount</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>Hulp: brons server</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>Help: brontoken</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>Help: doelaccount</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>Help: doelserver</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>Help: doel-token</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>Hulp: zichtbaarheid van het doel</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>Intern (alleen GitLab): gebruikers die zijn aangemeld en door je GitLab-instantie zijn gemachtigd, kunnen de bron lezen. Als je dit selecteert in combinatie met een openbare GitHub-doelomgeving, wordt de gekopieerde code voor iedereen op internet beschikbaar. Intern is een toegangsrecht, geen opensourcelicentie; publiceer alleen inhoud die je mag delen.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>Spiegelen voert een force-push uit op bronbranches en tags. Gebruik een dedicado doel: onafhankelijke wijzigingen daar kunnen worden overschreven. Issues, merge requests, machtigingen en projectinstellingen worden niet gekopieerd.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>Organisatie / GitLab-groep</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>Persoonlijk gebruikersaccount</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>Privé: de toegang wordt bepaald door de doelaccount</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>Privé: alleen gebruikers met expliciete toestemming kunnen de bron lezen. Standaard uitgeschakeld. Schakel dit alleen in wanneer uw organisatie toestemming geeft om deze opslagplaatsen te kopiëren.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>Openbaar: iedereen kan de bron lezen zonder zich aan te melden.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>Openbaar: iedereen op internet kan de kopie lezen</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>Te kopiëren repositories</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>Alleen vereist wanneer privébronnen worden opgenomen in nieuwe openbare GitHub-repositories. Bevestig dit opnieuw bij elke opslag. Als je ‘Privé’ selecteert, verandert een bestaande openbare bestemming nooit; bij het kopiëren van privébronnen weigert de mirrorbewerking die bestemming. Controleer de rechten van bestaande bestemmingen afzonderlijk.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Wijzigingen opslaan</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>Bij het opslaan wordt deze spiegelrelatie voor de geplande taak opgeslagen. Er worden geen inloggegevens geverifieerd en er wordt niet direct een kopie gestart. Controleer na de volgende uitvoering de taakhistorie voor authenticatiefouten en resultaten per repository.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Bron</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Doel</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>Gebruik een aparte doeltoken die repositories kan aanmaken in het doelaccount en de Git-inhoud kan pushen. Voor een GitHub fine-grained token, sta het aanmaken van repositories (Administration: write) en Contents: write toe; neem Workflows: write op als u workflowbestanden kopieert. Uw organisatie kan mogelijk ook tokengoedkeuring of SSO-autorisatie vereisen. Alleen leesrechten voor de bron zijn niet voldoende.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>Wat gebeurt er nadat ik opsla?</value>
+  </data>
+
+</root>
