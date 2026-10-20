@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>यह केवल तब लागू होता है जब कोई अनुपलब्ध GitHub रिपॉज़िटरी बनाई जा रही हो। डिफ़ॉल्ट रूप से यह सार्वजनिक होती है। मौजूदा लक्ष्य की दृश्यता कभी भी अपने आप नहीं बदली जाती। GitLab लक्ष्यों के लिए अनुपलब्ध रिपॉज़िटरी निजी रूप में बनाई जाती रहेंगी; GitHub का यह विकल्प उन पर लागू नहीं होता।</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>आर्काइव्ह किए गए रिपॉज़िटरी आमतौर पर सेवानिवृत्त या केवल-पठनीय होते हैं। डिफ़ॉल्ट रूप से निष्क्रिय। उनके Git सामग्री की प्रतिलिपि बनाने के लिए इसे सक्षम करें; स्रोत आर्काइव स्थिति लक्ष्य पर लागू नहीं की जाती।</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>सूची पर वापस जाएँ</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>कंपनी-मालिकाना GitLab रिपॉज़िटरी के लिए एक समूह चुनें या GitHub के लिए एक संगठन चुनें। व्यक्तिगत खाते से मालिकाना रिपॉज़िटरी के लिए एक उपयोगकर्ता चुनें।</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>चुनें कि क्या कॉपी करना है और उसे कहाँ भेजना है।</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>मिरर बनाएँ</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>गंतव्य संगठन, समूह या उपयोगकर्ता नाम दर्ज करें। व्यक्तिगत GitHub गंतव्य के लिए, टार्गेट टोकन को उसी उपयोगकर्ता का होना चाहिए।</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>रिपॉज़िटरी URL से समूह, संगठन या उपयोगकर्ता नाम दर्ज करें, डिस्प्ले नाम या पूर्ण रिपॉज़िटरी URL नहीं। केवल इस खाते के रिपॉज़िटरी ही विचार किए जाते हैं।</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>बाद में किसी श्रेणी को बाहर करना, स्रोत को संग्रहीत (archive) करना, या इसे निजी (Private) में बदलना पहले से प्रकाशित किसी भी प्रतिलिपी को हटाता या छुपाता नहीं है। पहुँच वापस लेते समय मौजूदा लक्ष्य रिपॉज़िटरी (repositories) को अलग से समीक्षा करें।</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>GitHub के लिए https://api.github.com का उपयोग करें। GitLab के लिए, /api/v4 के बिना वेबसाइट पता दर्ज करें।</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>GitLab के लिए, वेबसाइट पता दर्ज करें, जैसे https://gitlab.example.com, /api/v4 के बिना। GitHub के लिए, https://api.github.com का उपयोग करें।</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>GitLab के लिए, read_api और read_repository अनुमतियों वाले एक समर्पित खाते का उपयोग करें। उस खाते को चुने गए प्रोजेक्ट पढ़ने की अनुमति होनी चाहिए; Internal प्रोजेक्ट के लिए बाहरी या सेवा खातों को सदस्यता की आवश्यकता हो सकती है। GitHub के लिए, पढ़ने की पहुँच दें; Private व्यक्तिगत रिपॉज़िटरी के लिए स्रोत उपयोगकर्ता का टोकन आवश्यक है। टोकन केवल तभी खाली छोड़ें, जब प्रतिलिपि Public हो और उसे बिना लॉगिन किए बनाया जा सके, तथा Internal और Private बंद हों। निर्धारित रन के लिए टोकन मान्य रखें। चुनी गई दृश्यता फिर भी यह सीमित करती है कि क्या कॉपी किया जाएगा।</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>GitHub टोकन के निर्देश</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>GitLab टोकन के निर्देश</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>सहायता: खाता प्रकार</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>सहायता: संग्रहित रिपॉज़िटरी</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>सहायता: आंतरिक रिपॉज़िटरी</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>सहायता: निजी रिपॉज़िटरी</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>सहायता: सार्वजनिक रिपॉज़िटरी</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>सहायता: प्रकाशन पुष्टि</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>सहायता: स्रोत खाता</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>सहायता: स्रोत सर्वर</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>सहायता: स्रोत टोकन</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>सहायता: लक्ष्य खाता</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>सहायता: लक्ष्य सर्वर</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>सहायता: लक्ष्य टोकन</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>सहायता: लक्ष्य दृश्यता</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>आंतरिक (केवल GitLab): आपके GitLab इंस्टेंस द्वारा अनुमत प्रमाणीकृत उपयोगकर्ता स्रोत को पढ़ सकते हैं। यदि आप इसे एक सार्वजनिक GitHub लक्ष्य के साथ चुनते हैं, तो प्रतिलिपि की गई कोड इंटरनेट पर सभी के लिए प्रकाशित हो जाती है। आंतरिक एक पहुंच स्तर है, किसी ओपन-सोर्स लाइसेंस नहीं; केवल उस सामग्री को प्रकाशित करें जिसका साझा करने के लिए आपको अधिकृत किया गया है।</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>मिररिंग स्रोत ब्रांच और टैग को फोर्स-पुश करता है। एक समर्पित टार्गेट का उपयोग करें: वहाँ की स्वतंत्र परिवर्तनों को अधिरोहित किया जा सकता है। इश्यूज़, मर्ज रिक्वेस्ट, अनुमतियाँ और परियोजना सेटिंग्स कॉपी नहीं की जाती हैं।</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>संगठन / GitLab समूह</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>व्यक्तिगत उपयोगकर्ता खाता</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>निजी: एक्सेस लक्ष्य खाते द्वारा नियंत्रित है</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>निजी: केवल स्पष्ट रूप से अधिकृत उपयोगकर्ता ही स्रोत पढ़ सकते हैं। डिफ़ॉल्ट रूप से अक्षम। इसे तभी सक्षम करें जब आपका संगठन इन रिपॉज़िटरी की प्रतिलिपि बनाने की अनुमति देता हो।</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>सार्वजनिक: कोई भी साइन इन किए बिना स्रोत को पढ़ सकता है।</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>सार्वजनिक: इंटरनेट पर कोई भी इस कॉपी को पढ़ सकता है</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>कॉपी करने के लिए रिपॉज़िटरी</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>यह केवल तभी आवश्यक है जब Private स्रोतों को Public नए GitHub रिपॉज़िटरी के साथ शामिल किया जाए। हर सेव पर पुनः पुष्टि करें। Private का चयन करना कभी भी किसी मौजूदा Public लक्ष्य को नहीं बदलता; जब Private स्रोतों की कॉपी की जाती है, तो मिररिंग उस लक्ष्य को अस्वीकार कर देती है। मौजूदा लक्ष्य की अनुमतियों को अलग से समीक्षा करें।</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>परिवर्तन सहेजें</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>सेविंग इस मिरर संबंध को शेड्यूल किए गए जॉब के लिए स्टोर करता है। यह आपके क्रेडेंशियल्स को सत्यापित नहीं करता है या तुरंत एक कॉपी शुरू नहीं करता है। अगली चाल के बाद प्रमाणीकरण त्रुटियों और प्रति-रिपॉज़िटरी परिणामों के लिए जॉब इतिहास की जांच करें।</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>स्रोत</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>लक्ष्य</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>एक अलग टार्गेट टोकन का उपयोग करें जिससे कि गंतव्य खाते में रिपॉज़िटरी बनाई जा सकें और उनके Git सामग्री को push किया जा सके। GitHub fine-grained टोकन के लिए, रिपॉज़िटरी निर्माण (Administration: write) और Contents: write की अनुमति दें; यदि workflow फ़ाइलें कॉपी की जा रही हैं तो Workflows: write शामिल करें। आपकी संस्था को शायद टोकन अनुमोदन या SSO प्राधिकरण की भी आवश्यकता हो सकती है। केवल Source पढ़ने की अनुमतियाँ पर्याप्त नहीं हैं।</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>सहेजने के बाद क्या होता है?</value>
+  </data>
+
+</root>

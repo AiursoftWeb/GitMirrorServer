@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Applies only when creating a missing GitHub repository. Public is the default. Existing target visibility is never changed automatically. GitLab targets continue to create missing repositories as Private; this GitHub option does not apply to them." xml:space="preserve">
+    <value>Ισχύει μόνο κατά τη δημιουργία ενός GitHub αποθετηρίου που δεν υπάρχει. Η προεπιλογή είναι Δημόσιο. Η ορατότητα των υπαρχόντων αποθετηρίων προορισμού δεν αλλάζει ποτέ αυτόματα. Οι προορισμοί GitLab εξακολουθούν να δημιουργούν τα αποθετήρια που δεν υπάρχουν ως Ιδιωτικά· αυτή η επιλογή του GitHub δεν ισχύει γι’ αυτούς.</value>
+  </data>
+  <data name="Archived repositories are usually retired or read-only. Disabled by default. Enable this to copy their Git content too; the source archive status is not applied to the target." xml:space="preserve">
+    <value>Τα αρχειοθετημένα αποθετήρια συνήθως έχουν αποσυρθεί ή είναι μόνο για ανάγνωση. Απενεργοποιημένα από προεπιλογή. Ενεργοποιήστε αυτήν την επιλογή για να αντιγραφεί και το περιεχόμενό τους στο Git· η κατάσταση αρχειοθέτησης της πηγής δεν εφαρμόζεται στον προορισμό.</value>
+  </data>
+  <data name="Back to List" xml:space="preserve">
+    <value>Επιστροφή στη λίστα</value>
+  </data>
+  <data name="Choose a group for company-owned GitLab repositories or an organization for GitHub. Choose a user for repositories owned by an individual account." xml:space="preserve">
+    <value>Επιλέξτε ομάδα για αποθετήρια GitLab που ανήκουν σε εταιρεία ή οργάνωση για GitHub. Επιλέξτε χρήστη για αποθετήρια που ανήκουν σε ατομικό λογαριασμό.</value>
+  </data>
+  <data name="Choose what to copy and where to send it." xml:space="preserve">
+    <value>Επιλέξτε τι θέλετε να αντιγράψετε και πού να το στείλετε.</value>
+  </data>
+  <data name="Create Mirror" xml:space="preserve">
+    <value>Δημιουργία Κατόπτρου</value>
+  </data>
+  <data name="Enter the destination organization, group, or username. For a personal GitHub destination, the target token must belong to that same user." xml:space="preserve">
+    <value>Εισάγετε τον προορισμό οργάνωσης, ομάδας ή όνομα χρήστη. Για έναν προσωπικό προορισμό GitHub, το token προορισμού πρέπει να ανήκει στον ίδιο χρήστη.</value>
+  </data>
+  <data name="Enter the group, organization, or username from the repository URL, not the display name or a complete repository URL. Only this account&apos;s repositories are considered." xml:space="preserve">
+    <value>Εισαγάγετε το όνομα ομάδας, οργάνωσης ή χρήστη από το URL αποθετηρίου, όχι το οπτικό όνομα ή ένα πλήρες URL αποθετηρίου. Λάβονται υπόψη μόνο τα αποθετήρια αυτού του λογαριασμού.</value>
+  </data>
+  <data name="Excluding a category later, archiving a source, or changing it to Private does not delete or hide any copy already published. Review existing target repositories separately when withdrawing access." xml:space="preserve">
+    <value>Το αποκλεισμός μιας κατηγορίας αργότερα, η αρχικοποίηση μιας πηγής ή η αλλαγή της σε Ιδιωτική δεν διαγράφει ή κρύβει κανένα αντίγραφο που έχει ήδη δημοσιευτεί. Ελέγξτε ξεχωριστά τα υπάρχοντα αποθετήρια προορισμού κατά τον εκτοπισμό πρόσβασης.</value>
+  </data>
+  <data name="For GitHub, use https://api.github.com. For GitLab, enter the website address without /api/v4." xml:space="preserve">
+    <value>Για το GitHub, χρησιμοποιήστε το https://api.github.com. Για το GitLab, εισαγάγετε τη διεύθυνση του ιστότοπου χωρίς το /api/v4.</value>
+  </data>
+  <data name="For GitLab, enter the website address, such as https://gitlab.example.com, without /api/v4. For GitHub, use https://api.github.com." xml:space="preserve">
+    <value>Για το GitLab, εισαγάγετε τη διεύθυνση του ιστοτόπου, όπως https://gitlab.example.com, χωρίς /api/v4. Για το GitHub, χρησιμοποιήστε https://api.github.com.</value>
+  </data>
+  <data name="For GitLab, use a dedicated account with read_api and read_repository. It must be allowed to read the selected projects; Internal projects may require membership for external or service accounts. For GitHub, grant read access; Private personal repositories require a token belonging to the source user. Leave empty only for anonymous Public copies, with Internal and Private disabled. Keep the token valid for scheduled runs. The selected visibility still limits what is copied." xml:space="preserve">
+    <value>Για το GitLab, χρησιμοποιήστε έναν ειδικό λογαριασμό με δικαιώματα read_api και read_repository. Πρέπει να έχει άδεια ανάγνωσης των επιλεγμένων έργων· για τα έργα Internal ενδέχεται να απαιτείται συμμετοχή από εξωτερικούς λογαριασμούς ή λογαριασμούς υπηρεσίας. Για το GitHub, παραχωρήστε δικαιώματα ανάγνωσης· για τα προσωπικά αποθετήρια Private απαιτείται διακριτικό που ανήκει στον χρήστη-πηγή. Αφήστε το πεδίο κενό μόνο για ανώνυμη αντιγραφή δημόσιων αποθετηρίων, με απενεργοποιημένα τα Internal και Private. Διατηρήστε το διακριτικό σε ισχύ για τις προγραμματισμένες εκτελέσεις. Η επιλεγμένη ορατότητα εξακολουθεί να περιορίζει το περιεχόμενο που αντιγράφεται.</value>
+  </data>
+  <data name="GitHub token instructions" xml:space="preserve">
+    <value>Οδηγίες token GitHub</value>
+  </data>
+  <data name="GitLab token instructions" xml:space="preserve">
+    <value>Οδηγίες για τα διακριτικά πρόσβασης του GitLab</value>
+  </data>
+  <data name="Help: account type" xml:space="preserve">
+    <value>Βοήθεια: τύπος λογαριασμού</value>
+  </data>
+  <data name="Help: archived repositories" xml:space="preserve">
+    <value>Βοήθεια: αρχειοθετημένα αποθετήρια</value>
+  </data>
+  <data name="Help: internal repositories" xml:space="preserve">
+    <value>Βοήθεια: εσωτερικά αποθετήρια</value>
+  </data>
+  <data name="Help: private repositories" xml:space="preserve">
+    <value>Βοήθεια: ιδιωτικά αποθετήρια</value>
+  </data>
+  <data name="Help: public repositories" xml:space="preserve">
+    <value>Βοήθεια: δημόσια αποθετήρια</value>
+  </data>
+  <data name="Help: publication confirmation" xml:space="preserve">
+    <value>Βοήθεια: επιβεβαίωση δημοσίευσης</value>
+  </data>
+  <data name="Help: source account" xml:space="preserve">
+    <value>Βοήθεια: λογαριασμός προέλευσης</value>
+  </data>
+  <data name="Help: source server" xml:space="preserve">
+    <value>Βοήθεια: διακομιστής προέλευσης</value>
+  </data>
+  <data name="Help: source token" xml:space="preserve">
+    <value>Βοήθεια: token πηγής</value>
+  </data>
+  <data name="Help: target account" xml:space="preserve">
+    <value>Βοήθεια: λογαριασμός προορισμού</value>
+  </data>
+  <data name="Help: target server" xml:space="preserve">
+    <value>Βοήθεια: διακομιστής προορισμού</value>
+  </data>
+  <data name="Help: target token" xml:space="preserve">
+    <value>Βοήθεια: token προορισμού</value>
+  </data>
+  <data name="Help: target visibility" xml:space="preserve">
+    <value>Βοήθεια: ορατότητα προορισμού</value>
+  </data>
+  <data name="Internal (GitLab only): authenticated users allowed by your GitLab instance can read the source. Selecting this with a Public GitHub target publishes the copied code to everyone on the internet. Internal is an access level, not an open-source license; only publish content you are authorized to share." xml:space="preserve">
+    <value>Εσωτερικά (μόνο GitLab): οι επαληθευμένοι χρήστες που επιτρέπονται από την περιγραφή GitLab σας μπορούν να διαβάσουν τον κώδικα πηγής. Η επιλογή αυτής της δυνατότητας με έναν δημόσιο προορισμό GitHub δημοσιεύει τον αντιγραμμένο κώδικα σε όλους στο διαδίκτυο. Το «Εσωτερικό» είναι ένα επίπεδο πρόσβασης και όχι μια άδεια ανοιχτού κώδικα; δημοσιεύστε μόνο περιεχόμενο για το οποίο έχετε εξουσιοδότηση να το μοιραστείτε.</value>
+  </data>
+  <data name="Mirroring force-pushes source branches and tags. Use a dedicated target: independent changes there may be overwritten. Issues, merge requests, permissions, and project settings are not copied." xml:space="preserve">
+    <value>Ο συγχρονισμός αντικατοπτρισμού προωθεί με force-push τους κλάδους και τις ετικέτες της πηγής. Χρησιμοποιήστε έναν αποκλειστικό προορισμό: ανεξάρτητες αλλαγές εκεί ενδέχεται να αντικατασταθούν. Τα issues, τα αιτήματα συγχώνευσης, τα δικαιώματα και οι ρυθμίσεις του έργου δεν αντιγράφονται.</value>
+  </data>
+  <data name="Organization / GitLab group" xml:space="preserve">
+    <value>Οργάνωση / Ομάδα GitLab</value>
+  </data>
+  <data name="Personal user account" xml:space="preserve">
+    <value>Προσωπικός λογαριασμός χρήστη</value>
+  </data>
+  <data name="Private: access is controlled by the target account" xml:space="preserve">
+    <value>Ιδιωτικό: η πρόσβαση ελέγχεται από τον λογαριασμό προορισμού</value>
+  </data>
+  <data name="Private: only explicitly authorized users can read the source. Disabled by default. Enable this only when your organization authorizes copying these repositories." xml:space="preserve">
+    <value>Ιδιωτικά: μόνο οι ρητά εξουσιοδοτημένοι χρήστες μπορούν να διαβάσουν την πηγή. Απενεργοποιημένο από προεπιλογή. Ενεργοποιήστε το μόνο όταν ο οργανισμός σας εξουσιοδοτεί την αντιγραφή αυτών των αποθετηρίων.</value>
+  </data>
+  <data name="Public: anyone can read the source without signing in." xml:space="preserve">
+    <value>Δημόσιο: οποιοσδήποτε μπορεί να διαβάσει τον πηγαίο κώδικα χωρίς να συνδεθεί.</value>
+  </data>
+  <data name="Public: anyone on the internet can read the copy" xml:space="preserve">
+    <value>Δημόσιο: οποιοςδήποτε στο διαδίκτυο μπορεί να διαβάσει το αντίγραφο</value>
+  </data>
+  <data name="Repositories to copy" xml:space="preserve">
+    <value>Αποθετήρια προς αντιγραφή</value>
+  </data>
+  <data name="Required only when including Private sources with Public new GitHub repositories. Confirm again on each save. Selecting Private never changes an existing Public target; mirroring refuses that target when copying Private sources. Review existing target permissions separately." xml:space="preserve">
+    <value>Απαιτείται μόνο όταν συμπεριλαμβάνονται ιδιωτικές πηγές με δημόσια νέα αποθετήρια GitHub. Επιβεβαιώστε ξανά σε κάθε αποθήκευση. Η επιλογή «Ιδιωτικό» δεν αλλάζει ποτέ έναν υπάρχοντα δημόσιο προορισμό· η ανακλόνιση απορρίπτει αυτόν τον προορισμό κατά το αντίγραφο ιδιωτικών πηγών. Ελέγξτε ξεχωριστά τα δικαιώματα των υπάρχοντων προορισμών.</value>
+  </data>
+  <data name="Save Changes" xml:space="preserve">
+    <value>Αποθήκευση αλλαγών</value>
+  </data>
+  <data name="Saving stores this mirror relationship for the scheduled job. It does not verify your credentials or start a copy immediately. Check job history after the next run for authentication errors and per-repository results." xml:space="preserve">
+    <value>Η αποθήκευση καταχωρίζει αυτή τη σχέση κατοπτρισμού για την προγραμματισμένη εργασία. Δεν επαληθεύει τα διαπιστευτήριά σας ούτε ξεκινά αμέσως την αντιγραφή. Μετά την επόμενη εκτέλεση, ελέγξτε το ιστορικό εργασιών για σφάλματα ελέγχου ταυτότητας και αποτελέσματα ανά αποθετήριο.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Πηγή</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Στόχος</value>
+  </data>
+  <data name="Use a separate target token that can create repositories in the destination account and push their Git contents. For a GitHub fine-grained token, allow repository creation (Administration: write) and Contents: write; include Workflows: write if copying workflow files. Your organization may also require token approval or SSO authorization. Source read permissions alone are not enough." xml:space="preserve">
+    <value>Χρησιμοποιήστε έναν ξεχωριστό token προορισμού που μπορεί να δημιουργεί αποθετήρια στον λογαριασμό προορισμού και να αποστέλλει (push) το Git περιεχόμενό τους. Για έναν token GitHub λεπτομερών εξουσιοδοτήσεων (fine-grained), επιτρέψτε τη δημιουργία αποθετηρίων (Administration: write) και Contents: write; συμπεριλάβετε Workflows: write εάν αντιγράφετε αρχεία workflows. Ο οργανισμός σας ενδέχεται επίσης να απαιτεί έγκριση token ή εξουσιοδότηση SSO. Μόνο οι εξουσιοδοτήσεις ανάγνωσης πηγής δεν αρκούν.</value>
+  </data>
+  <data name="What happens after I save?" xml:space="preserve">
+    <value>Τι συμβαίνει αφού αποθηκεύσω;</value>
+  </data>
+
+</root>
