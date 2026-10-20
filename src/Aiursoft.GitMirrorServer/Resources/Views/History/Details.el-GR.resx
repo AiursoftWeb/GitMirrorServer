@@ -21,11 +21,20 @@
       <data name="Back to History" xml:space="preserve">
     <value>Επιστροφή στο Ιστορικό</value>
   </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Η αντιγραφή απέτυχε. Επιλέξτε το κείμενο του καταλόγου και αντιγράψτε το χειροκίνητα.</value>
+  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Αντιγραφή Καταγραφής</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Σφάλμα</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Επεκτείνετε ένα αποθετήριο για να εξετάσετε το αρχείο καταγραφής του. Τα αποτυχημένα αποτελέσματα επεκτείνονται αυτόματα.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Απέτυχαν</value>
   </data>
   <data name="Failures" xml:space="preserve">
     <value>Αποτυχίες</value>
@@ -36,11 +45,32 @@
   <data name="Job Error" xml:space="preserve">
     <value>Σφάλμα Εργασίας</value>
   </data>
+  <data name="Log" xml:space="preserve">
+    <value>Καταγραφή</value>
+  </data>
   <data name="Log copied to clipboard!" xml:space="preserve">
     <value>Το καταγεγραμμένο αντιγράφηκε στο πρόχειρο!</value>
   </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Το αρχείο καταγραφής αντιγράφηκε.</value>
+  </data>
   <data name="Logs" xml:space="preserve">
     <value>Ημερολόγιο</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Αποτελέσματα εκτέλεσης συγχρονισμού</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Δεν έχουν καταγραφεί αποτελέσματα αποθετηρίων για αυτή την εκτέλεση.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Αποτελέσματα αποθετηρίων</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Σφάλμα εκτέλεσης</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>Σε εξέλιξη</value>
   </data>
   <data name="Source" xml:space="preserve">
     <value>Πηγή</value>
@@ -48,11 +78,23 @@
   <data name="Start Time" xml:space="preserve">
     <value>Ώρα Εκκίνησης</value>
   </data>
+  <data name="Started" xml:space="preserve">
+    <value>Έναρξη</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Επιτυχία</value>
+  </data>
   <data name="Success" xml:space="preserve">
     <value>Επιτυχία</value>
   </data>
   <data name="Target" xml:space="preserve">
     <value>Στόχος</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Αυτή η εκτέλεση βρίσκεται ακόμα σε εξέλιξη. Ανανεώστε για να δείτε τα τελευταία αποτελέσματα.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Σύνολο αποθετηρίων</value>
   </data>
 
 </root>
