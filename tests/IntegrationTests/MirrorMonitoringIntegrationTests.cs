@@ -14,6 +14,16 @@ namespace Aiursoft.GitMirrorServer.Tests.IntegrationTests;
 [TestClass]
 public class MirrorMonitoringIntegrationTests : TestBase
 {
+    [TestInitialize]
+    public override async Task CreateServer()
+    {
+        await base.CreateServer();
+        // The existing in-memory provider can retain settings across test hosts.
+        var settings = GetService<GlobalSettingsService>();
+        foreach (var definition in SettingsMap.Definitions.Where(item => item.Key.StartsWith("AlertCenter_", StringComparison.Ordinal)))
+            await settings.UpdateSettingAsync(definition.Key, definition.DefaultValue);
+    }
+
     private async Task<(MirrorMonitoringService Service, MirrorMonitor Monitor, RecordingIncidents Client, GlobalSettingsService Settings)> Setup()
     {
         var settings = GetService<GlobalSettingsService>();
@@ -217,9 +227,11 @@ public class MirrorMonitoringIntegrationTests : TestBase
         var version = Regex.Match(page, "name=\"version\" value=\"([^\"]+)\"").Groups[1].Value;
         var form = new Dictionary<string, string> { ["version"] = version, ["failureCount"] = "5", ["severity"] = "sev1", ["isEnabled"] = "true" };
         Assert.AreEqual(HttpStatusCode.BadRequest, (await PostForm("/AlertMonitoring/SaveRule", form, includeToken: false)).StatusCode);
-        Assert.AreEqual(HttpStatusCode.Found, (await PostForm("/AlertMonitoring/SaveRule", form, tokenUrl: "/AlertMonitoring")).StatusCode);
+        var saved = await PostForm("/AlertMonitoring/SaveRule", form, tokenUrl: "/AlertMonitoring");
+        AssertRedirect(saved, "/AlertMonitoring");
         Assert.AreEqual(HttpStatusCode.Conflict, (await PostForm("/AlertMonitoring/SaveRule", form, tokenUrl: "/AlertMonitoring")).StatusCode);
-        var rules = MirrorMonitoringRule.Parse(await GetService<GlobalSettingsService>().GetSettingValueAsync(SettingsMap.AlertCenterRules));
+        var json = await GetService<GlobalSettingsService>().GetSettingValueAsync(SettingsMap.AlertCenterRules);
+        var rules = MirrorMonitoringRule.Parse(json);
         Assert.AreEqual(3, rules.Count);
         Assert.AreEqual(5, rules.Last().FailureCount);
         Assert.AreEqual("sev1", rules.Last().Severity);
