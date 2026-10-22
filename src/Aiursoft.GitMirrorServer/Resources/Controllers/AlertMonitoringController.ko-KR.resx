@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Select a positive failed-round threshold from 1 to 1000000 and sev0 to sev4." xml:space="preserve">
+    <value>실패 라운드 임계값을 1~1000000 사이의 양수로, 심각도를 sev0~sev4 중에서 선택하세요.</value>
+  </data>
+  <data name="The monitoring rules changed. Refresh before saving." xml:space="preserve">
+    <value>모니터링 규칙이 변경되었습니다. 저장 전에 새로고침해 주세요.</value>
+  </data>
+  <data name="The rules are invalid or overridden by configuration. Check Global Settings." xml:space="preserve">
+    <value>규칙이 유효하지 않거나 구성에 의해 무시됩니다. 전역 설정을 확인하세요.</value>
+  </data>
+  <data name="This setting is overridden by configuration." xml:space="preserve">
+    <value>이 설정은 구성에 의해 재정의됩니다.</value>
+  </data>
+
+</root>

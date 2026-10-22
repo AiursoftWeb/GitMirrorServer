@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>ブランドのホームページへのリンク。</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>クエリ、作成、重大度の変更、および軽減の権限を持つ専用のアプリケーションキー。</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>AlertCenter アプリケーション API キー</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>AlertCenter エンドポイント</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>ユーザーがニックネームを変更できるようにする</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>プロフィール管理ページでユーザーがニックネームを調整できるようにする。</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>復旧したリポジトリを自動的に緩和する</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>ブランド ホーム URL</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>ブランド名</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>AlertCenter連携を有効化</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>GitMirrorServerの公開URL</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP番号</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>JSON監視ルールです。編集するには、AlertCenterの監視ページを使用してください。</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>ミラー間隔 (分)</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>ミラー監視ルール</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>ミラーラウンドが正常に完了した後、軽減措置を適用します。最終的な解決は手動で行われます。</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>プロジェクトロゴ</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>プロジェクト名</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>リポジトリミラーのインシデントをAlertCenterと同期します。</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>フッターに表示されるブランド名。</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>AlertCenterのHTTP(S)ベースURL。</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>中国本土ユーザー向けのICPライセンス番号。空欄のままにすると非表示になります。</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>フロントエンドに表示されるプロジェクト名</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>インシデントの説明に使用される公開 HTTP(S) ベース URL。</value>
   </data>
 
 </root>

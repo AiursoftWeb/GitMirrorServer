@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>브랜드 홈페이지 링크</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>조회, 생성, 심각도 변경 및 완화 권한이 있는 전용 애플리케이션 키입니다.</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>AlertCenter 애플리케이션 API 키</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>AlertCenter 엔드포인트</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>사용자 닉네임 조정 허용</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>프로필 관리 페이지에서 사용자가 닉네임을 수정할 수 있도록 허용합니다.</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>복구된 저장소를 자동으로 완화</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>브랜드 홈 URL</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>브랜드 이름</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>AlertCenter 연동 활성화</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>GitMirrorServer 공개 URL</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP 번호</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>JSON 모니터링 규칙입니다. AlertCenter 모니터링 페이지에서 규칙을 수정하세요.</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>미러 간격 (분)</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>미러 모니터링 규칙</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>성공적인 미러 라운드 후 완화 처리합니다. 최종 해결은 수동으로 유지됩니다.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>프로젝트 로고</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>프로젝트 이름</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>리포지토리 미러링 관련 이벤트를 AlertCenter와 동기화합니다.</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>푸터에 표시되는 브랜드 이름</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>AlertCenter의 HTTP(S) 기본 URL입니다.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>중국 대륙 사용자를 위한 ICP 라이선스 번호. 비워두면 숨깁니다.</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>프론트엔드에 표시되는 프로젝트 이름</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>인시던트 설명에 사용되는 공개 HTTP(S) 기본 URL입니다.</value>
   </data>
 
 </root>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>Putaran mirror yang berhasil mengatur ulang penghitung repositori tersebut dan, secara default, memitigasi insiden aktifnya. Penyelesaian akhir tetap dilakukan secara manual.</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>Tambah aturan</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>Pemantauan AlertCenter</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>Meredam secara otomatis setelah ronde cermin berhasil</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>Secara default, tiga putaran gagal beruntun membuat sev3; sembilan putaran gagal beruntun meningkatkan insiden yang sama menjadi sev2.</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>Kredensial koneksi menggunakan Pengaturan Global, termasuk rahasia terenkripsi dan penimpaan lingkungan read-only.</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>Pengaturan koneksi</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>Jumlah putaran gagal berturut-turut</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>Hitung putaran pencerminan yang gagal secara berturut-turut untuk setiap repositori. Aturan yang cocok dengan tingkat keparahan tertinggi akan berlaku.</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>Penghitung menggunakan ruang tetap per repositori yang diamati di memori proses. Mulai ulang memulai penghitungan baru. Insiden yang ada dipertahankan hingga putaran yang benar-benar berhasil mengonfirmasi pemulihan. Gunakan satu instans aplikasi untuk penghitungan yang lengkap.</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>Hapus aturan</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>Setiap eksekusi cermin yang dijadwalkan atau dimulai secara manual dihitung satu kali per repositori. Empat percobaan internal tersebut adalah pengulangan di dalam putaran tersebut, bukan empat putaran yang gagal.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Diaktifkan</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>Cara kerja pemantauan</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>Sinkronisasi insiden dijalankan setelah setiap pekerjaan cermin dan mengulang percobaan setiap menit. Kegagalan sementara AlertCenter tidak mengubah hasil cermin.</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>Hasil terakhir (UTC)</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>Keberhasilan terakhir (UTC)</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>Aturan pemantauan</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>Tidak ada hasil repositori yang diamati sejak startup. Jalankan pekerjaan mirror atau tunggu jadwal.</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>Repositori yang Dipantau</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Pemulihan</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>Repositori</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>Identitas repositori mencakup konfigurasi mirror serta lokasi sumber dan target. Rute mirror yang berbeda dihitung secara terpisah.</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>Aturan ditimpa oleh konfigurasi dan bersifat hanya-baca di sini.</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>Simpan pengaturan pemulihan</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>Simpan aturan</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Keparahan</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>Repositori yang dilewati, belum ditemukan, atau dibatalkan berstatus tidak diketahui, bukan berhasil. Repositori lain tidak dapat mereset penghitung ini.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Sumber</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>Sinkronisasi dinonaktifkan atau kunci API aplikasi belum tersedia. Konfigurasikan koneksi AlertCenter di Pengaturan Global.</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Tujuan</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>Aturan pemantauan tidak valid. Perbaiki JSON di Pengaturan Global agar sinkronisasi dapat dilanjutkan.</value>
+  </data>
+
+</root>

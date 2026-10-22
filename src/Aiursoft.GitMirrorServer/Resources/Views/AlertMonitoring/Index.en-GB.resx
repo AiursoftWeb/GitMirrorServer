@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual.</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>Add rule</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>AlertCenter monitoring</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>Automatically mitigate after a successful mirror round</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>By default, three consecutive failed rounds create sev3; nine consecutive failed rounds escalate the same incident to sev2.</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides.</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>Connection settings</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>Consecutive failed rounds</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>Count consecutive failed mirror rounds for each repository. The most severe matching rule takes precedence.</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts.</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>Delete rule</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>How monitoring works</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>Incident synchronisation runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result.</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>Last result (UTC)</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>Last success (UTC)</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>Monitoring rules</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>No repository result has been observed since startup. Run a mirror job or wait for the schedule.</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>Observed repositories</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Recovery</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>Repository</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently.</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>Rules are overridden by the configuration and are read-only here.</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>Save recovery settings</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>Save rule</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>Skipped, undiscovered or cancelled repositories are unknown, not successful. Other repositories cannot reset this counter.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>Synchronisation is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings.</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Target</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume.</value>
+  </data>
+
+</root>

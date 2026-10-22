@@ -27,6 +27,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Giver mulighed for at tildele eller fjerne roller for enhver bruger.</value>
   </data>
+  <data name="Allows managing mirror alert rules and viewing in-memory monitoring state." xml:space="preserve">
+    <value>Giver mulighed for at administrere spejlingsregler for alarmer og se overvågningstilstanden i hukommelsen.</value>
+  </data>
   <data name="Allows managing the mirror targets and configurations." xml:space="preserve">
     <value>Tillader administration af spejle-mål og konfigurationer.</value>
   </data>
@@ -86,6 +89,9 @@
   </data>
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>Giver tilladelse til at genstarte applikationsinstansen. Kan forårsage afbrydelser i tilgængeligheden, men alle indstillinger og cache vil blive genindlæst.</value>
+  </data>
+  <data name="Manage AlertCenter Integration" xml:space="preserve">
+    <value>Administrér AlertCenter-integration</value>
   </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Håndtér globale indstillinger</value>

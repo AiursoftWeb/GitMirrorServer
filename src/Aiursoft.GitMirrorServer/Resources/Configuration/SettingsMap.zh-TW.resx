@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>品牌首頁的連結</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>具備查詢、建立、變更嚴重性及緩解權限的專用應用程式金鑰。</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>AlertCenter 應用程式 API 金鑰</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>AlertCenter 端點</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>允許使用者修改暱稱</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>允許使用者在個人檔案管理頁面中調整其暱稱。</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>自動緩解已恢復的儲存庫</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>品牌首頁網址</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>品牌名稱</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>啟用 AlertCenter 整合</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>GitMirrorServer 公開 URL</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP編號</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>JSON 監控規則。請使用 AlertCenter 監控頁面進行編輯。</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>同步間隔（分鐘）</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>鏡像監控規則</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>在鏡像輪次成功後緩解。最終解決仍需手動處理。</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>專案圖示</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>專案名稱</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>將儲存庫鏡像事件同步至 AlertCenter。</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>頁尾顯示的品牌名稱</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>AlertCenter 的 HTTP(S) 基礎 URL。</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>適用於中國大陸使用者的 ICP 備案號碼。留空則隱藏。</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>專案在前端顯示的名稱。</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>用於事件描述的公開 HTTP(S) 基礎 URL。</value>
   </data>
 
 </root>

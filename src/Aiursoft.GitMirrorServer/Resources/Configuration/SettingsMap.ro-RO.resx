@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>Linkul către pagina principală a mărcii.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>O cheie de aplicație dedicată, cu permisiuni de interogare, creare, modificare a severității și atenuare.</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>Cheie API a aplicației AlertCenter</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>punct terminal AlertCenter</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>Permite utilizatorului să-și ajusteze nickname-ul</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Permite utilizatorilor să-și ajusteze nickname-ul în pagina de gestionare a profilului.</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>Mitigare automat depozitele recuperate</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL pagină principală marcă</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>Numele mărcii</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>Activează integrarea cu AlertCenter</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>URL-ul public GitMirrorServer</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Număr ICP</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>Reguli de monitorizare JSON. Folosiți pagina de monitorizare AlertCenter pentru a le modifica.</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Interval de oglindire (minute)</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>Reguli de monitorizare a replicilor</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>Mitighează după o rundă de oglindă reușită. Rezoluția finală rămâne manuală.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logo Proiect</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>Numele proiectului</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>Sincronizează incidentele oglinzilor de depozit cu AlertCenter.</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Numele mărcii afișat în subsol.</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>URL-ul de bază HTTP(S) al AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Numărul de înregistrare ICP pentru utilizatorii din China continentală. Lăsați gol pentru a ascunde.</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Numele proiectului afișat în interfața frontend</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>URL-ul public de bază HTTP(S) utilizat în descrierile incidentelor.</value>
   </data>
 
 </root>

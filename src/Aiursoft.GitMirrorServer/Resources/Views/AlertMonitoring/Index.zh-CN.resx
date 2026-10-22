@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>一次成功的镜像轮次会重置该仓库的计数器，并默认缓解其活动事件。最终解决仍需手动操作。</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>添加规则</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>AlertCenter 监控</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>成功完成一轮镜像后自动缓解</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>默认情况下，连续三轮失败会创建 sev3 事件；连续九轮失败会将同一事件升级为 sev2。</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>连接凭据使用全局设置，包括加密的密钥和只读的环境变量覆盖项。</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>连接设置</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>连续失败轮数</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>按每个仓库统计连续镜像失败轮次。匹配多条规则时，以严重程度最高的规则为准。</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>计数器为每个观察到的存储库在进程内存中使用固定空间。重启后开始新的计数。现有事件将保留，直到实际成功的轮次确认恢复为止。请使用一个应用程序实例以获取完整的计数。</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>删除规则</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>每次按计划或手动启动的镜像运行，每个仓库都只计为一次。这一轮中的四次内部尝试属于重试，并不算作四轮失败。</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>已启用</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>监控工作原理</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>每次镜像任务结束后都会进行事件同步，并每分钟重试一次。AlertCenter 暂时发生故障不会影响镜像结果。</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>最后结果（UTC）</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>上次成功时间（UTC）</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>监控规则</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>自启动以来尚未观察到任何仓库结果。请运行镜像任务或等待计划任务执行。</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>已观察的存储库</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>恢复</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>仓库标识包含镜像配置以及源和目标位置。不同的镜像路由分别计数。</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>规则由配置覆盖，在此处为只读。</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>保存恢复设置</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>保存规则</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>严重程度</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>已跳过、尚未发现或已取消的仓库状态未知，不算成功。其他仓库无法重置此计数器。</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>源</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>同步功能已禁用，或缺少应用程序 API 密钥。请在“全局设置”中配置 AlertCenter 连接。</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>目标</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>监控规则无效。请在“全局设置”中修正 JSON，然后才能恢复同步。</value>
+  </data>
+
+</root>

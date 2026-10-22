@@ -33,6 +33,9 @@
   <data name="Aiursoft Template" xml:space="preserve">
     <value>Plantilla de Aiursoft</value>
   </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>Monitorización de AlertCenter</value>
+  </data>
   <data name="Anonymous" xml:space="preserve">
     <value>Anónimo</value>
   </data>
@@ -140,6 +143,9 @@
   </data>
   <data name="Mirrors List" xml:space="preserve">
     <value>Lista de espejos</value>
+  </data>
+  <data name="Monitoring" xml:space="preserve">
+    <value>Monitorización</value>
   </data>
   <data name="Not Found" xml:space="preserve">
     <value>No encontrado</value>

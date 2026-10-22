@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>Link til mærkets hjemmeside</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>En dedikeret applikationsnøgle med tilladelser til at forespørge, oprette, ændre alvorlighedsgrad og afbøde.</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>AlertCenter-applikationens API-nøgle</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>AlertCenter-slutpunkt</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>Tillad bruger at ændre apelation</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Tillad brugere at justere deres nickname på siden til at administrere profil.</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>Automatisk dæmpning af genoprettede repositorier</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>Brand Home URL</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>Varenavn</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>Aktivér integration med AlertCenter</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>Offentlig URL for GitMirrorServer</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP-nummer</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>JSON-overvågningsregler. Brug AlertCenter-overvågnings siden til at redigere dem.</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Spejlingstid (minutter)</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>Spejlingsmonitoreringsregler</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>Mild ind efter en vellykket spejlrunde. Endelig løsning forbliver manuel.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Projektlogo</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>Projektnavn</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>Synkronisér hændelser vedrørende spejling af repositories med AlertCenter.</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Det brands navn, der vises i foden.</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>Den HTTP(S)-baserede URL for AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>ICP-licensenr. for brugere i Kina. Lad stå tomt for at skjule.</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Navnet på projektet, der vises i brugergrænsefladen.</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>Den offentlige HTTP(S) basis-URL, der bruges i incidentbeskrivelser.</value>
   </data>
 
 </root>

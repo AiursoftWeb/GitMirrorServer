@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>En vellykket spejlingsrunde nulstiller tælleren for det pågældende arkiv og afhjælper som standard dets aktive hændelser. Den endelige løsning kræver stadig manuel handling.</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>Tilføj regel</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>AlertCenter-overvågning</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>Afhjælp automatisk efter en vellykket spejlingsrunde</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>Som standard opretter tre på hinanden følgende mislykkede runder sev3; ni på hinanden følgende mislykkede runder opgraderer den samme hændelse til sev2.</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>Forbindelsesidentifikatorer bruger globale indstillinger, herunder krypterede hemmeligheder og skrivebeskyttede miljøoverridinger.</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>Forbindelsesindstillinger</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>Kontinuerte fejlrunder</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>Tæl på hinanden følgende mislykkede spejlrunder pr. repository. Den mest alvorlige matchende regel vinder.</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>Tællerne bruger en fast mængde plads pr. observeret repository i processens hukommelse. En genstart starter en ny optælling. Eksisterende hændelser bevares, indtil en faktisk vellykket runde bekræfter, at problemet er løst. Brug én applikationsinstans for at få komplette optællinger.</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>Slet regel</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>Hver planlagt eller manuelt startet spejlingskørsel tæller én gang pr. repository. De fire interne forsøg er genforsøg inden for den pågældende runde, ikke fire mislykkede runder.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Aktiveret</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>Sådan fungerer overvågningen</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>Incident-synkronisering køres efter hver mirror-job og gentages hvert minut. En midlertidig AlertCenter-fejl ændrer ikke mirror-resultatet.</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>Seneste resultat (UTC)</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>Sidste succes (UTC)</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>Overvågningsregler</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>Der er ikke observeret nogen repository-resultat siden opstart. Kør en mirror-job eller vent på tidsplanen.</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>Observerede repositorier</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Gendannelse</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>Arkiv</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>Repositoryidentitet omfatter spejlingkonfigurationen samt kilde- og mållokationer. Undefærdige spejlrudder tæller uafhængigt.</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>Reglerne tilsidesættes af konfigurationen og kan ikke redigeres her.</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>Gem genoprettelsesindstillinger</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>Gem regel</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Sværhedsgrad</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>Springede, ikke-opdagede eller annullerede repositories har ukendt status og tæller ikke som vellykkede. Andre repositories kan ikke nulstille denne tæller.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Kilde</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>Synkronisering er deaktiveret, eller der mangler en API-nøgle til applikationen. Konfigurer AlertCenter-forbindelsen under Globale indstillinger.</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Mål</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>Overvågningsreglerne er ugyldige. Ret JSON&apos;en i Globale indstillinger, før synkroniseringen kan genoptages.</value>
+  </data>
+
+</root>
