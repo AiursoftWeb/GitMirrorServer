@@ -30,6 +30,10 @@ public static class RepositoryMirrorRetryRunner
                 jobExecution.SuccessCount++;
                 return;
             }
+            catch (OperationCanceledException)
+            {
+                throw;
+            }
             catch (Exception ex)
             {
                 lastException = ex;
