@@ -27,6 +27,8 @@ public static class AppPermissionNames
     public const string CanViewBackgroundJobs = nameof(CanViewBackgroundJobs);
     public const string CanManageGlobalSettings = nameof(CanManageGlobalSettings);
     
+    public const string CanManageAlertCenterIntegration = nameof(CanManageAlertCenterIntegration);
+
     // Mirror Management
     public const string CanViewMirrorStatus = nameof(CanViewMirrorStatus);
     public const string CanManageMirrorTargets = nameof(CanManageMirrorTargets);

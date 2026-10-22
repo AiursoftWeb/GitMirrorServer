@@ -1,0 +1,88 @@
+@using Aiursoft.GitMirrorServer.Authorization
+@model Aiursoft.GitMirrorServer.Models.Monitoring.MonitoringViewModel
+
+<div class="row mb-3">
+    <div class="col"><h3>@Localizer["AlertCenter monitoring"]</h3></div>
+    @if (User.HasClaim(AppPermissions.Type, AppPermissionNames.CanManageGlobalSettings))
+    {
+        <div class="col-auto"><a asp-controller="GlobalSettings" asp-action="Index" class="btn btn-outline-primary">@Localizer["Connection settings"]</a></div>
+    }
+</div>
+<div class="row">
+    <div class="col-xl-8">
+        @if (!Model.Enabled || !Model.ApiKeyConfigured)
+        {
+            <div class="alert alert-warning" role="alert"><div class="alert-message">@Localizer["Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings."]</div></div>
+        }
+        @if (Model.InvalidRules)
+        {
+            <div class="alert alert-danger" role="alert"><div class="alert-message">@Localizer["The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume."]</div></div>
+        }
+        @if (Model.RulesReadOnly)
+        {
+            <div class="alert alert-info" role="alert"><div class="alert-message">@Localizer["Rules are overridden by configuration and are read-only here."]</div></div>
+        }
+        <div class="card">
+            <div class="card-header"><h5 class="card-title">@Localizer["Monitoring rules"]</h5><p class="card-subtitle text-muted">@Localizer["Count consecutive failed mirror rounds per repository. The most severe matching rule wins."]</p></div>
+            <div class="card-body">
+                @foreach (var rule in Model.Rules)
+                {
+                    <form asp-action="SaveRule" method="post" class="border rounded p-3 mb-3">
+                        <input type="hidden" name="version" value="@Model.Version" />
+                        <input type="hidden" name="id" value="@rule.Id" />
+                        <fieldset disabled="@(Model.RulesReadOnly ? "disabled" : null)">
+                            <div class="row g-2">
+                                <div class="col-sm-5"><label class="form-label">@Localizer["Consecutive failed rounds"]</label><input name="failureCount" type="number" min="1" max="1000000" value="@rule.FailureCount" class="form-control" required /></div>
+                                <div class="col-sm-4"><label class="form-label">@Localizer["Severity"]</label><select name="severity" class="form-select">@foreach (var level in Enumerable.Range(0, 5)) { <option value="@($"sev{level}")" selected="@(rule.Severity == $"sev{level}")">@($"sev{level}")</option> }</select></div>
+                                <div class="col-sm-3 d-flex align-items-center"><label class="form-check"><input name="isEnabled" value="true" type="checkbox" checked="@rule.IsEnabled" class="form-check-input" /><span class="form-check-label">@Localizer["Enabled"]</span></label></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2">@Localizer["Save rule"]</button>
+                            <button type="submit" asp-action="DeleteRule" class="btn btn-outline-danger mt-2">@Localizer["Delete rule"]</button>
+                        </fieldset>
+                    </form>
+                }
+                <form asp-action="SaveRule" method="post">
+                    <input type="hidden" name="version" value="@Model.Version" />
+                    <fieldset disabled="@(Model.RulesReadOnly ? "disabled" : null)">
+                        <h6>@Localizer["Add rule"]</h6>
+                        <div class="row g-2">
+                            <div class="col-sm-7"><label class="form-label">@Localizer["Consecutive failed rounds"]</label><input name="failureCount" type="number" min="1" max="1000000" value="3" class="form-control" required /></div>
+                            <div class="col-sm-5"><label class="form-label">@Localizer["Severity"]</label><select name="severity" class="form-select">@foreach (var level in Enumerable.Range(0, 5)) { <option value="@($"sev{level}")" selected="@(level == 3)">@($"sev{level}")</option> }</select></div>
+                            <input type="hidden" name="isEnabled" value="true" />
+                        </div>
+                        <button type="submit" class="btn btn-outline-primary mt-2">@Localizer["Add rule"]</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="card"><div class="card-header"><h5 class="card-title">@Localizer["Recovery"]</h5></div><div class="card-body">
+            <form asp-action="SaveRecovery" method="post"><fieldset disabled="@(Model.AutoMitigateReadOnly ? "disabled" : null)">
+                <label class="form-check"><input name="autoMitigate" value="true" type="checkbox" checked="@Model.AutoMitigate" class="form-check-input" /><span class="form-check-label">@Localizer["Automatically mitigate after a successful mirror round"]</span></label>
+                <button class="btn btn-primary mt-2" type="submit">@Localizer["Save recovery settings"]</button>
+            </fieldset></form>
+        </div></div>
+    </div>
+    <div class="col-xl-4"><div class="card"><div class="card-header"><h5 class="card-title">@Localizer["How monitoring works"]</h5></div><div class="card-body">
+        <p>@Localizer["Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds."]</p>
+        <p>@Localizer["By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2."]</p>
+        <p>@Localizer["A successful mirror round resets that repository's counter and, by default, mitigates its active incidents. Final resolution remains manual."]</p>
+        <p>@Localizer["Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter."]</p>
+        <p>@Localizer["Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently."]</p>
+        <p>@Localizer["Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts."]</p>
+        <p>@Localizer["Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result."]</p>
+        <p class="mb-0">@Localizer["Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides."]</p>
+    </div></div></div>
+</div>
+<div class="card"><div class="card-header"><h5 class="card-title">@Localizer["Observed repositories"]</h5></div><div class="table-responsive"><table class="table mb-0">
+    <thead><tr><th>@Localizer["Repository"]</th><th>@Localizer["Source"]</th><th>@Localizer["Target"]</th><th>@Localizer["Consecutive failed rounds"]</th><th>@Localizer["Last result (UTC)"]</th><th>@Localizer["Last success (UTC)"]</th></tr></thead>
+    <tbody>
+    @foreach (var state in Model.Repositories)
+    {
+        <tr><td class="text-break">@state.Repository</td><td class="text-break">@state.Source</td><td class="text-break">@state.Target</td><td>@state.Failures</td><td>@state.LastObserved.ToString("u")</td><td>@state.LastSuccess?.ToString("u")</td></tr>
+    }
+    @if (Model.Repositories.Count == 0)
+    {
+        <tr><td colspan="6" class="text-muted">@Localizer["No repository result has been observed since startup. Run a mirror job or wait for the schedule."]</td></tr>
+    }
+    </tbody>
+</table></div></div>

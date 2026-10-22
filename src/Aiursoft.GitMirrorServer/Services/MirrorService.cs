@@ -1,4 +1,5 @@
 using System.Text;
+using Aiursoft.GitMirrorServer.Services.Monitoring;
 using Aiursoft.CSTools.Tools;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.GitMirrorServer.Models;
@@ -14,10 +15,20 @@ public class MirrorService(
     GitServiceFactory serviceFactory,
     WorkspaceManager workspaceManager,
     GitSourceService gitSourceService,
+    MirrorMonitor monitor,
+    MirrorMonitoringService monitoring,
     ILogger<MirrorService> logger,
     IConfiguration configuration) : IScopedDependency
 {
     public async Task RunMirrorAsync()
+    {
+        // Serial runs keep each repository round ordered, including manually started jobs.
+        await monitor.MirrorGate.WaitAsync();
+        try { await RunCoreAsync(); }
+        finally { monitor.MirrorGate.Release(); }
+    }
+
+    private async Task RunCoreAsync()
     {
         var jobExecution = new MirrorJobExecution
         {
@@ -153,6 +164,7 @@ public class MirrorService(
                                     attempt,
                                     RepositoryMirrorRetryRunner.MaximumAttempts,
                                     repo.Name));
+                            monitor.Observe(config, repoExecution, DateTimeOffset.UtcNow);
                         }
                         finally
                         {
@@ -186,6 +198,7 @@ public class MirrorService(
             jobExecution.EndTime = DateTime.UtcNow;
             dbContext.MirrorJobExecutions.Update(jobExecution);
             await dbContext.SaveChangesAsync();
+            await monitoring.ExecuteAsync();
         }
     }
 

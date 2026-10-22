@@ -17,6 +17,8 @@ using Newtonsoft.Json.Serialization;
 using Aiursoft.Canon.TaskQueue;
 using Aiursoft.Canon.BackgroundJobs;
 using Aiursoft.Canon.ScheduledTasks;
+using Aiursoft.GitMirrorServer.Services.Monitoring;
+using Aiursoft.AiurProtocol;
 
 namespace Aiursoft.GitMirrorServer;
 
@@ -50,6 +52,10 @@ public class Startup : IWebStartup
         // Services
         services.AddMemoryCache();
         services.AddHttpClient();
+        services.AddAiurProtocolClient();
+        services.AddSingleton<MirrorMonitor>();
+        services.AddScoped<MirrorMonitoringSettings>();
+        services.AddScoped<IMonitoringIncidentClient, MonitoringIncidentClient>();
         services.AddAssemblyDependencies(typeof(Startup).Assembly);
         services.AddSingleton<NavigationState<Startup>>();
 
@@ -61,6 +67,9 @@ public class Startup : IWebStartup
         services.RegisterScheduledTask(registration: orphanAvatarCleanupJob, period: TimeSpan.FromHours(6), startDelay: TimeSpan.FromMinutes(5));
         var mirrorJob = services.RegisterBackgroundJob<Services.BackgroundJobs.MirrorJob>();
         services.RegisterScheduledTask(registration: mirrorJob, period: TimeSpan.FromMinutes(30), startDelay: TimeSpan.FromMinutes(5));
+
+        var alertJob = services.RegisterBackgroundJob<MirrorMonitoringService>();
+        services.RegisterScheduledTask(registration: alertJob, period: TimeSpan.FromMinutes(1), startDelay: TimeSpan.FromMinutes(1));
 
         // Controllers and localization
         services.AddControllersWithViews()

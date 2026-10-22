@@ -4,6 +4,13 @@ namespace Aiursoft.GitMirrorServer.Configuration;
 
 public class SettingsMap
 {
+    public const string AlertCenterEnabled = "AlertCenter_Enabled";
+    public const string AlertCenterEndpoint = "AlertCenter_Endpoint";
+    public const string AlertCenterApiKey = "AlertCenter_ApiKey";
+    public const string AlertCenterPublicBaseUrl = "AlertCenter_PublicBaseUrl";
+    public const string AlertCenterRules = "AlertCenter_Rules";
+    public const string AlertCenterAutoMitigate = "AlertCenter_AutoMitigate";
+
     public const string ProjectName = "ProjectName";
     public const string BrandName = "BrandName";
     public const string BrandHomeUrl = "BrandHomeUrl";
@@ -20,6 +27,42 @@ public class SettingsMap
 
     public static readonly List<GlobalSettingDefinition> Definitions = new()
     {
+        new GlobalSettingDefinition
+        {
+            Key = AlertCenterEnabled, Name = Localizer["Enable AlertCenter integration"],
+            Description = Localizer["Synchronize repository mirror incidents with AlertCenter."],
+            Type = SettingType.Bool, DefaultValue = "False"
+        },
+        new GlobalSettingDefinition
+        {
+            Key = AlertCenterEndpoint, Name = Localizer["AlertCenter endpoint"],
+            Description = Localizer["The HTTP(S) base URL of AlertCenter."],
+            Type = SettingType.Text, DefaultValue = "https://alertcenter.aiursoft.com"
+        },
+        new GlobalSettingDefinition
+        {
+            Key = AlertCenterApiKey, Name = Localizer["AlertCenter application API key"],
+            Description = Localizer["A dedicated application key with query, create, change severity and mitigate permissions."],
+            Type = SettingType.Secret, DefaultValue = ""
+        },
+        new GlobalSettingDefinition
+        {
+            Key = AlertCenterPublicBaseUrl, Name = Localizer["GitMirrorServer public URL"],
+            Description = Localizer["The public HTTP(S) base URL used in incident descriptions."],
+            Type = SettingType.Text, DefaultValue = "https://gitmirror.aiursoft.com"
+        },
+        new GlobalSettingDefinition
+        {
+            Key = AlertCenterRules, Name = Localizer["Mirror monitoring rules"],
+            Description = Localizer["JSON monitoring rules. Use the AlertCenter monitoring page to edit them."],
+            Type = SettingType.Text, DefaultValue = Services.Monitoring.MirrorMonitoringRule.DefaultJson
+        },
+        new GlobalSettingDefinition
+        {
+            Key = AlertCenterAutoMitigate, Name = Localizer["Automatically mitigate recovered repositories"],
+            Description = Localizer["Mitigate after a successful mirror round. Final resolution remains manual."],
+            Type = SettingType.Bool, DefaultValue = "True"
+        },
         new GlobalSettingDefinition
         {
             Key = ProjectName,
