@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>Успішний раунд дзеркалювання скидає лічильник цього репозиторію та за замовчуванням пом’якшує його активні інциденти. Остаточне вирішення залишається ручним.</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>Додати правило</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>Моніторинг AlertCenter</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>Автоматично пом’якшувати наслідки після успішного циклу дзеркалювання</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>За замовчуванням три невдалі раунди поспіль створюють інцидент рівня sev3; дев’ять невдалих раундів поспіль підвищують рівень того самого інциденту до sev2.</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>Облікові дані з&apos;єднання використовують глобальні налаштування, включаючи зашифровані конфіденційні дані та лише для читання переопределения середовища.</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>Налаштування підключення</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>Послідовні невдалі раунди</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>Підраховуйте кількість послідовних невдалих циклів дзеркалювання для кожного репозиторію. Якщо збігається кілька правил, застосовується правило з найвищим рівнем критичності.</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>Лічильники займають фіксований обсяг пам’яті процесу для кожного відстежуваного репозиторію. Після перезапуску підрахунок починається заново. Наявні інциденти зберігаються, доки фактично успішний раунд не підтвердить відновлення. Для повного підрахунку використовуйте лише один екземпляр застосунку.</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>Видалити правило</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>Кожен запланований або запущений вручну цикл дзеркального копіювання враховується один раз для кожного репозиторію. Чотири внутрішні спроби — це повторні спроби в межах цього циклу, а не чотири невдалі цикли.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Увімкнено</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>Як працює моніторинг</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>Синхронізація інцидентів запускається після кожного завдання дзеркалювання та повторюється щохвилини. Тимчасовий збій AlertCenter не впливає на результат дзеркалювання.</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>Останній результат (UTC)</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>Останній успіх (UTC)</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>Правила моніторингу</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>З моменту запуску не було зафіксовано жодного результату репозиторію. Запустіть завдання дзеркала або зачекайте на розклад.</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>Відстежувані репозиторії</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Відновлення</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>Репозиторій</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>Ідентичність репозиторію включає налаштування дзеркала та розташування джерела і цільового пункту. Різні маршрути дзеркал враховуються незалежно.</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>Правила перевизначаються конфігурацією та є тут лише для читання.</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>Зберегти налаштування відновлення</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>Зберегти правило</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Рівень важливості</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>Пропущені, не виявлені або скасовані репозиторії вважаються невідомими, а не успішними. Інші репозиторії не можуть скинути цей лічильник.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Джерело</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>Синхронізацію вимкнено або не вказано API-ключ застосунку. Налаштуйте підключення AlertCenter у глобальних параметрах.</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Ціль</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>Правила моніторингу некоректні. Виправте JSON у глобальних налаштуваннях, перш ніж синхронізацію можна буде відновити.</value>
+  </data>
+
+</root>

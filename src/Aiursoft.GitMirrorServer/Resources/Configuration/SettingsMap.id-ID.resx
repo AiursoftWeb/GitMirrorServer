@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>Tautan ke halaman utama merek.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>Kunci aplikasi khusus dengan izin kueri, buat, ubah tingkat keparahan, dan mitigasi.</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>Kunci API aplikasi AlertCenter</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>Endpoint AlertCenter</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>Izinkan Pengguna Mengatur Nama Panggilan</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Izinkan pengguna menyesuaikan nama panggilan mereka di halaman pengelolaan profil.</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>Mitigasi repositori yang pulih secara otomatis</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL Halaman Utama Merek</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>Nama Merek</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>Aktifkan integrasi AlertCenter</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>URL publik GitMirrorServer</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Nomor ICP</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>Aturan pemantauan JSON. Gunakan halaman pemantauan AlertCenter untuk menyuntingnya.</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Interval Cermin (Menit)</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>Aturan pemantauan mirror</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>Mitigasi setelah putaran mirror berhasil. Resolusi akhir tetap manual.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Logo Proyek</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>Nama Proyek</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>Sinkronkan insiden pencerminan repositori dengan AlertCenter.</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Nama merek yang ditampilkan di bagian footer.</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>URL dasar HTTP(S) AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Nomor izin ICP untuk pengguna daratan Tiongkok. Biarkan kosong untuk menyembunyikan.</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Nama proyek yang ditampilkan di antarmuka pengguna depan</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>URL dasar HTTP(S) publik yang digunakan dalam deskripsi insiden.</value>
   </data>
 
 </root>

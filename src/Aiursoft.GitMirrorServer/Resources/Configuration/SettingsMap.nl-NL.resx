@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>De link naar de homepagina van het merk.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>Een toegewijde applicatiesleutel met rechten voor opvragen, aanmaken, ernst wijzigen en verlichten.</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>API-sleutel voor de AlertCenter-applicatie</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>AlertCenter-eindpunt</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>Gebruiker toestaan om bijnaam aan te passen</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Gebruikers toestaan om hun bijnaam aan te passen op de pagina voor profielbeheer.</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>Herstelde repositories automatisch mitigeren</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>Brand Home URL</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>Merkenaam</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>AlertCenter-integratie inschakelen</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>Openbare URL van GitMirrorServer</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP-nummer</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>JSON-monitoringsregels. Gebruik de AlertCenter-monitoringspagina om ze te bewerken.</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Spiegelinterval (minuten)</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>Regels voor mirrorbewaking</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>Los het incident op na een geslaagde synchronisatieronde. De definitieve afhandeling blijft handmatig.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Projectlogo</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>Projectnaam</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>Synchroniseer incidenten met betrekking tot repository-mirrors met AlertCenter.</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>De merknaam die wordt weergegeven in de voettekst.</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>De basis-URL van AlertCenter via HTTP(S).</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Het ICP-licentienummer voor gebruikers uit het Chinese vasteland. Leeg laten om te verbergen.</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>De naam van het project dat wordt weergegeven in de frontend.</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>De openbare HTTP(S) basis-URL die wordt gebruikt in incidentbeschrijvingen.</value>
   </data>
 
 </root>

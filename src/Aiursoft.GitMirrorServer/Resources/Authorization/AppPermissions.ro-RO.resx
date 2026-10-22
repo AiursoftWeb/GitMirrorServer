@@ -27,6 +27,9 @@
   <data name="Allows assigning or removing roles for any user." xml:space="preserve">
     <value>Permite atribuirea sau eliminarea rolurilor pentru orice utilizator.</value>
   </data>
+  <data name="Allows managing mirror alert rules and viewing in-memory monitoring state." xml:space="preserve">
+    <value>Permite gestionarea regulilor de alertă pentru oglindire și vizualizarea stării monitorizării din memorie.</value>
+  </data>
   <data name="Allows managing the mirror targets and configurations." xml:space="preserve">
     <value>Permite gestionarea destinațiilor și a configurațiilor pentru mirror.</value>
   </data>
@@ -86,6 +89,9 @@
   </data>
   <data name="Grants permission to restart the application instance. May cause availability interruptions but all settings and cache will be reloaded." xml:space="preserve">
     <value>Acordă permisiunea de a reporni instanța aplicației. Poate cauza întreruperi de disponibilitate, dar toate setările și memoria cache vor fi reîncărcate.</value>
+  </data>
+  <data name="Manage AlertCenter Integration" xml:space="preserve">
+    <value>Gestionează integrarea AlertCenter</value>
   </data>
   <data name="Manage Global Settings" xml:space="preserve">
     <value>Gestionare setări globale</value>

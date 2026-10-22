@@ -88,6 +88,9 @@ public class ViewModelArgsInjector(
         _ = localizer["Mirrors List"];
     
         _ = localizer["Delete Account"];
+    
+        _ = localizer["AlertCenter monitoring"];
+        _ = localizer["Monitoring"];
     }
 
     public void InjectSimple(

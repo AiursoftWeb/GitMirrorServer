@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>Ο σύνδεσμος προς την αρχική σελίδα της εταιρείας.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>Ένα ειδικό κλειδί εφαρμογής με δικαιώματα αναζήτησης, δημιουργίας, αλλαγής σοβαρότητας και μετριασμού.</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>Κλειδί API εφαρμογής AlertCenter</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>Σημείο πρόσβασης AlertCenter</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>Επιτρέψτε στον Χρήστη να Τροποποιήσει το Παρασκήνιο Όνομα</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Επιτρέψτε στους χρήστες να τροποποιήσουν το ψευδώνυμό τους στη σελίδα διαχείρισης προφίλ.</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>Αυτόματη μετριασμός των αποκατασταθέντων αποθετηρίων</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL αρχικής σελίδας εμπορικού σήματος</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>Όνομα Εταιρείας</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>Ενεργοποίηση ενσωμάτωσης AlertCenter</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>Δημόσια διεύθυνση URL του GitMirrorServer</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>Αριθμός ΕΙΠ</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>Κανόνες παρακολούθησης JSON. Χρησιμοποιήστε τη σελίδα παρακολούθησης του AlertCenter για να τους επεξεργαστείτε.</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Επανάληψη Αντιγραφής (Λεπτά)</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>Κανόνες παρακολούθησης κατόπτρου</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>Μείωση έντασης μετά από επιτυχημένο γύρο καθρέφτη. Η τελική επίλυση παραμένει χειροκίνητη.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Λογότυπο Έργου</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>Όνομα Έργου</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>Συγχρονισμός συμβάντων ολόκληρων αποθετηρίων με το AlertCenter.</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Το όνομα της εταιρείας που εμφανίζεται στον ποδόσκαλο.</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>Ο βασικός URL HTTP(S) του AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Ο αριθμός άδειας ICP για χρήστες της κυρίως Κίνας. Αφήστε κενό για να κρυφτεί.</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Το όνομα του έργου που εμφανίζεται στον προβολέα</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>Η δημόσια βασική διεύθυνση URL HTTP(S) που χρησιμοποιείται στις περιγραφές περιστατικών.</value>
   </data>
 
 </root>

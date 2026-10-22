@@ -21,11 +21,23 @@
       <data name=" The link to the brand&apos;s home page." xml:space="preserve">
     <value>Markanın ana sayfasına bağlantı</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
+    <value>Sorgulama, oluşturma, önem derecesini değiştirme ve olayı hafifletme izinlerine sahip, bu uygulamaya özel bir anahtar.</value>
+  </data>
+  <data name="AlertCenter application API key" xml:space="preserve">
+    <value>AlertCenter uygulama API anahtarı</value>
+  </data>
+  <data name="AlertCenter endpoint" xml:space="preserve">
+    <value>AlertCenter uç noktası</value>
+  </data>
   <data name="Allow User Adjust Nickname" xml:space="preserve">
     <value>Kullanıcı Adını Ayarlamaya İzin Ver</value>
   </data>
   <data name="Allow users to adjust their nickname in the profile management page." xml:space="preserve">
     <value>Kullanıcıların profil yönetimi sayfasında takma isimlerini ayarlamasına izin ver.</value>
+  </data>
+  <data name="Automatically mitigate recovered repositories" xml:space="preserve">
+    <value>Kurtarılan depoları otomatik olarak hafiflet</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>Marka Ana Sayfa URL&apos;si</value>
@@ -33,11 +45,26 @@
   <data name="Brand Name" xml:space="preserve">
     <value>Marka Adı</value>
   </data>
+  <data name="Enable AlertCenter integration" xml:space="preserve">
+    <value>AlertCenter entegrasyonunu etkinleştir</value>
+  </data>
+  <data name="GitMirrorServer public URL" xml:space="preserve">
+    <value>GitMirrorServer genel URL&apos;si</value>
+  </data>
   <data name="ICP Number" xml:space="preserve">
     <value>ICP Numarası</value>
   </data>
+  <data name="JSON monitoring rules. Use the AlertCenter monitoring page to edit them." xml:space="preserve">
+    <value>JSON izleme kuralları. Bunları düzenlemek için AlertCenter izleme sayfasını kullanın.</value>
+  </data>
   <data name="Mirror Interval (Minutes)" xml:space="preserve">
     <value>Aynalama Aralığı (Dakika)</value>
+  </data>
+  <data name="Mirror monitoring rules" xml:space="preserve">
+    <value>Yansıtma izleme kuralları</value>
+  </data>
+  <data name="Mitigate after a successful mirror round. Final resolution remains manual." xml:space="preserve">
+    <value>Başarılı bir yansılama turundan sonra hafifletin. Nihai çözümleme manuel olarak yapılır.</value>
   </data>
   <data name="Project Logo" xml:space="preserve">
     <value>Proje Logosu</value>
@@ -45,8 +72,14 @@
   <data name="Project Name" xml:space="preserve">
     <value>Proje Adı</value>
   </data>
+  <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
+    <value>Depo yansıtma olaylarını AlertCenter ile senkronize edin.</value>
+  </data>
   <data name="The brand name displayed in the footer." xml:space="preserve">
     <value>Footer&apos;da gösterilen marka adı.</value>
+  </data>
+  <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
+    <value>AlertCenter&apos;ın HTTP(S) taban URL&apos;si.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Çin ana karasında kullanıcılar için ICP lisans numarası. Gizlemek için boş bırakın.</value>
@@ -59,6 +92,9 @@
   </data>
   <data name="The name of the project displayed in the frontend." xml:space="preserve">
     <value>Frontende görüntülenen proje adı.</value>
+  </data>
+  <data name="The public HTTP(S) base URL used in incident descriptions." xml:space="preserve">
+    <value>Olay açıklamalarında kullanılan halka açık HTTP(S) temel URL&apos;si.</value>
   </data>
 
 </root>

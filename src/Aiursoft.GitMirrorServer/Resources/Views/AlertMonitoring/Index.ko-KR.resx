@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>성공적인 미러 라운드는 해당 저장소의 카운터를 리셋하고, 기본적으로 활성 인시던트를 완화합니다. 최종 해결은 수동으로 유지됩니다.</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>규칙 추가</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>AlertCenter 모니터링</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>성공적인 미러 라운드 후 자동 완화</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>기본적으로 3회 연속 실패 라운드가 sev3을 생성하며, 9회 연속 실패 라운드가 동일한 사건을 sev2로 격상시킵니다.</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>연결 자격 증명에는 암호화된 비밀 정보와 읽기 전용 환경 재정의를 포함한 전역 설정이 사용됩니다.</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>연결 설정</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>연속 실패한 라운드</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>저장소별 연속된 미러 실패 라운드를 카운트합니다. 가장 심각한 일치 규칙이 우선합니다.</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>카운터는 프로세스 메모리에서 관측된 저장소마다 고정된 공간을 사용합니다. 다시 시작하면 카운트가 새로 시작됩니다. 실제로 성공한 라운드에서 복구가 확인될 때까지 기존 인시던트는 유지됩니다. 전체 카운트를 확인하려면 애플리케이션 인스턴스를 하나만 사용하세요.</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>규칙 삭제</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>예약된 또는 수동으로 시작된 미러 실행은 리포지토리당 1회로 집계됩니다. 4회의 내부 시도는 해당 라운드 내의 재시도이며, 4회의 실패한 라운드가 아닙니다.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>사용</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>모니터링 작동 방식</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>인시던트 동기화는 각 미러 작업 후에 실행되며 매 분마다 재시도합니다. 일시적인 AlertCenter 장애는 미러 결과에 영향을 미치지 않습니다.</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>마지막 결과 (UTC)</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>마지막 성공(UTC)</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>모니터링 규칙</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>시작 이후 저장소 결과가 관찰되지 않았습니다. 미러 작업을 실행하거나 스케줄을 기다리세요.</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>관측된 저장소</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>복구</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>저장소</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>저장소 식별 정보에는 미러 구성과 소스 및 대상 위치가 포함됩니다. 미러 경로가 다르면 각각 별도로 집계됩니다.</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>규칙은 구성으로 재정의되므로 여기서는 읽기 전용입니다.</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>복구 설정 저장</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>규칙 저장</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>심각도</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>건너뛰기, 미발견 또는 취소된 저장소는 성공이 아닌 미확인 상태로 처리됩니다. 다른 저장소로는 이 카운터를 초기화할 수 없습니다.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>원본</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>동기가 비활성화되어 있거나 애플리케이션 API 키가 없습니다. 전역 설정에서 AlertCenter 연결을 구성하세요.</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>대상</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>모니터링 규칙이 올바르지 않습니다. 동기화를 재개하려면 전역 설정에서 JSON을 수정하세요.</value>
+  </data>
+
+</root>

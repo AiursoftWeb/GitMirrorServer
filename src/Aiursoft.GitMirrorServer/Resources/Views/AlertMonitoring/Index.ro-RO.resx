@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>O rundă de oglindire reușită resetează contorul acelui depozit și, în mod implicit, atenuează incidentele active asociate. Rezolvarea finală rămâne manuală.</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>Adaugă regulă</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>AlertCenter monitoring</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>Atenuează automat după o rundă de oglindire reușită</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>În mod implicit, trei runde consecutive eșuate creează un incident sev3; nouă runde consecutive eșuate ridică severitatea aceluiași incident la sev2.</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>Credențialele de conexiune utilizează Setările globale, inclusiv secretele criptate și suprascrierile de mediu cu doar citire.</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>Setări conexiune</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>Runde eșuate consecutive</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>Numărați rundele consecutive de oglindire eșuate pentru fiecare depozit. Se aplică regula corespunzătoare cu severitatea cea mai mare.</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>Contorii utilizează un spațiu fix pentru fiecare depozit observat în memoria procesului. Repornirea începe o nouă numărătoare. Incidentele existente sunt păstrate până când o rundă cu adevărat reușită confirmă recuperarea. Folosiți o singură instanță a aplicației pentru numărătoare complete.</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>Șterge regula</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>Fiecare rulare de oglindire programată sau inițiată manual este numărată o dată per depozit. Cele patru încercări interne sunt reîncercări în cadrul acelei runde, nu patru runde eșuate.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Activat</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>Cum funcționează monitorizarea</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>Sincronizarea incidentelor se execută după fiecare sarcină de oglindire și reîncearcă la fiecare minut. O defecțiune temporară a AlertCenter nu modifică rezultatul oglinzii.</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>Ultimul rezultat (UTC)</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>Ultima reușită (UTC)</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>Reguli de monitorizare</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>Nu s-a observat niciun rezultat de repository de la pornire. Rulează un job de oglindă sau așteaptă programarea.</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>Depozite observate</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Recuperare</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>Depozit</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>Identitatea depozitului include configurația oglinzii și locațiile sursă și destinație. Ruturile diferite de oglindă sunt numărate independent.</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>Regulile sunt suprascrise de configurație și sunt doar pentru citire aici.</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>Salvează setările de recuperare</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>Salvați regula</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Gravitate</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>Depozitele omise, nedescoperite sau anulate au un statut necunoscut, nu sunt considerate reușite. Alte depozite nu pot reseta acest contor.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Sursă</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>Sincronizarea este dezactivată sau lipsește o cheie API pentru aplicație. Configurați conexiunea AlertCenter în Setările globale.</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Țintă</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>Regulile de monitorizare sunt nevalide. Corectați JSON-ul în Setări globale pentru ca sincronizarea să poată fi reluată.</value>
+  </data>
+
+</root>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>Một lượt đồng bộ bản sao thành công sẽ đặt lại bộ đếm của kho lưu trữ đó và, theo mặc định, giảm mức độ nghiêm trọng của các sự cố đang diễn ra. Việc đóng sự cố cuối cùng vẫn được thực hiện thủ công.</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>Thêm quy tắc</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>Giám sát AlertCenter</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>Tự động giảm thiểu sau một lượt sao chép thành công</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>Mặc định, ba vòng liên tiếp thất bại sẽ tạo ra sự cố sev3; chín vòng liên tiếp thất bại sẽ nâng cấp cùng sự cố đó lên sev2.</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>Thông tin xác thực kết nối sử dụng Cài đặt toàn cục, bao gồm các bí mật được mã hóa và các ghi đè biến môi trường chỉ đọc.</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>Cài đặt kết nối</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>Số vòng thất bại liên tiếp</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>Đếm số vòng đồng bộ bản sao thất bại liên tiếp cho mỗi kho lưu trữ. Quy tắc phù hợp có mức độ nghiêm trọng cao nhất sẽ được áp dụng.</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>Bộ đếm sử dụng dung lượng cố định cho mỗi kho lưu trữ được quan sát trong bộ nhớ tiến trình. Khởi động lại bắt đầu một bộ đếm mới. Các sự cố hiện có được giữ nguyên cho đến khi một vòng chạy thành công thực sự xác nhận sự phục hồi. Sử dụng một phiên bản ứng dụng duy nhất để có các bộ đếm đầy đủ.</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>Xóa quy tắc</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>Mỗi lượt chạy mirror theo lịch hoặc được khởi chạy thủ công được tính một lần cho mỗi kho lưu trữ. Bốn lần thử nội bộ là các lần thử lại trong cùng lượt đó, không phải là bốn lượt thất bại.</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Bật</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>Cách giám sát hoạt động</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>Đồng bộ sự cố được thực hiện sau mỗi công việc mirror và thử lại mỗi phút. Sự cố tạm thời của AlertCenter không làm thay đổi kết quả mirror.</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>Kết quả gần nhất (UTC)</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>Lần thành công gần nhất (UTC)</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>Quy tắc giám sát</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>Chưa ghi nhận kết quả nào từ kho lưu trữ kể từ khi khởi động. Hãy chạy một tác vụ đồng bộ bản sao hoặc chờ đến lịch chạy.</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>Kho lưu trữ được quan sát</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>Khôi phục</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>Kho lưu trữ</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>Định danh kho chứa bao gồm cấu hình mirror và vị trí nguồn và đích. Các tuyến mirror khác nhau được tính độc lập.</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>Các quy tắc được ghi đè bởi cấu hình và chỉ có thể đọc tại đây.</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>Lưu cài đặt khôi phục</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>Lưu quy tắc</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Độ nghiêm trọng</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>Các kho lưu trữ bị bỏ qua, chưa được phát hiện hoặc đã bị hủy được xem là chưa xác định, không phải thành công. Các kho lưu trữ khác không thể đặt lại bộ đếm này.</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Nguồn</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>Đồng bộ hóa đã bị tắt hoặc thiếu khóa API ứng dụng. Hãy cấu hình kết nối AlertCenter trong Cài đặt chung.</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Mục tiêu</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>Các quy tắc giám sát không hợp lệ. Hãy sửa JSON trong Cài đặt chung để có thể tiếp tục đồng bộ hóa.</value>
+  </data>
+
+</root>
