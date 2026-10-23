@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
+    <value>मिरर का एक सफल चक्र उस रिपॉज़िटरी का काउंटर रीसेट कर देता है और डिफ़ॉल्ट रूप से, उसमें सक्रिय घटनाओं के प्रभाव को कम करता है। अंतिम समाधान अब भी मैन्युअल रूप से करना होगा।</value>
+  </data>
+  <data name="Add rule" xml:space="preserve">
+    <value>नियम जोड़ें</value>
+  </data>
+  <data name="AlertCenter monitoring" xml:space="preserve">
+    <value>AlertCenter निगरानी</value>
+  </data>
+  <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
+    <value>मिरर का एक चरण सफल होने के बाद स्वतः प्रभाव कम करें</value>
+  </data>
+  <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
+    <value>डिफ़ॉल्ट रूप से, लगातार तीन असफल राउंड sev3 बनाते हैं; लगातार नौ असफल राउंड उसी घटना को sev2 में अपग्रेड कर देते हैं।</value>
+  </data>
+  <data name="Connection credentials use Global Settings, including encrypted secrets and read-only environment overrides." xml:space="preserve">
+    <value>कनेक्शन क्रेडेंशियल्स ग्लोबल सेटिंग्स का उपयोग करते हैं, जिसमें एन्क्रिप्टेड सीक्रेट्स और रीड-ओनली एनवायरनमेंट ओवरराइड शामिल हैं।</value>
+  </data>
+  <data name="Connection settings" xml:space="preserve">
+    <value>कनेक्शन सेटिंग्स</value>
+  </data>
+  <data name="Consecutive failed rounds" xml:space="preserve">
+    <value>अनुक्रमिक असफल दौर</value>
+  </data>
+  <data name="Count consecutive failed mirror rounds per repository. The most severe matching rule wins." xml:space="preserve">
+    <value>प्रत्येक रिपॉज़िटरी के लिए लगातार विफल मिरर राउंड की गिनती करें। सबसे गंभीर मिलती-जुलती नियम जीतता है।</value>
+  </data>
+  <data name="Counters use fixed space per observed repository in process memory. Restarting begins a new count. Existing incidents are preserved until an actual successful round confirms recovery. Use one application instance for complete counts." xml:space="preserve">
+    <value>काउंटर, प्रक्रिया की मेमोरी में, देखे गए प्रत्येक रिपॉज़िटरी के लिए निश्चित स्थान का उपयोग करते हैं। रीस्टार्ट करने पर गिनती नए सिरे से शुरू होती है। मौजूदा घटनाएँ तब तक सुरक्षित रहती हैं, जब तक कोई वास्तविक सफल राउंड सुधार की पुष्टि नहीं कर देता। पूरी गिनती के लिए एप्लिकेशन का एक ही इंस्टेंस उपयोग करें।</value>
+  </data>
+  <data name="Delete rule" xml:space="preserve">
+    <value>नियम हटाएं</value>
+  </data>
+  <data name="Each scheduled or manually started mirror run counts once per repository. The four internal attempts are retries within that round, not four failed rounds." xml:space="preserve">
+    <value>प्रत्येक शेड्यूल की गई या मैन्युअल रूप से शुरू की गई मिरर चालू (run) रिपॉज़िटरी के लिए एक बार गिनी जाती है। चार आंतरिक प्रयास उस राउंड के भीतर पुनः प्रयास (retries) हैं, न कि चार असफल राउंड।</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>सक्षम</value>
+  </data>
+  <data name="How monitoring works" xml:space="preserve">
+    <value>मॉनिटरिंग कैसे काम करती है</value>
+  </data>
+  <data name="Incident synchronization runs after each mirror job and retries every minute. A temporary AlertCenter failure does not change the mirror result." xml:space="preserve">
+    <value>हर मिरर जॉब के बाद घटना सिंक्रनाइज़ेशन चलता है और हर मिनट फिर से प्रयास करता है। AlertCenter में अस्थायी विफलता से मिरर का परिणाम नहीं बदलता।</value>
+  </data>
+  <data name="Last result (UTC)" xml:space="preserve">
+    <value>पिछला परिणाम (UTC)</value>
+  </data>
+  <data name="Last success (UTC)" xml:space="preserve">
+    <value>अंतिम सफलता (UTC)</value>
+  </data>
+  <data name="Monitoring rules" xml:space="preserve">
+    <value>निगरानी के नियम</value>
+  </data>
+  <data name="No repository result has been observed since startup. Run a mirror job or wait for the schedule." xml:space="preserve">
+    <value>स्टार्टअप के बाद से रिपॉज़िटरी का कोई परिणाम दर्ज नहीं हुआ है। मिरर जॉब चलाएँ या निर्धारित समय की प्रतीक्षा करें।</value>
+  </data>
+  <data name="Observed repositories" xml:space="preserve">
+    <value>परीक्षित भंडार</value>
+  </data>
+  <data name="Recovery" xml:space="preserve">
+    <value>पुनर्प्राप्ति</value>
+  </data>
+  <data name="Repository" xml:space="preserve">
+    <value>रिपॉज़िटरी</value>
+  </data>
+  <data name="Repository identity includes the mirror configuration and source and target locations. Different mirror routes are counted independently." xml:space="preserve">
+    <value>रिपॉज़िटरी पहचान में मिरर कॉन्फ़िगरेशन और स्रोत व लक्ष्य स्थान शामिल होते हैं। अलग-अलग मिरर राउट्स को स्वतंत्र रूप से गिना जाता है।</value>
+  </data>
+  <data name="Rules are overridden by configuration and are read-only here." xml:space="preserve">
+    <value>कॉन्फ़िगरेशन द्वारा नियमों को ओवरराइड किया गया है और यहाँ उन्हें केवल पढ़ा जा सकता है।</value>
+  </data>
+  <data name="Save recovery settings" xml:space="preserve">
+    <value>पुनर्प्राप्ति सेटिंग्स सहेजें</value>
+  </data>
+  <data name="Save rule" xml:space="preserve">
+    <value>नियम सहेजें</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>गंभीरता</value>
+  </data>
+  <data name="Skipped, undiscovered or canceled repositories are unknown, not successful. Other repositories cannot reset this counter." xml:space="preserve">
+    <value>छोड़े गए, खोजे नहीं जा सके या रद्द किए गए रिपॉज़िटरी अज्ञात माने जाते हैं, सफल नहीं। अन्य रिपॉज़िटरी इस काउंटर को रीसेट नहीं कर सकतीं।</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>स्रोत</value>
+  </data>
+  <data name="Synchronization is disabled or an application API key is missing. Configure the AlertCenter connection in Global Settings." xml:space="preserve">
+    <value>सिंकरोनाइज़ेशन अक्षम है या एक एप्लिकेशन API कुंजी अनुपस्थित है। वैश्विक सेटिंग्स में AlertCenter कनेक्शन को कॉन्फ़िगर करें।</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>लक्ष्य</value>
+  </data>
+  <data name="The monitoring rules are invalid. Correct the JSON in Global Settings before synchronization can resume." xml:space="preserve">
+    <value>निगरानी नियम अमान्य हैं। सिंकरोनाइज़ेशन फिर से शुरू होने से पहले वैश्विक सेटिंग्स में JSON को सुधारें।</value>
+  </data>
+
+</root>
