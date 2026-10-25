@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>En särskild applikationsnyckel med behörighet att söka, skapa, ändra allvarlighetsgrad och åtgärda incidenter.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>En särskild programnyckel med behörighet att söka, skapa, ändra allvarlighetsgrad, begränsa och lösa incidenter.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>Efter en lyckad speglingsomgång tillämpar du den konfigurerade återställningsåtgärden för den aktuella incidentens allvarlighetsgrad.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>AlertCenter-API-nyckel för applikationen</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Åtgärda automatiskt återställda kodarkiv</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Återställ automatiskt incidenter i kodarkiv</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>Hemsida för varumärke</value>

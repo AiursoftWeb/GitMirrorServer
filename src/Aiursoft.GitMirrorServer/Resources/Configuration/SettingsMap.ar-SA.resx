@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>مفتاح تطبيق مخصّص بصلاحيات الاستعلام والإنشاء وتغيير مستوى الخطورة والمعالجة.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>مفتاح تطبيق مخصص مع صلاحيات الاستعلام، والإضافة، وتغيير الشدة، والتخفيف، والحل.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>بعد نجاح دورة مزامنة المرآة، نفّذ إجراء الاستعادة المُعَدّ وفقًا لدرجة خطورة الحادثة الحالية.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>مفتاح واجهة برمجة التطبيقات الخاص بتطبيق AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>معالجة المستودعات المستعادة تلقائيًا</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>الاسترداد التلقائي لحوادث المستودع</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>عنوان URL الصفحة الرئيسية للعلامة التجارية</value>

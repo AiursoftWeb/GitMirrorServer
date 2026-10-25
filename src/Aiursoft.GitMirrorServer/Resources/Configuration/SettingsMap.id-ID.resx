@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>Kunci aplikasi khusus dengan izin kueri, buat, ubah tingkat keparahan, dan mitigasi.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>Kunci aplikasi khusus dengan izin untuk melihat, membuat, mengubah tingkat keparahan, memitigasi, dan menyelesaikan insiden.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>Setelah proses pencerminan berhasil, terapkan tindakan pemulihan yang dikonfigurasi sesuai tingkat keparahan insiden saat ini.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>Kunci API aplikasi AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Mitigasi repositori yang pulih secara otomatis</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Pulihkan insiden repositori secara otomatis</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL Halaman Utama Merek</value>

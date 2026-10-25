@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>ミラーラウンドが成功すると、そのリポジトリのカウンターがリセットされ、デフォルトではアクティブなインシデントが緩和されます。最終的な解決は手動で行われます。</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>ミラー処理が1回正常に完了すると、そのリポジトリのカウンターがリセットされます。復旧時の対応はインシデントの現在の重大度に従います。デフォルトでは、sev4は自動的に解決され、sev3とsev2は手動で最終解決するために緩和されます。</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>ルールを追加</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter の監視</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>自動解決を行うには、アプリケーションキーに Resolve 権限が必要です。復旧に失敗した場合は保留状態のまま再試行され、完了として扱われることはありません。</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>ミラーラウンドが成功した後に自動的に緩和する</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>ミラーの実行が正常に完了した後、インシデントを自動的に復旧する</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>復旧後、この重大度を自動的に解決する</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>デフォルトでは、1回の失敗でsev4が発生し、3回連続で失敗すると同じインシデントがsev3に引き上げられ、9回連続で失敗するとsev2に引き上げられます。</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>デフォルトでは、3回連続で失敗したラウンドがsev3を作成し、9回連続で失敗したラウンドで同じインシデントがsev2にエスカレートします。</value>

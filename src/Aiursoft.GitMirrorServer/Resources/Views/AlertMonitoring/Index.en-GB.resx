@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Add rule</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter monitoring</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Automatically mitigate after a successful mirror round</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Automatically resolve incidents after a successful mirror round</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Automatically resolve this severity after recovery</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>By default, three consecutive failed rounds create sev3; nine consecutive failed rounds escalate the same incident to sev2.</value>

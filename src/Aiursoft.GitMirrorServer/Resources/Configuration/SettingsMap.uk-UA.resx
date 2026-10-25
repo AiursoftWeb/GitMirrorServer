@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>Виключений ключ застосунку з дозволами на запит, створення, зміну рівня серйозності та мітигацію.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>Спеціальний ключ застосунку з дозволами на перегляд, створення, зміну рівня серйозності, пом’якшення наслідків і усунення інцидентів.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>Після успішного циклу синхронізації застосуйте налаштовану дію з відновлення з урахуванням поточного рівня критичності інциденту.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>Ключ API застосунку AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Автоматично пом&apos;якшувати відновлені репозиторії</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Автоматично відновлювати інциденти репозиторію</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL домашньої сторінки бренду</value>

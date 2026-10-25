@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>Putaran mirror yang berhasil mengatur ulang penghitung repositori tersebut dan, secara default, memitigasi insiden aktifnya. Penyelesaian akhir tetap dilakukan secara manual.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>Putaran mirror yang berhasil mereset penghitung repositori tersebut. Pemulihan mengikuti tingkat keparahan insiden saat ini: secara default, sev4 diselesaikan secara otomatis, sedangkan sev3 dan sev2 dimitigasi untuk penyelesaian akhir secara manual.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Tambah aturan</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>Pemantauan AlertCenter</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Penyelesaian otomatis memerlukan kunci aplikasi memiliki izin Resolve. Pemulihan yang gagal tetap tertunda dan akan dicoba kembali; pemulihan tersebut tidak pernah dianggap selesai.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Meredam secara otomatis setelah ronde cermin berhasil</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Pulihkan insiden secara otomatis setelah putaran pencerminan berhasil</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Selesaikan tingkat keparahan ini secara otomatis setelah pemulihan</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>Secara default, satu putaran yang gagal membuat sev4; tiga putaran gagal berturut-turut meningkatkan insiden yang sama menjadi sev3; sembilan putaran meningkatkannya menjadi sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>Secara default, tiga putaran gagal beruntun membuat sev3; sembilan putaran gagal beruntun meningkatkan insiden yang sama menjadi sev2.</value>

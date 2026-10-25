@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>조회, 생성, 심각도 변경 및 완화 권한이 있는 전용 애플리케이션 키입니다.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>쿼리, 생성, 심각도 변경, 완화 및 해결 권한이 있는 전용 애플리케이션 키입니다.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>미러링 작업이 성공적으로 완료되면 현재 인시던트 심각도에 맞게 설정된 복구 조치를 적용합니다.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>AlertCenter 애플리케이션 API 키</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>복구된 저장소를 자동으로 완화</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>저장소 인시던트 자동 복구</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>브랜드 홈 URL</value>

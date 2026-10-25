@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>Một khóa ứng dụng chuyên dụng có quyền truy vấn, tạo, thay đổi mức độ nghiêm trọng và giảm thiểu.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>Khóa ứng dụng chuyên dụng có quyền truy vấn, tạo, thay đổi mức độ nghiêm trọng, giảm thiểu và xử lý sự cố.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>Sau khi một lượt đồng bộ bản sao thành công, hãy thực hiện hành động khôi phục đã cấu hình cho mức độ nghiêm trọng hiện tại của sự cố.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>Khóa API ứng dụng AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Tự động giảm nhẹ các kho đã được phục hồi</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Tự động khôi phục các sự cố của kho lưu trữ</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL trang chủ thương hiệu</value>

@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>专用应用密钥，具有查询、创建、更改严重级别和缓解权限。</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>具有查询、创建、修改严重性、缓解和解决权限的专用应用程序密钥。</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>镜像轮次成功后，针对当前事件严重程度应用已配置的处理措施。</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>AlertCenter 应用程序 API 密钥</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>自动缓解已恢复的仓库</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>自动恢复仓库事件</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>品牌主页链接</value>

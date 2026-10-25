@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>Başarılı bir yansılama turu, ilgili deponun sayacını sıfırlar ve varsayılan olarak etkin olaylarını hafifletir. Nihai çözümleme manuel olarak yapılır.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>Başarılı bir yansılama turu, ilgili deponun sayacını sıfırlar. Kurtarma işlemi, olayın mevcut önem derecesine göre yürütülür: varsayılan olarak sev4 otomatik olarak çözümlenir; sev3 ve sev2 ise son çözümün elle yapılabilmesi için hafifletilir.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Kural Ekle</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter izleme</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Otomatik çözümleme için uygulama anahtarının Resolve iznine sahip olması gerekir. Başarısız bir kurtarma işlemi beklemede kalır ve yeniden denenir; hiçbir zaman tamamlanmış sayılmaz.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Başarılı bir yansılama turundan sonra otomatik olarak hafiflet</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Başarılı bir yansılama turundan sonra olayları otomatik olarak kurtar</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Kurtarma sonrasında bu önem düzeyini otomatik olarak çözüme kavuştur</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>Varsayılan olarak, tek bir başarısız tur sev4 oluşturur; art arda üç başarısız tur aynı olayı sev3&apos;e yükseltir; dokuz başarısız tur ise sev2&apos;ye yükseltir.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>Varsayılan olarak, üç ardışık başarısız tur sev3 oluşturur; dokuz ardışık başarısız tur aynı olayı sev2&apos;ye yükseltir.</value>

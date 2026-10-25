@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>Een toegewijde applicatiesleutel met rechten voor opvragen, aanmaken, ernst wijzigen en verlichten.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>Een specifieke applicatiesleutel met machtigingen om op te vragen, aan te maken, de ernst te wijzigen, te beperken en op te lossen.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>Pas na een geslaagde mirrorsynchronisatie de geconfigureerde herstelactie toe voor de huidige incidenternst.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>API-sleutel voor de AlertCenter-applicatie</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Herstelde repositories automatisch mitigeren</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Repository-incidenten automatisch herstellen</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>Brand Home URL</value>

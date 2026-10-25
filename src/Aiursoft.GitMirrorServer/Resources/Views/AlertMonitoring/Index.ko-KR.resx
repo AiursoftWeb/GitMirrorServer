@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>성공적인 미러 라운드는 해당 저장소의 카운터를 리셋하고, 기본적으로 활성 인시던트를 완화합니다. 최종 해결은 수동으로 유지됩니다.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>미러링 라운드가 성공하면 해당 저장소의 카운터가 초기화됩니다. 복구 처리는 인시던트의 현재 심각도에 따라 달라집니다. 기본적으로 sev4는 자동으로 해결되고, sev3 및 sev2는 완전한 해결을 위해 수동 처리가 필요하도록 완화됩니다.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>규칙 추가</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter 모니터링</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>자동 해결을 위해서는 애플리케이션 키에 Resolve 권한이 있어야 합니다. 복구에 실패하면 대기 상태로 남아 재시도되며, 완료된 것으로 처리되지 않습니다.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>성공적인 미러 라운드 후 자동 완화</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>미러 라운드가 성공하면 인시던트를 자동으로 복구합니다</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>복구 후 이 심각도를 자동으로 해결</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>기본적으로 실패가 한 차례 발생하면 sev4 인시던트가 생성되고, 연속으로 세 차례 실패하면 동일한 인시던트의 심각도가 sev3으로 올라가며, 아홉 차례 실패하면 sev2로 올라갑니다.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>기본적으로 3회 연속 실패 라운드가 sev3을 생성하며, 9회 연속 실패 라운드가 동일한 사건을 sev2로 격상시킵니다.</value>
