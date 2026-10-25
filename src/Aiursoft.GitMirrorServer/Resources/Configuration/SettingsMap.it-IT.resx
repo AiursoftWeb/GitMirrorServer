@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>Una chiave di applicazione dedicata con autorizzazioni di interrogazione, creazione, modifica della gravità e mitigazione.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>Una chiave applicativa dedicata con autorizzazioni per consultare, creare, modificare la gravità, mitigare e risolvere gli incidenti.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>Dopo un ciclo di sincronizzazione completato correttamente, applicare l’azione di ripristino configurata per la gravità dell’incidente corrente.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>Chiave API dell&apos;applicazione AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Mitiga automaticamente i repository recuperati</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Ripristina automaticamente gli incidenti dei repository</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL home del marchio</value>

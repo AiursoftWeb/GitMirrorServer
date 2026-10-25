@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>一次成功的鏡像輪次會重置該儲存庫的計數器，並預設緩解其活躍事件。最終解決仍需手動處理。</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>一次成功的鏡像輪次會重置該儲存庫的計數器。恢復遵循事件的當前嚴重程度：預設情況下，sev4 會自動解決，而 sev3 和 sev2 則會緩解以進行手動最終解決。</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>新增規則</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter 監控</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>自動解決需要應用程式金鑰具有 Resolve 權限。若復原失敗，該項目會繼續處於待處理狀態並重試；絕不會被視為已完成。</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>鏡像輪次成功後自動緩解</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>成功完成鏡像輪次後自動復原事故</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>復原後自動解決此嚴重程度</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>預設情況下，一次失敗的回合會建立 sev4 事件；連續三次失敗會將同一事件升級至 sev3；連續九次則會升級至 sev2。</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>預設情況下，連續三次失敗會觸發 sev3；連續九次失敗會將同一事件升級為 sev2。</value>

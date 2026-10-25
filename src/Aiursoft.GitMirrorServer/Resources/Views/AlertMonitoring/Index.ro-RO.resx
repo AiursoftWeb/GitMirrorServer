@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>O rundă de oglindire reușită resetează contorul acelui depozit și, în mod implicit, atenuează incidentele active asociate. Rezolvarea finală rămâne manuală.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>O rundă de oglindire reușită resetează contorul depozitului respectiv. Recuperarea depinde de severitatea curentă a incidentului: în mod implicit, sev4 este rezolvat automat, în timp ce sev3 și sev2 sunt atenuate, urmând ca rezolvarea finală să fie făcută manual.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Adaugă regulă</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter monitoring</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Rezolvarea automată necesită ca cheia aplicației să aibă permisiunea Resolve. O recuperare eșuată rămâne în așteptare și este reîncercată; nu este considerată niciodată finalizată.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Atenuează automat după o rundă de oglindire reușită</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Recuperează automat incidentele după o rundă de oglindire reușită</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Rezolvă automat această gravitate după remediere</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>În mod implicit, o rundă eșuată creează sev4; trei runde eșuate consecutive ridică severitatea aceluiași incident la sev3; nouă runde o ridică la sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>În mod implicit, trei runde consecutive eșuate creează un incident sev3; nouă runde consecutive eșuate ridică severitatea aceluiași incident la sev2.</value>

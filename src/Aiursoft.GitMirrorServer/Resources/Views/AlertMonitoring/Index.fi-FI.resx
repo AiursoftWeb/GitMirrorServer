@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>Onnistunut peili kierros nollaa sen varaston laskurin ja lieventää oletuksena sen aktiiviset ongelmat. Lopullinen ratkaisu on edelleen manuaalinen.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>Onnistunut peilauskierros nollaa kyseisen tietovaraston laskurin. Palautuminen määräytyy häiriön nykyisen vakavuuden mukaan: oletusarvoisesti sev4 ratkaistaan automaattisesti, kun taas sev3 ja sev2 lievennetään ja jätetään odottamaan manuaalista lopullista ratkaisua.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Lisää sääntö</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenterin valvonta</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Automaattinen ratkaiseminen edellyttää, että sovellusavaimella on Resolve-oikeus. Epäonnistunut palautus jää odottamaan ja sitä yritetään uudelleen; sitä ei koskaan käsitellä valmiina.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Vaimenna automaattisesti onnistuneen peilerraudan jälkeen</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Palauta häiriötilanteet automaattisesti onnistuneen peilauskierroksen jälkeen</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Ratkaise tämä vakavuustaso automaattisesti palautumisen jälkeen</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>Oletusarvoisesti yksi epäonnistunut kierros luo sev4-tason häiriön; kolme peräkkäistä epäonnistunutta kierrosta nostaa saman häiriön sev3-tasolle; yhdeksän nostaa sen sev2-tasolle.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>Oletusarvoisesti kolme peräkkäistä epäonnistunutta kierrosta luo sev3-tasoisen häiriön; yhdeksän peräkkäistä epäonnistunutta kierrosta nostaa saman häiriön sev2-tasolle.</value>

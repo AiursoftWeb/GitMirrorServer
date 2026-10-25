@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>Успішний раунд дзеркалювання скидає лічильник цього репозиторію та за замовчуванням пом’якшує його активні інциденти. Остаточне вирішення залишається ручним.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>Успішний цикл дзеркалювання скидає лічильник цього репозиторію. Відновлення залежить від поточного рівня серйозності інциденту: за замовчуванням sev4 автоматично закривається, тоді як для sev3 і sev2 інцидент пом’якшується, а остаточне закриття виконується вручну.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Додати правило</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>Моніторинг AlertCenter</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Для автоматичного вирішення ключ застосунку має мати дозвіл Resolve. Невдала спроба відновлення залишається в очікуванні та повторюється; її ніколи не вважають завершеною.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Автоматично пом’якшувати наслідки після успішного циклу дзеркалювання</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Автоматично відновлювати інциденти після успішного циклу синхронізації</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Автоматично усувати цю критичність після відновлення</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>За замовчуванням один невдалий раунд створює інцидент sev4; три невдалі раунди поспіль підвищують рівень того самого інциденту до sev3; дев’ять — до sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>За замовчуванням три невдалі раунди поспіль створюють інцидент рівня sev3; дев’ять невдалих раундів поспіль підвищують рівень того самого інциденту до sev2.</value>

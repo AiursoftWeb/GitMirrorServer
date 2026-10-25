@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>คีย์แอปพลิเคชันเฉพาะที่มีสิทธิ์ค้นหา สร้าง เปลี่ยนระดับความรุนแรง และบรรเทาเหตุการณ์</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>คีย์แอปพลิเคชันเฉพาะที่มีสิทธิ์ค้นหา สร้าง เปลี่ยนระดับความรุนแรง บรรเทา และแก้ไขเหตุการณ์</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>หลังจากรอบการมิเรอร์สำเร็จ ให้ดำเนินการกู้คืนตามที่กำหนดไว้สำหรับระดับความรุนแรงของเหตุการณ์ปัจจุบัน</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>คีย์ API ของแอปพลิเคชัน AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>ลดระดับเหตุการณ์ของรีโพสิทอรีที่กู้คืนแล้วโดยอัตโนมัติ</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>กู้คืนเหตุขัดข้องของคลังเก็บโดยอัตโนมัติ</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL หน้าหลักของแบรนด์</value>

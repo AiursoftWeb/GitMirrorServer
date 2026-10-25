@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>Uma ronda de espelhamento bem-sucedida redefine o contador desse repositório e, por defeito, mitiga os seus incidentes ativos. A resolução final permanece manual.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>Uma execução de espelhamento bem-sucedida repõe o contador desse repositório. A recuperação segue a gravidade atual do incidente: por predefinição, os incidentes sev4 são resolvidos automaticamente, enquanto os incidentes sev3 e sev2 são mitigados, ficando a resolução final a cargo de um utilizador.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Adicionar regra</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>Monitorização do AlertCenter</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>A resolução automática requer que a chave da aplicação tenha a permissão Resolve. Uma recuperação falhada permanece pendente e é tentada novamente; nunca é considerada concluída.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Mitigar automaticamente após uma ronda de espelhamento bem-sucedida</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Recuperar automaticamente os incidentes após uma ronda de espelhamento bem-sucedida</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Resolver automaticamente esta gravidade após a recuperação</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>Por predefinição, uma ronda falhada cria um sev4; três rondas falhadas consecutivas agravam o mesmo incidente para sev3; nove agravam-no para sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>Por predefinição, três rondas falhadas consecutivas criam um incidente sev3; nove rondas falhadas consecutivas elevam o mesmo incidente para sev2.</value>

@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>Pomyślna runda lustrzana resetuje licznik tego repozytorium i, domyślnie, łagodzi jego aktywne incydenty. Ostateczne rozwiązanie pozostaje ręczne.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>Udana runda synchronizacji resetuje licznik tego repozytorium. Odzyskiwanie przebiega zgodnie z bieżącym poziomem ważności incydentu: domyślnie sev4 jest rozwiązywany automatycznie, natomiast sev3 i sev2 są łagodzone, a ich ostateczne rozwiązanie wymaga ręcznej interwencji.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Dodaj regułę</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>Monitorowanie AlertCenter</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Automatyczne rozwiązywanie wymaga, aby klucz aplikacji miał uprawnienie Resolve. Nieudane przywracanie pozostaje oczekujące i jest ponawiane; nigdy nie jest uznawane za zakończone.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Automatycznie łagodź skutki po pomyślnym zakończeniu rundy replikacji</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Automatycznie rozwiązuj incydenty po pomyślnym przebiegu synchronizacji lustrzanej</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Automatycznie rozwiązuj problem o tym poziomie ważności po przywróceniu działania</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>Domyślnie jedna nieudana runda tworzy sev4; trzy kolejne nieudane rundy eskalują ten sam incydent do sev3; dziewięć eskaluje go do sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>Domyślnie trzy kolejne nieudane rundy tworzą incydent sev3, a dziewięć kolejnych nieudanych rund podnosi ten sam incydent do sev2.</value>

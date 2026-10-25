@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>O cheie de aplicație dedicată, cu permisiuni de interogare, creare, modificare a severității și atenuare.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>O cheie de aplicație dedicată, cu permisiuni de interogare, creare, modificare a severității, atenuare și rezolvare.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>După finalizarea cu succes a unei sincronizări, aplicați acțiunea de recuperare configurată pentru severitatea incidentului curent.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>Cheie API a aplicației AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Mitigare automat depozitele recuperate</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Recuperare automată a incidentelor din depozite</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL pagină principală marcă</value>

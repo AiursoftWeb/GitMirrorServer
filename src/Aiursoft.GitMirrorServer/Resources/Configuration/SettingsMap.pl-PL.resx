@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>Dedykowany klucz aplikacji z uprawnieniami do odczytu, tworzenia, zmiany poziomu ważności i łagodzenia skutków.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>Dedykowany klucz aplikacji z uprawnieniami do wyszukiwania, tworzenia, zmiany poziomu ważności, ograniczania skutków i rozwiązywania incydentów.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>Po pomyślnym zakończeniu synchronizacji zastosuj skonfigurowaną akcję przywracania odpowiednią dla bieżącego poziomu ważności incydentu.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>Klucz API aplikacji AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Automatycznie łagodź problemy z odzyskanymi repozytoriami</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Automatyczne odzyskiwanie incydentów repozytorium</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>Adres URL strony głównej marki</value>

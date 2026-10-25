@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>En lyckad spegelrunda nollställer det berörda lagret och dämpar som standard dess aktiva incidenter. Slutarbetet sker manuellt.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>En lyckad speglingsomgång nollställer det berörda arkivets räknare. Återställningen följer incidentens aktuella allvarlighetsgrad: som standard avslutas sev4 automatiskt, medan sev3 och sev2 åtgärdas i väntan på ett manuellt slutligt avslut.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Lägg till regel</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter-övervakning</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Automatisk lösning kräver att programnyckeln har behörigheten Resolve. En misslyckad återställning förblir väntande och försöks igen; den betraktas aldrig som slutförd.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Miltiga automatiskt efter en lyckad spegelrunda</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Återställ incidenter automatiskt efter en lyckad speglingsomgång</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Lös automatiskt denna allvarlighetsgrad efter återhämtning</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>Som standard skapar en misslyckad omgång sev4; tre misslyckade omgångar i följd uppgraderar samma incident till sev3; nio uppgraderar den till sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>Som standard skapas sev3 efter tre misslyckade omgångar i följd; efter nio misslyckade omgångar i följd uppgraderas samma incident till sev2.</value>

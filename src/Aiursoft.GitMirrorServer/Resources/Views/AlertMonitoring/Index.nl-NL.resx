@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>Een succesvolle spiegelronde reset de teller van dat repository en mitigeert standaard de actieve incidenten. De definitieve afhandeling blijft handmatig.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>Een succesvolle mirrorslag zet de teller van die repository terug op nul. Het herstel volgt de huidige ernst van het incident: standaard wordt sev4 automatisch opgelost, terwijl sev3 en sev2 worden gemitigeerd en handmatig definitief moeten worden opgelost.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>Regel toevoegen</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter-monitoring</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>Automatische opheffing vereist dat de applicatiesleutel de Resolve-recht heeft. Een mislukte hersteloperatie blijft in afwachting en wordt opnieuw geprobeerd; deze wordt nooit als voltooid beschouwd.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>Automatisch beperken na een geslaagde spiegelsynchronisatie</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>Incidenten automatisch herstellen na een geslaagde replicatieronde</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>Los deze ernst automatisch op na herstel</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>Standaard leidt één mislukte ronde tot sev4; drie opeenvolgende mislukte rondes verhogen de ernst van hetzelfde incident naar sev3; negen rondes verhogen deze naar sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>Standaard leiden drie opeenvolgende mislukte rondes tot sev3; negen opeenvolgende mislukte rondes verhogen hetzelfde incident naar sev2.</value>

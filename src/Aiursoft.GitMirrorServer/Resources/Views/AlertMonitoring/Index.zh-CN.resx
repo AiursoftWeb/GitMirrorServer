@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>一次成功的镜像轮次会重置该仓库的计数器，并默认缓解其活动事件。最终解决仍需手动操作。</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>一次镜像轮次成功后，会重置该仓库的计数器。恢复处理取决于事件当前的严重级别：默认情况下，sev4 会自动解决，而 sev3 和 sev2 会进行缓解，最终由人工解决。</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>添加规则</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>AlertCenter 监控</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>自动解决要求应用密钥具有 Resolve 权限。恢复失败时会保持待处理状态并重试；绝不会被视为已完成。</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>成功完成一轮镜像后自动缓解</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>镜像轮次成功后自动恢复事件</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>恢复后自动解决此严重级别</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>默认情况下，一次失败的轮次会创建 sev4 事件；连续失败三轮会将同一事件升级为 sev3；连续失败九轮则升级为 sev2。</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>默认情况下，连续三轮失败会创建 sev3 事件；连续九轮失败会将同一事件升级为 sev2。</value>

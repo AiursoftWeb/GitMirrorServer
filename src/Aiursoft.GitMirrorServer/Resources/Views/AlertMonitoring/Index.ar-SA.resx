@@ -21,14 +21,29 @@
       <data name="A successful mirror round resets that repository&apos;s counter and, by default, mitigates its active incidents. Final resolution remains manual." xml:space="preserve">
     <value>تُعيد دورة النسخ المتطابق الناجحة عدّاد ذلك المستودع إلى الصفر، وتُخفّف، افتراضيًا، من حدة الحوادث النشطة فيه. ويظل الإغلاق النهائي يدويًا.</value>
   </data>
+  <data name="A successful mirror round resets that repository&apos;s counter. Recovery follows the incident&apos;s current severity: by default, sev4 is resolved automatically, while sev3 and sev2 are mitigated for manual final resolution." xml:space="preserve">
+    <value>تعيد الجولة الناجحة للمزامنة عكسياً عدّاد ذلك المستودع إلى الصفر. تتبع الاستعادة مستوى خطورة الحادثة الحالي: افتراضياً، تُحلّ الحوادث من المستوى sev4 تلقائياً، بينما تُخفف الحوادث من المستويين sev3 وsev2 تمهيداً لحلّها نهائياً يدوياً.</value>
+  </data>
   <data name="Add rule" xml:space="preserve">
     <value>إضافة قاعدة</value>
   </data>
   <data name="AlertCenter monitoring" xml:space="preserve">
     <value>مراقبة AlertCenter</value>
   </data>
+  <data name="Automatic resolution requires the application key to have Resolve permission. A failed recovery remains pending and is retried; it is never treated as completed." xml:space="preserve">
+    <value>يتطلب الحل التلقائي أن يمتلك مفتاح التطبيق صلاحية «الحل». ويظل فشل الاسترداد معلقًا وتُعاد محاولة تنفيذه؛ ولا يُعد مكتملًا أبدًا.</value>
+  </data>
   <data name="Automatically mitigate after a successful mirror round" xml:space="preserve">
     <value>تخفيف الحوادث تلقائيًا بعد نجاح جولة النسخ المتطابق</value>
+  </data>
+  <data name="Automatically recover incidents after a successful mirror round" xml:space="preserve">
+    <value>استعادة الحوادث تلقائيًا بعد نجاح جولة النسخ المتطابق</value>
+  </data>
+  <data name="Automatically resolve this severity after recovery" xml:space="preserve">
+    <value>حلّ هذه الخطورة تلقائيًا بعد التعافي</value>
+  </data>
+  <data name="By default, one failed round creates sev4; three consecutive failed rounds upgrade the same incident to sev3; nine upgrade it to sev2." xml:space="preserve">
+    <value>افتراضيًا، تؤدي جولة فاشلة واحدة إلى إنشاء حادثة بمستوى sev4؛ وترفع ثلاث جولات فاشلة متتالية مستوى الحادثة نفسها إلى sev3؛ وترفعها تسع جولات إلى sev2.</value>
   </data>
   <data name="By default, three consecutive failed rounds create sev3; nine consecutive failed rounds upgrade the same incident to sev2." xml:space="preserve">
     <value>افتراضيًا، تؤدي ثلاث جولات فاشلة متتالية إلى إنشاء حادثة بمستوى sev3؛ وتؤدي تسع جولات فاشلة متتالية إلى ترقية الحادثة نفسها إلى مستوى sev2.</value>

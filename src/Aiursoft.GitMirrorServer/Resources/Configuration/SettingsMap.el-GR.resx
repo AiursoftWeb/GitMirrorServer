@@ -24,6 +24,12 @@
   <data name="A dedicated application key with query, create, change severity and mitigate permissions." xml:space="preserve">
     <value>Ένα ειδικό κλειδί εφαρμογής με δικαιώματα αναζήτησης, δημιουργίας, αλλαγής σοβαρότητας και μετριασμού.</value>
   </data>
+  <data name="A dedicated application key with query, create, change severity, mitigate and resolve permissions." xml:space="preserve">
+    <value>Ένα ειδικό κλειδί εφαρμογής με δικαιώματα αναζήτησης, δημιουργίας, αλλαγής σοβαρότητας, μετριασμού και επίλυσης.</value>
+  </data>
+  <data name="After a successful mirror round, apply the configured recovery action for the current incident severity." xml:space="preserve">
+    <value>Μετά από έναν επιτυχημένο κύκλο συγχρονισμού του mirror, εκτελέστε την ενέργεια αποκατάστασης που έχει ρυθμιστεί για τη σοβαρότητα του τρέχοντος περιστατικού.</value>
+  </data>
   <data name="AlertCenter application API key" xml:space="preserve">
     <value>Κλειδί API εφαρμογής AlertCenter</value>
   </data>
@@ -38,6 +44,9 @@
   </data>
   <data name="Automatically mitigate recovered repositories" xml:space="preserve">
     <value>Αυτόματη μετριασμός των αποκατασταθέντων αποθετηρίων</value>
+  </data>
+  <data name="Automatically recover repository incidents" xml:space="preserve">
+    <value>Αυτόματη αποκατάσταση περιστατικών αποθετηρίου</value>
   </data>
   <data name="Brand Home URL" xml:space="preserve">
     <value>URL αρχικής σελίδας εμπορικού σήματος</value>
