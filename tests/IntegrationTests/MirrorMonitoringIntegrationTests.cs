@@ -36,7 +36,7 @@ public class MirrorMonitoringIntegrationTests : TestBase
     }
 
     [TestMethod]
-    public async Task ThresholdsDedupEscalationAndRecovery_UseThreeAndNineCompletedRounds()
+    public async Task ThresholdsDedupEscalationAndRecovery_UseOneThreeAndNineCompletedRounds()
     {
         var (service, monitor, client, _) = await Setup();
         var config = CreateConfiguration();
@@ -44,10 +44,10 @@ public class MirrorMonitoringIntegrationTests : TestBase
         {
             monitor.Observe(config, Result(), DateTimeOffset.UtcNow);
             await service.ExecuteAsync();
-            Assert.AreEqual(round >= 3 ? 1 : 0, client.All.Count);
-            if (round >= 3) Assert.AreEqual(round >= 9 ? "sev2" : "sev3", client.All[0].Level);
+            Assert.AreEqual(1, client.All.Count);
+            Assert.AreEqual(round >= 9 ? "sev2" : round >= 3 ? "sev3" : "sev4", client.All[0].Level);
         }
-        Assert.AreEqual(1, client.Escalations);
+        Assert.AreEqual(2, client.Escalations);
         await service.ExecuteAsync();
         Assert.AreEqual(1, client.CreateCalls);
         monitor.Observe(config, Result(true), DateTimeOffset.UtcNow);
@@ -225,16 +225,17 @@ public class MirrorMonitoringIntegrationTests : TestBase
         Assert.Contains("four internal attempts", page);
         Assert.Contains("value=\"sev2\"", page);
         var version = Regex.Match(page, "name=\"version\" value=\"([^\"]+)\"").Groups[1].Value;
-        var form = new Dictionary<string, string> { ["version"] = version, ["failureCount"] = "5", ["severity"] = "sev1", ["isEnabled"] = "true" };
+        var form = new Dictionary<string, string> { ["version"] = version, ["failureCount"] = "5", ["severity"] = "sev1", ["isEnabled"] = "true", ["resolveOnRecovery"] = "true" };
         Assert.AreEqual(HttpStatusCode.BadRequest, (await PostForm("/AlertMonitoring/SaveRule", form, includeToken: false)).StatusCode);
         var saved = await PostForm("/AlertMonitoring/SaveRule", form, tokenUrl: "/AlertMonitoring");
         AssertRedirect(saved, "/AlertMonitoring");
         Assert.AreEqual(HttpStatusCode.Conflict, (await PostForm("/AlertMonitoring/SaveRule", form, tokenUrl: "/AlertMonitoring")).StatusCode);
         var json = await GetService<GlobalSettingsService>().GetSettingValueAsync(SettingsMap.AlertCenterRules);
         var rules = MirrorMonitoringRule.Parse(json);
-        Assert.AreEqual(3, rules.Count);
+        Assert.AreEqual(4, rules.Count);
         Assert.AreEqual(5, rules.Last().FailureCount);
         Assert.AreEqual("sev1", rules.Last().Severity);
+        Assert.IsTrue(rules.Last().ResolveOnRecovery);
     }
 
     [TestMethod]
@@ -305,6 +306,93 @@ public class MirrorMonitoringIntegrationTests : TestBase
         Assert.AreEqual("new-key", client.Configuration.ApiKey);
     }
 
+    [TestMethod]
+    [DataRow(1, "resolved")]
+    [DataRow(2, "resolved")]
+    [DataRow(3, "mitigated")]
+    [DataRow(9, "mitigated")]
+    public async Task RecoveryFollowsCurrentSeverityAndNeverCreatesAnotherIncident(int failures, string status)
+    {
+        var (service, monitor, client, _) = await Setup();
+        var config = CreateConfiguration();
+        for (var i = 0; i < failures; i++)
+        {
+            monitor.Observe(config, Result(), DateTimeOffset.UtcNow);
+            await service.ExecuteAsync();
+        }
+        var id = client.All.Single().IncidentId;
+        monitor.Observe(config, Result(true), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        Assert.AreEqual(id, client.All.Single().IncidentId);
+        Assert.AreEqual(status, client.All.Single().Status);
+        Assert.AreEqual(status == "resolved" ? 1 : 0, client.Resolutions);
+        Assert.AreEqual(status == "mitigated" ? 1 : 0, client.Mitigations);
+        Assert.IsNull(monitor.Snapshot().Single().PendingRecovery);
+        await service.ExecuteAsync();
+        Assert.AreEqual(1, client.CreateCalls);
+        Assert.AreEqual(1, client.Resolutions + client.Mitigations);
+    }
+
+    [TestMethod]
+    [DataRow(false)]
+    [DataRow(true)]
+    public async Task ResolveFailureOrLostResponseRetainsRecoveryForSafeRetry(bool lostResponse)
+    {
+        var (service, monitor, client, _) = await Setup();
+        var config = CreateConfiguration();
+        monitor.Observe(config, Result(), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        monitor.Observe(config, Result(true), DateTimeOffset.UtcNow);
+        client.FailResolve = !lostResponse;
+        client.ThrowAfterResolve = lostResponse;
+        await service.ExecuteAsync();
+        Assert.IsNotNull(monitor.Snapshot().Single().PendingRecovery);
+        client.FailResolve = false;
+        client.ThrowAfterResolve = false;
+        await service.ExecuteAsync();
+        Assert.AreEqual("resolved", client.All.Single().Status);
+        Assert.AreEqual(1, client.Resolutions);
+        Assert.IsNull(monitor.Snapshot().Single().PendingRecovery);
+    }
+
+    [TestMethod]
+    public async Task AlreadyMitigatedQuietIncidentIsResolvedAndManualEscalationRemainsManual()
+    {
+        var (service, monitor, client, _) = await Setup();
+        var config = CreateConfiguration();
+        monitor.Observe(config, Result(), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        client.All.Single().Status = "mitigated";
+        monitor.Observe(config, Result(true), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        Assert.AreEqual("resolved", client.All[0].Status);
+        monitor.Observe(config, Result(), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        client.All.Last().Level = "sev1";
+        monitor.Observe(config, Result(true), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        Assert.AreEqual("mitigated", client.All.Last().Status);
+        Assert.AreEqual(1, client.Resolutions);
+        Assert.AreEqual(1, client.Mitigations);
+    }
+
+    [TestMethod]
+    public async Task RecoveryPolicyCanBeDisabledWithoutInventingRecovery()
+    {
+        var (service, monitor, client, settings) = await Setup();
+        var config = CreateConfiguration();
+        monitor.Observe(config, Result(), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        await settings.UpdateSettingAsync(SettingsMap.AlertCenterAutoMitigate, "False");
+        monitor.Observe(config, Result(true), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        Assert.AreEqual("new", client.All.Single().Status);
+        Assert.IsNotNull(monitor.Snapshot().Single().PendingRecovery);
+        await settings.UpdateSettingAsync(SettingsMap.AlertCenterAutoMitigate, "True");
+        await service.ExecuteAsync();
+        Assert.AreEqual("resolved", client.All.Single().Status);
+    }
+
     private sealed class RecordingIncidents : IMonitoringIncidentClient
     {
         public List<IncidentDetails> All { get; } = [];
@@ -312,6 +400,9 @@ public class MirrorMonitoringIntegrationTests : TestBase
         public int CreateCalls { get; private set; }
         public int Escalations { get; private set; }
         public int Mitigations { get; private set; }
+        public int Resolutions { get; private set; }
+        public bool FailResolve { get; set; }
+        public bool ThrowAfterResolve { get; set; }
         public Action? AfterCreate { get; set; }
         public MonitoringConfiguration? Configuration { get; private set; }
         public bool ThrowAfterCreate { get; set; }
@@ -334,7 +425,7 @@ public class MirrorMonitoringIntegrationTests : TestBase
                 Items = [new IncidentDetails { IncidentId = Guid.NewGuid(), Metadata = new() }],
                 TotalCount = 2, Page = 1, PageSize = 100
             });
-            var active = All.Where(i => i.Status is not ("mitigated" or "resolved")).ToList();
+            var active = All.Where(i => i.Status != "resolved").ToList();
             return Task.FromResult(new QueryIncidentsResponse { Items = active, TotalCount = active.Count, Page = request.Page, PageSize = request.PageSize });
         }
         public Task<CreateIncidentResponse> CreateAsync(CreateIncidentRequest request)
@@ -353,6 +444,19 @@ public class MirrorMonitoringIntegrationTests : TestBase
             incident.Level = request.Level; incident.Version = Guid.NewGuid(); Escalations++;
             return Task.FromResult(new ChangeIncidentSeverityResponse());
         }
+        public Task<ResolveIncidentResponse> ResolveAsync(Guid id, ResolveIncidentRequest request)
+        {
+            if (FailResolve) throw new HttpRequestException("resolve failed");
+            var incident = All.Single(item => item.IncidentId == id);
+            Assert.AreEqual(incident.Version, request.Version);
+            Assert.Contains("policy", request.Reason);
+            incident.Status = "resolved";
+            incident.Version = Guid.NewGuid();
+            Resolutions++;
+            if (ThrowAfterResolve) throw new HttpRequestException("Lost resolve response");
+            return Task.FromResult(new ResolveIncidentResponse());
+        }
+
         public Task<MitigateIncidentResponse> MitigateAsync(Guid id, MitigateIncidentRequest request)
         {
             if (FailMitigate) throw new HttpRequestException("mitigate failed");

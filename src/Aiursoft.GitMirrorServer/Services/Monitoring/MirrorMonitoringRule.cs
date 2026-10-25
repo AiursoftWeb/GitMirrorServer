@@ -8,9 +8,11 @@ public sealed class MirrorMonitoringRule
     public int FailureCount { get; set; } = 3;
     public string Severity { get; set; } = "sev3";
     public bool IsEnabled { get; set; } = true;
+    public bool ResolveOnRecovery { get; set; }
 
     public static string DefaultJson { get; } = JsonSerializer.Serialize(new[]
     {
+        new MirrorMonitoringRule { FailureCount = 1, Severity = "sev4", ResolveOnRecovery = true },
         new MirrorMonitoringRule { FailureCount = 3 },
         new MirrorMonitoringRule { FailureCount = 9, Severity = "sev2" },
     });

@@ -16,6 +16,10 @@ public sealed class MirrorMonitoringSettings(GlobalSettingsService settings)
 public sealed record MonitoringConfiguration(bool Enabled, string Endpoint, string ApiKey, string PublicBaseUrl,
     bool AutoMitigate, List<MirrorMonitoringRule> Rules)
 {
+    // Recovery follows the incident's current severity, including any manual escalation.
+    public bool ResolvesOnRecovery(string severity) =>
+        Rules.Any(rule => rule.Severity == severity && rule.ResolveOnRecovery);
+
     public void Validate()
     {
         foreach (var value in new[] { Endpoint, PublicBaseUrl })
