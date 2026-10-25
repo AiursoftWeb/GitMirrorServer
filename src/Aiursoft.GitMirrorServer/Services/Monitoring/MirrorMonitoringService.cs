@@ -31,13 +31,14 @@ public sealed class MirrorMonitoringService(MirrorMonitor monitor, MirrorMonitor
             {
                 try
                 {
-                    var active = owned[snapshot.Key].OrderBy(item => item.ReceivedAtUtc).ThenBy(item => item.IncidentId).ToList();
+                    var unresolved = owned[snapshot.Key].OrderBy(item => item.ReceivedAtUtc).ThenBy(item => item.IncidentId).ToList();
+                    var active = unresolved.Where(item => item.Status == "new").ToList();
                     if (active.Any(item => item.ReportId == snapshot.NextReportId))
                         monitor.AdvanceReceipt(snapshot.Key, snapshot.NextReportId);
                     if (config.AutoMitigate && snapshot.PendingRecovery is { } recovery)
                     {
-                        foreach (var incident in active)
-                            await MitigateAsync(incident, $"A completed mirror round succeeded at {snapshot.LastSuccess:O}. Internal retries are not separate rounds. Final resolution remains manual.");
+                        foreach (var incident in unresolved)
+                            await RecoverAsync(incident, config, $"A completed mirror round succeeded at {snapshot.LastSuccess:O}. Internal retries are not separate rounds.");
                         monitor.ConfirmRecovery(snapshot.Key, recovery);
                         active.Clear();
                     }
@@ -69,7 +70,7 @@ public sealed class MirrorMonitoringService(MirrorMonitor monitor, MirrorMonitor
                                 Version = incident.Version, Level = rule.Severity, Reason = Describe(snapshot, rule, config)
                             });
                         foreach (var duplicate in active.Skip(1))
-                            await MitigateAsync(duplicate, $"Duplicate repository incident. Continue response in incident {incident.IncidentId}.");
+                            await RecoverAsync(duplicate, config, $"Duplicate repository incident. Continue response in incident {incident.IncidentId}.");
                     }
                 }
                 catch (Exception) { logger.LogError("Mirror incident synchronization failed for {RepositoryKey}; retained state for retry", snapshot.Key); }
@@ -79,8 +80,19 @@ public sealed class MirrorMonitoringService(MirrorMonitor monitor, MirrorMonitor
         finally { monitor.SyncGate.Release(); }
     }
 
-    private async Task MitigateAsync(IncidentDetails incident, string reason) =>
-        await client.MitigateAsync(incident.IncidentId, new MitigateIncidentRequest { Version = incident.Version, Reason = reason });
+    private async Task RecoverAsync(IncidentDetails incident, MonitoringConfiguration config, string reason)
+    {
+        if (config.ResolvesOnRecovery(incident.Level))
+            await client.ResolveAsync(incident.IncidentId, new ResolveIncidentRequest
+            {
+                Version = incident.Version, Reason = reason + " The recovery policy automatically resolves this severity."
+            });
+        else if (incident.Status == "new")
+            await client.MitigateAsync(incident.IncidentId, new MitigateIncidentRequest
+            {
+                Version = incident.Version, Reason = reason + " Final resolution remains manual."
+            });
+    }
 
     private async Task<List<IncidentDetails>> LoadIncidentsAsync()
     {
@@ -119,8 +131,8 @@ public sealed class MirrorMonitoringService(MirrorMonitor monitor, MirrorMonitor
             "Next steps: Inspect the repository execution log, check source-read and target-write credentials, Git server connectivity, target branch protection and local disk space. " +
             "After fixing the cause, run the mirror again and verify that all branches and tags reach the target. Do not paste tokens or authenticated Git URLs into incident comments.\n" +
             $"Execution log: {config.PublicBaseUrl.TrimEnd('/')}/History/Details/{state.JobId}\n" +
-            (config.AutoMitigate ? "Recovery: A completed successful mirror round resets the counter and automatically mitigates this incident; final resolution is manual."
-                : "Recovery: A successful round resets the counter. Automatic mitigation is disabled; mitigate and resolve manually.");
+            (config.AutoMitigate ? "Recovery: A completed successful mirror round resets the counter and applies the recovery policy for the incident's current severity. By default, sev4 is resolved automatically; escalated incidents are mitigated for manual final resolution."
+                : "Recovery: A successful round resets the counter. Automatic recovery is disabled; mitigate and resolve manually.");
         return description[..Math.Min(description.Length, 4000)];
     }
 }

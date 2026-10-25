@@ -41,9 +41,9 @@ public sealed class AlertMonitoringController(GlobalSettingsService settings, Mi
     }
 
     [HttpPost, ValidateAntiForgeryToken]
-    public async Task<IActionResult> SaveRule(string version, Guid? id, int failureCount, string severity, bool isEnabled)
+    public async Task<IActionResult> SaveRule(string version, Guid? id, int failureCount, string severity, bool isEnabled, bool resolveOnRecovery = false)
     {
-        var candidate = new MirrorMonitoringRule { FailureCount = failureCount, Severity = severity, IsEnabled = isEnabled };
+        var candidate = new MirrorMonitoringRule { FailureCount = failureCount, Severity = severity, IsEnabled = isEnabled, ResolveOnRecovery = resolveOnRecovery };
         if (!ModelState.IsValid || !candidate.IsValid())
             return BadRequest(localizer["Select a positive failed-round threshold from 1 to 1000000 and sev0 to sev4."].Value);
         return await UpdateRules(version, rules =>

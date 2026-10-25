@@ -102,8 +102,9 @@ public class MirrorMonitoringTests
     public void DefaultRulesAndValidation_UseInclusiveThresholdsAndKeepEmptyRulesEmpty()
     {
         var rules = MirrorMonitoringRule.Parse(MirrorMonitoringRule.DefaultJson);
-        CollectionAssert.AreEqual(new[] { 3, 9 }, rules.Select(item => item.FailureCount).ToArray());
-        CollectionAssert.AreEqual(new[] { "sev3", "sev2" }, rules.Select(item => item.Severity).ToArray());
+        CollectionAssert.AreEqual(new[] { 1, 3, 9 }, rules.Select(item => item.FailureCount).ToArray());
+        CollectionAssert.AreEqual(new[] { "sev4", "sev3", "sev2" }, rules.Select(item => item.Severity).ToArray());
+        CollectionAssert.AreEqual(new[] { true, false, false }, rules.Select(item => item.ResolveOnRecovery).ToArray());
         Assert.IsEmpty(MirrorMonitoringRule.Parse("[]"));
         Assert.ThrowsExactly<InvalidOperationException>(() => MirrorMonitoringRule.Parse("[null]"));
         Assert.ThrowsExactly<InvalidOperationException>(() => MirrorMonitoringRule.Parse("[{\"FailureCount\":0}]"));

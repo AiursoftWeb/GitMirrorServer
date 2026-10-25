@@ -12,6 +12,7 @@ public interface IMonitoringIncidentClient
     Task<CreateIncidentResponse> CreateAsync(CreateIncidentRequest request);
     Task<ChangeIncidentSeverityResponse> ChangeSeverityAsync(Guid id, ChangeIncidentSeverityRequest request);
     Task<MitigateIncidentResponse> MitigateAsync(Guid id, MitigateIncidentRequest request);
+    Task<ResolveIncidentResponse> ResolveAsync(Guid id, ResolveIncidentRequest request);
 }
 
 public sealed class MonitoringIncidentClient(AiurProtocolClient http) : IMonitoringIncidentClient
@@ -32,6 +33,8 @@ public sealed class MonitoringIncidentClient(AiurProtocolClient http) : IMonitor
         await (await GetClientAsync()).ChangeIncidentSeverityAsync(id, request);
     public async Task<MitigateIncidentResponse> MitigateAsync(Guid id, MitigateIncidentRequest request) =>
         await (await GetClientAsync()).MitigateIncidentAsync(id, request);
+    public async Task<ResolveIncidentResponse> ResolveAsync(Guid id, ResolveIncidentRequest request) =>
+        await (await GetClientAsync()).ResolveIncidentAsync(id, request);
     private sealed class SnapshotKeyProvider(string key) : IAlertCenterApiKeyProvider
     {
         public ValueTask<string> GetApiKeyAsync() => ValueTask.FromResult(key);

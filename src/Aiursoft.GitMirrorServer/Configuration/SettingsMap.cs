@@ -42,7 +42,7 @@ public class SettingsMap
         new GlobalSettingDefinition
         {
             Key = AlertCenterApiKey, Name = Localizer["AlertCenter application API key"],
-            Description = Localizer["A dedicated application key with query, create, change severity and mitigate permissions."],
+            Description = Localizer["A dedicated application key with query, create, change severity, mitigate and resolve permissions."],
             Type = SettingType.Secret, DefaultValue = ""
         },
         new GlobalSettingDefinition
@@ -59,8 +59,8 @@ public class SettingsMap
         },
         new GlobalSettingDefinition
         {
-            Key = AlertCenterAutoMitigate, Name = Localizer["Automatically mitigate recovered repositories"],
-            Description = Localizer["Mitigate after a successful mirror round. Final resolution remains manual."],
+            Key = AlertCenterAutoMitigate, Name = Localizer["Automatically recover repository incidents"],
+            Description = Localizer["After a successful mirror round, apply the configured recovery action for the current incident severity."],
             Type = SettingType.Bool, DefaultValue = "True"
         },
         new GlobalSettingDefinition
