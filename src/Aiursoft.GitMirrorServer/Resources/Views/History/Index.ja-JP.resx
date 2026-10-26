@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>失敗</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>最初</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>処理中</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>ジョブ履歴</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>最後</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>ミラー履歴</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>ミラー履歴ページ</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次へ</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>まだミラー実行がありません</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>ミラー実行を開いて、リポジトリの結果とログを確認します。</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>全{1}ページ中{0}ページ</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>前へ</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>定期または手動のミラー実行が開始されると、ここに結果が表示されます。</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>実行中...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>全{2}件中{0}～{1}件を表示</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>開始時間</value>

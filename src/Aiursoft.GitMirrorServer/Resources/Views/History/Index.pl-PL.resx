@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Nie powiodło się</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Pierwsza</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>W trakcie</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Historia zadań</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Ostatnia</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Historia lustracji</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Strony historii kopii lustrzanej</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Dalej</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Nie ma jeszcze żadnych uruchomień mirrorowania</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Otwórz przebieg synchronizacji, aby sprawdzić wyniki dotyczące repozytoriów i logi.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Strona {0} z {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Poprzednia</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Wyniki pojawią się tutaj po rozpoczęciu zaplanowanego lub ręcznego uruchomienia synchronizacji lustrzanej.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Trwa uruchamianie...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Wyświetlanie {0}–{1} z {2} uruchomień</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Czas rozpoczęcia</value>

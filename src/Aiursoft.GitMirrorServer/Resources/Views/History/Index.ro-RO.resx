@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Eșuat</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Prima</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>În curs</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Istoricul sarcinilor</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Ultima</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Istoricul oglinzirii</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Pagini cu istoricul oglindirii</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Următoarea</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Nicio rulare a oglindei încă</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Deschideți o rulare de oglindire pentru a inspecta rezultatele și jurnalele depozitului.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Pagina {0} din {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Anterior</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Rezultatele apar aici după ce începe o rulare planificată sau manuală a oglinzii.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Se execută...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Se afișează {0}–{1} din {2} execuții</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Ora de începere</value>

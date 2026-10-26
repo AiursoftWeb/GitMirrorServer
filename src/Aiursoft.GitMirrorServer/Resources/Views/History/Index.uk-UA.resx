@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Помилка</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Перша</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>У процесі</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Історія завдань</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Остання</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Історія дзеркалення</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Сторінки історії дзеркалювання</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Далі</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Запусків дзеркалювання ще немає</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Відкрийте запуск дзеркалювання, щоб переглянути результати для репозиторіїв і журнали.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Сторінка {0} із {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Попередня</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Результати з’являться тут після запуску запланованого або ручного дзеркального копіювання.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Виконується...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Показано {0}–{1} із {2} запусків</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Час початку</value>

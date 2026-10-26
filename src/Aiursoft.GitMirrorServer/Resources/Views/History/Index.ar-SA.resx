@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>فشل</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>الأولى</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>قيد التنفيذ</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>سجل المهام</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>الأخيرة</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>سجل المرآة</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>صفحات سجل المزامنة</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>لا توجد عمليات مرآة بعد</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>افتح إحدى عمليات المزامنة لمراجعة نتائج المستودع والسجلات.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>الصفحة {0} من {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>السابق</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>تظهر النتائج هنا بعد بدء تشغيل المرآة المجدولة أو اليدوية.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>جاري التشغيل...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>عرض {0}–{1} من أصل {2} عملية تشغيل</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>وقت البدء</value>

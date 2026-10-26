@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Απέτυχε</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Πρώτη</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>Σε εξέλιξη</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Ιστορικό Εργασιών</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Τελευταία</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Ιστορικό κατόπτρου</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Σελίδες ιστορικού κατοπτρισμού</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Επόμενη</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Δεν υπάρχουν ακόμη εκτελέσεις κατοπτρισμού</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Ανοίξτε μια εκτέλεση κατοπτρισμού για να εξετάσετε τα αποτελέσματα και τα αρχεία καταγραφής του αποθετηρίου.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Σελίδα {0} από {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Προηγούμενο</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Τα αποτελέσματα εμφανίζονται εδώ μόλις ξεκινήσει μια προγραμματισμένη ή μη αυτόματη εκτέλεση κατοπτρισμού.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Εκτελείται...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Εμφανίζονται {0}–{1} από {2} εκτελέσεις</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Ώρα Εκκίνησης</value>

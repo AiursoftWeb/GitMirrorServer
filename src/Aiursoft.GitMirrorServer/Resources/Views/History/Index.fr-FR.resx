@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Échec</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Première</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>En cours</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Historique des tâches</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Dernière</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Historique de la synchronisation</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Pages de l’historique des synchronisations</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Aucune exécution de miroir pour le moment</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Ouvrez une exécution de miroir pour consulter les résultats des dépôts et les journaux.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Page {0} sur {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Précédent</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Les résultats s&apos;afficheront ici après le démarrage d&apos;une exécution de miroir planifiée ou manuelle.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>En cours...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Affichage de {0} à {1} sur {2} exécutions</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Heure de début</value>

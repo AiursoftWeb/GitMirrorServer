@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Mislykket</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Første</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>I gang</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Job Historik</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Sidste</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Spejlingshistorik</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Sider med spejlingshistorik</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Næste</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Ingen mirror-kørsler endnu</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Åbn en spejlkørsel for at se arkivresultater og logfiler.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Side {0} af {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Forrige</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Resultaterne vises her, når en planlagt eller manuel spejling starter.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Kører...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Viser {0}–{1} af {2} kørsler</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Starttid</value>

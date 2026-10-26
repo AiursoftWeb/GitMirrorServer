@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Epäonnistui</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Ensimmäinen</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>Käynnissä</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Tehtävän historia</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Viimeinen</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Peilikopiointihistoria</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Peilahistorian sivut</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Seuraava</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Ei peilattuja ajoksia vielä</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Avaa peilausajo tarkastellaksesi repositorioiden tuloksia ja lokitietoja.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Sivu {0}/{1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Edellinen</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Tulokset näkyvät täällä, kun ajastettu tai manuaalisesti käynnistetty peilaus alkaa.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Suoritetaan...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Näytetään {0}–{1} yhteensä {2} suorituksesta</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Aloitusaika</value>

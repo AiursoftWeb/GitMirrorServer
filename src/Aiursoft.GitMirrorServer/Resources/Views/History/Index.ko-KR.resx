@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>실패</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>처음</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>진행 중</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>작업 기록</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>마지막</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>미러 기록</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>미러 기록 페이지</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>다음</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>아직 미러 실행 기록이 없습니다</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>미러 실행을 열어 저장소 결과와 로그를 확인하세요.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>{1}페이지 중 {0}페이지</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>이전</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>예약 또는 수동 미러링이 시작되면 여기에 결과가 표시됩니다.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>실행 중...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>전체 {2}개 실행 중 {0}–{1}개 표시</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>시작 시간</value>

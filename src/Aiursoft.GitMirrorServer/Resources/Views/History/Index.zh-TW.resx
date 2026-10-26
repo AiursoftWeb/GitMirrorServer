@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>失敗</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>第一頁</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>進行中</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>工作歷程</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>最後</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>鏡像歷史</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>鏡像歷史記錄頁面</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一頁</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>尚無鏡像執行記錄</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>開啟一次鏡像執行，即可查看儲存庫結果和記錄。</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>第 {0} 頁，共 {1} 頁</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>上一頁</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>排程或手動鏡像作業開始後，結果會顯示在這裡。</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>執行中...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>顯示第 {0}–{1} 筆，共 {2} 筆執行記錄</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>開始時間</value>

@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Mislukt</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Eerste</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>Bezig</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Takenhistorie</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Laatste</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Geschiedenis van spiegelingen</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Pagina&apos;s van de spiegelgeschiedenis</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Volgende</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Nog geen mirrorruns uitgevoerd</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Open een spiegelsessie om de resultaten en logboeken van de repositories te bekijken.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Pagina {0} van {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Vorige</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Resultaten verschijnen hier nadat een geplande of handmatige mirrorsessie is gestart.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Bezig...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Weergave van {0}–{1} van {2} uitvoeringen</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Starttijd</value>

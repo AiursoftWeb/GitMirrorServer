@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>ล้มเหลว</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>หน้าแรก</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>กำลังดำเนินการ</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>ประวัติงาน</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>หน้าสุดท้าย</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>ประวัติการซิงค์</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>หน้าเพจประวัติการมิเรอร์</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>ถัดไป</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>ยังไม่มีบันทึกการซิงค์ข้อมูล</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>เปิดการทำงานมิเรอร์เพื่อดูผลลัพธ์และบันทึกของที่เก็บ</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>หน้า {0} จาก {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>ก่อนหน้า</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>ผลลัพธ์จะแสดงที่นี่เมื่อการมิเรอร์เริ่มทำงานตามกำหนดเวลาหรือเริ่มด้วยตนเอง</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>กำลังดำเนินการ...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>กำลังแสดง {0}–{1} จาก {2} รายการ</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>เวลาเริ่มต้น</value>

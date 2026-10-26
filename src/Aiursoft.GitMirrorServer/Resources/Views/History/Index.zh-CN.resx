@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>失败</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>首页</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>进行中</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>任务历史</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>末页</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>镜像历史</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>镜像历史记录页</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一页</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>尚无镜像运行记录</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>打开一次镜像运行，查看仓库的结果和日志。</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>第 {0} 页，共 {1} 页</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>上一页</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>启动计划任务或手动镜像后，结果会显示在这里。</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>运行中...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>共 {2} 次运行中的第 {0}–{1} 次</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>开始时间</value>

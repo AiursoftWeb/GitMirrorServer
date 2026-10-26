@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Fallito</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Prima</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>In corso</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Cronologia dei compiti</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Ultima</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Cronologia mirror</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Pagine della cronologia mirror</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Successivo</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Nessuna esecuzione di mirroring ancora</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Apri un&apos;esecuzione di mirroring per esaminare i risultati e i log del repository.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Pagina {0} di {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Precedente</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>I risultati appariranno qui all&apos;avvio di un&apos;esecuzione di mirroring pianificata o manuale.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>In esecuzione...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Visualizzazione di {0}–{1} su {2} esecuzioni</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Ora di inizio</value>
