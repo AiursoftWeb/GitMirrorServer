@@ -1,4 +1,5 @@
 using System.Net;
+using System.Text.RegularExpressions;
 using Aiursoft.GitMirrorServer.Entities;
 using Aiursoft.GitMirrorServer.Services;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,52 @@ namespace Aiursoft.GitMirrorServer.Tests.IntegrationTests;
 [TestClass]
 public class MirrorsControllerTests : TestBase
 {
+    [TestMethod]
+    public async Task HistoryPaginationKeepsEveryRunReachableAndClampsInvalidPages()
+    {
+        await LoginAsAdmin();
+        using var scope = Server!.Services.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<GitMirrorServerDbContext>();
+        var time = DateTime.UtcNow.AddDays(1);
+        var added = Enumerable.Range(0, 105).Select(_ => new MirrorJobExecution
+        {
+            Id = Guid.NewGuid(), StartTime = time, EndTime = time.AddMinutes(1)
+        }).ToList();
+        db.MirrorJobExecutions.AddRange(added);
+        await db.SaveChangesAsync();
+        try
+        {
+            var expected = await db.MirrorJobExecutions.OrderByDescending(run => run.StartTime)
+                .ThenByDescending(run => run.Id).Select(run => run.Id).ToListAsync();
+            var seen = new List<Guid>();
+            var pages = (int)Math.Ceiling(expected.Count / 50.0);
+            for (var page = 1; page <= pages; page++)
+            {
+                var ids = await ReadPage(page);
+                CollectionAssert.AreEqual(expected.Skip((page - 1) * 50).Take(50).ToList(), ids);
+                seen.AddRange(ids);
+            }
+            CollectionAssert.AreEqual(expected, seen);
+            CollectionAssert.AreEqual(expected.Take(50).ToList(), await ReadPage(int.MinValue));
+            CollectionAssert.AreEqual(expected.Skip((pages - 1) * 50).ToList(), await ReadPage(int.MaxValue));
+        }
+        finally
+        {
+            db.MirrorJobExecutions.RemoveRange(added);
+            await db.SaveChangesAsync();
+        }
+
+        async Task<List<Guid>> ReadPage(int page)
+        {
+            var response = await Http.GetAsync($"/History?page={page}");
+            response.EnsureSuccessStatusCode();
+            var html = await response.Content.ReadAsStringAsync();
+            Assert.Contains("Mirror history pages", html);
+            return Regex.Matches(html, @"/History/Details/([0-9a-f-]{36})", RegexOptions.IgnoreCase)
+                .Select(match => Guid.Parse(match.Groups[1].Value)).ToList();
+        }
+    }
+
     [TestMethod]
     public async Task FailedHistorySave_DoesNotPreventRecordingNextRepositoryOrJobCompletion()
     {
