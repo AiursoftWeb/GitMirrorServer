@@ -21,13 +21,22 @@ public class HistoryController(GitMirrorServerDbContext dbContext) : Controller
         CascadedLinksOrder = 1,
         LinkText = "History",
         LinkOrder = 2)]
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int page = 1)
     {
-        var history = await dbContext.MirrorJobExecutions
+        var model = new IndexViewModel
+        {
+            History = [],
+            TotalCount = await dbContext.MirrorJobExecutions.CountAsync()
+        };
+        model.CurrentPage = Math.Clamp(page, 1, model.TotalPages);
+        model.History = await dbContext.MirrorJobExecutions
+            .AsNoTracking()
             .OrderByDescending(j => j.StartTime)
-            .Take(50)
+            .ThenByDescending(j => j.Id)
+            .Skip((model.CurrentPage - 1) * model.PageSize)
+            .Take(model.PageSize)
             .ToListAsync();
-        return this.StackView(new IndexViewModel { History = history });
+        return this.StackView(model);
     }
 
     [Authorize(Policy = AppPermissionNames.CanViewMirrorStatus)]

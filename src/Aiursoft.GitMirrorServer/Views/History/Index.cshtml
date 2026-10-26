@@ -3,7 +3,7 @@
 @inject IViewLocalizer Localizer
 
 <h1 class="h3 mb-2">@Localizer["Mirror history"]</h1>
-<p class="text-muted mb-4">@Localizer["The latest 50 mirror runs. Open a run to inspect repository results and logs."]</p>
+<p class="text-muted mb-4">@Localizer["Open a mirror run to inspect repository results and logs."]</p>
 
 <div class="card">
     <div class="card-body">
@@ -69,6 +69,24 @@
                         }
                     </tbody>
                 </table>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3">
+                <p class="text-muted mb-0">@string.Format(@Localizer["Showing {0}–{1} of {2} runs"].Value, (Model.CurrentPage - 1) * Model.PageSize + 1, Math.Min((long)Model.CurrentPage * Model.PageSize, Model.TotalCount), Model.TotalCount)</p>
+                <nav aria-label="@Localizer["Mirror history pages"].Value">
+                    <ul class="pagination flex-wrap mb-0">
+                        @if (Model.CurrentPage > 1)
+                        {
+                            <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="1">@Localizer["First"]</a></li>
+                            <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage - 1)" rel="prev">@Localizer["Previous"]</a></li>
+                        }
+                        <li class="page-item active"><span class="page-link" aria-current="page">@string.Format(@Localizer["Page {0} of {1}"].Value, Model.CurrentPage, Model.TotalPages)</span></li>
+                        @if (Model.CurrentPage < Model.TotalPages)
+                        {
+                            <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage + 1)" rel="next">@Localizer["Next"]</a></li>
+                            <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@Model.TotalPages">@Localizer["Last"]</a></li>
+                        }
+                    </ul>
+                </nav>
             </div>
         }
     </div>
