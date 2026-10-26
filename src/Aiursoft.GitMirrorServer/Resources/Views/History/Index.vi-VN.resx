@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Thất bại</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>Đầu tiên</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>Đang xử lý</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>Lịch sử công việc</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Cuối</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Lịch sử đồng bộ bản sao</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Các trang lịch sử đồng bộ</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Tiếp</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Chưa có phiên chạy gương nào</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Mở một lượt sao chép để xem kết quả và nhật ký của kho lưu trữ.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Trang {0} trên {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Trước</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Kết quả sẽ xuất hiện tại đây sau khi quá trình đồng bộ bản sao được lên lịch hoặc bắt đầu thủ công.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Đang chạy...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Đang hiển thị {0}–{1} trong tổng số {2} lượt chạy</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Thời gian bắt đầu</value>

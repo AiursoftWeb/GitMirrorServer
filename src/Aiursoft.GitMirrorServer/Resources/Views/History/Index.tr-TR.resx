@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>Başarısız</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>İlk</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>Devam ediyor</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>İş Geçmişi</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>Son</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>Yansıtma geçmişi</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Ayna geçmişi sayfaları</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Sonraki</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>Henüz ayna çalıştırması yok</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Depo sonuçlarını ve günlükleri incelemek için bir yansılama çalıştırmasını açın.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>{1} sayfanın {0}. sayfası</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Önceki</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Planlı veya manuel ayna çalıştırması başladığında sonuçlar burada görünür.</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>Çalışıyor...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>{0}–{1} / {2} çalıştırma gösteriliyor</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>Başlangıç Zamanı</value>

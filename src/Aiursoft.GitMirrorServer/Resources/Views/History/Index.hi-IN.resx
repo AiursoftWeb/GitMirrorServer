@@ -36,17 +36,38 @@
   <data name="Failed" xml:space="preserve">
     <value>असफल</value>
   </data>
+  <data name="First" xml:space="preserve">
+    <value>पहला</value>
+  </data>
   <data name="In progress" xml:space="preserve">
     <value>प्रगति पर</value>
   </data>
   <data name="Job History" xml:space="preserve">
     <value>कार्य इतिहास</value>
   </data>
+  <data name="Last" xml:space="preserve">
+    <value>अंतिम</value>
+  </data>
   <data name="Mirror history" xml:space="preserve">
     <value>मिरर इतिहास</value>
   </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>मिरर इतिहास के पृष्ठ</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>अगला</value>
+  </data>
   <data name="No mirror runs yet" xml:space="preserve">
     <value>अभी तक कोई मिरर रन नहीं हुआ है</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>रिपॉज़िटरी के नतीजे और लॉग देखने के लिए मिरर रन खोलें।</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>पृष्ठ {0} में से {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>पिछला</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>जब कोई नियोजित या मैनुअल मिरर चालू शुरू होती है, तो परिणाम यहाँ दिखाई देते हैं।</value>
@@ -56,6 +77,9 @@
   </data>
   <data name="Running..." xml:space="preserve">
     <value>चल रहा है...</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>{2} रन में से {0}–{1} दिखा रहे हैं</value>
   </data>
   <data name="Start Time" xml:space="preserve">
     <value>प्रारंभ समय</value>
