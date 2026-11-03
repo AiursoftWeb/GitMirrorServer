@@ -15,7 +15,7 @@ public interface IMonitoringIncidentClient
     Task<ResolveIncidentResponse> ResolveAsync(Guid id, ResolveIncidentRequest request);
 }
 
-public sealed class MonitoringIncidentClient(AiurProtocolClient http) : IMonitoringIncidentClient
+public sealed class MonitoringIncidentClient(AiurProtocolClient http, ILogger<AlertCenterApiClient> logger) : IMonitoringIncidentClient
 {
     private AlertCenterApiClient? _client;
     public void Configure(MonitoringConfiguration configuration)
@@ -23,7 +23,7 @@ public sealed class MonitoringIncidentClient(AiurProtocolClient http) : IMonitor
         configuration.Validate();
         _client = new AlertCenterApiClient(http,
             Options.Create(new AlertCenterApiOptions { Endpoint = configuration.Endpoint.TrimEnd('/') }),
-            new SnapshotKeyProvider(configuration.ApiKey));
+            new SnapshotKeyProvider(configuration.ApiKey), logger);
     }
     private Task<AlertCenterApiClient> GetClientAsync() => Task.FromResult(
         _client ?? throw new InvalidOperationException("Configure the client before synchronization."));
