@@ -179,7 +179,12 @@ public class MirrorsControllerTests : TestBase
         // 5. Trigger
         var triggerResponse = await PostForm("/Mirrors/Trigger", new Dictionary<string, string>());
         AssertRedirect(triggerResponse, "/History");
-        // We can't easily verify background job ran without waiting, but redirect is enough.
+        // Confirm the request without treating it as a completed mirror run.
+        var requestedHtml = await Http.GetStringAsync("/History");
+        Assert.Contains("Mirror run requested. Results appear here when the run starts.", requestedHtml);
+        Assert.Contains("Refresh", requestedHtml);
+        var refreshedHtml = await Http.GetStringAsync("/History");
+        Assert.DoesNotContain("Mirror run requested.", refreshedHtml);
 
         // 6. Delete
         var deleteResponse = await PostForm($"/Mirrors/Delete/{mirror.Id}", new Dictionary<string, string>());

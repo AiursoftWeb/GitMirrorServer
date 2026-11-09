@@ -2,8 +2,22 @@
 @model Aiursoft.GitMirrorServer.Models.HistoryViewModels.IndexViewModel
 @inject IViewLocalizer Localizer
 
-<h1 class="h3 mb-2">@Localizer["Mirror history"]</h1>
-<p class="text-muted mb-4">@Localizer["Open a mirror run to inspect repository results and logs."]</p>
+<div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-4">
+    <div>
+        <h1 class="h3 mb-2">@Localizer["Mirror history"]</h1>
+        <p class="text-muted mb-0">@Localizer["Open a mirror run to inspect repository results and logs."]</p>
+    </div>
+    <a asp-action="Index" asp-route-page="@Model.CurrentPage" class="btn btn-outline-secondary">
+        <i class="align-middle me-1" data-lucide="refresh-cw" aria-hidden="true"></i>@Localizer["Refresh"]
+    </a>
+</div>
+
+@if (TempData["MirrorRunRequested"] is true)
+{
+    <div class="alert alert-info" role="status">
+        <div class="alert-message">@Localizer["Mirror run requested. Results appear here when the run starts."]</div>
+    </div>
+}
 
 <div class="card">
     <div class="card-body">
