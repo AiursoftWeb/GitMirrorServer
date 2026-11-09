@@ -184,6 +184,7 @@ public class MirrorsController(
     public IActionResult Trigger()
     {
         jobRegistry.TriggerNow(nameof(Services.BackgroundJobs.MirrorJob));
+        TempData["MirrorRunRequested"] = true;
         return RedirectToAction("Index", "History");
     }
 }
