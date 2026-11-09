@@ -42,6 +42,9 @@
   <data name="Mirrors List" xml:space="preserve">
     <value>Λίστα Αντικατοπτρισμών</value>
   </data>
+  <data name="Run mirrors" xml:space="preserve">
+    <value>Εκτέλεση mirrors</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>Προς</value>
   </data>

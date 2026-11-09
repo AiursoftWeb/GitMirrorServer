@@ -54,6 +54,9 @@
   <data name="Mirror history pages" xml:space="preserve">
     <value>Páginas do histórico de espelhamento</value>
   </data>
+  <data name="Mirror run requested. Results appear here when the run starts." xml:space="preserve">
+    <value>Execução de espelho solicitada. Os resultados aparecerão aqui quando a execução começar.</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Próxima</value>
   </data>
@@ -68,6 +71,9 @@
   </data>
   <data name="Previous" xml:space="preserve">
     <value>Anterior</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Atualizar</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Os resultados aparecem aqui após o início de uma execução de espelhamento agendada ou manual.</value>

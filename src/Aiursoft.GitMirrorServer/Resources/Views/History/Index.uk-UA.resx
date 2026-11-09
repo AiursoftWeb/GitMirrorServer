@@ -54,6 +54,9 @@
   <data name="Mirror history pages" xml:space="preserve">
     <value>Сторінки історії дзеркалювання</value>
   </data>
+  <data name="Mirror run requested. Results appear here when the run starts." xml:space="preserve">
+    <value>Запитано дзеркальний запуск. Результати з’являться тут, коли запуск розпочнеться.</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Далі</value>
   </data>
@@ -68,6 +71,9 @@
   </data>
   <data name="Previous" xml:space="preserve">
     <value>Попередня</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Оновити</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Результати з’являться тут після запуску запланованого або ручного дзеркального копіювання.</value>
