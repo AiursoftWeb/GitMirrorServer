@@ -54,6 +54,9 @@
   <data name="Mirror history pages" xml:space="preserve">
     <value>ミラー履歴ページ</value>
   </data>
+  <data name="Mirror run requested. Results appear here when the run starts." xml:space="preserve">
+    <value>ミラー実行が要求されました。実行が始まると、結果がここに表示されます。</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>次へ</value>
   </data>
@@ -68,6 +71,9 @@
   </data>
   <data name="Previous" xml:space="preserve">
     <value>前へ</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>更新</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>定期または手動のミラー実行が開始されると、ここに結果が表示されます。</value>

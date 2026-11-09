@@ -54,6 +54,9 @@
   <data name="Mirror history pages" xml:space="preserve">
     <value>Strony historii kopii lustrzanej</value>
   </data>
+  <data name="Mirror run requested. Results appear here when the run starts." xml:space="preserve">
+    <value>Żądanie uruchomienia lustra zostało przyjęte. Wyniki pojawią się tutaj, gdy uruchomienie zostanie rozpoczęte.</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Dalej</value>
   </data>
@@ -68,6 +71,9 @@
   </data>
   <data name="Previous" xml:space="preserve">
     <value>Poprzednia</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Odśwież</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Wyniki pojawią się tutaj po rozpoczęciu zaplanowanego lub ręcznego uruchomienia synchronizacji lustrzanej.</value>

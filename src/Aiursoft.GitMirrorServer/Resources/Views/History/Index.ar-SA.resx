@@ -54,6 +54,9 @@
   <data name="Mirror history pages" xml:space="preserve">
     <value>صفحات سجل المزامنة</value>
   </data>
+  <data name="Mirror run requested. Results appear here when the run starts." xml:space="preserve">
+    <value>تم طلب تنفيذ المرآة. ستظهر النتائج هنا عند بدء التشغيل.</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>التالي</value>
   </data>
@@ -68,6 +71,9 @@
   </data>
   <data name="Previous" xml:space="preserve">
     <value>السابق</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>تحديث</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>تظهر النتائج هنا بعد بدء تشغيل المرآة المجدولة أو اليدوية.</value>

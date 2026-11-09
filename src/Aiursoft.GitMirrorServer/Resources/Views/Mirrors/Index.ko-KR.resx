@@ -42,6 +42,9 @@
   <data name="Mirrors List" xml:space="preserve">
     <value>미러 목록</value>
   </data>
+  <data name="Run mirrors" xml:space="preserve">
+    <value>미러 실행</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>To</value>
   </data>

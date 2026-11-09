@@ -54,6 +54,9 @@
   <data name="Mirror history pages" xml:space="preserve">
     <value>Pagine della cronologia mirror</value>
   </data>
+  <data name="Mirror run requested. Results appear here when the run starts." xml:space="preserve">
+    <value>Esecuzione mirror richiesta. I risultati appariranno qui quando l&apos;esecuzione inizierà.</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Successivo</value>
   </data>
@@ -68,6 +71,9 @@
   </data>
   <data name="Previous" xml:space="preserve">
     <value>Precedente</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Aggiorna</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>I risultati appariranno qui all&apos;avvio di un&apos;esecuzione di mirroring pianificata o manuale.</value>

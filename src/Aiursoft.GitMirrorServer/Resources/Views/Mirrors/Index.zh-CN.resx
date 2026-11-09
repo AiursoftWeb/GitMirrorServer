@@ -42,6 +42,9 @@
   <data name="Mirrors List" xml:space="preserve">
     <value>镜像列表</value>
   </data>
+  <data name="Run mirrors" xml:space="preserve">
+    <value>运行镜像</value>
+  </data>
   <data name="To" xml:space="preserve">
     <value>到</value>
   </data>

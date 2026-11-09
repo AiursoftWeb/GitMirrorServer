@@ -54,6 +54,9 @@
   <data name="Mirror history pages" xml:space="preserve">
     <value>Speglingens historiksidor</value>
   </data>
+  <data name="Mirror run requested. Results appear here when the run starts." xml:space="preserve">
+    <value>Speglar kör begärt. Resultat visas här när körningen startar.</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Nästa</value>
   </data>
@@ -68,6 +71,9 @@
   </data>
   <data name="Previous" xml:space="preserve">
     <value>Föregående</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Uppdatera</value>
   </data>
   <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
     <value>Resultaten visas här när en schemalagd eller manuell spegling har startat.</value>
