@@ -1,3 +1,4 @@
+@using System.Globalization
 @using Aiursoft.GitMirrorServer.Authorization
 @model Aiursoft.GitMirrorServer.Models.Monitoring.MonitoringViewModel
 
@@ -81,7 +82,7 @@
     <tbody>
     @foreach (var state in Model.Repositories)
     {
-        <tr><td class="text-break">@state.Repository</td><td class="text-break">@state.Source</td><td class="text-break">@state.Target</td><td>@state.Failures</td><td>@state.LastObserved.ToString("u")</td><td>@state.LastSuccess?.ToString("u")</td></tr>
+        <tr><td class="text-break">@state.Repository</td><td class="text-break">@state.Source</td><td class="text-break">@state.Target</td><td>@state.Failures</td><td>@state.LastObserved.ToString("u", CultureInfo.InvariantCulture)</td><td>@state.LastSuccess?.ToString("u", CultureInfo.InvariantCulture)</td></tr>
     }
     @if (Model.Repositories.Count == 0)
     {
