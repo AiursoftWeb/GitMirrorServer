@@ -36,7 +36,7 @@ public sealed class AlertMonitoringController(GlobalSettingsService settings, Mi
         };
         try { model.Rules = MirrorMonitoringRule.Parse(json); }
         catch (Exception ex) when (ex is JsonException or InvalidOperationException) { model.InvalidRules = true; }
-        model.Repositories = monitor.Snapshot().OrderBy(state => state.Source).ThenBy(state => state.Repository).ToList();
+        model.Repositories = monitor.Snapshot().OrderBy(state => state.Source, StringComparer.Ordinal).ThenBy(state => state.Repository, StringComparer.Ordinal).ToList();
         return this.StackView(model);
     }
 

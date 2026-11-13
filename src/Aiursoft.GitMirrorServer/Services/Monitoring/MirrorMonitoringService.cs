@@ -1,3 +1,4 @@
+using System.Globalization;
 using Aiursoft.AlertCenter.SDK.Models;
 using Aiursoft.Canon.BackgroundJobs;
 using Newtonsoft.Json.Linq;
@@ -125,7 +126,7 @@ public sealed class MirrorMonitoringService(MirrorMonitor monitor, MirrorMonitor
             $"The configured rule triggers {rule.Severity} at {rule.FailureCount} failed rounds. " +
             $"Each scheduled or manually started mirror run counts once per repository, after all {RepositoryMirrorRetryRunner.MaximumAttempts} internal attempts. " +
             "A half-hour schedule therefore needs separate failed runs, not three individual retry attempts.\n" +
-            $"Last result (UTC): {state.LastObserved:O}. Last observed successful round (UTC): {state.LastSuccess?.ToString("O") ?? "not observed in this process"}.\n\n" +
+            $"Last result (UTC): {state.LastObserved:O}. Last observed successful round (UTC): {state.LastSuccess?.ToString("O", CultureInfo.InvariantCulture) ?? "not observed in this process"}.\n\n" +
             $"Evidence: {state.FailureSummary}\n\n" +
             "Impact: The target copy may be stale; this does not establish that the source repository or its deployed application is down.\n" +
             "Next steps: Inspect the repository execution log, check source-read and target-write credentials, Git server connectivity, target branch protection and local disk space. " +

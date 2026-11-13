@@ -62,7 +62,7 @@ public class MirrorService(
 
                     var repos = (await sourceService
                             .GetRepositoriesAsync(config.FromOrgName,
-                                isOrg: config.OrgOrUser.ToLower().StartsWith("org"),
+                                isOrg: config.OrgOrUser.StartsWith("org", StringComparison.OrdinalIgnoreCase),
                                 includePrivate: config.IncludePrivateRepositories,
                                 includeArchived: config.IncludeArchivedRepositories))
                         .Where(r => config.IncludeArchivedRepositories || !r.Archived)

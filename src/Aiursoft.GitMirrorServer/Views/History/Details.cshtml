@@ -70,7 +70,7 @@
     </div></div>
 }
 
-@foreach (var repo in Model.Job.RepoExecutions.OrderBy(repo => repo.IsSuccess).ThenBy(repo => repo.RepoName))
+@foreach (var repo in Model.Job.RepoExecutions.OrderBy(repo => repo.IsSuccess).ThenBy(repo => repo.RepoName, StringComparer.Ordinal))
 {
     <details class="card mb-3" open="@(!repo.IsSuccess)">
         <summary class="card-header text-break">
