@@ -21,11 +21,11 @@
       <data name="Back to History" xml:space="preserve">
     <value>Voltar para o Histórico</value>
   </data>
-  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
-    <value>Falha ao copiar. Selecione o texto do log e copie-o manualmente.</value>
-  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Copiar Log</value>
+  </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Falha ao copiar. Selecione o texto do log e copie-o manualmente.</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Erro</value>

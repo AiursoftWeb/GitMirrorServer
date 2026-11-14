@@ -39,11 +39,11 @@
   <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
     <value>Một công cụ mạnh mẽ để đồng bộ hóa các kho lưu trữ của bạn trên nhiều nền tảng.</value>
   </data>
-  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
-    <value>Đạt được nhiều hơn với Aiursoft Template</value>
-  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>Dịch Thuật Hỗ Trợ Bởi AI</value>
+  </data>
+  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
+    <value>Đạt được nhiều hơn với Aiursoft Template</value>
   </data>
   <data name="Aiursoft Template is our definitive choice for enterprise projects! It&apos;s built for developers and is lightweight yet powerful. We can skip all the boilerplate for authentication and user management." xml:space="preserve">
     <value>Aiursoft Template là lựa chọn tối ưu cho các dự án doanh nghiệp! Nó được xây dựng cho nhà phát triển, nhẹ nhàng nhưng mạnh mẽ. Chúng ta có thể bỏ qua tất cả các mã mẫu cho xác thực và quản lý người dùng.</value>
@@ -138,9 +138,6 @@
   <data name="FAQ" xml:space="preserve">
     <value>Câu hỏi thường gặp</value>
   </data>
-  <data name="faster" xml:space="preserve">
-    <value>nhanh hơn</value>
-  </data>
   <data name="Features" xml:space="preserve">
     <value>Tính năng</value>
   </data>
@@ -152,9 +149,6 @@
   </data>
   <data name="Flexible Configuration" xml:space="preserve">
     <value>Cấu hình linh hoạt</value>
-  </data>
-  <data name="for any inquiries or to report issues." xml:space="preserve">
-    <value>để có bất kỳ thắc mắc nào hoặc để báo cáo sự cố.</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Miễn phí</value>
@@ -204,6 +198,9 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>Hãy tham gia cộng đồng của chúng tôi và bắt đầu xây dựng ngay hôm nay!</value>
   </data>
+  <data name="MIT Licence" xml:space="preserve">
+    <value>Giấy phép MIT</value>
+  </data>
   <data name="Made Simple" xml:space="preserve">
     <value>Đơn giản hóa</value>
   </data>
@@ -218,9 +215,6 @@
   </data>
   <data name="Mirroring" xml:space="preserve">
     <value>Đồng bộ hóa</value>
-  </data>
-  <data name="MIT Licence" xml:space="preserve">
-    <value>Giấy phép MIT</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Các mô hình được xác thực ở cả phía khách và phía máy chủ dựa trên các chú thích dữ liệu.</value>
@@ -350,6 +344,12 @@
   </data>
   <data name="You&apos;ll need the .NET 10 SDK, npm and your favorite IDE, like Visual Studio or JetBrains Rider. You can find the full setup guide in our documentation." xml:space="preserve">
     <value>Bạn sẽ cần .NET 10 SDK, npm và IDE yêu thích của bạn, như Visual Studio hoặc JetBrains Rider. Bạn có thể tìm thấy hướng dẫn thiết lập đầy đủ trong tài liệu của chúng tôi.</value>
+  </data>
+  <data name="faster" xml:space="preserve">
+    <value>nhanh hơn</value>
+  </data>
+  <data name="for any inquiries or to report issues." xml:space="preserve">
+    <value>để có bất kỳ thắc mắc nào hoặc để báo cáo sự cố.</value>
   </data>
 
 </root>

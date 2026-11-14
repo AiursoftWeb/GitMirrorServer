@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>リポジトリミラーのインシデントをAlertCenterと同期します。</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>フッターに表示されるブランド名。</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>AlertCenterのHTTP(S)ベースURL。</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>中国本土ユーザー向けのICPライセンス番号。空欄のままにすると非表示になります。</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>フッターに表示されるブランド名。</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>自動ミラー作業の間隔（分単位）。</value>

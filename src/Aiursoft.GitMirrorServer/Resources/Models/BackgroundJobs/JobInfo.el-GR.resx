@@ -24,11 +24,11 @@
   <data name="Error message" xml:space="preserve">
     <value>Μήνυμα σφάλματος</value>
   </data>
-  <data name="Job action" xml:space="preserve">
-    <value>Ενέργεια εργασίας</value>
-  </data>
   <data name="Job ID" xml:space="preserve">
     <value>ID Εργασίας</value>
+  </data>
+  <data name="Job action" xml:space="preserve">
+    <value>Ενέργεια εργασίας</value>
   </data>
   <data name="Job name" xml:space="preserve">
     <value>Όνομα εργασίας</value>

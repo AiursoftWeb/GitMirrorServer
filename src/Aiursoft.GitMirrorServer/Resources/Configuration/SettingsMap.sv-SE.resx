@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>Synkronisera incidenter för lagringsplats-speglar med AlertCenter.</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>Det varumärke som visas i sidfoten.</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>HTTP(S)-basadressen för AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>ICP-licensnummer för användare i Kina. Lämna tomt för att dölja.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>Det varumärke som visas i sidfoten.</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Intervall i minuter mellan automatiska spegeljobb.</value>

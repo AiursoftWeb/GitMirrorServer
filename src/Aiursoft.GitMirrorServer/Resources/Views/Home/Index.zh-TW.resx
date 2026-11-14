@@ -39,11 +39,11 @@
   <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
     <value>功能強大的工具，可協助您在各平台之間保持程式庫同步。</value>
   </data>
-  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
-    <value>使用 Aiursoft Template 成就更多</value>
-  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>AI 驅動翻譯</value>
+  </data>
+  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
+    <value>使用 Aiursoft Template 成就更多</value>
   </data>
   <data name="Aiursoft Template is our definitive choice for enterprise projects! It&apos;s built for developers and is lightweight yet powerful. We can skip all the boilerplate for authentication and user management." xml:space="preserve">
     <value>Aiursoft Template 是我們企業級專案的不二之選！它專為開發者打造，輕量卻功能強大。我們可以直接跳過所有身份驗證和使用者管理的樣板程式碼。</value>
@@ -138,9 +138,6 @@
   <data name="FAQ" xml:space="preserve">
     <value>常見問題</value>
   </data>
-  <data name="faster" xml:space="preserve">
-    <value>更快速</value>
-  </data>
   <data name="Features" xml:space="preserve">
     <value>功能特色</value>
   </data>
@@ -152,9 +149,6 @@
   </data>
   <data name="Flexible Configuration" xml:space="preserve">
     <value>彈性設定</value>
-  </data>
-  <data name="for any inquiries or to report issues." xml:space="preserve">
-    <value>如有任何疑問或回報問題。</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>免費</value>
@@ -204,6 +198,9 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>加入我們的社群，立即開始建構！</value>
   </data>
+  <data name="MIT Licence" xml:space="preserve">
+    <value>MIT 授權</value>
+  </data>
   <data name="Made Simple" xml:space="preserve">
     <value>簡單實作</value>
   </data>
@@ -218,9 +215,6 @@
   </data>
   <data name="Mirroring" xml:space="preserve">
     <value>鏡像</value>
-  </data>
-  <data name="MIT Licence" xml:space="preserve">
-    <value>MIT 授權</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>模型會根據資料註解，在用戶端和伺服器端進行驗證。</value>
@@ -350,6 +344,12 @@
   </data>
   <data name="You&apos;ll need the .NET 10 SDK, npm and your favorite IDE, like Visual Studio or JetBrains Rider. You can find the full setup guide in our documentation." xml:space="preserve">
     <value>您需要安裝 .NET 10 SDK、npm 以及您喜愛的 IDE，例如 Visual Studio 或 JetBrains Rider。您可以在我們的文件中找到完整的設定指南。</value>
+  </data>
+  <data name="faster" xml:space="preserve">
+    <value>更快速</value>
+  </data>
+  <data name="for any inquiries or to report issues." xml:space="preserve">
+    <value>如有任何疑問或回報問題。</value>
   </data>
 
 </root>

@@ -33,9 +33,6 @@
   <data name="I confirm that Private source repositories may be published to Public GitHub repositories." xml:space="preserve">
     <value>Tôi xác nhận rằng các kho lưu trữ riêng tư nguồn có thể được công khai trên các kho lưu trữ GitHub công khai.</value>
   </data>
-  <data name="Include archived repositories" xml:space="preserve">
-    <value>Bao gồm các kho lưu trữ đã lưu trữ</value>
-  </data>
   <data name="Include Internal repositories (GitLab)" xml:space="preserve">
     <value>Bao gồm các kho lưu trữ nội bộ (GitLab)</value>
   </data>
@@ -45,11 +42,20 @@
   <data name="Include Public repositories" xml:space="preserve">
     <value>Bao gồm kho lưu trữ công khai</value>
   </data>
+  <data name="Include archived repositories" xml:space="preserve">
+    <value>Bao gồm các kho lưu trữ đã lưu trữ</value>
+  </data>
   <data name="Please enter a valid URL." xml:space="preserve">
     <value>Vui lòng nhập một URL hợp lệ.</value>
   </data>
   <data name="Please specify if this is an Organization or a User." xml:space="preserve">
     <value>Vui lòng xác định đây là Tổ chức hay Người dùng.</value>
+  </data>
+  <data name="Source Git provider" xml:space="preserve">
+    <value>Nhà cung cấp Git nguồn</value>
+  </data>
+  <data name="Source Type (Org/User)" xml:space="preserve">
+    <value>Loại nguồn (Tổ chức/Người dùng)</value>
   </data>
   <data name="Source access token" xml:space="preserve">
     <value>Token truy cập nguồn</value>
@@ -57,29 +63,17 @@
   <data name="Source account type" xml:space="preserve">
     <value>Loại tài khoản nguồn</value>
   </data>
-  <data name="Source Git provider" xml:space="preserve">
-    <value>Nhà cung cấp Git nguồn</value>
-  </data>
   <data name="Source organization or username" xml:space="preserve">
     <value>Tên tổ chức hoặc tên người dùng nguồn</value>
   </data>
   <data name="Source server URL" xml:space="preserve">
     <value>URL máy chủ nguồn</value>
   </data>
-  <data name="Source Type (Org/User)" xml:space="preserve">
-    <value>Loại nguồn (Tổ chức/Người dùng)</value>
-  </data>
-  <data name="Target access token" xml:space="preserve">
-    <value>Mã thông báo truy cập đích</value>
-  </data>
   <data name="Target Git provider" xml:space="preserve">
     <value>Nhà cung cấp Git đích</value>
   </data>
   <data name="Target Organization" xml:space="preserve">
     <value>Tổ chức đích</value>
-  </data>
-  <data name="Target organization or username" xml:space="preserve">
-    <value>Tổ chức hoặc tên người dùng đích</value>
   </data>
   <data name="Target Server URL" xml:space="preserve">
     <value>URL máy chủ đích</value>
@@ -89,6 +83,12 @@
   </data>
   <data name="Target Type" xml:space="preserve">
     <value>Loại mục tiêu</value>
+  </data>
+  <data name="Target access token" xml:space="preserve">
+    <value>Mã thông báo truy cập đích</value>
+  </data>
+  <data name="Target organization or username" xml:space="preserve">
+    <value>Tổ chức hoặc tên người dùng đích</value>
   </data>
   <data name="The From Organization/User Name is required." xml:space="preserve">
     <value>Tên tổ chức/người dùng nguồn là bắt buộc.</value>

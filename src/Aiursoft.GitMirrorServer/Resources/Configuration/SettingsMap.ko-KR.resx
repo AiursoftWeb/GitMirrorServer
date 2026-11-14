@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>리포지토리 미러링 관련 이벤트를 AlertCenter와 동기화합니다.</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>푸터에 표시되는 브랜드 이름</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>AlertCenter의 HTTP(S) 기본 URL입니다.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>중국 대륙 사용자를 위한 ICP 라이선스 번호. 비워두면 숨깁니다.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>푸터에 표시되는 브랜드 이름</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>자동 미러 작업 사이의 간격(분 단위).</value>

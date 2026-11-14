@@ -21,11 +21,11 @@
       <data name="Back to History" xml:space="preserve">
     <value>Quay lại Lịch sử</value>
   </data>
-  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
-    <value>Sao chép thất bại. Hãy chọn văn bản nhật ký và sao chép thủ công.</value>
-  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Sao chép nhật ký</value>
+  </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Sao chép thất bại. Hãy chọn văn bản nhật ký và sao chép thủ công.</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Lỗi</value>

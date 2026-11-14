@@ -21,11 +21,11 @@
       <data name="Back to History" xml:space="preserve">
     <value>履歴へ戻る</value>
   </data>
-  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
-    <value>コピーに失敗しました。ログのテキストを選択して、手動でコピーしてください。</value>
-  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>ログをコピー</value>
+  </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>コピーに失敗しました。ログのテキストを選択して、手動でコピーしてください。</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>エラー</value>

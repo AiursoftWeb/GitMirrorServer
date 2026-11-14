@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>Συγχρονισμός συμβάντων ολόκληρων αποθετηρίων με το AlertCenter.</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>Το όνομα της εταιρείας που εμφανίζεται στον ποδόσκαλο.</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>Ο βασικός URL HTTP(S) του AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Ο αριθμός άδειας ICP για χρήστες της κυρίως Κίνας. Αφήστε κενό για να κρυφτεί.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>Το όνομα της εταιρείας που εμφανίζεται στον ποδόσκαλο.</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Ο χρονικός διάστημα σε λεπτά μεταξύ των αυτόματων εργασιών αντικατοπτρισμού.</value>

@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>Depo yansıtma olaylarını AlertCenter ile senkronize edin.</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>Footer&apos;da gösterilen marka adı.</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>AlertCenter&apos;ın HTTP(S) taban URL&apos;si.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Çin ana karasında kullanıcılar için ICP lisans numarası. Gizlemek için boş bırakın.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>Footer&apos;da gösterilen marka adı.</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Otomatik aynalama işlerinin dakikalar cinsinden aralığı.</value>

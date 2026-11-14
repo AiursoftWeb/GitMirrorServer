@@ -39,11 +39,11 @@
   <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
     <value>प्लेटफॉर्म के बीच अपने रिपॉजिटरी को सिंक करे रखने के लिए एक शक्तिशाली टूल।</value>
   </data>
-  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
-    <value>Aiursoft टेम्पलेट के साथ और अधिक हासिल करें</value>
-  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>AI-संचालित अनुवाद</value>
+  </data>
+  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
+    <value>Aiursoft टेम्पलेट के साथ और अधिक हासिल करें</value>
   </data>
   <data name="Aiursoft Template is our definitive choice for enterprise projects! It&apos;s built for developers and is lightweight yet powerful. We can skip all the boilerplate for authentication and user management." xml:space="preserve">
     <value>Aiursoft Template उद्यम परियोजनाओं के लिए हमारा सर्वोत्तम विकल्प है! यह डेवलपर्स के लिए बनाया गया है और हल्का होने के साथ-साथ शक्तिशाली भी है। हम प्रमाणीकरण और उपयोगकर्ता प्रबंधन के लिए सभी बॉयलरप्लेट को छोड़ सकते हैं।</value>
@@ -138,9 +138,6 @@
   <data name="FAQ" xml:space="preserve">
     <value>अक्सर पूछे जाने वाले प्रश्न</value>
   </data>
-  <data name="faster" xml:space="preserve">
-    <value>तेज़</value>
-  </data>
   <data name="Features" xml:space="preserve">
     <value>विशेषताएँ</value>
   </data>
@@ -152,9 +149,6 @@
   </data>
   <data name="Flexible Configuration" xml:space="preserve">
     <value>लचीला कॉन्फ़िगरेशन</value>
-  </data>
-  <data name="for any inquiries or to report issues." xml:space="preserve">
-    <value>किसी भी जानकारी के लिए या समस्याओं की रिपोर्ट करने के लिए।</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>मुफ़्त</value>
@@ -204,6 +198,9 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>हमारे समुदाय से जुड़ें और आज ही निर्माण शुरू करें!</value>
   </data>
+  <data name="MIT Licence" xml:space="preserve">
+    <value>एमआईटी लाइसेंस</value>
+  </data>
   <data name="Made Simple" xml:space="preserve">
     <value>सरल बनाया गया</value>
   </data>
@@ -218,9 +215,6 @@
   </data>
   <data name="Mirroring" xml:space="preserve">
     <value>मिररिंग</value>
-  </data>
-  <data name="MIT Licence" xml:space="preserve">
-    <value>एमआईटी लाइसेंस</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>मॉडल्स को डेटा एनोटेशन्स के आधार पर क्लाइंट और सर्वर दोनों तरफ मान्यता दी जाती है।</value>
@@ -350,6 +344,12 @@
   </data>
   <data name="You&apos;ll need the .NET 10 SDK, npm and your favorite IDE, like Visual Studio or JetBrains Rider. You can find the full setup guide in our documentation." xml:space="preserve">
     <value>आपको .NET 10 SDK, npm और अपना पसंदीदा IDE, जैसे Visual Studio या JetBrains Rider की आवश्यकता होगी। आप हमारे दस्तावेज़ीकरण में पूर्ण सेटअप गाइड पा सकते हैं।</value>
+  </data>
+  <data name="faster" xml:space="preserve">
+    <value>तेज़</value>
+  </data>
+  <data name="for any inquiries or to report issues." xml:space="preserve">
+    <value>किसी भी जानकारी के लिए या समस्याओं की रिपोर्ट करने के लिए।</value>
   </data>
 
 </root>
