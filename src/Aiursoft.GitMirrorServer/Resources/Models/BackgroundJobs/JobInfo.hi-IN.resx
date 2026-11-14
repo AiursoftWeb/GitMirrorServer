@@ -24,11 +24,11 @@
   <data name="Error message" xml:space="preserve">
     <value>त्रुटि संदेश</value>
   </data>
-  <data name="Job action" xml:space="preserve">
-    <value>कार्य क्रिया</value>
-  </data>
   <data name="Job ID" xml:space="preserve">
     <value>कार्य पहचान</value>
+  </data>
+  <data name="Job action" xml:space="preserve">
+    <value>कार्य क्रिया</value>
   </data>
   <data name="Job name" xml:space="preserve">
     <value>कार्य नाम</value>

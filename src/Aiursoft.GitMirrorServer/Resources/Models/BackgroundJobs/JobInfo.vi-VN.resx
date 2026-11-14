@@ -24,11 +24,11 @@
   <data name="Error message" xml:space="preserve">
     <value>Thông báo lỗi</value>
   </data>
-  <data name="Job action" xml:space="preserve">
-    <value>Hành động công việc</value>
-  </data>
   <data name="Job ID" xml:space="preserve">
     <value>ID công việc</value>
+  </data>
+  <data name="Job action" xml:space="preserve">
+    <value>Hành động công việc</value>
   </data>
   <data name="Job name" xml:space="preserve">
     <value>Tên công việc</value>

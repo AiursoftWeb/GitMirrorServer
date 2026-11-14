@@ -24,11 +24,11 @@
   <data name="Error message" xml:space="preserve">
     <value>Hata mesajı</value>
   </data>
-  <data name="Job action" xml:space="preserve">
-    <value>İşlem eylemi</value>
-  </data>
   <data name="Job ID" xml:space="preserve">
     <value>İş Kimliği</value>
+  </data>
+  <data name="Job action" xml:space="preserve">
+    <value>İşlem eylemi</value>
   </data>
   <data name="Job name" xml:space="preserve">
     <value>İş adı</value>

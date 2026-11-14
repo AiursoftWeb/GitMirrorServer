@@ -24,11 +24,11 @@
   <data name="Error message" xml:space="preserve">
     <value>錯誤訊息</value>
   </data>
-  <data name="Job action" xml:space="preserve">
-    <value>工作動作</value>
-  </data>
   <data name="Job ID" xml:space="preserve">
     <value>工作編號</value>
+  </data>
+  <data name="Job action" xml:space="preserve">
+    <value>工作動作</value>
   </data>
   <data name="Job name" xml:space="preserve">
     <value>工作名稱</value>

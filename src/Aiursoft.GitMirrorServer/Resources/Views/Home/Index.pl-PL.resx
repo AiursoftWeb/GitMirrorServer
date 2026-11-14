@@ -39,11 +39,11 @@
   <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
     <value>Mocny narzędzie do synchronizowania Twoich repozytoriów na różnych platformach.</value>
   </data>
-  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
-    <value>Osiągaj więcej z Aiursoft Template</value>
-  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>Tłumaczenia Wspomagane Sztuczną Inteligencją</value>
+  </data>
+  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
+    <value>Osiągaj więcej z Aiursoft Template</value>
   </data>
   <data name="Aiursoft Template is our definitive choice for enterprise projects! It&apos;s built for developers and is lightweight yet powerful. We can skip all the boilerplate for authentication and user management." xml:space="preserve">
     <value>Szablon Aiursoft to nasz ostateczny wybór dla projektów korporacyjnych! Jest stworzony z myślą o programistach, lekki, a jednocześnie potężny. Pozwala pominąć cały standardowy kod związany z uwierzytelnianiem i zarządzaniem użytkownikami.</value>
@@ -138,9 +138,6 @@
   <data name="FAQ" xml:space="preserve">
     <value>Najczęściej zadawane pytania</value>
   </data>
-  <data name="faster" xml:space="preserve">
-    <value>szybciej</value>
-  </data>
   <data name="Features" xml:space="preserve">
     <value>Funkcje</value>
   </data>
@@ -152,9 +149,6 @@
   </data>
   <data name="Flexible Configuration" xml:space="preserve">
     <value>Elastyczna konfiguracja</value>
-  </data>
-  <data name="for any inquiries or to report issues." xml:space="preserve">
-    <value>w przypadku jakichkolwiek pytań lub zgłaszania problemów.</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Bezpłatne</value>
@@ -204,6 +198,9 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>Dołącz do naszej społeczności i zacznij budować już dziś!</value>
   </data>
+  <data name="MIT Licence" xml:space="preserve">
+    <value>Licencja MIT</value>
+  </data>
   <data name="Made Simple" xml:space="preserve">
     <value>Stworzone prosto</value>
   </data>
@@ -218,9 +215,6 @@
   </data>
   <data name="Mirroring" xml:space="preserve">
     <value>Odbijanie</value>
-  </data>
-  <data name="MIT Licence" xml:space="preserve">
-    <value>Licencja MIT</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Modele są weryfikowane po stronie klienta i serwera na podstawie adnotacji danych.</value>
@@ -350,6 +344,12 @@
   </data>
   <data name="You&apos;ll need the .NET 10 SDK, npm and your favorite IDE, like Visual Studio or JetBrains Rider. You can find the full setup guide in our documentation." xml:space="preserve">
     <value>Będziesz potrzebować .NET 10 SDK, npm oraz ulubionego środowiska IDE, takiego jak Visual Studio lub JetBrains Rider. Pełny przewodnik konfiguracji znajdziesz w naszej dokumentacji.</value>
+  </data>
+  <data name="faster" xml:space="preserve">
+    <value>szybciej</value>
+  </data>
+  <data name="for any inquiries or to report issues." xml:space="preserve">
+    <value>w przypadku jakichkolwiek pytań lub zgłaszania problemów.</value>
   </data>
 
 </root>

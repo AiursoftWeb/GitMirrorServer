@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>將儲存庫鏡像事件同步至 AlertCenter。</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>頁尾顯示的品牌名稱</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>AlertCenter 的 HTTP(S) 基礎 URL。</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>適用於中國大陸使用者的 ICP 備案號碼。留空則隱藏。</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>頁尾顯示的品牌名稱</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>自動鏡像作業之間的間隔（分鐘）。</value>

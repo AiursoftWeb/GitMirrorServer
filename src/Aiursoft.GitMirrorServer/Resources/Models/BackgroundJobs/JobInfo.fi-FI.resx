@@ -24,11 +24,11 @@
   <data name="Error message" xml:space="preserve">
     <value>Virheviesti</value>
   </data>
-  <data name="Job action" xml:space="preserve">
-    <value>Tehtävän toiminto</value>
-  </data>
   <data name="Job ID" xml:space="preserve">
     <value>Tehtävän tunnus</value>
+  </data>
+  <data name="Job action" xml:space="preserve">
+    <value>Tehtävän toiminto</value>
   </data>
   <data name="Job name" xml:space="preserve">
     <value>Tehtävän nimi</value>

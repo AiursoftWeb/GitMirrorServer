@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>Sincronizar os incidentes dos repositórios espelhados com o AlertCenter.</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>O nome da marca exibido no rodapé.</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>O URL base HTTP(S) do AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>O número de licença ICP para utilizadores da China continental. Deixe em branco para ocultar.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>O nome da marca exibido no rodapé.</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>O intervalo em minutos entre os trabalhos automáticos de espelhamento.</value>

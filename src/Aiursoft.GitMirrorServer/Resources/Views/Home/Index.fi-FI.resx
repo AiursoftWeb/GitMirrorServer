@@ -39,11 +39,11 @@
   <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
     <value>Voimakas työkalu, joka pitää varmuuskopiointiasi synkronoituina eri alustoilla.</value>
   </data>
-  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
-    <value>Saavuta enemmän Aiursoft Templatella</value>
-  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>Tehokäännökset tekoälyllä</value>
+  </data>
+  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
+    <value>Saavuta enemmän Aiursoft Templatella</value>
   </data>
   <data name="Aiursoft Template is our definitive choice for enterprise projects! It&apos;s built for developers and is lightweight yet powerful. We can skip all the boilerplate for authentication and user management." xml:space="preserve">
     <value>Aiursoft Template on ratkaiseva valintamme yritysprojekteihin! Se on rakennettu kehittäjille ja on kevyt mutta tehokas. Voimme ohittaa kaiken valmiin koodin todennukseen ja käyttäjien hallintaan.</value>
@@ -138,9 +138,6 @@
   <data name="FAQ" xml:space="preserve">
     <value>UKK</value>
   </data>
-  <data name="faster" xml:space="preserve">
-    <value>nopeammin</value>
-  </data>
   <data name="Features" xml:space="preserve">
     <value>Ominaisuudet</value>
   </data>
@@ -152,9 +149,6 @@
   </data>
   <data name="Flexible Configuration" xml:space="preserve">
     <value>Mukautettu määritys</value>
-  </data>
-  <data name="for any inquiries or to report issues." xml:space="preserve">
-    <value>kaikkiin kyselyihin tai ongelmien ilmoittamiseen.</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Ilmainen</value>
@@ -204,6 +198,9 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>Liity yhteisöömme ja aloita rakentaminen tänään!</value>
   </data>
+  <data name="MIT Licence" xml:space="preserve">
+    <value>MIT-lisenssi</value>
+  </data>
   <data name="Made Simple" xml:space="preserve">
     <value>Tehty yksinkertaiseksi</value>
   </data>
@@ -218,9 +215,6 @@
   </data>
   <data name="Mirroring" xml:space="preserve">
     <value>Peilaus</value>
-  </data>
-  <data name="MIT Licence" xml:space="preserve">
-    <value>MIT-lisenssi</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>Mallit tarkistetaan molemmilla puolilla, asiakas- ja palvelinpuolella, tietojen annotaatioiden perusteella.</value>
@@ -350,6 +344,12 @@
   </data>
   <data name="You&apos;ll need the .NET 10 SDK, npm and your favorite IDE, like Visual Studio or JetBrains Rider. You can find the full setup guide in our documentation." xml:space="preserve">
     <value>Tarvitset .NET 10 SDK:n, npm:n ja suosikki-IDE:si, kuten Visual Studion tai JetBrains Riderin. Löydät täydellisen asennusoppaan dokumentaatiostamme.</value>
+  </data>
+  <data name="faster" xml:space="preserve">
+    <value>nopeammin</value>
+  </data>
+  <data name="for any inquiries or to report issues." xml:space="preserve">
+    <value>kaikkiin kyselyihin tai ongelmien ilmoittamiseen.</value>
   </data>
 
 </root>

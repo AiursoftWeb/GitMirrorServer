@@ -24,11 +24,11 @@
   <data name="Error message" xml:space="preserve">
     <value>Komunikat błędu</value>
   </data>
-  <data name="Job action" xml:space="preserve">
-    <value>Akcja zadania</value>
-  </data>
   <data name="Job ID" xml:space="preserve">
     <value>ID zadania</value>
+  </data>
+  <data name="Job action" xml:space="preserve">
+    <value>Akcja zadania</value>
   </data>
   <data name="Job name" xml:space="preserve">
     <value>Nazwa zadania</value>

@@ -21,11 +21,11 @@
       <data name="Back to History" xml:space="preserve">
     <value>Επιστροφή στο Ιστορικό</value>
   </data>
-  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
-    <value>Η αντιγραφή απέτυχε. Επιλέξτε το κείμενο του καταλόγου και αντιγράψτε το χειροκίνητα.</value>
-  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Αντιγραφή Καταγραφής</value>
+  </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Η αντιγραφή απέτυχε. Επιλέξτε το κείμενο του καταλόγου και αντιγράψτε το χειροκίνητα.</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Σφάλμα</value>

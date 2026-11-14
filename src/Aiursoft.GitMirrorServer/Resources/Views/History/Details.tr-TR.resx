@@ -21,11 +21,11 @@
       <data name="Back to History" xml:space="preserve">
     <value>Geçmişe Dön</value>
   </data>
-  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
-    <value>Kopyalama başarısız oldu. Günlük metnini seçin ve manuel olarak kopyalayın.</value>
-  </data>
   <data name="Copy Log" xml:space="preserve">
     <value>Günlüğü Kopyala</value>
+  </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Kopyalama başarısız oldu. Günlük metnini seçin ve manuel olarak kopyalayın.</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Hata</value>

@@ -39,11 +39,11 @@
   <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
     <value>プラットフォーム間でリポジトリを同期し続けるための強力なツール</value>
   </data>
-  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
-    <value>Aiursoft Templateでさらに多くのことを実現</value>
-  </data>
   <data name="AI-Powered Translations" xml:space="preserve">
     <value>AIによる翻訳</value>
+  </data>
+  <data name="Achieve more with Aiursoft Template" xml:space="preserve">
+    <value>Aiursoft Templateでさらに多くのことを実現</value>
   </data>
   <data name="Aiursoft Template is our definitive choice for enterprise projects! It&apos;s built for developers and is lightweight yet powerful. We can skip all the boilerplate for authentication and user management." xml:space="preserve">
     <value>Aiursoft Templateは、エンタープライズプロジェクトにおける私たちの確固たる選択です！開発者のために構築されており、軽量でありながら強力です。認証やユーザー管理に関する定型コードをすべて省略できます。</value>
@@ -138,9 +138,6 @@
   <data name="FAQ" xml:space="preserve">
     <value>よくある質問</value>
   </data>
-  <data name="faster" xml:space="preserve">
-    <value>より迅速に</value>
-  </data>
   <data name="Features" xml:space="preserve">
     <value>機能</value>
   </data>
@@ -152,9 +149,6 @@
   </data>
   <data name="Flexible Configuration" xml:space="preserve">
     <value>柔軟な設定</value>
-  </data>
-  <data name="for any inquiries or to report issues." xml:space="preserve">
-    <value>お問い合わせや問題の報告はこちらへ。</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>無料</value>
@@ -204,6 +198,9 @@
   <data name="Join our community and start building today!" xml:space="preserve">
     <value>コミュニティに参加して、今すぐ構築を始めましょう！</value>
   </data>
+  <data name="MIT Licence" xml:space="preserve">
+    <value>MITライセンス</value>
+  </data>
   <data name="Made Simple" xml:space="preserve">
     <value>シンプルに</value>
   </data>
@@ -218,9 +215,6 @@
   </data>
   <data name="Mirroring" xml:space="preserve">
     <value>ミラーリング</value>
-  </data>
-  <data name="MIT Licence" xml:space="preserve">
-    <value>MITライセンス</value>
   </data>
   <data name="Models are validated on both client and server sides based on data annotations." xml:space="preserve">
     <value>モデルはデータ注釈に基づいて、クライアントおよびサーバーの両方で検証されます。</value>
@@ -350,6 +344,12 @@
   </data>
   <data name="You&apos;ll need the .NET 10 SDK, npm and your favorite IDE, like Visual Studio or JetBrains Rider. You can find the full setup guide in our documentation." xml:space="preserve">
     <value>.NET 10 SDK、npm、そしてVisual StudioやJetBrains Riderのようなお好みのIDEが必要です。完全なセットアップガイドはドキュメントでご覧いただけます。</value>
+  </data>
+  <data name="faster" xml:space="preserve">
+    <value>より迅速に</value>
+  </data>
+  <data name="for any inquiries or to report issues." xml:space="preserve">
+    <value>お問い合わせや問題の報告はこちらへ。</value>
   </data>
 
 </root>

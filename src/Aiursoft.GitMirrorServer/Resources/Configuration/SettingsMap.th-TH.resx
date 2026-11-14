@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>ซิงโครไนซ์เหตุขัดข้องของมิเรอร์ที่เก็บโค้ดกับ AlertCenter</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>ชื่อแบรนด์ที่แสดงไว้ในส่วนท้ายหน้า</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>URL พื้นฐาน HTTP(S) ของ AlertCenter</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>หมายเลขใบอนุญาต ICP สำหรับผู้ใช้ในแผ่นดินใหญ่จีน ปล่อยว่างไว้เพื่อซ่อน</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>ชื่อแบรนด์ที่แสดงไว้ในส่วนท้ายหน้า</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>ช่วงเวลาเป็นนาทีระหว่างงานซ้ำอัตโนมัติ</value>

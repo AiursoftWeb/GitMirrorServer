@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>Sinkronkan insiden pencerminan repositori dengan AlertCenter.</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>Nama merek yang ditampilkan di bagian footer.</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>URL dasar HTTP(S) AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Nomor izin ICP untuk pengguna daratan Tiongkok. Biarkan kosong untuk menyembunyikan.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>Nama merek yang ditampilkan di bagian footer.</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Jeda dalam menit antara pekerjaan cermin otomatis.</value>

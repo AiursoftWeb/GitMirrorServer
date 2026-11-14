@@ -84,14 +84,14 @@
   <data name="Synchronize repository mirror incidents with AlertCenter." xml:space="preserve">
     <value>Đồng bộ hóa các sự cố của máy nhân bản kho mã với AlertCenter.</value>
   </data>
-  <data name="The brand name displayed in the footer." xml:space="preserve">
-    <value>Tên thương hiệu được hiển thị trong chân trang.</value>
-  </data>
   <data name="The HTTP(S) base URL of AlertCenter." xml:space="preserve">
     <value>URL gốc HTTP(S) của AlertCenter.</value>
   </data>
   <data name="The ICP license number for China mainland users. Leave empty to hide." xml:space="preserve">
     <value>Số giấy phép ICP cho người dùng tại Trung Quốc đại lục. Để trống để ẩn.</value>
+  </data>
+  <data name="The brand name displayed in the footer." xml:space="preserve">
+    <value>Tên thương hiệu được hiển thị trong chân trang.</value>
   </data>
   <data name="The interval in minutes between automatic mirror jobs." xml:space="preserve">
     <value>Khoảng cách thời gian tính bằng phút giữa các công việc sao chép tự động.</value>
