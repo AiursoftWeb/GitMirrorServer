@@ -83,6 +83,65 @@ public class MirrorMonitoringIntegrationTests : TestBase
     }
 
     [TestMethod]
+    public async Task RetiredRepositoryStopsReporting_WithoutChangingAnotherRoute()
+    {
+        var (service, monitor, client, _) = await Setup();
+        var primaryRoute = CreateConfiguration();
+        var otherRoute = CreateConfiguration();
+        for (var i = 0; i < 9; i++)
+        {
+            monitor.Observe(primaryRoute, Result(name: "raillive"), DateTimeOffset.UtcNow);
+            monitor.Observe(otherRoute, Result(name: "raillive"), DateTimeOffset.UtcNow);
+        }
+        await service.ExecuteAsync();
+        var original = client.All.Single(item =>
+            item.Metadata.Value<string>("configurationId") == primaryRoute.Id.ToString());
+        Assert.AreEqual("sev2", original.Level);
+
+        await monitor.RecordInventoryAsync(primaryRoute.Id, ["another-repository"]);
+        await service.ExecuteAsync();
+        Assert.AreEqual("mitigated", original.Status);
+        Assert.AreEqual("new", client.All.Single(item => item != original).Status);
+        Assert.AreEqual(otherRoute.Id, monitor.Snapshot().Single().ConfigurationId);
+
+        original.Status = "resolved";
+        await service.ExecuteAsync();
+        Assert.AreEqual(2, client.CreateCalls);
+        monitor.Observe(primaryRoute, Result(name: "raillive"), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+        Assert.AreEqual("sev4", client.All.Last().Level);
+    }
+
+    [TestMethod]
+    public async Task CompleteSourceListingAfterRestart_RetiresOldIncidentAndRetriesOnFailure()
+    {
+        var (service, monitor, client, settings) = await Setup();
+        var route = CreateConfiguration();
+        for (var i = 0; i < 9; i++)
+            monitor.Observe(route, Result(name: "raillive"), DateTimeOffset.UtcNow);
+        await service.ExecuteAsync();
+
+        var restarted = new MirrorMonitor();
+        var afterRestart = new MirrorMonitoringService(restarted, new MirrorMonitoringSettings(settings), client,
+            NullLogger<MirrorMonitoringService>.Instance);
+        await afterRestart.ExecuteAsync();
+        Assert.AreEqual("new", client.All.Single().Status);
+
+        await restarted.RecordInventoryAsync(route.Id, []);
+        client.FailMitigate = true;
+        await afterRestart.ExecuteAsync();
+        Assert.AreEqual("new", client.All.Single().Status);
+
+        client.FailMitigate = false;
+        await afterRestart.ExecuteAsync();
+        Assert.AreEqual("mitigated", client.All.Single().Status);
+        Assert.AreEqual(1, client.CreateCalls);
+        var queries = client.Queries;
+        await afterRestart.ExecuteAsync();
+        Assert.AreEqual(queries, client.Queries);
+    }
+
+    [TestMethod]
     public async Task LostCreateResponse_ReconcilesReceiptBeforeLaterManualClosure()
     {
         var (service, monitor, client, _) = await Setup();

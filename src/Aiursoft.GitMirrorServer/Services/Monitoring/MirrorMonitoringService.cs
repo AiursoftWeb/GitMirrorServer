@@ -22,17 +22,22 @@ public sealed class MirrorMonitoringService(MirrorMonitor monitor, MirrorMonitor
             config.Validate();
             client.Configure(config);
             var snapshots = monitor.Snapshot();
-            if (!snapshots.Any(state => state.PendingRecovery != null || config.Rules.Any(rule =>
+            var inventories = monitor.PendingInventories();
+            if ((!config.AutoMitigate || inventories.Count == 0) &&
+                !snapshots.Any(state => state.PendingRecovery != null || config.Rules.Any(rule =>
                     rule.IsEnabled && state.Failures >= rule.FailureCount))) return;
-            // Complete all pages before the first write. Unknown repositories are never treated as recovered.
+            // Complete all pages before the first write. Retirement requires a confirmed source listing.
             var incidents = await LoadIncidentsAsync();
-            var owned = incidents.Where(item => item.Metadata.Value<string>("source") == Source)
-                .ToLookup(item => item.Metadata.Value<string>("repositoryKey"));
+            var owned = incidents.Where(item => item.Metadata.Value<string>("source") == Source).ToList();
+            if (config.AutoMitigate)
+                await RecoverRetiredRepositoriesAsync(owned, inventories, config);
+
+            var byRepository = owned.ToLookup(item => item.Metadata.Value<string>("repositoryKey"));
             foreach (var snapshot in snapshots)
             {
                 try
                 {
-                    var unresolved = owned[snapshot.Key].OrderBy(item => item.ReceivedAtUtc).ThenBy(item => item.IncidentId).ToList();
+                    var unresolved = byRepository[snapshot.Key].OrderBy(item => item.ReceivedAtUtc).ThenBy(item => item.IncidentId).ToList();
                     var active = unresolved.Where(item => item.Status == "new").ToList();
                     if (active.Any(item => item.ReportId == snapshot.NextReportId))
                         monitor.AdvanceReceipt(snapshot.Key, snapshot.NextReportId);
@@ -79,6 +84,31 @@ public sealed class MirrorMonitoringService(MirrorMonitor monitor, MirrorMonitor
         }
         catch (Exception) { logger.LogError("Mirror monitoring pass failed; retained state for retry. Check connection settings and API key scopes."); }
         finally { monitor.SyncGate.Release(); }
+    }
+
+    private async Task RecoverRetiredRepositoriesAsync(List<IncidentDetails> incidents,
+        Dictionary<Guid, IReadOnlySet<string>> inventories, MonitoringConfiguration config)
+    {
+        var byConfiguration = incidents.ToLookup(incident =>
+            Guid.TryParse(incident.Metadata.Value<string>("configurationId"), out var id) ? id : (Guid?)null);
+        foreach (var (configurationId, repositories) in inventories)
+        {
+            try
+            {
+                foreach (var incident in byConfiguration[configurationId])
+                {
+                    var repository = incident.Metadata.Value<string>("repository");
+                    if (!string.IsNullOrEmpty(repository) && !repositories.Contains(repository))
+                        await RecoverAsync(incident, config,
+                            "The repository is no longer included in this mirror configuration, confirmed by a complete source listing.");
+                }
+                monitor.ConfirmInventory(configurationId);
+            }
+            catch (Exception)
+            {
+                logger.LogError("Unable to recover retired repositories for configuration {ConfigurationId}; will retry", configurationId);
+            }
+        }
     }
 
     private async Task RecoverAsync(IncidentDetails incident, MonitoringConfiguration config, string reason)

@@ -53,7 +53,8 @@ public class GitHubService : IGitService
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
             var batch = JsonSerializer.Deserialize<List<GitHubRepo>>(content,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<GitHubRepo>();
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                ?? throw new JsonException("The GitHub repository list was null.");
             repos.AddRange(batch);
             if (batch.Count < 100)
             {
