@@ -74,6 +74,8 @@ public class MirrorService(
                             _ => false
                         })
                         .ToList();
+
+                    await monitor.RecordInventoryAsync(config.Id, repos.Select(repo => repo.Name));
                     
                     logger.LogInformation("Found {count} repositories to mirror", repos.Count());
                     jobExecution.TotalCount += repos.Count;

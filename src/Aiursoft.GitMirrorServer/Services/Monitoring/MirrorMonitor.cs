@@ -8,8 +8,39 @@ public sealed class MirrorMonitor
 {
     private readonly object _gate = new();
     private readonly Dictionary<string, MirrorSnapshot> _states = new(StringComparer.Ordinal);
+    private readonly Dictionary<Guid, IReadOnlySet<string>> _pendingInventories = new();
     public SemaphoreSlim MirrorGate { get; } = new(1, 1);
     public SemaphoreSlim SyncGate { get; } = new(1, 1);
+
+    public async Task RecordInventoryAsync(Guid configurationId, IEnumerable<string> repositories)
+    {
+        var names = repositories.ToHashSet(StringComparer.Ordinal);
+        // Wait out an incident update based on the previous inventory before retiring a source.
+        await SyncGate.WaitAsync();
+        try
+        {
+            lock (_gate)
+            {
+                var retired = _states.Values
+                    .Where(state => state.ConfigurationId == configurationId && !names.Contains(state.Repository))
+                    .Select(state => state.Key)
+                    .ToList();
+                foreach (var key in retired) _states.Remove(key);
+                _pendingInventories[configurationId] = names;
+            }
+        }
+        finally { SyncGate.Release(); }
+    }
+
+    internal Dictionary<Guid, IReadOnlySet<string>> PendingInventories()
+    {
+        lock (_gate) return new(_pendingInventories);
+    }
+
+    internal void ConfirmInventory(Guid configurationId)
+    {
+        lock (_gate) _pendingInventories.Remove(configurationId);
+    }
 
     public void Observe(MirrorConfiguration config, MirrorRepoExecution result, DateTimeOffset observedAt)
     {

@@ -50,7 +50,8 @@ public class GitLabService : IGitService
             response.EnsureSuccessStatusCode();
             var content = await response.Content.ReadAsStringAsync();
             repos.AddRange(JsonSerializer.Deserialize<List<GitLabRepo>>(content,
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new List<GitLabRepo>());
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
+                ?? throw new JsonException("The GitLab project list was null."));
             nextPage = response.Headers.TryGetValues("X-Next-Page", out var pages)
                 ? pages.SingleOrDefault()
                 : null;
@@ -59,7 +60,7 @@ public class GitLabService : IGitService
         // Private repositories require an explicit selection, even when the token can read them.
         return repos.Where(r => (r.Visibility is "public" or "internal" ||
                                 (includePrivate && r.Visibility == "private")) &&
-                               (includeArchived || !r.Archived)).Select(r => new GitRepository
+                               (includeArchived || !r.Archived) && !r.IsPendingDeletion).Select(r => new GitRepository
         {
             Name = r.Path,
             Description = r.Description ?? string.Empty,

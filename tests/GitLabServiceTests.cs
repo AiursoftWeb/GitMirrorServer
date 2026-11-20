@@ -1,5 +1,6 @@
 using System.Net;
 using System.Text;
+using System.Text.Json;
 using Aiursoft.GitMirrorServer.Services;
 
 namespace Aiursoft.GitMirrorServer.Tests;
@@ -10,6 +11,44 @@ public class GitLabServiceTests
     private const string Projects = """
         [{"name":"Video Float","path":"Video-float","description":"Demo","visibility":"public","archived":false}]
         """;
+
+    [TestMethod]
+    public async Task GetRepositoriesAsync_SkipsPendingDeletionEvenWhenArchivedMirrorsAreEnabled()
+    {
+        var handler = new StubHandler(_ => new HttpResponseMessage(HttpStatusCode.OK)
+        {
+            Content = new StringContent("""
+                [{"id":643,"path":"raillive-deletion_scheduled-643","visibility":"internal"},
+                 {"id":644,"path":"marked","visibility":"internal","marked_for_deletion_on":"2026-11-20"},
+                 {"id":645,"path":"also-marked","visibility":"internal","marked_for_deletion_at":"2026-11-20"},
+                 {"id":646,"path":"docs-deletion_scheduled-999","visibility":"public","archived":true},
+                 {"id":647,"path":"active","visibility":"public","marked_for_deletion_at":null}]
+                """, Encoding.UTF8, "application/json")
+        });
+        var service = new GitLabService("https://gitlab.example.com", "source-token", handler);
+
+        var repositories = await service.GetRepositoriesAsync("Anduin", false, includeArchived: true);
+
+        CollectionAssert.AreEqual(new[] { "docs-deletion_scheduled-999", "active" },
+            repositories.Select(repo => repo.Name).ToArray());
+    }
+
+    [TestMethod]
+    public async Task GetRepositoriesAsync_RejectsNullOnLaterPage()
+    {
+        var handler = new StubHandler(request =>
+        {
+            var secondPage = request.RequestUri!.Query.Contains("&page=2", StringComparison.Ordinal);
+            var response = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new StringContent(secondPage ? "null" : Projects, Encoding.UTF8, "application/json")
+            };
+            if (!secondPage) response.Headers.Add("X-Next-Page", "2");
+            return response;
+        });
+        var service = new GitLabService("https://gitlab.example.com", "source-token", handler);
+        await Assert.ThrowsExactlyAsync<JsonException>(() => service.GetRepositoriesAsync("Anduin", false));
+    }
 
     [TestMethod]
     [DataRow(true)]
