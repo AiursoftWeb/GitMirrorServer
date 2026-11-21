@@ -7,7 +7,6 @@ using Aiursoft.GitMirrorServer.InMemory;
 using Aiursoft.GitMirrorServer.MySql;
 using Aiursoft.GitMirrorServer.Services.Authentication;
 using Aiursoft.GitMirrorServer.Sqlite;
-using Aiursoft.UiStack;
 using Aiursoft.UiStack.Layout;
 using Aiursoft.UiStack.Navigation;
 using Microsoft.AspNetCore.Mvc.Razor;
