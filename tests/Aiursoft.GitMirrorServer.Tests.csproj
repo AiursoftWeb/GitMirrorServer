@@ -21,4 +21,8 @@
   <ItemGroup>
     <ProjectReference Include="..\src\Aiursoft.GitMirrorServer\Aiursoft.GitMirrorServer.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="../src/Aiursoft.GitMirrorServer/wwwroot/scripts/uploader.js" TargetPath="wwwroot/scripts/uploader.js" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../src/Aiursoft.GitMirrorServer/wwwroot/styles/uploader.css" TargetPath="wwwroot/styles/uploader.css" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>
