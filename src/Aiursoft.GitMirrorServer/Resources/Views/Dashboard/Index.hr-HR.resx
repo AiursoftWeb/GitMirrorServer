@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="App Uptime" xml:space="preserve">
+    <value>Radno vrijeme aplikacije</value>
+  </data>
+  <data name="Configured repositories" xml:space="preserve">
+    <value>Konfigurirani repozitoriji</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Nadzorna ploča</value>
+  </data>
+  <data name="Last Run Duration" xml:space="preserve">
+    <value>Trajanje zadnjeg pokretanja</value>
+  </data>
+  <data name="Last Run Failures" xml:space="preserve">
+    <value>Neuspjeh zadnjeg pokretanja</value>
+  </data>
+  <data name="Last Run Success" xml:space="preserve">
+    <value>Uspjeh zadnjeg pokretanja</value>
+  </data>
+  <data name="Last Run Time" xml:space="preserve">
+    <value>Vrijeme zadnjeg pokretanja</value>
+  </data>
+  <data name="Lifetime job runs" xml:space="preserve">
+    <value>Ukupno pokretanja poslova</value>
+  </data>
+  <data name="Manage Mirrors" xml:space="preserve">
+    <value>Upravljanje ogledalima</value>
+  </data>
+  <data name="Never" xml:space="preserve">
+    <value>Nikad</value>
+  </data>
+  <data name="Quick Actions" xml:space="preserve">
+    <value>Brze radnje</value>
+  </data>
+  <data name="Repos failed to sync" xml:space="preserve">
+    <value>Repozitoriji nisu uspjeli sinkronizirati</value>
+  </data>
+  <data name="Repos synced successfully" xml:space="preserve">
+    <value>Repozitoriji uspješno sinhronizirani</value>
+  </data>
+  <data name="System Status" xml:space="preserve">
+    <value>Status sustava</value>
+  </data>
+  <data name="Total Executions" xml:space="preserve">
+    <value>Ukupna izvršenja</value>
+  </data>
+  <data name="Total Mirrors" xml:space="preserve">
+    <value>Ukupno zrcala</value>
+  </data>
+  <data name="View History" xml:space="preserve">
+    <value>Prikaži povijest</value>
+  </data>
+
+</root>
