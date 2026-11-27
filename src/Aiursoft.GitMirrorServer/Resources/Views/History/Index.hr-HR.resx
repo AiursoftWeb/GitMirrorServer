@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Actions" xml:space="preserve">
+    <value>Akcije</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Trajanje</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Neuspješno</value>
+  </data>
+  <data name="First" xml:space="preserve">
+    <value>Prva</value>
+  </data>
+  <data name="In progress" xml:space="preserve">
+    <value>U tijeku</value>
+  </data>
+  <data name="Last" xml:space="preserve">
+    <value>Zadnja</value>
+  </data>
+  <data name="Mirror history" xml:space="preserve">
+    <value>Povijest zrcala</value>
+  </data>
+  <data name="Mirror history pages" xml:space="preserve">
+    <value>Stranice povijesti ogledala</value>
+  </data>
+  <data name="Mirror run requested. Results appear here when the run starts." xml:space="preserve">
+    <value>Zatraženo ogledalo. Rezultati će se ovdje pojaviti kada pokretanje počne.</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Dalje</value>
+  </data>
+  <data name="No mirror runs yet" xml:space="preserve">
+    <value>Još nema pokretanja ogledala</value>
+  </data>
+  <data name="Open a mirror run to inspect repository results and logs." xml:space="preserve">
+    <value>Otvorite izvođenje zrcala za pregled rezultata i dnevnika repozitorija.</value>
+  </data>
+  <data name="Page {0} of {1}" xml:space="preserve">
+    <value>Stranica {0} od {1}</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Prethodna</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Osvježi</value>
+  </data>
+  <data name="Results appear here after a scheduled or manual mirror run starts." xml:space="preserve">
+    <value>Rezultati se ovdje prikazuju nakon što započne planirano ili ručno pokretanje ogledala.</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>U tijeku</value>
+  </data>
+  <data name="Showing {0}–{1} of {2} runs" xml:space="preserve">
+    <value>Prikazano {0}–{1} od {2} pokretanja</value>
+  </data>
+  <data name="Started" xml:space="preserve">
+    <value>Pokrenuto</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Uspjelo</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Ukupno repozitorija</value>
+  </data>
+  <data name="View results" xml:space="preserve">
+    <value>Prikaži rezultate</value>
+  </data>
+
+</root>

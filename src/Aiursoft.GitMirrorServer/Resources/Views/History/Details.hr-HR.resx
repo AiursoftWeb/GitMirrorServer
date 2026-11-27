@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="Back to History" xml:space="preserve">
+    <value>Natrag na povijest</value>
+  </data>
+  <data name="Copy failed. Select the log text and copy it manually." xml:space="preserve">
+    <value>Kopiranje nije uspjelo. Odaberite tekst dnevnika i kopirajte ga ručno.</value>
+  </data>
+  <data name="Copy log" xml:space="preserve">
+    <value>Kopiraj dnevnik</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Greška</value>
+  </data>
+  <data name="Expand a repository to inspect its log. Failed results are expanded automatically." xml:space="preserve">
+    <value>Proširite repozitorij da biste pregledali njegov dnevnik. Neuspjeli rezultati se automatski proširuju.</value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+    <value>Neuspjelo</value>
+  </data>
+  <data name="Log" xml:space="preserve">
+    <value>Dnevnik</value>
+  </data>
+  <data name="Log copied." xml:space="preserve">
+    <value>Dnevnik kopiran.</value>
+  </data>
+  <data name="Mirror run results" xml:space="preserve">
+    <value>Rezultati pokretanja ogledala</value>
+  </data>
+  <data name="No repository results have been recorded for this run." xml:space="preserve">
+    <value>Za ovaj pokret nije zabilježen nijedan rezultat repozitorija.</value>
+  </data>
+  <data name="Repository results" xml:space="preserve">
+    <value>Rezultati repozitorija</value>
+  </data>
+  <data name="Run error" xml:space="preserve">
+    <value>Greška pokretanja</value>
+  </data>
+  <data name="Running" xml:space="preserve">
+    <value>U tijeku</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Izvor</value>
+  </data>
+  <data name="Started" xml:space="preserve">
+    <value>Započeto</value>
+  </data>
+  <data name="Succeeded" xml:space="preserve">
+    <value>Uspjelo</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Odredište</value>
+  </data>
+  <data name="This run is still in progress. Refresh to see the latest results." xml:space="preserve">
+    <value>Ovo izvođenje je još uvijek u tijeku. Osvježite stranicu za prikaz najnovijih rezultata.</value>
+  </data>
+  <data name="Total repositories" xml:space="preserve">
+    <value>Ukupno repozitorija</value>
+  </data>
+
+</root>
