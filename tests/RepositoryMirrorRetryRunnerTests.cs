@@ -227,7 +227,7 @@ public class RepositoryMirrorRetryRunnerTests
             _ => Task.CompletedTask);
 
         Assert.AreEqual(2, attempts);
-        CollectionAssert.AreEqual(new[] { (1, (Exception)syncError), (1, (Exception)cleanupError) }, errors);
+        CollectionAssert.AreEqual(new (int, Exception)[] { (1, syncError), (1, cleanupError) }, errors);
         Assert.AreEqual(1, state.Job.SuccessCount);
         Assert.AreEqual(0, state.Job.FailureCount);
         Assert.IsTrue(state.Repository.IsSuccess);
