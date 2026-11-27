@@ -177,6 +177,63 @@ public class RepositoryMirrorRetryRunnerTests
         Assert.IsNull(state.Job.ErrorMessage);
     }
 
+    [TestMethod]
+    public async Task CancellingAMirrorDuringRetryPreservesCompletedJobCounts()
+    {
+        var state = CreateState();
+        state.Job.SuccessCount = 2;
+        var attempts = 0;
+        var cleanups = 0;
+        var delays = new List<TimeSpan>();
+        var errors = new List<Exception>();
+        var transient = new IOException("Remote unavailable");
+
+        await Assert.ThrowsAsync<OperationCanceledException>(() => RepositoryMirrorRetryRunner.RunAsync(
+            "example", state.Job, state.Repository,
+            () => ++attempts == 1 ? Task.FromException(transient) : Task.FromCanceled(new CancellationToken(true)),
+            () => cleanups++,
+            _ => { },
+            (_, error) => errors.Add(error),
+            delay =>
+            {
+                delays.Add(delay);
+                return Task.CompletedTask;
+            }));
+
+        Assert.AreEqual(2, attempts);
+        Assert.AreEqual(1, cleanups);
+        CollectionAssert.AreEqual(new[] { TimeSpan.FromSeconds(1) }, delays);
+        CollectionAssert.AreEqual(new Exception[] { transient }, errors);
+        Assert.AreEqual(2, state.Job.SuccessCount);
+        Assert.AreEqual(0, state.Job.FailureCount);
+        Assert.IsTrue(state.Job.IsSuccess);
+        Assert.IsNull(state.Repository.ErrorMessage);
+    }
+
+    [TestMethod]
+    public async Task RetryRecoversWhenCleanupOfFailedAttemptAlsoFails()
+    {
+        var state = CreateState();
+        var attempts = 0;
+        var syncError = new IOException("Remote temporarily unavailable");
+        var cleanupError = new IOException("Workspace still in use");
+        var errors = new List<(int Attempt, Exception Error)>();
+
+        await RepositoryMirrorRetryRunner.RunAsync("example", state.Job, state.Repository,
+            () => ++attempts == 1 ? Task.FromException(syncError) : Task.CompletedTask,
+            () => throw cleanupError,
+            _ => { },
+            (attempt, error) => errors.Add((attempt, error)),
+            _ => Task.CompletedTask);
+
+        Assert.AreEqual(2, attempts);
+        CollectionAssert.AreEqual(new (int, Exception)[] { (1, syncError), (1, cleanupError) }, errors);
+        Assert.AreEqual(1, state.Job.SuccessCount);
+        Assert.AreEqual(0, state.Job.FailureCount);
+        Assert.IsTrue(state.Repository.IsSuccess);
+        Assert.IsNull(state.Repository.ErrorMessage);
+    }
+
     private static (MirrorJobExecution Job, MirrorRepoExecution Repository) CreateState()
     {
         var job = new MirrorJobExecution
