@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+      <data name="A powerful tool to keep your repositories in sync across platforms." xml:space="preserve">
+    <value>Moćno alat za održavanje vaše repozitorije u sinkronizaciji između platformi.</value>
+  </data>
+  <data name="Automated" xml:space="preserve">
+    <value>Automatizirano</value>
+  </data>
+  <data name="Automated Sync" xml:space="preserve">
+    <value>Automatizirano sinkroniziranje</value>
+  </data>
+  <data name="Automatically mirror your Git repositories between GitHub, GitLab, and other providers." xml:space="preserve">
+    <value>Automatski zrcalite svoje Git repozitorije između GitHuba, GitLaba i drugih pružatelja.</value>
+  </data>
+  <data name="Configure your mirrors once, and let the server handle the rest. Runs automatically on a schedule you define." xml:space="preserve">
+    <value>Podesite svoje ogledala jednom, a server će se pobrinuti za ostalo. Radi automatski prema rasporedu koji definirajte.</value>
+  </data>
+  <data name="Create an Account" xml:space="preserve">
+    <value>Izradi račun</value>
+  </data>
+  <data name="Detailed History" xml:space="preserve">
+    <value>Detaljna povijest</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Značajke</value>
+  </data>
+  <data name="Flexible Configuration" xml:space="preserve">
+    <value>Fleksibilna konfiguracija</value>
+  </data>
+  <data name="Get Started" xml:space="preserve">
+    <value>Započni</value>
+  </data>
+  <data name="Git Repository" xml:space="preserve">
+    <value>Git repozitorij</value>
+  </data>
+  <data name="Made Simple" xml:space="preserve">
+    <value>Osvježeno</value>
+  </data>
+  <data name="Manage access tokens securely. Supports private repositories and organizations." xml:space="preserve">
+    <value>Sigurno upravljajte pristupnim žetonima. Podržava privatne repozitorije i organizacije.</value>
+  </data>
+  <data name="Mirror entire organizations or specific users. Configure intervals and storage paths easily." xml:space="preserve">
+    <value>Ozrcalite cijele organizacije ili specifične korisnike. Lako konfigurirajte intervale i putanje za pohranu.</value>
+  </data>
+  <data name="Mirroring" xml:space="preserve">
+    <value>Zrcaljenje</value>
+  </data>
+  <data name="Monitor your mirror status with a comprehensive dashboard. See what&apos;s running, what failed, and why." xml:space="preserve">
+    <value>Pratite status svog ogledala pomoću sveobuhvatne nadzorne ploče. Pogledajte što se pokreće, što je završilo s greškom i zašto.</value>
+  </data>
+  <data name="Open Source" xml:space="preserve">
+    <value>Otvoreni izvor</value>
+  </data>
+  <data name="Ready to secure your code?" xml:space="preserve">
+    <value>Spremni za zaštitu svog koda?</value>
+  </data>
+  <data name="Real-time Status" xml:space="preserve">
+    <value>Status u stvarnom vremenu</value>
+  </data>
+  <data name="Secure Access" xml:space="preserve">
+    <value>Sigurni pristup</value>
+  </data>
+  <data name="Secure, reliable, and fully automated." xml:space="preserve">
+    <value>Sigurno, pouzdano i potpuno automatizirano.</value>
+  </data>
+  <data name="Start mirroring your repositories today and ensure your code is always backed up and accessible." xml:space="preserve">
+    <value>Počnite s ogledaljenjem svojih repozitorija već danas i osigurajte da je vaš kod uvijek sigurno pohranjen i dostupan.</value>
+  </data>
+  <data name="Supports mirroring between GitHub, GitLab, and any standard Git server. Handles branches, tags, and commits." xml:space="preserve">
+    <value>Podržava zrcaljenje između GitHuba, GitLaba i bilo kojeg standardnog Git poslužitelja. Obravlja grane, oznake i commitove.</value>
+  </data>
+  <data name="Track every synchronization job. View success/failure status and detailed logs for every repository." xml:space="preserve">
+    <value>Pratite svaki posao sinkronizacije. Pregledajte status uspjeha/neuspjeha i detaljne dnevnike za svako spremište.</value>
+  </data>
+  <data name="Universal Compatibility" xml:space="preserve">
+    <value>Univerzalna kompatibilnost</value>
+  </data>
+  <data name="View on GitHub" xml:space="preserve">
+    <value>Pogledaj na GitHubu</value>
+  </data>
+  <data name="Why GitMirrorServer?" xml:space="preserve">
+    <value>Zašto GitMirrorServer?</value>
+  </data>
+
+</root>
